@@ -14,14 +14,13 @@ $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fie
   </div>
   
   <div class="info">
-    <span><?php print $fields['field_library_ref_nid']->content; ?></span>
     <h4><?php print $fields['title']->content; ?></h4>
+    <span><?php print $fields['field_library_ref_nid']->content; ?></span>
     <?php if (dynamo_datef($start, 'Hi') != '0000'): ?>
-    <span class="time">
-			<?php print dynamo_datef($start, 'H:i'); ?> -
-    </span>
-    <?php endif; ?>
-    <?php print $price; ?>
+    <div class="time">
+			<?php print dynamo_datef($start, 'H:i'); ?> - <?php print $price; ?>
+    </div>
+    <?php endif; ?>    
   </div>
 
 </div>

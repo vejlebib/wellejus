@@ -1,2 +1,162 @@
-#event-list li .calendar-leafs .leaf.Jelling { background-position: 0 -65px; }
-#event-list li .calendar-leafs .leaf.Give { background-position: 0 -85px; }
+body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Palatino, Arial, sans-serif;}
+
+.feed-icon span {
+  top: -8px;
+  }
+
+.view .feed-icon {
+  margin: 18px 0 0 10px;
+  }
+
+.panel-threecol-33-34-33-stacked .panel-middle {
+  width: 230px;
+  background:none;
+  }
+
+.panel-left .view ul li, .panel-left ul.item-list li, .panel-left .pane-library_feature_detail_list ul li {
+  background: none;
+  margin: 0 20px;
+  padding: 10px 0px;
+  border-top:solid silver 1px;
+  }  
+  
+.panel-left .view ul li.views-row-first {
+  border-top:none;
+  }  
+  
+.pane-vejlebib_article_list-panel_pane_3 h2 {
+  text-transform:uppercase;
+  font-weight:bold;
+  }  
+  
+.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:active { 
+  color:rgb(228,3,46);
+  }
+.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:active {
+  color:rgb(149,27,129);
+  }
+.pane-vejlebib_article_list-panel_pane_3 h2.Give a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Give a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Give a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Give a:active {
+  color:rgb(243,146,0);
+  }
+.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:active {
+  color:rgb(0,139,210);
+  }
+.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:active {
+  color:rgb(149,193,31);
+  } 
+  
+.subject a, .subject a:link, .subject a:visited, .subject a:active {
+    text-decoration: none;
+    background-color: #FFF;
+    color: #000;
+    font-weight:bold;
+    font-size: 11px;
+}  
+  
+.more-link a, a.more-link, div.more-link {
+  text-align: left;
+  background:none;
+  padding:0;
+  font-size:10px;
+  }
+  
+#event-list h3 {
+  margin:0;
+  color:white;
+  font-weight:bold;
+  background:rgb(65,65,65);
+  }  
+  
+#event-list li {
+  background:none;
+  padding: 8px 0 6px;
+  }
+  
+#event-list li .calendar-leafs .leaf {
+  border: 1px solid rgb(149,149,149);
+  padding:0;
+  background:none;
+  font-family: inherit;
+  font-weight:bold;
+  text-transform:uppercase;
+  }
+
+#event-list li .leaf.Børkop { 
+  border-color:rgb(228,3,46);
+  }
+#event-list li .leaf.Egtved { 
+  border-color:rgb(149,27,129);
+  }
+#event-list li .leaf.Give { 
+  border-color:rgb(243,146,0);
+  }
+#event-list li .leaf.Jelling { 
+  border-color:rgb(0,139,210);
+  }
+#event-list li .leaf.Vejle { 
+  border-color:rgb(149,193,31);
+  }  
+  
+#event-list li .leaf .day { 
+  background-color: rgb(149,149,149); 
+  margin-bottom: 3px;
+  }
+
+#event-list li .leaf.Børkop .day { 
+  background-color: rgb(228,3,46); 
+  }
+#event-list li .leaf.Egtved .day { 
+  background-color: rgb(149,27,129); 
+  }
+#event-list li .leaf.Give .day { 
+  background-color: rgb(243,146,0); 
+  }
+#event-list li .leaf.Jelling .day { 
+  background-color: rgb(0,139,210); 
+  }
+#event-list li .leaf.Vejle .day { 
+  background-color: rgb(149,193,31); 
+  }
+
+#event-list li .calendar-leafs .info {
+  font-size: 11px;
+  }
+  
+#event-list li div.info h4 a, #event-list li div.info span, #event-list li div.info div.time {
+  font-size: 11px;
+  }
+  
+#event-list li div.info div.time {
+  background: url("../images/ur.png") no-repeat scroll 0 4px transparent;
+  padding-left: 14px;
+  }
+
+#event-list .view-footer p {
+  padding-top: 10px;
+  text-align:right;
+  float:right;
+  }  
+  
+#event-list div.feed-icon {
+  margin-left: -10px;
+  }
+  
+#event-list .more-link {
+    text-align:right;
+    padding:0;
+}

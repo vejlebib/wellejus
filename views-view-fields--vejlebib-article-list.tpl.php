@@ -1,17 +1,18 @@
 <!-- views-view-fields--vejlebib-article-list.tpl.php -->
 
+<?php
+// Prepare variables.
+$libString = $fields['field_library_ref_nid_1']->content;
+$libString = str_replace(" Bibliotek", "", $libString);
+$libString = str_replace("ø", "o", $libString);
+?>
+
 <div class="subject"><?php print $fields['tid']->content; ?> </div>
 
-<h2><?php print $fields['title']->content; ?></h2>
+<h2 class="<?php print $libString; ?>"><?php print $fields['title']->content; ?></h2>
 
 <div class="meta">
-	 <?php if($fields['field_library_ref_nid']->content){ ?>
-	 <ul>
-	   <li><?php print $fields['field_library_ref_nid']->content; ?></li>
-	 </ul>
-	 <?php } ?>
-
- 	<?php print $fields['created']->content; ?>
+	 <?php print $fields['created']->content; ?>
 
 	<?php if($fields['name']->content){ ?>
 		<i><?php print t('by'); ?></i>
@@ -32,8 +33,9 @@ if($fields['field_teaser_value']->content OR $fields['body']->content){
 	<p>
  	<?php print $fields['field_teaser_value']->content; ?>  
  	<?php print $fields['body']->content; ?>    
-	<span class="more-link"><?php print $fields['view_node']->content; ?></span>
 	</p>
+    <div class="more-link"><?php print $fields['view_node']->content; ?></div>
+	
 <?php } ?>
 
 
