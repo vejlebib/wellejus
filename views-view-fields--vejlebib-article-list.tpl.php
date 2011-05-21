@@ -4,7 +4,8 @@
 // Prepare variables.
 $libString = $fields['field_library_ref_nid_1']->content;
 $libString = str_replace(" Bibliotek", "", $libString);
-$libString = str_replace("ø", "o", $libString);
+// Trick to check if we have Børkop as string, avoiding character set issues. Use "Borkop" in CSS.
+$libString = (strpos($libString, "rkop") === false) ? $libString : "Borkop";
 ?>
 
 <div class="subject"><?php print $fields['tid']->content; ?> </div>

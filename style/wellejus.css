@@ -1,11 +1,180 @@
 body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Palatino, Arial, sans-serif;}
 
+#container {
+  background: none;
+  }
+
+#header {
+  height: 50px;
+  left: 245px;
+  position: absolute;
+  top: 40px;
+  width: 500px;
+  }
+
+#header h3 {
+  font-size: 10px;
+  }
+
+#header ul li {
+  color: #000;
+	float: left;
+  font-size: 10px;
+  width: 250px;
+  }	
+	
+#header ul li div.title {
+  width: 150px;
+  }	
+	
+#header ul li div.field-opening-hours-scope {
+  width: 100px;
+  }
+
+#header ul li div {
+  float: left;
+  }
+
+#header .view-library-list a {
+  color:inherit;
+  }	
+	
+#top {
+    height: 281px;
+}
+
+#pageheader {
+    background: url("") no-repeat scroll 0 0 gray;
+    height: 316px;
+    position: relative;
+    width: 994px;
+}
+
+#site-name {
+    height: 38px;
+    left: 55px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    width: 168px;
+}
+
+#site-name a {
+  background-image: url("../images/logo.png");
+	height:60px;
+  }
+
+#ting-search-form {
+    background: none repeat scroll 0 0 transparent;
+    left: 54px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 183px;
+    width: 355px;
+}
+
+#ting-search-form .form-text {
+    border: 0 solid #999999;
+    height: 31px;
+    margin: 0 4px 0 0;
+    padding: 0 0 0 30px;
+    width: 259px;
+}
+
+#ting-search-form .form-submit {
+    background: none repeat scroll 0 0 rgb(89,89,89);
+    border: 1px solid rgb(244,244,244);
+    height: 31px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+#account {
+    left: 756px;
+    margin: 0;
+    position: absolute;
+    top: 120px;
+    width: 210px;
+}
+
+#helpers {
+    left: 750px;
+    margin: 0;
+    position: absolute;
+    top: 285px;
+    width: 230px;
+}
+
+#helpers li {
+    float: left;
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+#helpers li .print {
+    background: url("../images/printer.png") no-repeat scroll 0 center transparent;
+    padding: 5px 0 5px 20px;
+}
+#helpers li .read {
+    background: url("../images/bog.png") no-repeat scroll 0 center transparent;
+    padding: 5px 0 5px 20px;
+}
+#helpers li .english {
+    background: url("../images/uk.png") no-repeat scroll 0 center transparent;
+    padding: 5px 0 5px 30px;
+}
+
+#navigation-inner {
+    background-color: white;
+}
+
+.meta .author a, .meta .author a:link, .meta .author a:visited, .meta .author a:active {
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#pager, ul.pager {
+  padding:0;
+	background: none;
+	margin: 80px 0 5px;
+  }
+
+#ting-result-pager ul li.current, 
+.panel-left ul.pager li.pager-current,
+.panel-left ul.pager li.pager-item,
+.panel-left ul.pager li.pager-next,
+.panel-left ul.pager li.pager-previous,
+.panel-left ul.pager li.pager-first,
+.panel-left ul.pager li.pager-last {
+  background: none repeat scroll 0 0 rgb(244,244,244);
+	border:solid silver 1px;
+	padding: 5px 0 0;
+	margin:0 5px 0 0;
+	height: 22px;	
+  }
+	
+.panel-left ul.pager li.pager-item {
+  width: 32px;
+  }
+	
+.panel-left ul.pager li.pager-current {
+  background-color: rgb(89,89,89);
+	color:white;
+  }
+	
+.panel-left ul.pager li a {
+  color:rgb(89,89,89);
+  }
+
 .feed-icon span {
   top: -8px;
   }
 
 .view .feed-icon {
-  margin: 18px 0 0 10px;
+  margin: 0;
   }
 
 .panel-threecol-33-34-33-stacked .panel-middle {
@@ -15,7 +184,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
 
 .panel-left .view ul li, .panel-left ul.item-list li, .panel-left .pane-library_feature_detail_list ul li {
   background: none;
-  margin: 0 20px;
   padding: 10px 0px;
   border-top:solid silver 1px;
   }  
@@ -24,15 +192,19 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   border-top:none;
   }  
   
+.pane-vejlebib_article_list-panel_pane_3 {
+  padding:0 20px;
+  }	
+
 .pane-vejlebib_article_list-panel_pane_3 h2 {
   text-transform:uppercase;
   font-weight:bold;
   }  
   
-.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Børkop a:active { 
+.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:active { 
   color:rgb(228,3,46);
   }
 .pane-vejlebib_article_list-panel_pane_3 h2.Egtved a, 
@@ -96,7 +268,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   text-transform:uppercase;
   }
 
-#event-list li .leaf.Børkop { 
+#event-list li .leaf.Borkop { 
   border-color:rgb(228,3,46);
   }
 #event-list li .leaf.Egtved { 
@@ -117,7 +289,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   margin-bottom: 3px;
   }
 
-#event-list li .leaf.Børkop .day { 
+#event-list li .leaf.Borkop .day { 
   background-color: rgb(228,3,46); 
   }
 #event-list li .leaf.Egtved .day { 
@@ -153,7 +325,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   }  
   
 #event-list div.feed-icon {
-  margin-left: -10px;
+  margin: 18px 0;
   }
   
 #event-list .more-link {
