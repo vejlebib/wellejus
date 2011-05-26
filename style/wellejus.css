@@ -1,9 +1,36 @@
 body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Palatino, Arial, sans-serif;}
 
+body {
+  background: url("../images/bg.jpg") repeat scroll 0 0 #DDDDDD;
+  }
+
 #container {
   background: none;
   }
 
+.frontpage .panel-content .left .panel-top {
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 670px;
+}  
+  
+.frontpage .panel-left {
+  float: left;
+  padding-right: 20px;
+  width: 440px;
+  }
+
+.frontpage .panel-middle {
+  float: left;
+  width: 210px;
+  }  
+  
+.frontpage .panel-content .right {
+    float: left;
+    width: 210px;
+}
+  
 #header {
   height: 50px;
   left: 245px;
@@ -177,11 +204,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   margin: 0;
   }
 
-.panel-threecol-33-34-33-stacked .panel-middle {
-  width: 230px;
-  background:none;
-  }
-
 .panel-left .view ul li, .panel-left ul.item-list li, .panel-left .pane-library_feature_detail_list ul li {
   background: none;
   padding: 10px 0px;
@@ -307,6 +329,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
 
 #event-list li .calendar-leafs .info {
   font-size: 11px;
+  width: 145px;
   }
   
 #event-list li div.info h4 a, #event-list li div.info span, #event-list li div.info div.time {
