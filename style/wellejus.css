@@ -14,7 +14,7 @@ body {
   }
 
 #pagefooter {
-    background: url("../images/bg-footer.png") no-repeat scroll -16px bottom transparent;
+    background: url("../images/bg-footer.png") no-repeat scroll -32px -50px transparent;
 }  
 
 #pagefooter-inner, #pagefooter-inner div.left {
@@ -93,7 +93,7 @@ body {
 
 #site-name {
     height: 38px;
-    left: 55px;
+    left: 30px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -108,29 +108,43 @@ body {
 
 #ting-search-form {
     background: none repeat scroll 0 0 transparent;
-    left: 54px;
+    left: 45px;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 183px;
-    width: 355px;
+    top: 175px;
+    width: 520px;
 }
 
 #ting-search-form .form-text {
     border: 0 solid #999999;
-    height: 31px;
+    height: 42px;
     margin: 0 4px 0 0;
     padding: 0 0 0 30px;
-    width: 259px;
+    width: 420px;
 }
 
-#ting-search-form .form-submit {
-    background: none repeat scroll 0 0 rgb(89,89,89);
+#ting-search-form .form-button {
+    padding: 0;
+}
+
+#ting-search-form .form-submit, #user-login-form .form-submit {
     border: 1px solid rgb(244,244,244);
-    height: 31px;
+    height: 42px;
     padding: 0 10px;
     text-transform: uppercase;
+    background: url("../images/bg-button-big.png") rgb(89,89,89);
+    color:#fff;
+    overflow:hidden;
+    width:65px;
+    font-weight:bold;
 }
+
+#user-login-form .form-submit {
+  position:relative;
+  top:-45px;
+  left:175px;
+  }
 
 #account {
     left: 700px;
@@ -147,7 +161,7 @@ body {
   }
 
 #user-login-form #edit-name-wrapper input, #user-login-form #edit-pass-wrapper input {
-  width: 180px;
+  width: 165px;
   }  
     
 #user-login-form .form-image-button {
@@ -191,7 +205,7 @@ body {
     left: 750px;
     margin: 0;
     position: absolute;
-    top: 285px;
+    top: 272px;
     width: 230px;
 }
 
@@ -216,6 +230,99 @@ body {
 
 #navigation-inner {
     background-color: white;
+}
+
+#featured {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 240px;
+    position: relative;
+    width: 670px;
+}
+
+#featured ul.ui-tabs-nav {
+    left: 448px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    z-index: 20;
+}
+
+.ui-tabs-nav {
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    bottom: -1px;
+    float: left;
+    font-family: Arial,sans-serif;
+    font-size: 1.1em;
+    line-height: 1.3;
+    list-style: none outside none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#featured ul.ui-tabs-nav li {
+    border: medium none;
+    color: #666666;
+}
+
+.ui-tabs-nav li.ui-tabs-selected {
+    border-bottom-color: #FFFFFF;
+}
+
+#featured li.ui-tabs-nav-item a {
+    background: url("/profiles/ding/themes/elsinore/images/tab.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 43px;
+    line-height: 17px;
+    overflow: hidden;
+    padding: 5px 0 0 20px;
+    width: 202px;
+}
+
+#featured ul.ui-tabs-nav li.ui-tabs-selected a {
+    background: url("/profiles/ding/themes/elsinore/images/tab-active.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    height: 43px;
+    overflow: hidden;
+    padding-top: 5px;
+    width: 202px;
+}
+
+#featured .ui-tabs-panel .image {
+    position: absolute;
+    z-index: 1;
+}
+
+#featured .ui-tabs-panel .info {
+    background: url("/profiles/ding/themes/elsinore/images/bluegbg-75.png") repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 90px;
+    left: 0;
+    position: absolute;
+    width: 460px;
+    z-index: 10;
+}
+
+#featured .ui-tabs-panel .info h3 {
+    margin: 10px 10px 0 20px;
+}
+
+#featured .ui-tabs-panel .info p {
+    color: #FFFFFF;
+    margin: 0 20px;
+}
+
+#featured .ui-tabs-hide {
+    display: none;
 }
 
 .meta .author a, .meta .author a:link, .meta .author a:visited, .meta .author a:active {
