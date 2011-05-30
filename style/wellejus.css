@@ -1,13 +1,27 @@
 body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Palatino, Arial, sans-serif;}
 
 body {
-  background: url("../images/bg.jpg") repeat scroll 0 0 #DDDDDD;
+  background: url("../images/bg.jpg") repeat scroll center 0 #DDDDDD;
   }
 
+#pagebody-inner {
+    background: url("../images/bg-page.png") repeat-y scroll -17px 0 transparent;
+}  
+  
 #container {
   background: none;
+  margin-bottom:0;
   }
 
+#pagefooter {
+    background: url("../images/bg-footer.png") no-repeat scroll -16px bottom transparent;
+}  
+
+#pagefooter-inner, #pagefooter-inner div.left {
+  background-image:none;
+  } 
+
+  
 .frontpage .panel-content .left .panel-top {
     height: auto;
     padding-bottom: 20px;
@@ -67,15 +81,15 @@ body {
   }	
 	
 #top {
-    height: 281px;
+    height: 265px;
 }
 
 #pageheader {
-    background: url("") no-repeat scroll 0 0 gray;
-    height: 316px;
-    position: relative;
-    width: 994px;
-}
+  background: url("../images/bg-header.png") no-repeat scroll -22px -17px transparent;
+  height: 316px;
+  position: relative;
+  width: 994px;
+  }
 
 #site-name {
     height: 38px;
@@ -119,13 +133,60 @@ body {
 }
 
 #account {
-    left: 756px;
+    left: 700px;
     margin: 0;
     position: absolute;
     top: 120px;
     width: 210px;
 }
 
+#user-login-form {
+  background: url("../images/logind.png") no-repeat scroll 0 0 transparent;
+  margin: 20px 0 0;
+  padding: 35px 0 0 10px;
+  }
+
+#user-login-form #edit-name-wrapper input, #user-login-form #edit-pass-wrapper input {
+  width: 180px;
+  }  
+    
+#user-login-form .form-image-button {
+  position: relative;
+    top: -40px;
+    left: 185px;
+  }
+
+#navigation {
+  height:35px;
+  }
+
+#navigation-inner {
+    margin: 0 30px;
+}  
+  
+#navigation li.first, #navigation li  {
+  padding: 0;
+  margin:0 5px;
+  }
+
+#navigation li a {
+  float:none;
+  padding: 6px 10px;
+  font-weight:bold;
+  border-bottom:none;
+  color: gray;
+  border:solid transparent 1px;
+  }  
+  
+#navigation li a.active {  
+  background:url(../images/bg-button-big.png) #000;  
+  }  
+  
+#navigation li a:hover {  
+  border:solid silver 1px;
+  color:black;  
+  }   
+  
 #helpers {
     left: 750px;
     margin: 0;
