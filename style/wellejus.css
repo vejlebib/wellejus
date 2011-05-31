@@ -233,7 +233,7 @@ body {
 }
 
 #featured {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #555;
     height: 240px;
     position: relative;
     width: 670px;
@@ -277,7 +277,7 @@ body {
 }
 
 #featured li.ui-tabs-nav-item a {
-    background: url("/profiles/ding/themes/elsinore/images/tab.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/tab.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     display: block;
     font-weight: bold;
@@ -289,7 +289,7 @@ body {
 }
 
 #featured ul.ui-tabs-nav li.ui-tabs-selected a {
-    background: url("/profiles/ding/themes/elsinore/images/tab-active.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/tab-active.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
     height: 43px;
     overflow: hidden;
@@ -303,7 +303,7 @@ body {
 }
 
 #featured .ui-tabs-panel .info {
-    background: url("/profiles/ding/themes/elsinore/images/bluegbg-75.png") repeat scroll 0 0 transparent;
+    background: url("../images/bluegbg-75.png") repeat scroll 0 0 transparent;
     bottom: 0;
     height: 90px;
     left: 0;
@@ -314,6 +314,14 @@ body {
 
 #featured .ui-tabs-panel .info h3 {
     margin: 10px 10px 0 20px;
+}
+
+#featured .ui-tabs-panel .info h3 a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 #featured .ui-tabs-panel .info p {
