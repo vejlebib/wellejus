@@ -17,6 +17,4 @@ regions[footer_three]   = footer three
 regions[footer_four]    = footer four
 
 stylesheets[all][] = style/wellejus.css
-stylesheets[screen, projection][] = style/views-accordion-wellejus.css
 
-scripts[] = script/wellejus.js
