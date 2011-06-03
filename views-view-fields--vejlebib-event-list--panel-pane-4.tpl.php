@@ -5,9 +5,10 @@
 $start = date_make_date($fields['field_datetime_value']->raw);
 $price = ($fields['field_entry_price_value']->raw < 1) ? t('Free') : intval($fields['field_entry_price_value']->raw) . ' kr.';
 $libString = $fields['field_library_ref_nid_1']->content;
-$libString = str_replace(" Bibliotek", "", $libString);
-// Trick to check if we have B�rkop as string, avoiding character set issues. Use "Borkop" in CSS.
-$libString = (strpos($libString, "rkop") === false) ? $libString : "Borkop";
+$libString = strtolower( str_replace(" Bibliotek", "", $libString) );
+// Translating danish characters, avoiding character set issues when styling with CSS afterwards
+$trans = array("æ" => "ae", "Æ" => "AE", "ø" => "o", "Ø" => "O", "å" => "aa", "Å" => "AA");
+$libString = strtr($libString, $trans);
 ?>
 <div class="calendar-leafs">
 

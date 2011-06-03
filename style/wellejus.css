@@ -232,105 +232,45 @@ body {
     background-color: white;
 }
 
-#featured {
-    background: none repeat scroll 0 0 #555;
-    height: 240px;
-    position: relative;
-    width: 670px;
-}
-
-#featured ul.ui-tabs-nav {
-    left: 447px;
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 220px;
-    z-index: 20;
-}
-
-.ui-tabs-nav {
-    border-style: none solid none none;
-    border-width: 0 1px 0 0;
-    bottom: -1px;
-    float: left;
-    font-family: Arial,sans-serif;
-    font-size: 1.1em;
-    line-height: 1.3;
-    list-style: none outside none;
-    margin: 0;
-    outline: 0 none;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
-}
-
-#featured ul.ui-tabs-nav li {
-    border: medium none;
-    color: #666666;
-}
-
-.ui-tabs-nav li.ui-tabs-selected {
-    border-bottom-color: #FFFFFF;
-}
-
-#featured li.ui-tabs-nav-item a {
-    background: url("../images/tab.png") no-repeat scroll 0 0 transparent;
-    color: #FFFFFF;
-    display: block;
-    font-weight: bold;
-    height: 43px;
-    line-height: 17px;
-    overflow: hidden;
-    padding: 5px 0 0 20px;
-    width: 202px;
-}
-
-#featured ul.ui-tabs-nav li.ui-tabs-selected a {
-    background: url("../images/tab-active.png") no-repeat scroll 0 0 transparent;
-    color: #FFFFFF;
-    height: 43px;
-    overflow: hidden;
-    padding-top: 5px;
-    width: 202px;
-}
-
-#featured .ui-tabs-panel .image {
-    position: absolute;
-    z-index: 1;
-}
-
 #featured .ui-tabs-panel .info {
-    background: url("../images/bluegbg-75.png") repeat scroll 0 0 transparent;
-    bottom: 0;
-    height: 90px;
-    left: 0;
-    position: absolute;
-    width: 460px;
-    z-index: 10;
-}
+  height:80px;
+  }
 
-#featured .ui-tabs-panel .info h3 {
-    margin: 10px 10px 0 20px;
-}
+#featured .info.borkop, .info.egtved, .info.give, .info.jelling, .info.vejle  {
+  padding-top: 160px;
+  }
 
-#featured .ui-tabs-panel .info h3 a {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 20px;
-    text-transform: uppercase;
-}
+#featured .ui-tabs-panel .info.borkop {
+  background: url("../images/tint-red.png") repeat scroll 0 0 transparent;
+  }
 
-#featured .ui-tabs-panel .info p {
-    color: #FFFFFF;
-    margin: 0 20px;
-}
+#featured .ui-tabs-panel .info.egtved {
+  background: url("../images/tint-purple.png") repeat scroll 0 0 transparent;
+  }
 
-#featured .ui-tabs-hide {
-    display: none;
+#featured .ui-tabs-panel .info.give {
+  background: url("../images/tint-orange.png") repeat scroll 0 0 transparent;
+  }
+
+#featured .ui-tabs-panel .info.jelling {
+  background: url("../images/tint-blue.png") repeat scroll 0 0 transparent;
+  }
+
+#featured .ui-tabs-panel .info.vejle {
+  background: url("../images/tint-green.png") repeat scroll 0 0 transparent;
+  }
+
+#featured li.ui-tabs-nav-item a, #featured .ui-tabs-panel .info h3, #featured .ui-tabs-panel .info p { 
+  text-transform:uppercase;  
+  }
+  
+#featured .ui-tabs-panel .info h3 a, #featured .ui-tabs-panel .info p { 
+  font-size:18px;
+  font-weight:normal;  
+  }
+  
+#featured .ui-tabs-panel .info h3, #featured .ui-tabs-panel .info p {
+    margin: 5px 0 0 10px;
 }
 
 .meta .author a, .meta .author a:link, .meta .author a:visited, .meta .author a:active {
@@ -399,34 +339,34 @@ body {
   font-weight:bold;
   }  
   
-.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Borkop a:active { 
+.pane-vejlebib_article_list-panel_pane_3 h2.borkop a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.borkop a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.borkop a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.borkop a:active { 
   color:rgb(228,3,46);
   }
-.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Egtved a:active {
+.pane-vejlebib_article_list-panel_pane_3 h2.egtved a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.egtved a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.egtved a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.egtved a:active {
   color:rgb(149,27,129);
   }
-.pane-vejlebib_article_list-panel_pane_3 h2.Give a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Give a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Give a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Give a:active {
+.pane-vejlebib_article_list-panel_pane_3 h2.give a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.give a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.give a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.give a:active {
   color:rgb(243,146,0);
   }
-.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Jelling a:active {
+.pane-vejlebib_article_list-panel_pane_3 h2.jelling a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.jelling a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.jelling a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.jelling a:active {
   color:rgb(0,139,210);
   }
-.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:link, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:visited, 
-.pane-vejlebib_article_list-panel_pane_3 h2.Vejle a:active {
+.pane-vejlebib_article_list-panel_pane_3 h2.vejle a, 
+.pane-vejlebib_article_list-panel_pane_3 h2.vejle a:link, 
+.pane-vejlebib_article_list-panel_pane_3 h2.vejle a:visited, 
+.pane-vejlebib_article_list-panel_pane_3 h2.vejle a:active {
   color:rgb(149,193,31);
   } 
   
@@ -466,19 +406,19 @@ body {
   text-transform:uppercase;
   }
 
-#event-list li .leaf.Borkop { 
+#event-list li .leaf.borkop { 
   border-color:rgb(228,3,46);
   }
-#event-list li .leaf.Egtved { 
+#event-list li .leaf.egtved { 
   border-color:rgb(149,27,129);
   }
-#event-list li .leaf.Give { 
+#event-list li .leaf.give { 
   border-color:rgb(243,146,0);
   }
-#event-list li .leaf.Jelling { 
+#event-list li .leaf.jelling { 
   border-color:rgb(0,139,210);
   }
-#event-list li .leaf.Vejle { 
+#event-list li .leaf.vejle { 
   border-color:rgb(149,193,31);
   }  
   
@@ -487,19 +427,19 @@ body {
   margin-bottom: 3px;
   }
 
-#event-list li .leaf.Borkop .day { 
+#event-list li .leaf.borkop .day { 
   background-color: rgb(228,3,46); 
   }
-#event-list li .leaf.Egtved .day { 
+#event-list li .leaf.egtved .day { 
   background-color: rgb(149,27,129); 
   }
-#event-list li .leaf.Give .day { 
+#event-list li .leaf.give .day { 
   background-color: rgb(243,146,0); 
   }
-#event-list li .leaf.Jelling .day { 
+#event-list li .leaf.jelling .day { 
   background-color: rgb(0,139,210); 
   }
-#event-list li .leaf.Vejle .day { 
+#event-list li .leaf.vejle .day { 
   background-color: rgb(149,193,31); 
   }
 
