@@ -126,6 +126,7 @@ body {
 
 #ting-search-form .form-button {
     padding: 0;
+    margin-left:455px;
 }
 
 #ting-search-form .form-submit, #user-login-form .form-submit {
