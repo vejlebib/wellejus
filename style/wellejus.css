@@ -4,6 +4,12 @@ body {
   background: url("../images/bg.jpg") repeat scroll center 0 #DDDDDD;
   }
 
+#path, #pagebody { margin-top:25px; }  
+
+#path { 
+  margin-left: 44px; 
+  } 
+    
 #pagebody-inner {
     background: url("../images/bg-page.png") repeat-y scroll -17px 0 transparent;
 }  
@@ -233,6 +239,15 @@ body {
     background-color: white;
 }
 
+#content-inner {
+  margin: 0 0 0 28px;
+  }
+  
+.content-top { 
+  left:0;
+  padding: 8px 0 20px 0;
+  }  
+
 #featured .ui-tabs-panel .info {
   height:80px;
   }
@@ -242,23 +257,23 @@ body {
   }
 
 #featured .ui-tabs-panel .info.borkop {
-  background: url("../images/tint-red.png") repeat scroll 0 0 transparent;
+  background: url("../images/ovlay470x250-red.png") repeat scroll 0 0 transparent;
   }
 
 #featured .ui-tabs-panel .info.egtved {
-  background: url("../images/tint-purple.png") repeat scroll 0 0 transparent;
+  background: url("../images/ovlay470x250-purple.png") repeat scroll 0 0 transparent;
   }
 
 #featured .ui-tabs-panel .info.give {
-  background: url("../images/tint-orange.png") repeat scroll 0 0 transparent;
+  background: url("../images/ovlay470x250-orange.png") repeat scroll 0 0 transparent;
   }
 
 #featured .ui-tabs-panel .info.jelling {
-  background: url("../images/tint-blue.png") repeat scroll 0 0 transparent;
+  background: url("../images/ovlay470x250-blue.png") repeat scroll 0 0 transparent;
   }
 
 #featured .ui-tabs-panel .info.vejle {
-  background: url("../images/tint-green.png") repeat scroll 0 0 transparent;
+  background: url("../images/ovlay470x250-green.png") repeat scroll 0 0 transparent;
   }
 
 #featured li.ui-tabs-nav-item a, #featured .ui-tabs-panel .info h3, #featured .ui-tabs-panel .info p { 
@@ -321,6 +336,10 @@ body {
   margin: 0;
   }
 
+ul, .item-list ul {
+  margin:12px;
+  }  
+  
 .panel-left .view ul li, .panel-left ul.item-list li, .panel-left .pane-library_feature_detail_list ul li {
   background: none;
   padding: 10px 0px;
@@ -472,3 +491,20 @@ body {
     text-align:right;
     padding:0;
 }
+
+.view-library-list .node-teaser-library .picture {
+  position:relative;
+  }
+
+.view-library-list .node-teaser-library .picture .overlay {
+  background: url(../images/ovlay125x125-green.png) repeat scroll 0 0 transparent;
+  height:120px;
+  width:120px;
+  position:absolute;
+  }
+
+.view-library-list .node-teaser-library .picture .overlay.borkop { background-image: url(../images/ovlay125x125-red.png); }
+.view-library-list .node-teaser-library .picture .overlay.egtved { background-image: url(../images/ovlay125x125-purple.png); }
+.view-library-list .node-teaser-library .picture .overlay.give { background-image: url(../images/ovlay125x125-orange.png); }
+.view-library-list .node-teaser-library .picture .overlay.jelling { background-image: url(../images/ovlay125x125-blue.png); }
+.view-library-list .node-teaser-library .picture .overlay.vejle { background-image: url(../images/ovlay125x125-green.png); }
