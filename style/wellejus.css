@@ -4,9 +4,8 @@ body {
   background: url("../images/bg.jpg") repeat scroll center 0 #DDDDDD;
   }
 
-#path, #pagebody { margin-top:25px; }  
-
 #path { 
+  margin-top:25px;
   margin-left: 44px; 
   } 
     
@@ -28,28 +27,34 @@ body {
   } 
 
   
-.frontpage .panel-content .left .panel-top {
-    height: auto;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    width: 670px;
+.panel-threecol-33-34-33-stacked .panel-top {
+    width: 905px;
 }  
   
-.frontpage .panel-left {
+.panel-threecol-33-34-33-stacked .panel-left {
   float: left;
   padding-right: 20px;
-  width: 440px;
+  width: 437px;
+  border-right:none;
+  background-image:none;
   }
 
-.frontpage .panel-middle {
+.panel-threecol-33-34-33-stacked .panel-middle {
   float: left;
-  width: 210px;
+  width: 212px;
+  background-image:none;
+  margin-top: 10px;
   }  
   
-.frontpage .panel-content .right {
+.panel-threecol-33-34-33-stacked .panel-right {
     float: left;
-    width: 210px;
+    width: 235px;
 }
+
+.panel-threecol-33-34-33-stacked .panel-right .pane-relevant_campaigns {
+  float:right;
+  margin-top:10px;
+  }
   
 #header {
   height: 50px;
@@ -91,8 +96,8 @@ body {
 }
 
 #pageheader {
-  background: url("../images/bg-header.png") no-repeat scroll -22px -17px transparent;
-  height: 316px;
+  background: url("../images/bg-header.png") no-repeat scroll -21px -25px transparent;
+  height: 330px;
   position: relative;
   width: 994px;
   }
@@ -240,7 +245,7 @@ body {
 }
 
 #content-inner {
-  margin: 0 0 0 28px;
+  margin: 14px 0 0 28px;
   }
   
 .content-top { 
@@ -289,6 +294,39 @@ body {
     margin: 5px 0 0 10px;
 }
 
+#kviklinks {
+  width: 220px;
+  float: right;
+  }
+  
+#kviklinks h3 {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size:12px;
+  }
+  
+#kviklinks ul.menu {
+  margin-top:11px;
+  }  
+  
+#kviklinks ul.menu li.leaf {
+  margin:0;
+  }  
+  
+#kviklinks ul.menu li.leaf a {
+  background: url("../images/arrow.png") no-repeat scroll 0 2px transparent;
+  color: #000;
+  font-size: 11px;
+  font-weight:normal;
+  padding: 0 0 0 12px;
+  text-transform: uppercase;
+  display:block;
+  }
+  
+#kviklinks ul.menu li.leaf a:hover {
+  font-weight:bold;
+  }  
+
 .meta .author a, .meta .author a:link, .meta .author a:visited, .meta .author a:active {
   color: inherit;
   text-decoration: none;
@@ -336,10 +374,10 @@ body {
   margin: 0;
   }
 
-ul, .item-list ul {
-  margin:12px;
-  }  
-  
+body.page-biblioteker .panel-left .view ul li {
+  padding: 10px 0;
+  }
+ 
 .panel-left .view ul li, .panel-left ul.item-list li, .panel-left .pane-library_feature_detail_list ul li {
   background: none;
   padding: 10px 0px;
@@ -350,10 +388,10 @@ ul, .item-list ul {
   border-top:none;
   }  
   
-.pane-vejlebib_article_list-panel_pane_3 {
-  padding:0 20px;
-  }	
-
+.panel-left .view, .panel-left .pane-library_feature_detail_list ul.item-list {
+  left: 0px;
+  }
+  
 .pane-vejlebib_article_list-panel_pane_3 h2 {
   text-transform:uppercase;
   font-weight:bold;
@@ -405,7 +443,7 @@ ul, .item-list ul {
   font-size:10px;
   }
   
-#event-list h3 {
+#event-list h3, #kviklinks h3 {
   margin:0;
   color:white;
   font-weight:bold;
@@ -508,3 +546,19 @@ ul, .item-list ul {
 .view-library-list .node-teaser-library .picture .overlay.give { background-image: url(../images/ovlay125x125-orange.png); }
 .view-library-list .node-teaser-library .picture .overlay.jelling { background-image: url(../images/ovlay125x125-blue.png); }
 .view-library-list .node-teaser-library .picture .overlay.vejle { background-image: url(../images/ovlay125x125-green.png); }
+
+#pagefooter-inner div.left {
+  min-height: 190px;
+  }
+
+#pagefooter-bottom {
+  font-size: 12px;
+  margin: -10px 0 0;
+  padding: 0 40px;
+  text-align: center;
+  }
+  
+#pagefooter-bottom .block {
+  border-top: 1px solid silver;
+  }
+  
