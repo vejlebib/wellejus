@@ -145,10 +145,14 @@
 
             <div class="left">
               <?php print $footer_four; ?>              
-              <?php print $footer; ?>
             </div>
       
           </div>
+          
+          <div id="pagefooter-bottom">
+            <?php print $footer; ?>
+          </div>
+          
         </div>
 
       </div>
