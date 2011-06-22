@@ -54,6 +54,7 @@ body {
 .panel-threecol-33-34-33-stacked .panel-right .pane-relevant_campaigns {
   float:right;
   margin-top:10px;
+  text-align: right;
   }
   
 #header {
@@ -118,22 +119,30 @@ body {
   }
 
 #ting-search-form {
-    background: none repeat scroll 0 0 transparent;
-    left: 45px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 175px;
-    width: 520px;
-}
+  background: none;
+  left: 45px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 175px;
+  width: 520px;
+  }
 
+#ting-search-form label {
+    font-size: 16px;
+    margin-top: 12px;
+}  
+  
 #ting-search-form .form-text {
-    border: 0 solid #999999;
-    height: 42px;
-    margin: 0 4px 0 0;
-    padding: 0 0 0 30px;
-    width: 420px;
-}
+  background-position: 9px 14px;
+  border: 0 solid #999999;
+  font-size: 18px;
+  height: 42px;
+  line-height: 42px;
+  margin: 0 4px 0 0;
+  padding: 0 0 0 30px;
+  width: 420px;
+  }
 
 #ting-search-form .form-button {
     padding: 0;
@@ -151,6 +160,10 @@ body {
     width:65px;
     font-weight:bold;
 }
+
+.ac_results {}
+.ac_results li {height:16px;}
+.ac_results span.term {font-size:12px;}
 
 #user-login-form .form-submit {
   position:relative;
@@ -305,16 +318,16 @@ body {
   font-size:12px;
   }
   
-#kviklinks ul.menu {
+#kviklinks ul.menu, #pagefooter ul.menu {
   margin-top:11px;
   }  
   
-#kviklinks ul.menu li.leaf {
+#kviklinks ul.menu li.leaf, #pagefooter ul.menu li.leaf {
   margin:0;
   }  
   
-#kviklinks ul.menu li.leaf a {
-  background: url("../images/arrow.png") no-repeat scroll 0 2px transparent;
+#kviklinks ul.menu li.leaf a, #pagefooter ul.menu li.leaf a {
+  background: url("../images/arrow.png") no-repeat scroll 0 3px transparent;
   color: #000;
   font-size: 11px;
   font-weight:normal;
@@ -323,7 +336,7 @@ body {
   display:block;
   }
   
-#kviklinks ul.menu li.leaf a:hover {
+#kviklinks ul.menu li.leaf a:hover, #pagefooter ul.menu li.leaf a:hover {
   font-weight:bold;
   }  
 
@@ -547,6 +560,17 @@ body.page-biblioteker .panel-left .view ul li {
 .view-library-list .node-teaser-library .picture .overlay.jelling { background-image: url(../images/ovlay125x125-blue.png); }
 .view-library-list .node-teaser-library .picture .overlay.vejle { background-image: url(../images/ovlay125x125-green.png); }
 
+.page-biblioteker .panel-left .view ul li {
+  height: 120px;
+  padding: 10px;
+  width: 80px;
+  }
+
+.view-library-staff-list li .field-image-fid, .view-library-staff-list li .field-image-fid img {
+  height: 72px;
+  width: 72px;
+  }
+
 #pagefooter-inner div.left {
   min-height: 190px;
   }
@@ -562,3 +586,12 @@ body.page-biblioteker .panel-left .view ul li {
   border-top: 1px solid silver;
   }
   
+#pagefooter {  
+  line-height: inherit;  
+  }
+  
+#pagefooter h3 {
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size:12px;
+  }
