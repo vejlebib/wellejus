@@ -595,3 +595,9 @@ body.page-biblioteker .panel-left .view ul li {
   text-transform: uppercase;
   font-size:12px;
   }
+  
+/* Errors in Dynamo corrected below */
+/* position:relative on "form div" is not good inside vertical tabs - form-description will overlap inputs on some contrib modules such as scheduler */
+.vertical-tabs .form-description {
+  position: static;
+  }
