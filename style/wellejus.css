@@ -119,11 +119,9 @@ body.page-biblioteker .panel-left .view ul li {
   }  
   
 #featured .ui-tabs-panel .info {
-  height:80px;
-  }
-
-#featured .info.borkop, .info.egtved, .info.give, .info.jelling, .info.vejle  {
-  padding-top: 160px;
+  padding-top: 168px;
+  height:72px;
+  background-image: url("../images/ovlay470x250-gray.png");
   }
 
 #featured .info.borkop {
@@ -146,9 +144,24 @@ body.page-biblioteker .panel-left .view ul li {
   background-image: url("../images/ovlay470x250-green.png");
   }
 
-#featured .ui-tabs-panel .info h3, #featured .ui-tabs-panel .info p {
-    margin: 5px 0 0 10px;
+#featured .ui-tabs-panel .info h3 {
+    margin: 0 0 0 10px;
+    height:100%;
 }
+
+#featured .ui-tabs-panel .info h3 a {
+    display: block;
+    height: 100%;
+    line-height: 68px;
+    vertical-align: middle;
+    overflow:hidden;
+}
+
+#featured .ui-tabs-panel .info p {
+  position: absolute;
+  top: 0;
+  margin: 5px 10px;
+  }
 
 #header {
   height: 50px;
@@ -274,11 +287,12 @@ body.page-biblioteker .panel-left .view ul li {
   font-weight:bold;
   text-transform: uppercase;
   font-size:12px;
+  font-family:inherit;
   }
 
 #pagefooter-bottom {
   font-size: 12px;
-  margin: -10px 0 0;
+  margin: -5px 0 0;
   padding: 0 40px;
   text-align: center;
   }
@@ -287,13 +301,17 @@ body.page-biblioteker .panel-left .view ul li {
   border-top: 1px solid silver;
   }
 
+#pagefooter-inner {  
+  padding-top: 10px; 
+  } 
+  
 #pagefooter-inner, 
 #pagefooter-inner div.left {
   background-image:none;
   } 
 
 #pagefooter-inner div.left {
-  min-height: 190px;
+  min-height: 185px;
   }
   
 #pageheader {
@@ -421,6 +439,12 @@ div.more-link {
   background-image: url(../images/ovlay125x125-green.png); 
   }
   
+.pane-similar_events_title {
+  border-top:1px solid #DCDCDC;
+  margin-top: 3em;
+  padding-top: 1em;
+  }   
+  
 .panel-left ul.pager li.pager-item {
   width: 32px;
   }
@@ -507,7 +531,9 @@ div.more-link {
 /*ting*/
 
 /* TYPOGRAPHY: Fonts and sizes */
-body, caption, th, td, input, textarea, select, option, legend, fieldset {font-family: Palatino, Arial, sans-serif;}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+  font-family: Arial, sans-serif;
+  }
 
 #event-list h3, 
 #kviklinks h3 {
@@ -533,12 +559,15 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {font-f
   text-transform:uppercase;  
   }
   
-#featured .ui-tabs-panel .info h3 a, 
-#featured .ui-tabs-panel .info p { 
+#featured .ui-tabs-panel .info h3 a { 
   font-size:18px;
   font-weight:normal;  
   }
 
+#featured .ui-tabs-panel .info p {
+  font-size: 10px;
+  }  
+  
 #header h3,
 #header ul li {
   font-size: 10px;
@@ -640,6 +669,11 @@ div.more-link {
   font-size:10px;
   }
   
+.pane-similar_events_title h4 {
+  font-size: 18px;
+  font-weight:normal;
+  }  
+
 .pane-vejlebib_article_list-panel_pane_3 h2 {
   text-transform:uppercase;
   font-weight:bold;
