@@ -542,7 +542,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }  
   
 #event-list li .calendar-leafs .leaf {
-  font-family: inherit;
+  font-family: Arial, sans-serif;
   font-weight:bold;
   text-transform:uppercase;
   }
@@ -575,7 +575,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
   
 #header .view-library-list a {
-  color:inherit;
+  color:#000;
   }	
 
 #helpers li {
