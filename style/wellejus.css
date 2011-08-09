@@ -469,8 +469,9 @@ div.more-link {
 .panel-left .pane-library_feature_detail_list ul.item-list {
   left: 0px;
   }
-    
-.panel-threecol-33-34-33-stacked .panel-left {
+
+.panel-threecol-33-34-33-stacked .panel-left,
+.panel-threecol-left-stacked .panel-left .view-vejlebib-article-list {
   float: left;
   padding-right: 20px;
   width: 437px;
@@ -499,6 +500,21 @@ div.more-link {
 .panel-threecol-33-34-33-stacked .panel-top {
   width: 905px;
   }  
+
+.panel-threecol-left-stacked .panel-middle .ding-box-pane {
+  margin: 0 0 20px;
+  }
+  
+.ding-box-pane .pane-library_feature_list ul.item-list li {
+  width:200px;
+  font-size: 14px;
+  line-height: 20px;
+  }  
+
+.panel-threecol-left-stacked .panel-middle #event-list {  
+  padding-left: 5px;
+  width: 220px;
+  }
   
 .subject a, 
 .subject a:link, 
@@ -674,7 +690,8 @@ div.more-link {
   font-weight:normal;
   }  
 
-.pane-vejlebib_article_list-panel_pane_3 h2 {
+.pane-vejlebib_article_list-panel_pane_3 h2, 
+.pane-vejlebib_article_list-panel_pane_4 h2 {
   text-transform:uppercase;
   font-weight:bold;
   }  
