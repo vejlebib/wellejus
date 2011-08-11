@@ -1,5 +1,4 @@
 <?php
-// $Id$
 /**
  * @file ting_object.tpl.php
  *
@@ -52,15 +51,14 @@
         <?php } ?>
       </div>
       <p><?php print $abstract; ?></p>
-      <?php // TODO: This should be refactored into the availability module.
-      if (ting_object_is($object, 'limited_availability')) { ?>
-        <div class="ting-status waiting"><?php print t('waiting for data'); ?></div>
-      <?php } ?>
+
+      <?php if (isset($additional_main_content)) { print drupal_render($additional_main_content); } ?>
     </div>
 
     <?php if ($buttons) :?>
       <div class="ting-object-buttons">
-      <?php 
+      
+      <?php
       /* START wiredloose: in vejlebib, use modified online_URL for OPACs */
       $proxy = variable_get('ting_proxy', NULL);
       if (!empty($object->online_url)) {
@@ -76,8 +74,7 @@
       }
       /* END wiredloose: in vejlebib, use modified online_URL for OPACs */
       
-      print theme('item_list', $buttons, NULL, 'ul', array('class' => 'buttons')) 
-      ?>
+      print theme('item_list', $buttons, NULL, 'ul', array('class' => 'buttons')) ?>
       </div>
     <?php endif; ?>
 
@@ -210,14 +207,5 @@
   }
   ?>
 
-  <?php
-    // TODO: This should be refactored into the availability module.
-  if (ting_object_is($object, 'limited_availability')) { ?>
-  <div class="ding-box-wide ting-availability">
-    <h3>Følgende biblioteker har "<?php print check_plain($object->title); ?>" hjemme:</h3>
-    <ul class="library-list">
-      <li class="ting-status waiting even"><?php print t('waiting for data'); ?></li>
-    </ul>
-  </div>
-  <?php } ?>
+  <?php if (isset($additional_content)) { print drupal_render($additional_content); } ?>
 </div>

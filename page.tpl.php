@@ -3,7 +3,7 @@
 
 /**
  * @file page.tpl.php
- * Main page template file for the wellejus theme.
+ * Main page template file for the wellejus theme. We use body id="w" to make CSS style selectors shorter in the style files.
  */
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -18,7 +18,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
-<body class="<?php print $body_classes; ?><?php if (!empty($admin)) print ' '.admin;  ?>">
+<body id="w" class="<?php print $body_classes; ?><?php if (!empty($admin)) print ' '.admin;  ?>">
 <?php
 /*adds support for for the admin module*/
   if (!empty($admin)) print $admin;

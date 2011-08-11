@@ -343,13 +343,13 @@ ul.pager {
 	height:60px;
   }
   
-#ting-result-pager ul li.current, 
-.panel-left ul.pager li.pager-current,
-.panel-left ul.pager li.pager-item,
-.panel-left ul.pager li.pager-next,
-.panel-left ul.pager li.pager-previous,
-.panel-left ul.pager li.pager-first,
-.panel-left ul.pager li.pager-last {
+#w li.current, 
+#w li.pager-current, 
+#w li.pager-item, 
+#w li.pager-next, 
+#w li.pager-previous, 
+#w li.pager-first, 
+#w li.pager-last {
   background: none repeat scroll 0 0 rgb(244,244,244);
   border:solid silver 1px;
   padding: 5px 0 0;
@@ -407,6 +407,10 @@ ul.pager {
   padding: 8px 0 20px 0;
   }  
   
+.ding-box-wide ul li {
+  height: 20px;
+  }	
+	
 .feed-icon span {
   top: -8px;
   }
@@ -445,16 +449,16 @@ div.more-link {
   padding-top: 1em;
   }   
   
-.panel-left ul.pager li.pager-item {
+.panel-left ul.pager li.pager-item,
+.panel-middle ul.pager li.pager-item {
   width: 32px;
   }
 	
-.panel-left ul.pager li.pager-current {
+#w li.pager-current {
   background-color: rgb(89,89,89);
   }
-	
-.panel-left .view ul li, 
-.panel-left ul.item-list li, 
+
+.panel-left .pane-vejlebib_article_list-panel_pane_3 ul li, 
 .panel-left .pane-library_feature_detail_list ul li {
   background: none;
   padding: 10px 0px;
@@ -652,6 +656,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   color:rgb(228,3,46);
   }
 
+.ding-box-wide ul li, 
+.ding-box-wide ul li.first {
+  font-size: 12px;
+  }	
+	
 .egtved a, 
 .egtved a:link, 
 .egtved a:visited, 
@@ -696,11 +705,12 @@ div.more-link {
   font-weight:bold;
   }  
 
-.panel-left ul.pager li.pager-current {
+#w li.pager-current {
   color:white;
   }
 	
-.panel-left ul.pager li a {
+.panel-left ul.pager li a,
+.panel-middle ul.pager li a {
   color:rgb(89,89,89);
   }
   
