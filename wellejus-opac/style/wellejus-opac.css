@@ -1,4 +1,4 @@
 /* OPAC-specific styles */
-#pageheader-inner {
-  background: url("../images/opacComputer.png") no-repeat scroll 20px 20px transparent;
+#container {
+  background: url("/sites/all/themes/wellejus/wellejus-opac/images/opacComputer2.png") no-repeat scroll 30px bottom transparent;
   }
