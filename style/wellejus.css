@@ -3,6 +3,9 @@
 /*developer*/
 
 /*dynamo*/
+#w .view-footer {
+  margin: 10px 0;
+  }
 
 /*ie6*/
 
@@ -114,8 +117,7 @@ body.page-biblioteker .panel-left .view ul li {
 
 #event-list .view-footer p {
   padding-top: 10px;
-  text-align:right;
-  float:right;
+  text-align:center;
   }  
   
 #featured .ui-tabs-panel .info {
@@ -223,15 +225,18 @@ body.page-biblioteker .panel-left .view ul li {
   padding: 0 10px;
   }
   
-#kviklinks ul.menu, #pagefooter ul.menu {
+#kviklinks ul.menu, 
+#pagefooter ul.menu {
   margin-top:11px;
   }  
   
-#kviklinks ul.menu li.leaf, #pagefooter ul.menu li.leaf {
+#kviklinks ul.menu li.leaf, 
+#pagefooter ul.menu li.leaf {
   margin:0;
   }  
   
-#kviklinks ul.menu li.leaf a, #pagefooter ul.menu li.leaf a {
+#kviklinks ul.menu li.leaf a, 
+#pagefooter ul.menu li.leaf a {
   background: url("../images/arrow.png") no-repeat scroll 0 3px transparent;
   padding: 0 0 0 12px;
   display:block;
@@ -286,7 +291,7 @@ body.page-biblioteker .panel-left .view ul li {
 #pagefooter h3 {
   font-weight:bold;
   text-transform: uppercase;
-  font-size:12px;
+  font-size:13px;
   font-family:inherit;
   }
 
@@ -343,20 +348,6 @@ ul.pager {
 	height:60px;
   }
   
-#w li.current, 
-#w li.pager-current, 
-#w li.pager-item, 
-#w li.pager-next, 
-#w li.pager-previous, 
-#w li.pager-first, 
-#w li.pager-last {
-  background: none repeat scroll 0 0 rgb(244,244,244);
-  border:solid silver 1px;
-  padding: 5px 0 0;
-  margin:0 5px 0 0;
-  height: 22px;	
-  }
-
 #ting-search-form {
   background: none;
   left: 45px;
@@ -402,6 +393,39 @@ ul.pager {
   left:175px;
   }
 
+#w .more-link a, 
+#w a.more-link, 
+#w div.more-link {
+  text-align: left;
+  background:none;
+  padding:0;
+  }
+  
+#w .subject a, 
+#w .subject a:link, 
+#w .subject a:visited, 
+#w .subject a:active {
+  background-color: #FFF;
+  }  
+  
+#w li.current, 
+#w li.pager-current, 
+#w li.pager-item, 
+#w li.pager-next, 
+#w li.pager-previous, 
+#w li.pager-first, 
+#w li.pager-last {
+  background: none repeat scroll 0 0 rgb(244,244,244);
+  border:solid silver 1px;
+  padding: 5px 0 0;
+  margin:0 5px 0 0;
+  height: 22px;	
+  }
+
+#w li.pager-current {
+  background-color: rgb(89,89,89);
+  }
+
 .content-top { 
   left:0;
   padding: 8px 0 20px 0;
@@ -415,14 +439,6 @@ ul.pager {
   top: -8px;
   }
  
-.more-link a, 
-a.more-link, 
-div.more-link {
-  text-align: left;
-  background:none;
-  padding:0;
-  }
-  
 .overlay.borkop {
   background-image: url(../images/ovlay125x125-red.png); 
   }
@@ -454,10 +470,6 @@ div.more-link {
   width: 32px;
   }
 	
-#w li.pager-current {
-  background-color: rgb(89,89,89);
-  }
-
 .panel-left .pane-vejlebib_article_list-panel_pane_3 ul li, 
 .panel-left .pane-library_feature_detail_list ul li {
   background: none;
@@ -520,13 +532,6 @@ div.more-link {
   width: 220px;
   }
   
-.subject a, 
-.subject a:link, 
-.subject a:visited, 
-.subject a:active {
-  background-color: #FFF;
-  }  
-  
 .view .feed-icon {
   margin: 0;
   }
@@ -547,6 +552,9 @@ div.more-link {
 /*print*/
 
 /*search*/
+#ting-facet-browser li.selected {
+  background: url(../images/checkmark.png) no-repeat 0 center #D9F785 !important;
+	}
 
 /*ting*/
 
@@ -561,18 +569,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-weight:bold;
   }  
   
+#event-list li div.info h4 a {
+  line-height: 13px;
+  }
+	
 #event-list li .calendar-leafs .leaf {
   font-family: Arial, sans-serif;
   font-weight:bold;
   text-transform:uppercase;
   }
 
-#event-list li div.info h4 a, 
-#event-list li div.info span, 
-#event-list li div.info div.time {
-  font-size: 11px;
-  }
-  
 #featured li.ui-tabs-nav-item a, 
 #featured .ui-tabs-panel .info h3, 
 #featured .ui-tabs-panel .info p { 
@@ -590,7 +596,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   
 #header h3,
 #header ul li {
-  font-size: 10px;
   color: #000;
   }
   
@@ -598,18 +603,14 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   color:#000;
   }	
 
-#helpers li {
-    font-size: 10px;
-}
-
 #kviklinks h3 {
   text-transform: uppercase;
-  font-size:12px;
+  font-size:13px;
   }
   
-#kviklinks ul.menu li.leaf a, #pagefooter ul.menu li.leaf a {
+#kviklinks ul.menu li.leaf a, 
+#pagefooter ul.menu li.leaf a {
   color: #000;
-  font-size: 11px;
   font-weight:normal;
   text-transform: uppercase;
   }
@@ -646,54 +647,87 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   line-height: 42px;
   }
 
-.ac_results li {height:16px;}
-.ac_results span.term {font-size:12px;}
-
-.borkop a, 
-.borkop a:link, 
-.borkop a:visited, 
-.borkop a:active { 
+#ting-facet-browser li li,	
+#w a, 
+#w a:link, 
+#w a:visited, 
+#w a:active {
+  color: #607F0C;
+  }	
+	
+#w li.pager-current {
+  color:white;
+  }
+	
+#w .borkop a, 
+#w .borkop a:link, 
+#w .borkop a:visited, 
+#w .borkop a:active { 
   color:rgb(228,3,46);
   }
+
+#w .egtved a, 
+#w .egtved a:link, 
+#w .egtved a:visited, 
+#w .egtved a:active {
+  color:rgb(149,27,129);
+  }
+
+#w .give a, 
+#w .give a:link, 
+#w .give a:visited, 
+#w .give a:active {
+  color:rgb(243,146,0);
+  }
+
+#w .jelling a, 
+#w .jelling a:link, 
+#w .jelling a:visited, 
+#w .jelling a:active {
+  color:rgb(0,139,210);
+  }
+
+#w .meta .author a, 
+#w .meta .author a:link, 
+#w .meta .author a:visited, 
+#w .meta .author a:active {
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+  }
+
+#w.page-ting .content-left ul li a {
+  color: #333333;
+  }
+ 
+#w .panel-left ul.pager li a,
+#w .panel-middle ul.pager li a {
+  color:rgb(89,89,89);
+  }
+  
+#w .subject a, 
+#w .subject a:link, 
+#w .subject a:visited, 
+#w .subject a:active {
+  color: #000;
+  font-weight:bold;
+  }  
+  
+#w .vejle a, 
+#w .vejle a:link, 
+#w .vejle a:visited, 
+#w .vejle a:active {
+  color:rgb(149,193,31);
+  } 
+  
+.ac_results li {height:16px;}
+.ac_results span.term {font-size:12px;}
 
 .ding-box-wide ul li, 
 .ding-box-wide ul li.first {
   font-size: 12px;
   }	
 	
-.egtved a, 
-.egtved a:link, 
-.egtved a:visited, 
-.egtved a:active {
-  color:rgb(149,27,129);
-  }
-
-.give a, 
-.give a:link, 
-.give a:visited, 
-.give a:active {
-  color:rgb(243,146,0);
-  }
-
-.jelling a, 
-.jelling a:link, 
-.jelling a:visited, 
-.jelling a:active {
-  color:rgb(0,139,210);
-  }
-
-.meta .author a, .meta .author a:link, .meta .author a:visited, .meta .author a:active {
-  color: inherit;
-  text-decoration: none;
-  font-style: italic;
-  }
-
-.more-link a, 
-a.more-link, 
-div.more-link {
-  font-size:10px;
-  }
-  
 .pane-similar_events_title h4 {
   font-size: 18px;
   font-weight:normal;
@@ -705,31 +739,36 @@ div.more-link {
   font-weight:bold;
   }  
 
-#w li.pager-current {
-  color:white;
+/* TYPOGRAPHY: 11PX fonts */
+#header h3, 
+#header ul li,
+#helpers li,
+#kviklinks ul.menu li.leaf a, 
+#pagefooter ul.menu li.leaf a,
+#path,
+#ting-facet-browser li *,
+#ting-search-form div.example,
+#w .subject a, 
+#w .subject a:link, 
+#w .subject a:visited, 
+#w .subject a:active {
+  font-size:11px;
   }
 	
-.panel-left ul.pager li a,
-.panel-middle ul.pager li a {
-  color:rgb(89,89,89);
+/* TYPOGRAPHY: 12PX fonts */
+#w .more-link a, 
+#w a.more-link, 
+#w div.more-link,
+#event-list li div.info h4 a, 
+#event-list li div.info span, 
+#event-list li div.info div.time {
+  font-size:12px;
   }
-  
-.subject a, 
-.subject a:link, 
-.subject a:visited, 
-.subject a:active {
-  color: #000;
-  font-weight:bold;
-  font-size: 11px;
-  }  
-  
-.vejle a, 
-.vejle a:link, 
-.vejle a:visited, 
-.vejle a:active {
-  color:rgb(149,193,31);
-  } 
-  
+	
+/* TYPOGRAPHY: 13PX fonts = inherited from BODY style */
+	
+/* TYPOGRAPHY: 14PX fonts */
+
 /*user*/
 #ting-search-form .form-button {
   padding: 0;
@@ -744,7 +783,6 @@ div.more-link {
   overflow:hidden;
   width:65px;
   }
-
 
 /*wysiwyg: styles for tinymce*/
 
