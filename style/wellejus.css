@@ -56,7 +56,7 @@ body.page-biblioteker .panel-left .view ul li {
   
 #event-list li {
   background:none;
-  padding: 8px 0 6px;
+  padding: 16px 0 6px;
   }
   
 #event-list li .calendar-leafs .leaf {
@@ -551,12 +551,19 @@ ul.pager {
   
 /*print*/
 
-/*search*/
-#ting-facet-browser li.selected {
-  background: url(../images/checkmark.png) no-repeat 0 center #D9F785 !important;
-	}
 
+/*search*/
+#ting-facet-browser li li.selected {
+  background: url(../images/checked.png) no-repeat -1px center transparent !important;
+  }
+    
+#ting-facet-browser li li {
+  background: url(../images/unchecked.png) no-repeat -1px center transparent !important;
+  }
+
+  
 /*ting*/
+
 
 /* TYPOGRAPHY: Fonts and sizes */
 body, caption, th, td, input, textarea, select, option, legend, fieldset {
@@ -569,8 +576,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-weight:bold;
   }  
   
-#event-list li div.info h4 a {
-  line-height: 13px;
+#event-list li div.info h4 {
+  line-height: 14px;
   }
 	
 #event-list li .calendar-leafs .leaf {
@@ -599,10 +606,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   color: #000;
   }
   
-#header .view-library-list a {
-  color:#000;
-  }	
-
 #kviklinks h3 {
   text-transform: uppercase;
   font-size:13px;
@@ -619,15 +622,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-weight:bold;
   }
 
-#navigation li a {
-  font-weight:bold;
-  color: gray;
-  }  
-  
-#navigation li a:hover {  
-  color:black;  
-  }   
-  
 #pagefooter {  
   line-height: inherit;  
   }
@@ -654,11 +648,40 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #w a:active {
   color: #607F0C;
   }	
-	
+
+#w h2 a, 
+#w h2 a:link, 
+#w h2 a:visited, 
+#w h2 a:active, 
+#w h3 a, 
+#w h3 a:link, 
+#w h3 a:visited, 
+#w h3 a:active,
+#w #header .view-library-list a  {
+  color: #050505;
+  }
+
+#w #account a {
+  color: #FFFFFF;
+  }  
+  
+#w #navigation li a {
+  font-weight:bold;
+  color: gray;
+  }  
+
+#w #navigation li.active a {
+  color: #EEEEEE;
+  }
+  	
+#w #navigation li a:hover {  
+  color:black;  
+  }   
+
 #w li.pager-current {
   color:white;
   }
-	
+
 #w .borkop a, 
 #w .borkop a:link, 
 #w .borkop a:visited, 
@@ -704,7 +727,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #w .panel-middle ul.pager li a {
   color:rgb(89,89,89);
   }
-  
+
 #w .subject a, 
 #w .subject a:link, 
 #w .subject a:visited, 
@@ -756,12 +779,20 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 	
 /* TYPOGRAPHY: 12PX fonts */
-#w .more-link a, 
-#w a.more-link, 
-#w div.more-link,
 #event-list li div.info h4 a, 
 #event-list li div.info span, 
-#event-list li div.info div.time {
+#event-list li div.info div.time,
+#w a.more-link, 
+#w div.more-link,
+#w .comment, 
+#w .meta, 
+#w .more-link a, 
+#w .taxonomy, 
+#w .view-empty, 
+#w .view-event-list .library-tag, 
+#w .view .field-library-ref-nid, 
+#w .view .created, 
+#w .view .name {
   font-size:12px;
   }
 	
