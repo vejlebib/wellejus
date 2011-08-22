@@ -27,9 +27,65 @@ body.page-biblioteker .panel-left .view ul li {
   margin: 0;
   position: absolute;
   top: 120px;
-  width: 210px;
+  width: 240px;
   }
 
+#account-profile div.logout a {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 55px;
+  }  
+  
+#account-profile div.logout a, 
+#account-profile .cart a {
+  font-size: 11px;
+  width: 80px;
+  }  
+  
+#account-profile div.logout a, 
+#account-profile ul div.content a,
+#account-profile .cart a {
+  background: url("../images/bg-button-big.png") repeat scroll 0 0 #595959;
+  padding: 0 10px;
+  border: 1px solid #F4F4F4;
+  padding: 3px 10px;
+  }  
+
+#account-profile ul {
+  width:120px;
+  }
+  
+#account-profile ul div.content a {
+  height: 16px;
+  margin-bottom: 2px;
+  width:120px;
+  }
+  
+#account-profile ul div.status {
+  margin-left: -170px;
+  }
+  
+#account-profile .cart {
+  float: right;
+  margin-top: 21px;
+  background-image: none;
+  width: 100px;
+  padding: 0 13px 0 0;
+  }
+  
+#account-profile .cart a {  
+  height: 16px;
+  }
+  
+#account-profile .user {
+  margin: 19px 0 5px;
+  }  
+  
+#account-profile .username {
+  width: 100%;
+  }  
+  
 #container {
   background: none;
   margin-bottom:0;
@@ -570,6 +626,18 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-family: Arial, sans-serif;
   }
 
+#account-profile div.logout a, 
+#account-profile ul div.content a,
+#account-profile .cart a {
+  font-weight: bold;
+  text-transform: uppercase;
+  }    
+  
+#account-profile .username a {
+  font-size: 16px;
+  font-weight: bold;
+  }  
+
 #event-list h3, 
 #kviklinks h3 {
   color:white;
@@ -797,6 +865,9 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 	
 /* TYPOGRAPHY: 13PX fonts = inherited from BODY style */
+#account-profile div.logout a {
+  font-size:13px;
+  }
 	
 /* TYPOGRAPHY: 14PX fonts */
 
@@ -812,7 +883,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   padding: 0 10px;
   background: url("../images/bg-button-big.png") rgb(89,89,89);
   overflow:hidden;
-  width:65px;
+  cursor: pointer;
   }
 
 /*wysiwyg: styles for tinymce*/

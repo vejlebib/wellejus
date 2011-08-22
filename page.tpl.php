@@ -55,7 +55,7 @@
 
              <li> <a class="print" href="javascript:window.print();">Print</a></li>
              <li> <a class="read" href="http://adgangforalle.dk">Læs op</a></li>
-             <li> <a class="english" href="">English</a></li>
+             <li> <a class="english" href="/in-english">English</a></li>
             </ul>
 
             <div id="top" class="clearfix">
