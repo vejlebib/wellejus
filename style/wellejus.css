@@ -27,9 +27,13 @@ body.page-biblioteker .panel-left .view ul li {
   margin: 0;
   position: absolute;
   top: 120px;
-  width: 240px;
+  width: 260px;
   }
 
+#account-profile {
+  margin:0;
+  }  
+  
 #account-profile div.logout a {
   position: absolute;
   right: 0;
@@ -40,7 +44,7 @@ body.page-biblioteker .panel-left .view ul li {
 #account-profile div.logout a, 
 #account-profile .cart a {
   font-size: 11px;
-  width: 80px;
+  width: 100px;
   }  
   
 #account-profile div.logout a, 
@@ -411,7 +415,7 @@ ul.pager {
   padding: 0;
   position: absolute;
   top: 175px;
-  width: 520px;
+  width: 540px;
   }
   
 #ting-search-form label {
@@ -428,9 +432,8 @@ ul.pager {
   }
 
 #user-login-form {
-  background: url("../images/logind.png") no-repeat scroll 0 0 transparent;
-  margin: 20px 0 0;
-  padding: 35px 0 0 10px;
+  background: url("../images/logind.png") no-repeat scroll -10px 0 transparent;
+  padding-top: 35px;
   }
 
 #user-login-form #edit-name-wrapper input, #user-login-form #edit-pass-wrapper input {
@@ -444,9 +447,9 @@ ul.pager {
   }
 
 #user-login-form .form-submit {
-  position:relative;
-  top:-45px;
-  left:175px;
+  margin-left: 175px;
+  position: relative;
+  top: -46px;
   }
 
 #w .more-link a, 
@@ -880,12 +883,15 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #ting-search-form .form-submit, #user-login-form .form-submit {
   border: 1px solid rgb(244,244,244);
   height: 42px;
-  padding: 0 10px;
   background: url("../images/bg-button-big.png") rgb(89,89,89);
   overflow:hidden;
   cursor: pointer;
   }
 
+#ting-search-form .form-submit {
+  padding: 0 10px;
+  }  
+  
 /*wysiwyg: styles for tinymce*/
 
 
