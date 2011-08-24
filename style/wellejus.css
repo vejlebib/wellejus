@@ -446,12 +446,11 @@ ul.pager {
   left: 185px;
   }
 
-#user-login-form .form-submit {
+#user-login-form .edit-submit {
   margin-left: 175px;
-  position: relative;
-  top: -46px;
+  top: -33px;
   }
-
+  
 #w .more-link a, 
 #w a.more-link, 
 #w div.more-link {
