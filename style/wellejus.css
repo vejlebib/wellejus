@@ -497,6 +497,12 @@ ul.pager {
   top: -8px;
   }
  
+.library-about-bottom {
+  clear: both;
+  margin-bottom: 2em;
+  text-align: center;
+  }
+ 
 .overlay.borkop {
   background-image: url(../images/ovlay125x125-red.png); 
   }
@@ -600,12 +606,23 @@ ul.pager {
   position:absolute;
   }
   
-.view-library-staff-list li .field-image-fid, 
-.view-library-staff-list li .field-image-fid img {
-  height: 72px;
-  width: 72px;
-  }
+.view-vejlebib-library-staff-list li {
+  float: left;
+  height: 120px;
+  overflow: hidden;
+  width: 48%;
+  }  
 
+.view-vejlebib-library-staff-list .display-name-2 {
+  font-weight:bold;
+  font-size:1.1em;
+  margin-bottom: 0.8em;
+  }  
+
+.view-vejlebib-library-staff-list .field-image-fid {
+  float:left;
+  margin-right: 1em;
+  }  
   
 /*print*/
 
@@ -872,6 +889,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 	
 /* TYPOGRAPHY: 14PX fonts */
+
+/* TYPOGRAPHY: 16PX fonts */
+.library-about-bottom {
+  font-size:16px;
+  }
 
 /*user*/
 #ting-search-form .form-button {
