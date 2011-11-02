@@ -225,6 +225,16 @@ body.page-biblioteker .panel-left .view ul li {
   margin: 5px 10px;
   }
 
+#for-boern-page {
+  position: relative;
+  left: -28px;
+  top: -28px;
+  }
+  
+#for-boern-page .view-vejlebib-page a {
+  position:absolute;
+  }  
+  
 #header {
   height: 50px;
   left: 245px;
@@ -744,11 +754,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #w h3 a:link, 
 #w h3 a:visited, 
 #w h3 a:active,
+#w h4 a, 
+#w h4 a:link, 
+#w h4 a:visited, 
+#w h4 a:active,
 #w #header .view-library-list a  {
   color: #050505;
   }
 
-#w #account a {
+#w #account a,
+#w div.place2book.order a {
   color: #FFFFFF;
   }  
   
