@@ -723,6 +723,14 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   line-height: inherit;  
   }
   
+#ting-search-form div.example {
+  margin: 5px 0 0 -5px;
+  }	
+#ting-search-form div.example li a {
+  color: #fff;
+	font-weight:bold;
+  }	
+	
 #ting-search-form label {
   font-size: 16px;
   }
@@ -872,7 +880,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #pagefooter ul.menu li.leaf a,
 #path,
 #ting-facet-browser li *,
-#ting-search-form div.example,
 #w .subject a, 
 #w .subject a:link, 
 #w .subject a:visited, 
@@ -899,7 +906,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 	
 /* TYPOGRAPHY: 13PX fonts = inherited from BODY style */
-#account-profile div.logout a {
+#account-profile div.logout a,
+#ting-search-form div.example {
   font-size:13px;
   }
 	
