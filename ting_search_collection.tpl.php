@@ -19,12 +19,14 @@
       </div>
 
       <h3>
-        <?php 
+			  <?php 
 				if (count($collection->types) == 1 && strpos('Bog,Node', $collection->types[0]) !== FALSE) {
 				  $dk5_pieces = explode(":", $collection->objects[0]->record['dc:subject']['dkdcplus:DK5'][0]); 
-					print $dk5_pieces[0] . " "; 
+					if ($dk5_pieces[0] != 'sk') {
+					  print $dk5_pieces[0] . " "; 
+				  }
 				} 
-				?>
+			  ?>
 			  <?php print l($collection->title, $collection->url, array('attributes' => array('class' =>'title'))) ;?>
       </h3>
 

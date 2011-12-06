@@ -648,8 +648,91 @@ ul.pager {
 
   
 /*ting*/
+#ting-collection .tab-navigation.ui-tabs-nav,
+#ting-object .tab-navigation.ui-tabs-nav,
+#ting-object .ting-availability h3 { 
+  display:none;
+  }
+	
+.page-ting .content-left span.creator a {
+  display:inline;
+  }	
+	
+#ting-collection .tab-navigation-main,
+#ting-object .tab-navigation-main { 
+  background:none;
+	width:690px;
+  }	
+	
+.page-ting .ding-box-wide,	
+.page-ting .ding-box-wide h3,
+.page-ting .ding-box-wide ul,
+.page-ting .pane-recommendation_list h3 {
+  background:none;
+	width:100%;
+	}	
 
+#ting-object .ting-availability ul li,
+#ting-object .ting-availability p,
+#ting-object .object-otherversions h3,
+#ting-object .object-otherversions li {
+  margin:0;
+	padding:0;
+  }
+	
+#ting-object .ting-availability p {
+  font-size:12px;
+	margin-bottom:10px;
+	}
+	
+#ting-object .ding-box-wide,
+#ting-object .object-information {
+  width:100%;
+  }	
+	
+.ding-ting-collection .ding-box-wide h3,
+.ding-ting-object .ding-box-wide h3 {
+  font-size:12px;
+	border-bottom: 1px solid silver;
+  }
 
+body.ding-ting-object .pane-recommendation_list,
+body.ding-ting-collection .pane-recommendation_list {
+  margin:0;
+  }	
+	
+#ting-object .terms {
+  margin-bottom: 10px;
+  }
+	
+.ting-overview .right-column {
+  width: 450px;
+  }
+
+.object-information, .ting-item .ting-status,
+#ting-object #more-info {
+  font-size: 14px;
+  }
+
+#w.page-ting .ting-object-buttons ul.buttons li a {
+  color:#fff;
+	font-size: 14px;
+	text-transform: none;
+  }	
+
+.ting-item ul.buttons li {
+  min-width: 150px;
+  }
+
+.ting-item .right-column h2 {
+  clear:both;
+  }	
+	
+#ting-collection .ting-item .ting-object-buttons {
+    width: 160px;
+		float:right;
+}
+	
 /* TYPOGRAPHY: Fonts and sizes */
 body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-family: Arial, sans-serif;
@@ -824,12 +907,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #w .meta .author a:link, 
 #w .meta .author a:visited, 
 #w .meta .author a:active {
-  color: inherit;
   text-decoration: none;
   font-style: italic;
   }
 
-#w.page-ting .content-left ul li a {
+#w.page-ting li.ui-tabs-selected a {
   color: #333333;
   }
  
@@ -860,6 +942,10 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 .ding-box-wide ul li.first {
   font-size: 12px;
   }	
+
+.meta {
+  color:#000;
+  }
 	
 .pane-similar_events_title h4 {
   font-size: 18px;
@@ -907,7 +993,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 	
 /* TYPOGRAPHY: 13PX fonts = inherited from BODY style */
 #account-profile div.logout a,
-#ting-search-form div.example {
+#ting-search-form div.example,
+#ting-search-result .subjects li,
+#ting-search-result .subjects h4,
+#ting-object .terms,
+#ting-collection .ting-overview .terms {
   font-size:13px;
   }
 	
