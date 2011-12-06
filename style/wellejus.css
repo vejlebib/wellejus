@@ -705,6 +705,10 @@ body.ding-ting-collection .pane-recommendation_list {
   margin-bottom: 10px;
   }
 	
+.ting-overview h4 {
+  clear:both;
+  } 
+	
 .ting-overview .right-column {
   width: 450px;
   }
