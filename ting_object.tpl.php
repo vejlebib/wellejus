@@ -29,9 +29,53 @@ if ($dk5_pieces[0]) {
 <div class="ting-overview clearfix">
 <div class="left-column left">
 <div class="picture">
-<?php if ($image) { ?>
-<?php print $image; ?>
-<?php } ?>
+  <?php 
+  if ($image) { 
+    if (strpos($image, 'default_image.')) {
+  		switch ( (string) $object->type ) {
+  		  case 'Node':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/nodepapir_180x248.png">';
+  				break;
+  		  case 'Tidsskrift':
+  			case 'Tidsskriftsartikel':
+  			case 'Periodikum':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/magasin_180x248.png">';
+  				break;
+  			case 'netmusik (album)':
+  			case 'Netdokument':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/globe_180x248.png">';
+  				break;
+  			case 'CD-rom':
+  			case 'Wii-spil':
+  			case 'Playstation2-spil':
+  			case 'XBOX-spil': 
+  			case 'DVD':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/dvd_180x248.png">';
+  				break;
+  			case 'Lydbog (cd)':
+				case 'Lydbog (cd-mp3)':
+  			case 'CD':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/cd_180x248.png">';
+  				break;
+  		  case 'Avis':
+  			case 'Avisartikel':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/avis_180x248.png">';
+  				break;
+  		  case 'Bog':
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/bog_180x248.png">';
+  				break;
+  			case 'Spil':
+  			case 'Billedbog':
+  			case 'Video':
+  			default:
+  			  $typeimg = '<img title="" alt="" src="/sites/all/themes/wellejus/images/standart_180x248.png">';
+  				break;
+  	  }
+			$image = $typeimg;
+		}
+		
+		print $image;		
+  } ?>
 </div>
 
 </div>
