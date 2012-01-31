@@ -648,6 +648,12 @@ ul.pager {
 
   
 /*ting*/
+#periodical-issue-list .year h3 {
+  background-image: url("../images/plus.gif");
+	background-position: 0 7px;
+	padding-left: 20px;
+	}
+
 #ting-collection .tab-navigation.ui-tabs-nav,
 #ting-object .tab-navigation.ui-tabs-nav,
 #ting-object .ting-availability h3 { 
@@ -705,7 +711,7 @@ body.ding-ting-collection .pane-recommendation_list {
   margin-bottom: 10px;
   }
 
-.ting-details .title {
+#ting-object .ting-details .title {
   clear:left;
   }
 	
@@ -722,7 +728,8 @@ body.ding-ting-collection .pane-recommendation_list {
   font-size: 14px;
   }
 
-#w.page-ting .ting-object-buttons ul.buttons li a {
+#w.page-ting .ting-object-buttons ul.buttons li a,
+#periodical-issue-list ul.buttons li a {
   color:#fff;
 	font-size: 14px;
 	text-transform: none;
@@ -1002,14 +1009,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 /* TYPOGRAPHY: 13PX fonts = inherited from BODY style */
 #account-profile div.logout a,
 #ting-search-form div.example,
-#ting-search-result .subjects li,
-#ting-search-result .subjects h4,
+#ting-search-result .ting-properties .item-list span,
 #ting-object .terms,
-#ting-collection .ting-overview .terms {
+#ting-collection .ting-overview .ting-properties .item-list span {
   font-size:13px;
   }
 	
 /* TYPOGRAPHY: 14PX fonts */
+#periodical-issue-list .year h3 {
+  font-size:14px;
+  }
 
 /* TYPOGRAPHY: 16PX fonts */
 .library-about-bottom {

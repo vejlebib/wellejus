@@ -5,6 +5,18 @@
  * Template to render a Ting collection of books.
  */
  
+//list available variables: 
+//dpm(get_defined_vars()); 
+
+/* 
+** modifications to object data before display
+*/
+if (!empty($ting_subjects_links)) {
+  foreach ($ting_subjects_links as $key => $value) {
+	  $ting_subjects_links[$key] = str_replace('/search/', '/search/dc.subject=', $value);
+	}
+} 
+ 
 ?>
   <li>
     <?php if ($picture): ?>
@@ -20,20 +32,25 @@
     			case 'Periodikum':
     			  $typeimg = '<img style="width:80px;" src="/sites/all/themes/wellejus/images/magasin_180x248.png">';
     				break;
-    			case 'netmusik (album)':
+    			case 'Musik (net)':
     			case 'Netdokument':
+					case 'Lydbog (net)':
     			  $typeimg = '<img style="width:80px;" src="/sites/all/themes/wellejus/images/globe_180x248.png">';
     				break;
-    			case 'CD-rom':
-    			case 'Wii-spil':
-    			case 'Playstation2-spil':
-    			case 'XBOX-spil': 
-    			case 'DVD':
+    			case 'Cd-rom':
+    			case 'Wii':
+    			case 'Playstation':
+					case 'Playstation 2':
+					case 'Playstation 3':
+    			case 'Xbox': 
+    			case 'Xbox 360': 
+    			case 'Dvd':
+					case 'Blu-ray':
     			  $typeimg = '<img style="width:80px;" src="/sites/all/themes/wellejus/images/dvd_180x248.png">';
     				break;
     			case 'Lydbog (cd)':
 					case 'Lydbog (cd-mp3)':
-    			case 'CD':
+    			case 'Cd (musik)':
     			  $typeimg = '<img style="width:80px;" src="/sites/all/themes/wellejus/images/cd_180x248.png">';
     				break;
     		  case 'Avis':
@@ -45,7 +62,9 @@
     				break;
     			case 'Spil':
     			case 'Billedbog':
-    			case 'Video':
+					case 'Tegneserie':
+					case 'Video':
+					case 'Lydbog (bånd)':
     			default:
     			  $typeimg = '<img style="width:80px;" src="/sites/all/themes/wellejus/images/standart_180x248.png">';
     				break;
@@ -64,52 +83,73 @@
       </div>
 
       <h3>
-			  <?php 
-				if (count($collection->types) == 1 && strpos('Bog,Node', $collection->types[0]) !== FALSE) {
-				  $dk5_pieces = explode(":", $collection->objects[0]->record['dc:subject']['dkdcplus:DK5'][0]); 
-					if ($dk5_pieces[0] != 'sk') {
-					  print $dk5_pieces[0] . " "; 
-				  }
-				} 
-			  ?>
-			  <?php print l($collection->title, $collection->url, array('attributes' => array('class' =>'title'))) ;?>
+			  <?php print l($ting_title, $ting_url, array('html' => TRUE, 'attributes' => array('class' =>'title'))) ;?>
       </h3>
 
       <div class="meta">
-        <?php if ($collection->creators_string) : ?>
+        <?php if ($ting_creators) : ?>
           <span class="creator">
             <?php 
             echo ucfirst(t('by')) . ' ';
-            echo l($collection->creators_string, 'ting/search/dc.creator='.$collection->creators_string );
+            echo l($collection->creators_string, 'ting/search/dc.creator=\''.$collection->creators_string.'\'' );
             ?>
           </span>
         <?php endif; ?>
-        <?php if ($collection->date) : ?>
+        <?php if ($ting_publication_date) : ?>
           <span class="publication_date">
-            <?php echo t('(%publication_date%)', array('%publication_date%' => $collection->date)) /* TODO: Improve date handling, localizations etc. */ ?>
+            <?php echo t('(%publication_date%)', array('%publication_date%' => $ting_publication_date)) /* TODO: Improve date handling, localizations etc. */ ?>
           </span>
         <?php endif; ?>
       </div>
 
-      <?php if ($collection->abstract) : ?>
-      <div class="abstract">
-        <p>
-          <?php print check_plain($collection->abstract); ?>
+      <?php if (isset($ting_title_full)) { ?>
+        <p class="title-info">
+           <span class="label"><?php print t('Additional title information:')?></span>
+          <?php print $ting_title_full; ?>
         </p>
-      </div>
+      <?php }?>
+
+      <?php if ($ting_abstract) : ?>
+        <p class="abstract">
+          <?php print $ting_abstract; ?>
+        </p>
       <?php endif; ?>
 
-      <?php if ($collection->subjects) : ?>
-        <div class="subjects">
-          <h4><?php echo t('Subjects:') ?></h4>
-          <ul>
-            <?php foreach ($collection->subjects as $subject) : ?>
-              <li><?php echo l($subject, 'ting/search/dc.subject='.$subject) ?></li>
-            <?php endforeach; ?>
-          </ul>
-        </div>
-      <?php endif; ?>
+      <div class="ting-details">
+        <div class="ting-properties item-list">
+  				<?php if (!empty($ting_series_links)) { ?>
+    		    <?php 
+						print '<div class="ting-series">';
+						print theme('item_list', $ting_series_links, t('Series'), 'span'); 
+						print '</div>';
+						?>
+    		  <?php } ?>
+					
+					<?php if (!empty($ting_classification_links)) { ?>
+    		    <?php 
+						print '<div class="ting-classification">';
+						print theme('item_list', $ting_classification_links, t('Classification'), 'span'); 
+						print '</div>';
+						?>
+    		  <?php } ?>
+					
+					<?php if (!empty($ting_listing_links)) { ?>
+    		    <?php 
+						print '<div class="ting-listing">';
+						print theme('item_list', $ting_listing_links, t('Listing'), 'span'); 
+						print '</div>';
+						?>
+    		  <?php } ?>
+					
+					<?php if (!empty($ting_subjects_links)) { ?>
+    		    <?php 
+						print '<div class="ting-subjects">';
+						print theme('item_list', $ting_subjects_links, t('Subjects'), 'span'); 
+						print '</div>';
+						?>
+    		  <?php } ?>
+				</div>
+      </div>
 
     </div>
   </li>
-
