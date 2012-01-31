@@ -17,4 +17,5 @@ regions[footer_three]   = footer three
 regions[footer_four]    = footer four
 
 stylesheets[all][] = style/wellejus.css
+stylesheets[print][]  = style/wellejusprint.css
 
