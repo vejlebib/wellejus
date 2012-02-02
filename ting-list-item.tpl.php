@@ -5,7 +5,7 @@
  */
  
 //list available variables: 
-dpm(get_defined_vars()); 
+//dpm(get_defined_vars()); 
 
 ?>
 <!-- ting-list-item.tpl -->
@@ -17,17 +17,17 @@ dpm(get_defined_vars());
         		if (strpos($image, 'default_image.')) {
           		switch ( (string) $object->type ) {
           		  case 'Node':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/nodepapir_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/nodepapir_180x248.png">';
           				break;
           		  case 'Tidsskrift':
           			case 'Tidsskriftsartikel':
           			case 'Periodikum':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/magasin_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/magasin_180x248.png">';
           				break;
           			case 'Musik (net)':
           			case 'Netdokument':
       					case 'Lydbog (net)':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/globe_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/globe_180x248.png">';
           				break;
           			case 'Cd-rom':
           			case 'Wii':
@@ -38,19 +38,19 @@ dpm(get_defined_vars());
           			case 'Xbox 360': 
           			case 'Dvd':
       					case 'Blu-ray':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/dvd_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/dvd_180x248.png">';
           				break;
           			case 'Lydbog (cd)':
       					case 'Lydbog (cd-mp3)':
           			case 'Cd (musik)':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/cd_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/cd_180x248.png">';
           				break;
           		  case 'Avis':
           			case 'Avisartikel':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/avis_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/avis_180x248.png">';
           				break;
           		  case 'Bog':
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/bog_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/bog_180x248.png">';
           				break;
           			case 'Spil':
           			case 'Billedbog':
@@ -58,7 +58,7 @@ dpm(get_defined_vars());
       					case 'Video':
       					case 'Lydbog (bånd)':
           			default:
-          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/sites/all/themes/wellejus/images/standart_180x248.png">';
+          			  $typeimg = '<img title="" alt="" style="width:80px;" src="/' . path_to_theme() . '/images/standart_180x248.png">';
           				break;
         	  }
       			$image = $typeimg;
