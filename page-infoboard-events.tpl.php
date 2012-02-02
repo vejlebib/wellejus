@@ -8,7 +8,7 @@
     font: 26px verdana, sans-serif;
     padding-left:20px;
     color:white;
-    background: url("/sites/all/themes/wellejus/images/bg-infoboard.png") repeat scroll 0 0 silver;
+    background: url("/profiles/ding/themes/wellejus/images/bg-infoboard.png") repeat scroll 0 0 silver;
     }
   
   body div.view {
