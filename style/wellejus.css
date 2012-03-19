@@ -942,7 +942,11 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   color: #000;
   font-weight:bold;
   }  
-  
+
+#w .ting-availability .library-list a.wagnerguide { 
+  color:white;
+  }  
+	
 #w .vejle a, 
 #w .vejle a:link, 
 #w .vejle a:visited, 
