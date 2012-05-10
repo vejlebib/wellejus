@@ -1015,7 +1015,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #ting-search-form div.example,
 #ting-search-result .ting-properties .item-list span,
 #ting-object .terms,
-#ting-collection .ting-overview .ting-properties .item-list span {
+#ting-collection .ting-overview .ting-properties .item-list span,
+#w div.comment blockquote {
   font-size:13px;
   }
 	
