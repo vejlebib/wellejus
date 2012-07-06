@@ -469,6 +469,19 @@ ul.pager {
   padding:0;
   }
   
+#w a.button:link, #w a.button:visited {
+    background: url("../images/button-generic-green.png") no-repeat 0 0 transparent;
+    color: white;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 0.5em 280px 0.5em 0;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 205px;
+}
+  
 #w .subject a, 
 #w .subject a:link, 
 #w .subject a:visited, 
