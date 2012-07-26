@@ -200,6 +200,15 @@ body.page-biblioteker .panel-left .view ul li {
   background-image: url("../images/tint-green-80.png");
   }
 
+#featured .ui-tabs-panel .info {
+  height: 75px;
+  }  
+  
+#featured .ui-tabs-panel .info h3,
+#featured .ui-tabs-panel .info p {
+  margin-left:10px;
+  }  
+  
 #for-boern-page {
   position: relative;
   left: -28px;
@@ -325,10 +334,6 @@ body.page-biblioteker .panel-left .view ul li {
   margin-left: 44px; 
   } 
   
-#top {
-  height: 265px;
-  }
-
 #pagefooter {
   background: url("../images/bg-footer.png") no-repeat scroll -32px -50px transparent;
   }  
@@ -384,13 +389,13 @@ ul.pager {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50px;
-  width: 168px;
+  top: 30px;
+  width: 270px;
   }
 
 #site-name a {
   background-image: url("../images/logo.png");
-	height:60px;
+	height:80px;
   }
   
 #ting-search-form {
@@ -416,6 +421,10 @@ ul.pager {
   width: 420px;
   }
 
+#top {
+  height: 265px;
+  }
+  
 #user-login-form {
   background: url("../images/logind.png") no-repeat scroll -10px 0 transparent;
   padding-top: 35px;
