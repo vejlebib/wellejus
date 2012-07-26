@@ -221,7 +221,7 @@ body.page-biblioteker .panel-left .view ul li {
   
 #header {
   height: 50px;
-  left: 245px;
+  left: 345px;
   position: absolute;
   top: 40px;
   width: 500px;
@@ -385,11 +385,11 @@ ul.pager {
 
 #site-name {
   height: 38px;
-  left: 30px;
+  left: 45px;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 30px;
+  top: 40px;
   width: 270px;
   }
 
