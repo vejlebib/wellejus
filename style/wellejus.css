@@ -180,49 +180,24 @@ body.page-biblioteker .panel-left .view ul li {
   text-align:center;
   }  
   
-#featured .ui-tabs-panel .info {
-  padding-top: 168px;
-  height:72px;
-  background-image: url("../images/ovlay470x250-gray.png");
-  }
-
 #featured .info.borkop {
-  background-image: url("../images/ovlay470x250-red.png");
+  background-image: url("../images/tint-red-80.png");
   }
 
 #featured .info.egtved {
-  background-image: url("../images/ovlay470x250-purple.png");
+  background-image: url("../images/tint-purple-80.png");
   }
 
 #featured .info.give {
-  background-image: url("../images/ovlay470x250-orange.png");
+  background-image: url("../images/tint-orange-80.png");
   }
 
 #featured .info.jelling {
-  background-image: url("../images/ovlay470x250-blue.png");
+  background-image: url("../images/tint-blue-80.png");
   }
 
 #featured .info.vejle {
-  background-image: url("../images/ovlay470x250-green.png");
-  }
-
-#featured .ui-tabs-panel .info h3 {
-    margin: 0 0 0 10px;
-    height:100%;
-}
-
-#featured .ui-tabs-panel .info h3 a {
-    display: block;
-    height: 100%;
-    line-height: 68px;
-    vertical-align: middle;
-    overflow:hidden;
-}
-
-#featured .ui-tabs-panel .info p {
-  position: absolute;
-  top: 0;
-  margin: 5px 10px;
+  background-image: url("../images/tint-green-80.png");
   }
 
 #for-boern-page {
@@ -794,21 +769,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   text-transform:uppercase;
   }
 
-#featured li.ui-tabs-nav-item a, 
-#featured .ui-tabs-panel .info h3, 
-#featured .ui-tabs-panel .info p { 
-  text-transform:uppercase;  
-  }
-  
-#featured .ui-tabs-panel .info h3 a { 
-  font-size:18px;
-  font-weight:normal;  
-  }
-
-#featured .ui-tabs-panel .info p {
-  font-size: 10px;
-  }  
-  
 #header h3,
 #header ul li {
   color: #000;
