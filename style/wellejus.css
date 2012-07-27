@@ -221,23 +221,31 @@ body.page-biblioteker .panel-left .view ul li {
   
 #header {
   height: 50px;
-  left: 345px;
+  right: -10px;
   position: absolute;
-  top: 40px;
-  width: 500px;
+  top: 30px;
+  width: 550px;
   }
 
 #header ul li {
   float: left;
-  width: 250px;
+  width: 275px;
+  line-height:20px;
   }	
 	
 #header ul li div.title {
-  width: 150px;
+  width: 120px;
   }	
 	
-#header ul li div.field-opening-hours-scope {
+#header ul li div.opening-hours-scope .hours {
+  text-align:right;
   width: 100px;
+  display: block;
+  padding-right: 14px;
+  }
+
+#header ul li div.opening-hours-scope .hours.detail {  
+  background: url(../images/plus12.png) no-repeat right 4px;
   }
 
 #header ul li div {
@@ -324,6 +332,10 @@ body.page-biblioteker .panel-left .view ul li {
 #navigation li a:hover {  
   border:solid silver 1px;
   }   
+ 
+#page {
+  overflow:visible;
+  }
     
 #pagebody-inner {
   background: url("../images/bg-page.png") repeat-y scroll -17px 0 transparent;
@@ -960,8 +972,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }  
 
 /* TYPOGRAPHY: 11PX fonts */
-#header h3, 
-#header ul li,
 #helpers li,
 #kviklinks ul.menu li.leaf a, 
 #pagefooter ul.menu li.leaf a,
@@ -978,6 +988,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #event-list li div.info h4 a, 
 #event-list li div.info span, 
 #event-list li div.info div.time,
+#header .oho-popup h3,
 #w a.more-link, 
 #w div.more-link,
 #w .comment, 
@@ -1003,11 +1014,14 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 	
 /* TYPOGRAPHY: 14PX fonts */
+#header .oho-popup h3,
+#header ul li,
 #periodical-issue-list .year h3 {
   font-size:14px;
   }
 
 /* TYPOGRAPHY: 16PX fonts */
+#header h3, 
 .library-about-bottom {
   font-size:16px;
   }
