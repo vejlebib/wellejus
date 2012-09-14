@@ -269,11 +269,11 @@ $wellejus_path = str_replace("/wellejus-opac", "", path_to_theme());
       <?php print theme('item_list', $object->record['dc:rights'][''], t('Rights'), 'span', array('class' => 'rights'));?>
       <?php } ?>
   		
-			<?php if (!empty($ting_creators_links) && $ting_type == 'Tidsskriftsartikel') { ?>
+			<?php if (!empty($ting_creators_links) && in_array($ting_type, array('Tidsskriftsartikel', 'Avisartikel'))) { ?>
   		  <?php print theme('item_list', $ting_creators_links, t('Creators'), 'span', array('class' => 'creators')); ?>		
   		<?php } ?>
 			
-			<?php if (!empty($ting_related) && $ting_type == 'Tidsskriftsartikel') { ?>
+			<?php if (!empty($ting_related) && in_array($ting_type, array('Tidsskriftsartikel', 'Avisartikel'))) { ?>
       <?php print theme('item_list', $ting_related, t('Related'), 'span', array('class' => 'ting-related'));?>
       <?php } ?>
 			
