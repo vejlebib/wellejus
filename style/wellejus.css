@@ -221,7 +221,7 @@ body.page-biblioteker .panel-left .view ul li {
   
 #header {
   height: 50px;
-  right: 0;
+  right: -12px;
   position: absolute;
   top: 30px;
   width: 550px;
@@ -237,15 +237,18 @@ body.page-biblioteker .panel-left .view ul li {
   width: 120px;
   }	
 	
-#header ul li div.opening-hours-scope .hours {
+#header ul li div.opening-hours-scope {
   text-align:right;
   width: 100px;
-  display: block;
+  padding-right: 14px;
+  }
+
+#header ul li div.opening-hours-scope .hours {
   padding-right: 14px;
   }
 
 #header ul li div.opening-hours-scope .hours.detail {  
-  background: url(../images/plus12.png) no-repeat right 4px;
+  background: url(../images/plus12.png) no-repeat right 3px;
   }
 
 #header ul li div {
