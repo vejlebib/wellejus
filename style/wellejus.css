@@ -221,7 +221,7 @@ body.page-biblioteker .panel-left .view ul li {
   
 #header {
   height: 50px;
-  right: -12px;
+  right: 8px;
   position: absolute;
   top: 30px;
   width: 550px;
@@ -233,14 +233,12 @@ body.page-biblioteker .panel-left .view ul li {
   line-height:20px;
   }	
 	
-#header ul li div.title {
+#header ul li div {
   width: 120px;
   }	
 	
 #header ul li div.opening-hours-scope {
   text-align:right;
-  width: 100px;
-  padding-right: 14px;
   }
 
 #header ul li div.opening-hours-scope .hours {
@@ -248,13 +246,19 @@ body.page-biblioteker .panel-left .view ul li {
   }
 
 #header ul li div.opening-hours-scope .hours.detail {  
-  background: url(../images/plus12.png) no-repeat right 3px;
+  background: url(../images/plus12.png) no-repeat right 1px;
   }
-
+  
 #header ul li div {
   float: left;
   }
 
+#header .oho-popup {
+  width:220px;
+  text-align:left;
+  left:0;
+  }  
+  
 #helpers {
     left: 750px;
     margin: 0;
@@ -793,11 +797,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   }
 
 #header h3,
-#header ul li,
-#header ul li a, 
-#header ul li a:link, 
-#header ul li a:visited, 
-#header ul li a:active {
+#header ul li {
   color: #000;
   }
   
