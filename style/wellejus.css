@@ -90,6 +90,15 @@ body.page-biblioteker .panel-left .view ul li {
   width: 100%;
   }  
   
+#block-ding-wayf a {
+  background: url("../images/logo-nemid-small.png") no-repeat scroll 1px center transparent;
+  clear: right;
+  display: block;
+  min-height: 25px;
+  min-width: 90px;
+  text-indent: -9999em;
+  }  
+  
 #container {
   background: none;
   margin-bottom:0;
@@ -239,6 +248,7 @@ body.page-biblioteker .panel-left .view ul li {
 	
 #header ul li div.opening-hours-scope {
   text-align:right;
+  position:relative;
   }
 
 #header ul li div.opening-hours-scope .hours {
@@ -447,12 +457,19 @@ ul.pager {
 #user-login-form {
   background: url("../images/logind.png") no-repeat scroll -10px 0 transparent;
   padding-top: 35px;
+  height: 45px;
+  overflow: hidden;
   }
 
 #user-login-form #edit-name-wrapper input, #user-login-form #edit-pass-wrapper input {
   width: 165px;
   }  
     
+#user-login-form #edit-name-wrapper,
+#user-login-form #edit-pass-wrapper {
+  width: 215px;
+  }  
+  
 #user-login-form .form-image-button {
   position: relative;
   top: -40px;
@@ -461,8 +478,12 @@ ul.pager {
 
 #user-login-form .edit-submit {
   margin-left: 175px;
-  top: -33px;
+  top: -45px;
   }
+
+#user-login-form div {
+  height: 20px;
+  }  
   
 #w .more-link a, 
 #w a.more-link, 
