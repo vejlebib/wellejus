@@ -548,6 +548,18 @@ ul.pager {
   margin-bottom: 2em;
   text-align: center;
   }
+
+.node-type-event .content {
+  position: relative;
+  } 
+  
+.node-type-event .place2book,
+.node-type-event .content .place2book.info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin:0;
+  }
  
 .overlay.borkop {
   background-image: url(../images/ovlay125x125-red.png); 
