@@ -1065,7 +1065,13 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
   font-size:16px;
   }
 
-/*user*/
+/* user */
+#edit-interest-period-wrapper {
+  display: none;
+  }
+
+/* ting */
+
 #ting-search-form .form-button {
   padding: 0;
   margin-left:455px;
