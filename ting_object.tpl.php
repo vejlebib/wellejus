@@ -4,7 +4,7 @@
  *
  * Template to render objects from the Ting database.
  */
- 
+
 //list available variables: 
 //dpm(get_defined_vars());
 
@@ -13,7 +13,6 @@
 */
 //remove part after ":" in DK5-string
 //how to do this when working with $ting_classification_links?? string replace?
-
 ?>
 <div id="ting-item-<?php print $ting_local_id; ?>" class="ting-item ting-item-full">
   <div class="ting-overview clearfix">
@@ -86,7 +85,7 @@
 
       <?php if (!empty($object->record['dc:subject']['dkdcplus:DK5']) 
       				 && $object->record['dc:subject']['dkdcplus:DK5'][0] != 'sk'
-      				 && strpos('Bog,Node', $object->type) !== FALSE) { ?>
+      				 && in_array($object->type, array('Bog','Node'))) { ?>
         <h4><?php print $ting_classification_links[0]; ?></h4>
       <?php } ?>
 			
@@ -136,7 +135,7 @@
 			<?php if (isset($additional_content)) { print drupal_render($additional_content); } ?>
 			
 			<div id="more-info">
-        <a onclick="javascript: $('#ting-details').toggle(); $('#showInfo').toggle(); $('#hideInfo').toggle(); return false;" id="moreinfolink" href="#">
+        <a onclick="javascript: $('.ting-details').toggle(); $('#showInfo').toggle(); $('#hideInfo').toggle(); return false;" id="moreinfolink" href="#">
           <span id="showInfo">Vis flere detaljer</span>
 					<span id="hideInfo" style="display:none;">Skjul detaljer</span>
 			  </a>
@@ -146,125 +145,10 @@
 
   </div>
 
-  <div id="ting-details" class="object-information ting-details clearfix">
-  	<div class="ting-properties">
-  	
-      <?php print theme('item_list', array($ting_type), t('Type'), 'span', array('class' => 'type')); ?>
-  		
-  		<?php if (!empty($ting_language)) { ?>
-      <?php print theme('item_list', array($ting_language), t('Language'), 'span', array('class' => 'language'));?>
-      <?php } ?>
-      <?php if (!empty($object->record['dc:language']['oss:spoken'])) { ?>
-      <?php print theme('item_list', $object->record['dc:language']['oss:spoken'], t('Speech'), 'span', array('class' => 'language'));?>
-      <?php } ?>
-      <?php if (!empty($object->record['dc:language']['oss:subtitles'])) { ?>
-      <?php print theme('item_list', $object->record['dc:language']['oss:subtitles'], t('Subtitles'), 'span', array('class' => 'language'));?>
-      <?php } ?>
-  		
-  		<?php if (!empty($object->record['dc:subject']['oss:genre'])) { 
-        foreach ($object->record['dc:subject']['oss:genre'] as $subject_genre) {
-          $subjects_genre[] = l($subject_genre, 'ting/search/dc.subject=\''. $subject_genre .'\'');
-        }
-        print theme('item_list', $subjects_genre, t('Genre'), 'span');?>
-      <?php } ?>
-      
-  		<?php if (!empty($ting_classification_links)) { ?>
-  		  <?php print theme('item_list', $ting_classification_links, t('Classification'), 'span', array('class' => 'classification')); ?>
-      <?php } ?>
-  		
-  		<?php if (!empty($ting_listing_links)) { ?>
-  		  <?php print theme('item_list', $ting_listing_links, t('Listing'), 'span', array('class' => 'listing')); ?>
-  		<?php } ?>
-  		
-  		<?php if (!empty($ting_subjects_links)) { ?>
-  		  <?php print theme('item_list', $ting_subjects_links, t('Subjects'), 'span', array('class' => 'subjects')); ?>		
-  		<?php } ?>
-  				
-      <?php if (!empty($object->record['dcterms:spatial']['dkdcplus:DBCF'])) { ?>
-        <?php //print theme('item_list', $object->record['dcterms:spatial']['dkdcplus:DBCF'], t('Spatial'), 'span', array('class' => 'spatial')); ?>
-      <?php } ?>
-      
-      <?php if (!empty($ting_contributors)) { ?>
-      <?php print theme('item_list', $ting_contributors, t('Contributor'), 'span', array('class' => 'ting-contributors'));?>
-      <?php } ?>
-  		
-			<?php if (!empty($object->record['dcterms:hasPart']['dkdcplus:track'])) { ?>
-        <?php print theme('item_list', $object->record['dcterms:hasPart']['dkdcplus:track'], t('Contains'), 'span', array('class' => 'contains'));?>
-      <?php } ?>
-			
-      <?php if (!empty($object->record['dcterms:isReferencedBy'][''])) { ?>
-      <?php print theme('item_list', $object->record['dcterms:isReferencedBy'][''], t('Referenced by'), 'span', array('class' => 'referenced-by'));?>
-      <?php } ?>
-            
-      <?php if (!empty($object->record['dc:description'])) { ?>
-      <?php foreach ($object->record['dc:description'] as $type => $dc_description) { ?>
-      <?php print theme('item_list', $dc_description, t('Description'), 'span', array('class' => 'description'));?>
-      <?php } ?>
-      <?php } ?>
-      
-      <?php if (!empty($object->record['dc:source'][''])) { ?>
-      <?php print theme('item_list', $object->record['dc:source'][''], t('Original title'), 'span', array('class' => 'titles'));?>
-      <?php } ?>
-      <?php if (!empty($object->record['dcterms:replaces'][''])) { ?>
-      <?php print theme('item_list', $object->record['dcterms:replaces'][''], t('Previous title'), 'span', array('class' => 'titles'));?>
-      <?php } ?>
-      <?php if (!empty($object->record['dcterms:isReplacedBy'][''])) { ?>
-      <?php print theme('item_list', $object->record['dcterms:isReplacedBy'][''], t('Later title'), 'span', array('class' => 'titles'));?>
-      <?php } ?>
-      
-      <?php if (!empty($object->record['dc:identifier']['dkdcplus:ISBN'])) { ?>
-      <?php print theme('item_list', $object->record['dc:identifier']['dkdcplus:ISBN'], t('ISBN no.'), 'span', array('class' => 'identifier'));?>
-      <?php } ?>
-      
-      <?php
-          /* wiredloose: We will display the online_url instead of original identifier-line in Vejle Bibliotekerne */
-          if (!empty($object->record['dc:identifier']['dcterms:URI'])) {
-            $uris = array();
-            foreach ($object->record['dc:identifier']['dcterms:URI'] as $uri) {
-              /* wiredloose: LINE OVERRIDDEN 
-              $uris[] = l($uri, $uri);
-              */
-              $uris[] = l($object->online_url, $object->online_url);
-            }
-            print theme('item_list', $uris, t('Host publication'), 'span', array('class' => 'identifier'));
-          }
-          ?>
-      
-      <?php if (!empty($object->record['dkdcplus:version'][''])) { ?>
-      <?php print theme('item_list', $object->record['dkdcplus:version'][''], t('Version'), 'span', array('class' => 'version'));?>
-      <?php } ?>
-      
-      <?php if (!empty($object->record['dcterms:extent'][''])) { ?>
-      <?php print theme('item_list', $object->record['dcterms:extent'][''], t('Extent'), 'span', array('class' => 'version'));?>
-      <?php } ?>
-      
-			<?php if (!empty($ting_publisher)) { ?>
-  		  <?php print theme('item_list', array($ting_publisher), t('publisher'), 'span', array('class' => 'ting-publisher')); ?>
-      <?php } ?>
-      <?php if (!empty($ting_record_label)) { ?>
-  		  <?php print theme('item_list', array($ting_record_label), t('Record label'), 'span', array('class' => 'ting-record-label')); ?>
-      <?php } ?>
-			
-			<?php if (!empty($object->record['dc:rights'][''])) { ?>
-      <?php print theme('item_list', $object->record['dc:rights'][''], t('Rights'), 'span', array('class' => 'rights'));?>
-      <?php } ?>
-  		
-			<?php if (!empty($ting_creators_links) && in_array($ting_type, array('Tidsskriftsartikel', 'Avisartikel'))) { ?>
-  		  <?php print theme('item_list', $ting_creators_links, t('Creators'), 'span', array('class' => 'creators')); ?>		
-  		<?php } ?>
-			
-			<?php if (!empty($ting_related) && in_array($ting_type, array('Tidsskriftsartikel', 'Avisartikel'))) { ?>
-      <?php print theme('item_list', $ting_related, t('Related'), 'span', array('class' => 'ting-related'));?>
-      <?php } ?>
-			
-    </div>
-		
-		<script>$('#ting-details').toggle();</script>
-		
-	  <?php //print $ting_details; ?>
-	
-	</div>
-
+  <div class="object-information ting-details clearfix">
+    <?php print $ting_details; ?>
+  </div>
+  
   <?php
   $collection = ting_get_collection_by_id($object->id);
   if ($collection instanceof TingClientObjectCollection && is_array($collection->types)) {

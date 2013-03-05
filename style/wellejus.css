@@ -806,6 +806,10 @@ body.ding-ting-collection .pane-recommendation_list {
   width: 450px;
   }
 
+.object-information.ting-details {
+  display: none;
+  }  
+  
 .object-information, .ting-item .ting-status,
 #ting-object #more-info {
   font-size: 14px;

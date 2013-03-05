@@ -125,7 +125,10 @@ if (!empty($ting_subjects_links)) {
 						?>
     		  <?php } ?>
 					
-					<?php if (!empty($ting_classification_links)) { ?>
+					<?php if (!empty($ting_classification_links) 
+                    && $ting_classification[0] != 'sk'
+                    && count($ting_type) == 1 
+                    && in_array($ting_type[0], array('Bog','Node'))) { ?>
     		    <?php 
 						print '<div class="ting-classification">';
 						print theme('item_list', $ting_classification_links, t('Classification'), 'span'); 
