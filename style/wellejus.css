@@ -125,7 +125,7 @@ body.page-biblioteker .panel-left .view ul li {
   
 #event-list li {
   background:none;
-  padding: 16px 0 6px;
+  padding: 30px 0 6px;
   }
   
 #event-list li .calendar-leafs .leaf {
@@ -530,6 +530,10 @@ ul.pager {
   background-color: rgb(89,89,89);
   }
 
+.campaign-image {
+  margin: 10px 10px 30px;	
+  }
+
 .content-top { 
   left:0;
   padding: 8px 0 20px 0;
@@ -632,6 +636,7 @@ ul.pager {
 .panel-threecol-33-34-33-stacked .panel-right .pane-relevant_campaigns {
   float:right;
   margin-top:10px;
+  margin-bottom:10px;
   text-align: right;
   }
 
