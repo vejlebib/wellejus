@@ -1,5 +1,7 @@
 # Wellejus theme for Ding2
 
+![Screenshot of wellejus theme](screenshot.png)
+
 A sub-theme based on DDBasic theme for ding2.
 
 ## Setup
