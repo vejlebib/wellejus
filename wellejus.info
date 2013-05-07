@@ -7,6 +7,6 @@
 
 ;----------// Stylesheets
   ; Import stylesheets.
-  stylesheets[all][] = style/wellejus.css
-  stylesheets[print][]  = style/wellejusprint.css
+  stylesheets[all][] = css/wellejus.css
+  stylesheets[print][]  = css/wellejusprint.css
   
