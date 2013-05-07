@@ -40,22 +40,9 @@ $theme-border-radius:             12px;
 
 
 // -----------------------------------------------------------------------------
-// Font library
-// -----------------------------------------------------------------------------
-//
-$theme-icon-library-font:         FontAwesome;
-
-
-// -----------------------------------------------------------------------------
 // Typography
 // -----------------------------------------------------------------------------
 //
-$font-light:                      "SourceSansProLight";
-$font-light-italic:               "SourceSansProLightItalic";
-$font-regular:                    "SourceSansProRegular";
-$font-regular-italic:             "SourceSansProItalic";
-$font-bold:                       "SourceSansProSemibold";
-$font-bold-italic:                "SourceSansProSemiboldItalic";
 $font-color-primary:              transparentize($black, .2);;
 
 
@@ -65,7 +52,7 @@ $font-color-primary:              transparentize($black, .2);;
 //
 $theme-font-size:                 15px;
 $theme-line-height:               24px;
-$theme-font-family:               $font-light, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+$theme-font-family:               "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $theme-font-weight-normal:        normal;
 $theme-font-weight-bold:          normal;
 $theme-font-selection-color:      $font-color-primary;

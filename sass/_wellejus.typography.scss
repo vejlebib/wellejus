@@ -20,6 +20,12 @@
 // Default styling
 // -----------------------------------------------------------------------------
 //
+body {
+  @include rem('font-size', $theme-font-size);
+
+  color: $font-color-primary;
+  font-family: $theme-font-family;
+}
 
 
 // -----------------------------------------------------------------------------
