@@ -45,16 +45,27 @@
   width: 80%;
   margin: 0 10%;
   background-color: rgb(255, 255, 255);
+  
+  .topbar-inner {
+    max-width: 100%;
+  }
 }
 
 .logo {
+  width: 100%;
+  margin: 0;
+  min-height: 110px;
+
   a,
   a:link,
   a:visited,
   a:active {
-    background-image: url(../images/logo.png);
-    width:312px;
-    height:80px;
+    display: block;
+    margin: 6% 0 0;
+  }
+  
+  img {
+    //width: auto;
   }
 }
 

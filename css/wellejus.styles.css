@@ -14,15 +14,24 @@
   margin: 0 10%;
   background-color: white;
 }
+/* line 49, ../sass/_wellejus.layout.scss */
+.topbar .topbar-inner {
+  max-width: 100%;
+}
 
 /* line 54, ../sass/_wellejus.layout.scss */
+.logo {
+  width: 100%;
+  margin: 0;
+  min-height: 110px;
+}
+/* line 62, ../sass/_wellejus.layout.scss */
 .logo a,
 .logo a:link,
 .logo a:visited,
 .logo a:active {
-  background-image: url(../images/logo.png);
-  width: 312px;
-  height: 80px;
+  display: block;
+  margin: 6% 0 0;
 }
 
 /* line 23, ../sass/_wellejus.typography.scss */
