@@ -34,6 +34,12 @@
   margin: 6% 0 0;
 }
 
+/* line 23, ../sass/_wellejus.header.scss */
+.header-wrapper {
+  background-color: #50ba00;
+  background-color: rgba(80, 186, 0, 0.7);
+}
+
 /* line 23, ../sass/_wellejus.typography.scss */
 body {
   font-size: 15px;
