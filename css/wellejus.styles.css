@@ -3,29 +3,38 @@
   padding: 10px 0;
 }
 
-/* line 36, ../sass/_wellejus.layout.scss */
-.grid-wrapper, .content-wrapper, .header-wrapper, .navigation-wrapper {
-  max-width: 80%;
+/* line 37, ../sass/_wellejus.layout.scss */
+.grid-wrapper .grid-inner,
+.header-wrapper .header-inner {
+  max-width: 100%;
 }
 
 /* line 44, ../sass/_wellejus.layout.scss */
+.grid-wrapper,
+.content-wrapper,
+.header-wrapper,
+.navigation-wrapper {
+  max-width: 80%;
+}
+
+/* line 52, ../sass/_wellejus.layout.scss */
 .topbar {
   width: 80%;
   margin: 0 10%;
   background-color: white;
 }
-/* line 49, ../sass/_wellejus.layout.scss */
+/* line 57, ../sass/_wellejus.layout.scss */
 .topbar .topbar-inner {
   max-width: 100%;
 }
 
-/* line 54, ../sass/_wellejus.layout.scss */
+/* line 62, ../sass/_wellejus.layout.scss */
 .logo {
   width: 100%;
   margin: 0;
   min-height: 110px;
 }
-/* line 62, ../sass/_wellejus.layout.scss */
+/* line 70, ../sass/_wellejus.layout.scss */
 .logo a,
 .logo a:link,
 .logo a:visited,
@@ -52,4 +61,49 @@ body {
 .navigation-wrapper {
   margin: 0 10%;
   background-color: white;
+}
+
+/* line 35, ../sass/_wellejus.navigation.scss */
+.main-menu a,
+.main-menu li a {
+  text-transform: uppercase;
+}
+
+/* line 48, ../sass/_wellejus.navigation.scss */
+.secondary-menu a,
+.secondary-menu li a {
+  text-transform: uppercase;
+}
+
+/* line 30, ../sass/_wellejus.search.scss */
+.search .search-label {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 1px #666666;
+}
+/* line 38, ../sass/_wellejus.search.scss */
+.search input[type="text"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 42, ../sass/_wellejus.search.scss */
+.search input[type="submit"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 52, ../sass/_wellejus.search.scss */
+.header-wrapper .search {
+  padding-left: 2rem;
 }

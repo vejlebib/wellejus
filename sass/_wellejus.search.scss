@@ -1,6 +1,7 @@
 // =============================================================================
-// Navigation
+// Search
 // =============================================================================
+//
 
 
 // -----------------------------------------------------------------------------
@@ -16,54 +17,76 @@
 
 
 // -----------------------------------------------------------------------------
+// Markup overrides
+// -----------------------------------------------------------------------------
+//
+
+
+// -----------------------------------------------------------------------------
 // Default styling
 // -----------------------------------------------------------------------------
 //
-.navigation-wrapper {
-  margin: 0 10%;
-  background-color: rgb(255, 255, 255);
-}
-
-
-// **
-// Main menu
-// **
-//
-.main-menu {
-
-  a,
-  li a {
+.search {
+  .search-label {
+    color: white;
     text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 1px #666666;
+  }
+
+  input[type="text"] {
+    @include border-radius(0);
   }
   
+  input[type="submit"] {
+    @include border-radius(0);
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
 }
 
-// **
-// Secondary menu
-// **
-//
-.secondary-menu {
-
-  a, 
-  li a {
-    text-transform: uppercase;
+.header-wrapper {
+  .search {
+    padding-left: 2rem;
   }
 }
 
+
 // **
-// Sub menu
+// Facet browser styling
 // **
 //
 
 
 // **
-// Footer menu(s)
+// Search results list
 // **
 //
 
 
 // **
-// Action Links
+// Seach results list
+// **
+//
+
+
+// **
+// Collection display
+// **
+//
+
+
+// **
+// Object display
+// **
+//
+
+
+// **
+// Search autocomplete
 // **
 //
 

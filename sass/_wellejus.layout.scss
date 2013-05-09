@@ -33,7 +33,15 @@
   padding: 10px 0;
 }
 
-.grid-wrapper, .content-wrapper, .header-wrapper, .navigation-wrapper {
+.grid-wrapper .grid-inner,
+.header-wrapper .header-inner, {
+  max-width: 100%;
+}
+
+.grid-wrapper,
+.content-wrapper,
+.header-wrapper,
+.navigation-wrapper {
   max-width: 80%;
 }
 
