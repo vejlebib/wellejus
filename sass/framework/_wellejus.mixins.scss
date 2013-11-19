@@ -1,0 +1,22 @@
+/**
+ * Mixins for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+
+// -----------------------------------------------------------------------------
+// Mixin for transparent backgrounds, maing it cross browser compatible
+// -----------------------------------------------------------------------------
+//
+// including IE8+. (https://gist.github.com/1949202)
+//
+// $color - The color of the background.
+// $alpha - The alpha value for transparency.
+//
+@mixin rgba-background($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  // IE fallback
+  background-color: $color;
+  background-color: $rgba;
+}

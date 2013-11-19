@@ -1,0 +1,14 @@
+/**
+ * Layout
+ *
+ * Base layout for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+
+/* Header wrapper
+   ========================================================================== */
+.header-wrapper {
+  @include rgba-background($header-background-color, $default-transparency);
+}
