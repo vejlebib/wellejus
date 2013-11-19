@@ -116,6 +116,18 @@ a:focus {
  * @author wiredloose
  */
 /**
+ * Navigation for wellejus theme
+ *
+ * @author wiredloose
+ */
+/* Topbar menu
+   ========================================================================== */
+/* line 13, ../sass/framework/_wellejus.navigation.scss */
+.topbar-menu .menu-item.active {
+  background-color: #50ba00;
+}
+
+/**
  * Layout
  *
  * Base layout for wellejus theme
