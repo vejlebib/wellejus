@@ -1,0 +1,55 @@
+/**
+ * User styling for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+
+/* User login in header
+   ========================================================================== */
+
+.user {
+
+  .form-item-name,
+  .form-item-pass {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    float: none;
+    width: 68%;
+  }
+
+  [class^="icon-"] {
+    left: 16px;
+    bottom: 5px;
+    font-size: 120%;
+  }
+
+  .label-user {
+    color: $white;
+    font-size: $font-size-largest;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .label-password {
+    display: none;
+  }
+
+  .form-text {
+    @include border-radius(0px);
+    min-height: 30px;
+  }
+
+  .form-submit {
+    @include border-radius(0px);
+    border: solid $white 1px;
+    min-height: 65px;
+    text-transform: uppercase;
+    padding: 0;
+  }
+}
+

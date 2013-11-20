@@ -1,0 +1,32 @@
+/**
+ * Search for wellejus theme
+ *
+ *
+ * @author wiredloose
+ */
+
+
+/* Search in header
+   ========================================================================== */
+
+.search {
+
+  [class^="label-"] {
+    color: $white;
+    font-size: $font-size-largest;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .form-text {
+    @include border-radius(0px);
+    min-height: 65px;
+  }
+
+  .form-submit {
+    @include border-radius(0px);
+    border: solid $white 1px;
+    min-height: 65px;
+    text-transform: uppercase;
+  }  
+}

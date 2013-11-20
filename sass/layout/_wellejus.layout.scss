@@ -11,4 +11,16 @@
    ========================================================================== */
 .header-wrapper {
   @include rgba-background($header-background-color, $default-transparency);
+
+  .header-inner {
+    .pane-search-form {
+      width: 60%;
+      float: left;
+    }
+    
+    .pane-user-login {
+      padding-left: 10%;
+      width: 30%;
+    }
+  }
 }
