@@ -101,13 +101,23 @@ a:focus {
 /* Footer background color */
 /* line 82, ../sass/configuration/_wellejus.configuration.scss */
 .footer {
-  background-color: #262626;
+  background-color: transparent;
+}
+
+/* line 86, ../sass/configuration/_wellejus.configuration.scss */
+.footer-inner {
+  background-color: white;
 }
 
 /* Bottom background color */
-/* line 89, ../sass/configuration/_wellejus.configuration.scss */
+/* line 93, ../sass/configuration/_wellejus.configuration.scss */
 .bottom {
-  background-color: #191919;
+  background-color: transparent;
+}
+
+/* line 97, ../sass/configuration/_wellejus.configuration.scss */
+.bottom .panel-pane {
+  background-color: white;
 }
 
 /**
@@ -134,6 +144,30 @@ a:focus {
   background-color: rgba(80, 186, 0, 0.7);
 }
 
+/* Footer menus
+   ========================================================================== */
+/* line 29, ../sass/framework/_wellejus.navigation.scss */
+.footer .pane-title {
+  color: black;
+  border-bottom: none;
+}
+/* line 36, ../sass/framework/_wellejus.navigation.scss */
+.footer .menu li {
+  margin-bottom: 0;
+}
+/* line 39, ../sass/framework/_wellejus.navigation.scss */
+.footer .menu li:before {
+  color: black;
+}
+/* line 43, ../sass/framework/_wellejus.navigation.scss */
+.footer .menu li a {
+  color: black;
+}
+/* line 46, ../sass/framework/_wellejus.navigation.scss */
+.footer .menu li a.active {
+  color: white;
+}
+
 /**
  * Layout
  *
@@ -141,22 +175,101 @@ a:focus {
  *
  * @author wiredloose
  */
-/* Header wrapper
+/* Page
    ========================================================================== */
 /* line 12, ../sass/layout/_wellejus.layout.scss */
+.ding2-site-template {
+  padding: 10px;
+}
+
+/* line 17, ../sass/layout/_wellejus.layout.scss */
+.site-header,
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 8px #666666;
+}
+
+/* line 23, ../sass/layout/_wellejus.layout.scss */
+.content-wrapper {
+  margin-top: 10px;
+}
+
+/* line 27, ../sass/layout/_wellejus.layout.scss */
+.frontpage-layout {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 8px #666666;
+  margin-bottom: 10px;
+}
+
+/* Sections
+   ========================================================================== */
+/* line 35, ../sass/layout/_wellejus.layout.scss */
+.navigation-wrapper {
+  width: inherit;
+}
+
+/* Site-header
+   ========================================================================== */
+/* line 42, ../sass/layout/_wellejus.layout.scss */
+.logo {
+  margin: 30px 20px;
+}
+
+/* Header wrapper
+   ========================================================================== */
+/* line 48, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper {
   background-color: #50ba00;
   background-color: rgba(80, 186, 0, 0.7);
 }
-/* line 16, ../sass/layout/_wellejus.layout.scss */
+/* line 52, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper .header-inner .pane-search-form {
   width: 60%;
   float: left;
 }
-/* line 21, ../sass/layout/_wellejus.layout.scss */
+/* line 57, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper .header-inner .pane-user-login {
-  padding-left: 10%;
+  margin-left: 67%;
   width: 30%;
+}
+
+/* Attachments (aka. blocks/panes)
+   ========================================================================== */
+/* line 70, ../sass/layout/_wellejus.layout.scss */
+.attachment-first,
+.attachment-second,
+.attachment-third,
+.attachment-fourth {
+  width: 24%;
+}
+
+/* Footer
+   ========================================================================== */
+/* line 77, ../sass/layout/_wellejus.layout.scss */
+.footer {
+  padding-top: 0;
+}
+
+/* line 81, ../sass/layout/_wellejus.layout.scss */
+.footer-inner {
+  padding: 20px;
+}
+
+/* Bottom
+   ========================================================================== */
+/* line 88, ../sass/layout/_wellejus.layout.scss */
+.bottom {
+  padding: 0;
+  color: black;
+}
+
+/* line 93, ../sass/layout/_wellejus.layout.scss */
+.bottom p {
+  border-top: 1px solid #C0C0C0;
+  color: #808080;
+  line-height: 3em;
+  margin: 0 20px;
 }
 
 /**

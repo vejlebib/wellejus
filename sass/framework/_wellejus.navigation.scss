@@ -20,3 +20,33 @@
     }
   }
 }
+
+
+/* Footer menus
+   ========================================================================== */
+
+.footer {
+  .pane-title {
+    color: $black;
+    border-bottom: none;
+  }
+
+  .menu {
+    
+    li {
+      margin-bottom: 0;
+
+      &:before {
+        color: $black;
+      }
+
+      a {
+        color: $black;
+
+        &.active {
+          color: darken(white, 0.1);
+        }
+      }
+    }
+  }
+}

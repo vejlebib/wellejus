@@ -80,6 +80,10 @@ a {
 /* Footer background color */
 
 .footer {
+  background-color: transparent;
+}
+
+.footer-inner {
   background-color: $footer-background-color;
 }
 
@@ -87,5 +91,9 @@ a {
 /* Bottom background color */
 
 .bottom {
-  background-color: darken($footer-background-color, 5%);
+  background-color: transparent;
+}
+
+.bottom .panel-pane {
+  background-color: white;
 }
