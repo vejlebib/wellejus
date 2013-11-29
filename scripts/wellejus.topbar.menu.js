@@ -126,12 +126,16 @@
    */
   $(document).ready(function () {
     // Open search as default on frontpage, close on others.
-    $('.js-topbar-search').css("display", "none");
-    $('.front .js-topbar-search').css("display", "block");
-
+    //$('.js-topbar-search').css("display", "none");
+    //$('.front .js-topbar-search').css("display", "block");
+    // By default open search on all pages on desktop mode
+    $('.js-topbar-search').css("display", "block");
+	  
     //Hide user login on load.
-    $('.js-topbar-user').css("display", "none");
-
+    //$('.js-topbar-user').css("display", "none");
+    // By default open user login on all pages on desktop mode
+    $('.js-topbar-user').css("display", "block");
+    
     //Hide openhours on load.
     $('.js-topbar-hours').css("display", "none");
 
@@ -139,12 +143,12 @@
     $('.front .leaf .topbar-link-menu').removeClass('active');
     $('.front .leaf .topbar-link-search').addClass('active');
 
-    // If the search link is clicked toggle mobile menu and show/hide search.
+    // If the search link is clicked toggle mobile menu and show/hide search and user.
     $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
       ddbasic_search(true);
       ddbasic_mobile_menu(false);
-      ddbasic_user_login(false);
-      ddbasic_user_account(false);
+      ddbasic_user_login(true);
+      ddbasic_user_account(true);
       wellejus_openhours(false);
       e.preventDefault();
     });
@@ -159,20 +163,20 @@
       e.preventDefault();
     });
 
-    // If the user login is clicked toggle user and show/hide user menu.
+    // If the user login is clicked toggle user and show/hide user menu and search.
     $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
       ddbasic_user_login(true);
       ddbasic_mobile_menu(false);
-      ddbasic_search(false);
+      ddbasic_search(true);
       wellejus_openhours(false);
       e.preventDefault();
     });
 
-    // If the user login is clicked toggle user and show/hide user menu.
+    // If the user login is clicked toggle user and show/hide user menu and search.
     $('.js-topbar-link.topbar-link-user-account.default-override').on('click touchstart', function(e) {
       ddbasic_user_account(true);
       ddbasic_mobile_menu(false);
-      ddbasic_search(false);
+      ddbasic_search(true);
       wellejus_openhours(false);
       e.preventDefault();
     });

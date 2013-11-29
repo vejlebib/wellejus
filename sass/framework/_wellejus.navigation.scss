@@ -19,6 +19,22 @@
       @include rgba-background($header-background-color, $default-transparency);
     }
   }
+  
+  /* Media queries */
+  @include large-x-large() {
+    display: none;
+  }
+}
+
+
+/* Navigation, main menu and secondary menu
+   ========================================================================== */
+
+.navigation-wrapper {
+  /* Media queries */
+  @include small-medium() {
+    @include rgba-background($header-background-color, $default-transparency);
+  }
 }
 
 

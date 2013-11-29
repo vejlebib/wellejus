@@ -125,6 +125,10 @@ a:focus {
  *
  * @author wiredloose
  */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
 /**
  * Navigation for wellejus theme
  *
@@ -132,6 +136,10 @@ a:focus {
  */
 /* Topbar menu
    ========================================================================== */
+/* line 11, ../sass/framework/_wellejus.navigation.scss */
+.topbar-menu {
+  /* Media queries */
+}
 /* line 12, ../sass/framework/_wellejus.navigation.scss */
 .topbar-menu .menu-item {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -143,27 +151,47 @@ a:focus {
   background-color: #50ba00;
   background-color: rgba(80, 186, 0, 0.7);
 }
+@media only screen and (min-width: 769px) {
+  /* line 11, ../sass/framework/_wellejus.navigation.scss */
+  .topbar-menu {
+    display: none;
+  }
+}
+
+/* Navigation, main menu and secondary menu
+   ========================================================================== */
+/* line 33, ../sass/framework/_wellejus.navigation.scss */
+.navigation-wrapper {
+  /* Media queries */
+}
+@media only screen and (max-width: 768px) {
+  /* line 33, ../sass/framework/_wellejus.navigation.scss */
+  .navigation-wrapper {
+    background-color: #50ba00;
+    background-color: rgba(80, 186, 0, 0.7);
+  }
+}
 
 /* Footer menus
    ========================================================================== */
-/* line 29, ../sass/framework/_wellejus.navigation.scss */
+/* line 45, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 36, ../sass/framework/_wellejus.navigation.scss */
+/* line 52, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 39, ../sass/framework/_wellejus.navigation.scss */
+/* line 55, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 43, ../sass/framework/_wellejus.navigation.scss */
+/* line 59, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a {
   color: black;
 }
-/* line 46, ../sass/framework/_wellejus.navigation.scss */
+/* line 62, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a.active {
   color: white;
 }
@@ -207,28 +235,29 @@ a:focus {
 /* line 35, ../sass/layout/_wellejus.layout.scss */
 .navigation-wrapper {
   width: inherit;
+  clear: both;
 }
 
 /* Site-header
    ========================================================================== */
-/* line 42, ../sass/layout/_wellejus.layout.scss */
+/* line 43, ../sass/layout/_wellejus.layout.scss */
 .logo {
   margin: 30px 20px;
 }
 
 /* Header wrapper
    ========================================================================== */
-/* line 48, ../sass/layout/_wellejus.layout.scss */
+/* line 49, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper {
   background-color: #50ba00;
   background-color: rgba(80, 186, 0, 0.7);
 }
-/* line 52, ../sass/layout/_wellejus.layout.scss */
+/* line 53, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper .header-inner .pane-search-form {
   width: 60%;
   float: left;
 }
-/* line 57, ../sass/layout/_wellejus.layout.scss */
+/* line 58, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper .header-inner .pane-user-login {
   margin-left: 67%;
   width: 30%;
@@ -236,7 +265,7 @@ a:focus {
 
 /* Attachments (aka. blocks/panes)
    ========================================================================== */
-/* line 70, ../sass/layout/_wellejus.layout.scss */
+/* line 71, ../sass/layout/_wellejus.layout.scss */
 .attachment-first,
 .attachment-second,
 .attachment-third,
@@ -246,25 +275,25 @@ a:focus {
 
 /* Footer
    ========================================================================== */
-/* line 77, ../sass/layout/_wellejus.layout.scss */
+/* line 78, ../sass/layout/_wellejus.layout.scss */
 .footer {
   padding-top: 0;
 }
 
-/* line 81, ../sass/layout/_wellejus.layout.scss */
+/* line 82, ../sass/layout/_wellejus.layout.scss */
 .footer-inner {
   padding: 20px;
 }
 
 /* Bottom
    ========================================================================== */
-/* line 88, ../sass/layout/_wellejus.layout.scss */
+/* line 89, ../sass/layout/_wellejus.layout.scss */
 .bottom {
   padding: 0;
   color: black;
 }
 
-/* line 93, ../sass/layout/_wellejus.layout.scss */
+/* line 94, ../sass/layout/_wellejus.layout.scss */
 .bottom p {
   border-top: 1px solid #C0C0C0;
   color: #808080;
@@ -315,7 +344,11 @@ a:focus {
  */
 /* User login in header
    ========================================================================== */
-/* line 14, ../sass/module/_wellejus.user.scss */
+/* line 11, ../sass/module/_wellejus.user.scss */
+.user {
+  overflow: visible;
+}
+/* line 15, ../sass/module/_wellejus.user.scss */
 .user .form-item-name,
 .user .form-item-pass {
   padding-left: 0;
@@ -327,24 +360,24 @@ a:focus {
   float: none;
   width: 68%;
 }
-/* line 25, ../sass/module/_wellejus.user.scss */
+/* line 26, ../sass/module/_wellejus.user.scss */
 .user [class^="icon-"] {
   left: 16px;
   bottom: 5px;
   font-size: 120%;
 }
-/* line 31, ../sass/module/_wellejus.user.scss */
+/* line 32, ../sass/module/_wellejus.user.scss */
 .user .label-user {
   color: white;
   font-size: 180%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 38, ../sass/module/_wellejus.user.scss */
+/* line 39, ../sass/module/_wellejus.user.scss */
 .user .label-password {
   display: none;
 }
-/* line 42, ../sass/module/_wellejus.user.scss */
+/* line 43, ../sass/module/_wellejus.user.scss */
 .user .form-text {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -353,7 +386,7 @@ a:focus {
   border-radius: 0px;
   min-height: 30px;
 }
-/* line 47, ../sass/module/_wellejus.user.scss */
+/* line 48, ../sass/module/_wellejus.user.scss */
 .user .form-submit {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;

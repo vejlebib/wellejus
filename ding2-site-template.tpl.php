@@ -11,7 +11,7 @@
 
       <?php if (!empty($content['header'])): ?>
         <section class="header-wrapper">
-          <div class="header-inner">
+          <div class="header-inner clearfix">
             <?php print render($content['header']); ?>
           </div>
         </section>
