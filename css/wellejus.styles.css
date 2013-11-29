@@ -121,6 +121,50 @@ a:focus {
 }
 
 /**
+ * Base for wellejus theme
+ *
+ * @author wiredloose
+ */
+/* line 9, ../sass/framework/_wellejus.base.scss */
+body {
+  background-color: #efefef;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Verdana", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 18, ../sass/framework/_wellejus.base.scss */
+h1 {
+  font-size: 170%;
+}
+
+/* line 22, ../sass/framework/_wellejus.base.scss */
+h2 {
+  font-size: 140%;
+}
+
+/* line 26, ../sass/framework/_wellejus.base.scss */
+h3 {
+  font-size: 130%;
+}
+
+/* line 30, ../sass/framework/_wellejus.base.scss */
+h4 {
+  font-size: 120%;
+}
+
+/* line 34, ../sass/framework/_wellejus.base.scss */
+h5 {
+  font-size: 110%;
+}
+
+/* line 38, ../sass/framework/_wellejus.base.scss */
+h6 {
+  font-size: 100%;
+}
+
+/**
  * Mixins for wellejus theme
  *
  * @author wiredloose
@@ -312,7 +356,7 @@ a:focus {
 /* line 14, ../sass/module/_wellejus.search.scss */
 .search [class^="label-"] {
   color: white;
-  font-size: 180%;
+  font-size: 140%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
@@ -369,7 +413,7 @@ a:focus {
 /* line 32, ../sass/module/_wellejus.user.scss */
 .user .label-user {
   color: white;
-  font-size: 180%;
+  font-size: 140%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,40 @@
+/**
+ * Base for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+
+
+body {
+  background-color: $gray-light;
+  color: $font-color-primary;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+
+h1 {
+  font-size: $font-size-giga;
+}
+
+h2 {
+  font-size: $font-size-largest;
+}
+
+h3 {
+  font-size: $font-size-larger;
+}
+
+h4 {
+  font-size: $font-size-large;
+}
+
+h5 {
+  font-size: $font-size-medium;
+}
+
+h6 {
+  font-size: $font-size-reset;
+}
