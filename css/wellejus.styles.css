@@ -104,12 +104,12 @@ a:focus {
 }
 
 /* line 71, ../sass/configuration/_wellejus.configuration.scss */
-.news-list .news-list-item:nth-child(odd) {
+.news-list .news-list-item:nth-child(odd), .event-list .event-list-item:nth-child(odd) {
   background-color: white;
 }
 
 /* line 75, ../sass/configuration/_wellejus.configuration.scss */
-.news-list .news-list-item:nth-child(even) {
+.news-list .news-list-item:nth-child(even), .event-list .event-list-item:nth-child(even) {
   background-color: white;
 }
 
@@ -416,6 +416,13 @@ h6 {
   border-top: none;
 }
 
+/**
+ * Event styling for wellejus theme
+ *
+ * @author wiredloose
+ */
+/* Event list
+   ========================================================================== */
 /**
  * User styling for wellejus theme
  *

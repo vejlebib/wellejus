@@ -1,0 +1,22 @@
+/**
+ * Event styling for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+
+/* Event list
+   ========================================================================== */
+
+
+.event-list {
+
+  .event-list-item:nth-child(odd) {
+    @extend %article-background--odd;
+  }
+
+  .event-list-item:nth-child(even) {
+    @extend %article-background--even;
+  }
+
+}
