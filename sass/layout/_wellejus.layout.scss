@@ -49,15 +49,18 @@
 .header-wrapper {
   @include rgba-background($header-background-color, $default-transparency);
 
-  .header-inner {
-    .pane-search-form {
-      width: 60%;
-      float: left;
-    }
-    
-    .pane-user-login {
-      margin-left: 67%;
-      width: 30%;
+  /* Media queries */
+  @include large-x-large() {
+    .header-inner {
+      .pane-search-form {
+        width: 60%;
+        float: left;
+      }
+      
+      .pane-user-login {
+        margin-left: 67%;
+        width: 30%;
+      }
     }
   }
 }

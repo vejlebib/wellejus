@@ -129,7 +129,7 @@ a:focus {
 body {
   background-color: #efefef;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Verdana", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "Verdana", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -295,21 +295,24 @@ h6 {
 .header-wrapper {
   background-color: #50ba00;
   background-color: rgba(80, 186, 0, 0.7);
+  /* Media queries */
 }
-/* line 53, ../sass/layout/_wellejus.layout.scss */
-.header-wrapper .header-inner .pane-search-form {
-  width: 60%;
-  float: left;
-}
-/* line 58, ../sass/layout/_wellejus.layout.scss */
-.header-wrapper .header-inner .pane-user-login {
-  margin-left: 67%;
-  width: 30%;
+@media only screen and (min-width: 769px) {
+  /* line 55, ../sass/layout/_wellejus.layout.scss */
+  .header-wrapper .header-inner .pane-search-form {
+    width: 60%;
+    float: left;
+  }
+  /* line 60, ../sass/layout/_wellejus.layout.scss */
+  .header-wrapper .header-inner .pane-user-login {
+    margin-left: 67%;
+    width: 30%;
+  }
 }
 
 /* Attachments (aka. blocks/panes)
    ========================================================================== */
-/* line 71, ../sass/layout/_wellejus.layout.scss */
+/* line 74, ../sass/layout/_wellejus.layout.scss */
 .attachment-first,
 .attachment-second,
 .attachment-third,
@@ -319,25 +322,25 @@ h6 {
 
 /* Footer
    ========================================================================== */
-/* line 78, ../sass/layout/_wellejus.layout.scss */
+/* line 81, ../sass/layout/_wellejus.layout.scss */
 .footer {
   padding-top: 0;
 }
 
-/* line 82, ../sass/layout/_wellejus.layout.scss */
+/* line 85, ../sass/layout/_wellejus.layout.scss */
 .footer-inner {
   padding: 20px;
 }
 
 /* Bottom
    ========================================================================== */
-/* line 89, ../sass/layout/_wellejus.layout.scss */
+/* line 92, ../sass/layout/_wellejus.layout.scss */
 .bottom {
   padding: 0;
   color: black;
 }
 
-/* line 94, ../sass/layout/_wellejus.layout.scss */
+/* line 97, ../sass/layout/_wellejus.layout.scss */
 .bottom p {
   border-top: 1px solid #C0C0C0;
   color: #808080;
