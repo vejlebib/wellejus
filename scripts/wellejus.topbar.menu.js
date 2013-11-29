@@ -120,21 +120,95 @@
       $('.js-topbar-hours').css("display", "none");
     }
   }
-  
+
+  $( window ).resize(function() {
+    wellejus_menu_handling();
+  });
+
   /**
-   * When ready start the magic and handle the menu.
+   * Menu handling.
+   *
    */
-  $(document).ready(function () {
-    // Open search as default on frontpage, close on others.
-    //$('.js-topbar-search').css("display", "none");
-    //$('.front .js-topbar-search').css("display", "block");
-    // By default open search on all pages on desktop mode
-    $('.js-topbar-search').css("display", "block");
-	  
-    //Hide user login on load.
-    //$('.js-topbar-user').css("display", "none");
-    // By default open user login on all pages on desktop mode
-    $('.js-topbar-user').css("display", "block");
+  function wellejus_menu_handling() {
+    if ( $(window).width() >= 768 ) {
+      console.log("<div>" + $( window ).width() + " - now in breakpoint MEDIUM or above</div>");
+    }
+    else {
+      console.log("<div>" + $( window ).width() + " - now in breakpoint SMALL or below</div>" );
+    }
+    
+    // Special behaviour when in breakpoint medium or above (>= 768)
+    if ( $(window).width() >= 768 ) {
+      // By default open search on all pages when in breakpoint medium or above
+      $('.js-topbar-search').css("display", "block");
+      
+      // By default open user login on all pages when in breakpoint medium or above
+      $('.js-topbar-user').css("display", "block");
+      
+      // If the search link is clicked toggle mobile menu and show/hide search and user.
+      $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
+        ddbasic_search(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_user_login(true);
+        ddbasic_user_account(true);
+        wellejus_openhours(false);
+        e.preventDefault();
+      });
+      
+      // If the user login is clicked toggle user and show/hide user menu and search.
+      $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
+        ddbasic_user_login(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_search(true);
+        wellejus_openhours(false);
+        e.preventDefault();
+      });
+      
+      // If the user login is clicked toggle user and show/hide user menu and search.
+      $('.js-topbar-link.topbar-link-user-account.default-override').on('click touchstart', function(e) {
+        ddbasic_user_account(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_search(true);
+        wellejus_openhours(false);
+        e.preventDefault();
+      });
+
+    }
+    else {
+      // Open search as default on frontpage, close on others.
+      $('.js-topbar-search').css("display", "none");
+      $('.front .js-topbar-search').css("display", "block");
+      
+      //Hide user login on load.
+      $('.js-topbar-user').css("display", "none");
+      
+      // If the search link is clicked toggle mobile menu and show/hide search.
+      $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
+        ddbasic_search(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_user_login(false);
+        ddbasic_user_account(false);
+        e.preventDefault();
+      });
+      
+      // If the user login is clicked toggle user and show/hide user menu.
+      $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
+        ddbasic_user_login(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_search(false);
+        wellejus_openhours(false);
+        e.preventDefault();
+      });
+
+      // If the user login is clicked toggle user and show/hide user menu.
+      $('.js-topbar-link.topbar-link-user-account.default-override').on('click touchstart', function(e) {
+        ddbasic_user_account(true);
+        ddbasic_mobile_menu(false);
+        ddbasic_search(false);
+        wellejus_openhours(false);
+        e.preventDefault();
+      });
+    }
     
     //Hide openhours on load.
     $('.js-topbar-hours').css("display", "none");
@@ -143,40 +217,12 @@
     $('.front .leaf .topbar-link-menu').removeClass('active');
     $('.front .leaf .topbar-link-search').addClass('active');
 
-    // If the search link is clicked toggle mobile menu and show/hide search and user.
-    $('.js-topbar-link.topbar-link-search').on('click touchstart', function(e) {
-      ddbasic_search(true);
-      ddbasic_mobile_menu(false);
-      ddbasic_user_login(true);
-      ddbasic_user_account(true);
-      wellejus_openhours(false);
-      e.preventDefault();
-    });
-
     // If the mobile menu is clicked toggle search and show/hide menu.
     $('.js-topbar-link.topbar-link-menu').on('click touchstart', function(e) {
       ddbasic_mobile_menu(true);
       ddbasic_search(false);
       ddbasic_user_login(false);
       ddbasic_user_account(false);
-      wellejus_openhours(false);
-      e.preventDefault();
-    });
-
-    // If the user login is clicked toggle user and show/hide user menu and search.
-    $('.js-topbar-link.topbar-link-user').on('click touchstart', function(e) {
-      ddbasic_user_login(true);
-      ddbasic_mobile_menu(false);
-      ddbasic_search(true);
-      wellejus_openhours(false);
-      e.preventDefault();
-    });
-
-    // If the user login is clicked toggle user and show/hide user menu and search.
-    $('.js-topbar-link.topbar-link-user-account.default-override').on('click touchstart', function(e) {
-      ddbasic_user_account(true);
-      ddbasic_mobile_menu(false);
-      ddbasic_search(true);
       wellejus_openhours(false);
       e.preventDefault();
     });
@@ -233,7 +279,14 @@
         return $(this).contents();
       });
     };
+  }
 
+  /**
+   * When ready start the magic and handle the menu.
+   */
+  $(document).ready(function () {
+    wellejus_menu_handling();
+    
     // Goto action.
     $(".js-library-menu-responsive select").change(function () {
       document.location.href = $(this).val();
