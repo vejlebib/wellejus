@@ -268,19 +268,19 @@
     
     if ( $(window).width() >= 768 ) {
       // Resetting: open search and user
-      ddbasic_search(true);
-      ddbasic_mobile_menu(false);
-      ddbasic_user_login(true);
-      ddbasic_user_account(true);
-      wellejus_openhours(false);
+      $('.js-topbar-search').css("display", "block");
+      $('.site-header .js-topbar-menu').css("display", "none");
+      $('.js-topbar-user').css("display", "block");
+      $('.js-user-top-menu').css("display", "block");
+      $('.js-topbar-hours').css("display", "none");
     }
     else {
       // Resetting: open search
-      ddbasic_search(true);
-      ddbasic_mobile_menu(false);
-      ddbasic_user_login(false);
-      ddbasic_user_account(false);
-      wellejus_openhours(false);
+      $('.js-topbar-search').css("display", "block");
+      $('.site-header .js-topbar-menu').css("display", "none");
+      $('.js-topbar-user').css("display", "none");
+      $('.js-user-top-menu').css("display", "none");
+      $('.js-topbar-hours').css("display", "none");
     }
   }); 
   
