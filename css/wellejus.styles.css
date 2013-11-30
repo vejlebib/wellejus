@@ -326,37 +326,27 @@ h6 {
   }
 }
 
-/* Attachments (aka. blocks/panes)
-   ========================================================================== */
-/* line 75, ../sass/layout/_wellejus.layout.scss */
-.attachment-first,
-.attachment-second,
-.attachment-third,
-.attachment-fourth {
-  width: 24%;
-}
-
 /* Footer
    ========================================================================== */
-/* line 82, ../sass/layout/_wellejus.layout.scss */
+/* line 72, ../sass/layout/_wellejus.layout.scss */
 .footer {
   padding-top: 0;
 }
 
-/* line 86, ../sass/layout/_wellejus.layout.scss */
+/* line 76, ../sass/layout/_wellejus.layout.scss */
 .footer-inner {
   padding: 20px;
 }
 
 /* Bottom
    ========================================================================== */
-/* line 93, ../sass/layout/_wellejus.layout.scss */
+/* line 83, ../sass/layout/_wellejus.layout.scss */
 .bottom {
   padding: 0;
   color: black;
 }
 
-/* line 98, ../sass/layout/_wellejus.layout.scss */
+/* line 88, ../sass/layout/_wellejus.layout.scss */
 .bottom p {
   border-top: 1px solid #C0C0C0;
   color: #808080;
