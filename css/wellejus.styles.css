@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Variables for wellejus theme
  *
@@ -413,6 +414,81 @@ h6 {
  */
 /* Event list
    ========================================================================== */
+/**
+ * Opening hours for wellejus
+ *
+ * @author wiredloose
+ */
+/* line 8, ../sass/module/_wellejus.openinghours.scss */
+.opening-hours-list .tipsy-oho .close:after {
+  content: " ";
+  font-family: FontAwesome;
+}
+
+/* opening hours today block in normal position on page
+   ========================================================================== */
+/* line 18, ../sass/module/_wellejus.openinghours.scss */
+.hours {
+  padding: 30px 20px;
+}
+/* line 22, ../sass/module/_wellejus.openinghours.scss */
+.hours .openhours-today-wrapper h2 {
+  color: #FFFFFF;
+  font-size: 140%;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+/* line 29, ../sass/module/_wellejus.openinghours.scss */
+.hours .openhours-today-wrapper .title:before {
+  content: "\f105  ";
+  font-family: FontAwesome;
+}
+/* line 35, ../sass/module/_wellejus.openinghours.scss */
+.hours .opening-hours-list {
+  padding-left: 10px;
+}
+/* line 38, ../sass/module/_wellejus.openinghours.scss */
+.hours .opening-hours-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  clear: both;
+  height: 2em;
+  padding: 10px 0;
+  color: white;
+}
+/* line 45, ../sass/module/_wellejus.openinghours.scss */
+.hours .opening-hours-list li a {
+  color: white;
+}
+/* line 50, ../sass/module/_wellejus.openinghours.scss */
+.hours .opening-hours-list .tipsy-oho .close:after {
+  color: white;
+  font-size: 140%;
+}
+
+/* opening hours today block placed in topbar
+   ========================================================================== */
+/* line 62, ../sass/module/_wellejus.openinghours.scss */
+.topbar-inner .openhours-today-wrapper {
+  top: 0.8em;
+  left: 40%;
+  position: absolute;
+  width: 60%;
+}
+/* line 63, ../sass/module/_wellejus.openinghours.scss */
+.topbar-inner .openhours-today-wrapper h2 {
+  font-size: 120%;
+  margin-bottom: 0;
+}
+/* line 74, ../sass/module/_wellejus.openinghours.scss */
+.topbar-inner .opening-hours-list {
+  padding-left: 0;
+}
+/* line 77, ../sass/module/_wellejus.openinghours.scss */
+.topbar-inner .opening-hours-list li {
+  float: left;
+  width: 50%;
+}
+
 /**
  * User styling for wellejus theme
  *

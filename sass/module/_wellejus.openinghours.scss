@@ -1,0 +1,83 @@
+/**
+ * Opening hours for wellejus
+ *
+ * @author wiredloose
+ */
+
+.opening-hours-list {
+  .tipsy-oho .close:after {
+    content: " ";
+    font-family: FontAwesome;
+  }
+}
+
+
+/* opening hours today block in normal position on page
+   ========================================================================== */
+
+.hours {
+  padding: 30px 20px;
+  
+  .openhours-today-wrapper {
+    h2 {
+      color: #FFFFFF;
+      font-size: 140%;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+    }
+    
+    .title:before {
+      content: "\f105  ";
+      font-family: FontAwesome;
+    }
+  }
+  
+  .opening-hours-list {
+    padding-left: 10px;
+    
+    li {  
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      clear: both;
+      height: 2em;
+      padding: 10px 0;
+      color: white;
+      
+      a {
+        color: white;
+      }
+    }
+    
+    .tipsy-oho .close:after {
+      color: white;
+      font-size: 140%;
+    }
+  }
+}
+
+
+/* opening hours today block placed in topbar
+   ========================================================================== */
+
+.topbar-inner {
+  .openhours-today-wrapper {
+    h2 {
+      font-size: 120%;
+      margin-bottom: 0;
+    }
+    
+    top: 0.8em;
+    left: 40%;
+    position: absolute;
+    width: 60%;
+  }
+  
+  .opening-hours-list {
+    padding-left: 0;
+    
+    li {
+      float: left;
+      width: 50%;
+    }
+    
+  }
+}
