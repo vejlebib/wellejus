@@ -249,7 +249,7 @@ h6 {
 }
 /* line 60, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
-.footer .menu li a:active {
+.footer .menu li a.active {
   color: black;
 }
 
