@@ -247,13 +247,10 @@ h6 {
 .footer .menu li:before {
   color: black;
 }
-/* line 59, ../sass/framework/_wellejus.navigation.scss */
-.footer .menu li a {
+/* line 60, ../sass/framework/_wellejus.navigation.scss */
+.footer .menu li a,
+.footer .menu li a:active {
   color: black;
-}
-/* line 62, ../sass/framework/_wellejus.navigation.scss */
-.footer .menu li a.active {
-  color: white;
 }
 
 /**

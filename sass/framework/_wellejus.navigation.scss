@@ -56,12 +56,9 @@
         color: $black;
       }
 
-      a {
+      a, 
+      a:active {
         color: $black;
-
-        &.active {
-          color: darken(white, 0.1);
-        }
       }
     }
   }
