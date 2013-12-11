@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Default simple view template to display a list of rows.
+ * Vejlebib view template to display event list of rows.
  *
  * - $title : The title of this group of rows.  May be empty.
  * - $options['type'] will either be ul or ol.
@@ -14,7 +14,7 @@ print $wrapper_prefix;
   endif;
   print $list_type_prefix;
     foreach ($rows as $id => $row):
-      print '<li class="' . print $classes_array[$id] . '">' . $row . '</li>';
+      print '<li class="' . $classes_array[$id] . '">' . $row . '</li>';
     endforeach;
   print $list_type_suffix;
 print $wrapper_suffix;
