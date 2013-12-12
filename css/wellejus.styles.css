@@ -413,71 +413,76 @@ h6 {
 /* Event list
    ========================================================================== */
 /* line 25, ../sass/module/_wellejus.event.scss */
+.view-vejlebib-ding-event .event-list-leaf {
+  padding-left: 75px;
+}
+/* line 28, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper {
   box-shadow: 2px 2px 2px;
-  float: left;
+  position: absolute;
+  left: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 32, ../sass/module/_wellejus.event.scss */
+/* line 36, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper.vejle {
   border: 1px solid #95c127;
 }
-/* line 36, ../sass/module/_wellejus.event.scss */
+/* line 40, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper.borkop {
   border: 1px solid #e4032e;
 }
-/* line 40, ../sass/module/_wellejus.event.scss */
+/* line 44, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper.egtved {
   border: 1px solid #951b81;
 }
-/* line 44, ../sass/module/_wellejus.event.scss */
+/* line 48, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper.give {
   border: 1px solid #f39200;
 }
-/* line 48, ../sass/module/_wellejus.event.scss */
+/* line 52, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-leaf .event-list-date-wrapper.jelling {
   border: 1px solid #008bd2;
 }
-/* line 53, ../sass/module/_wellejus.event.scss */
+/* line 58, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-day {
   text-shadow: none;
 }
-/* line 57, ../sass/module/_wellejus.event.scss */
+/* line 62, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-date {
   font-size: 280%;
   margin-bottom: -5px;
 }
-/* line 63, ../sass/module/_wellejus.event.scss */
+/* line 68, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .vejle .event-list-day {
   background-color: #95c127;
 }
-/* line 67, ../sass/module/_wellejus.event.scss */
+/* line 72, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .borkop .event-list-day {
   background-color: #e4032e;
 }
-/* line 71, ../sass/module/_wellejus.event.scss */
+/* line 76, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .egtved .event-list-day {
   background-color: #951b81;
 }
-/* line 75, ../sass/module/_wellejus.event.scss */
+/* line 80, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .give .event-list-day {
   background-color: #f39200;
 }
-/* line 79, ../sass/module/_wellejus.event.scss */
+/* line 84, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .jelling .event-list-day {
   background-color: #008bd2;
 }
-/* line 83, ../sass/module/_wellejus.event.scss */
+/* line 88, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-heading {
   margin-bottom: 0;
   font-size: 130%;
 }
-/* line 88, ../sass/module/_wellejus.event.scss */
+/* line 93, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-location {
   display: block;
 }
-/* line 92, ../sass/module/_wellejus.event.scss */
+/* line 97, ../sass/module/_wellejus.event.scss */
 .view-vejlebib-ding-event .event-list-time:before {
   content: "\f017  ";
   font-family: FontAwesome;

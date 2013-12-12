@@ -22,31 +22,36 @@
 }
 
 .view-vejlebib-ding-event {
-  .event-list-leaf .event-list-date-wrapper {
-    box-shadow: 2px 2px 2px;
-    float: left;
-    text-transform: uppercase;
-    font-weight: bold;
+  .event-list-leaf {
+    padding-left: 75px;
     
-    // using library colors
-    &.vejle {
-      border: 1px solid $vejle-color;
-    }
-    
-    &.borkop {
-      border: 1px solid $borkop-color;
-    }
-    
-    &.egtved {
-      border: 1px solid $egtved-color;
-    }
-    
-    &.give {
-      border: 1px solid $give-color;
-    }
-    
-    &.jelling {
-      border: 1px solid $jelling-color;
+    .event-list-date-wrapper {
+      box-shadow: 2px 2px 2px;
+      position: absolute;
+      left: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      
+      // using library colors
+      &.vejle {
+        border: 1px solid $vejle-color;
+      }
+      
+      &.borkop {
+        border: 1px solid $borkop-color;
+      }
+      
+      &.egtved {
+        border: 1px solid $egtved-color;
+      }
+      
+      &.give {
+        border: 1px solid $give-color;
+      }
+      
+      &.jelling {
+        border: 1px solid $jelling-color;
+      }
     }
   }
 
