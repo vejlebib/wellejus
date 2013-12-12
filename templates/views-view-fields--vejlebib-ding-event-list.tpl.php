@@ -4,10 +4,6 @@
  * @file views-view-fields--vejlebib-ding-event-list.tpl.php
  */
 // Prepare a couple of variables.
-
-// Get locale drawn from language settings
-global $language;
-$langcode = $language->language;
 $start = strtotime($fields['field_ding_event_date_1']->content);
 $price = ($fields['field_ding_event_price']->content < 1) ? t('Free') : intval($fields['field_ding_event_price']->content) . ' kr.';
 $slug = $fields['field_ding_library_slug']->content;
@@ -21,10 +17,10 @@ $slug = $fields['field_ding_library_slug']->content;
   // Format date with HTML for a leaf - use drupal's format_date()
   if($id == 'field_ding_event_date_1') {
     print '<div class="event-list-date-wrapper ' . $slug . '">
-      <span class="event-list-day">' . format_date($start, 'custom', 'l', $langcode) .'</span>
+      <span class="event-list-day">' . format_date($start, 'custom', 'l') .'</span>
       <div class="event-list-inner-wrapper">
-        <span class="event-list-date">' . format_date($start, 'custom', 'j', $langcode) .'</span>
-        <span class="event-list-month">' . format_date($start, 'custom', 'M', $langcode) .'</span>
+        <span class="event-list-date">' . format_date($start, 'custom', 'j') .'</span>
+        <span class="event-list-month">' . format_date($start, 'custom', 'M') .'</span>
       </div>
     </div>';
   }
