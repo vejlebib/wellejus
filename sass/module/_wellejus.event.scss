@@ -20,3 +20,77 @@
   }
 
 }
+
+.view-vejlebib-ding-event {
+  .event-list-leaf .event-list-date-wrapper {
+    box-shadow: 2px 2px 2px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    // using library colors
+    &.vejle {
+      border: 1px solid $vejle-color;
+    }
+    
+    &.borkop {
+      border: 1px solid $borkop-color;
+    }
+    
+    &.egtved {
+      border: 1px solid $egtved-color;
+    }
+    
+    &.give {
+      border: 1px solid $give-color;
+    }
+    
+    &.jelling {
+      border: 1px solid $jelling-color;
+    }
+  }
+
+  .event-list-day{
+    text-shadow: none;
+  }
+
+  .event-list-date {
+    font-size: 280%;
+    margin-bottom: -5px;
+  }
+
+  // using library colors
+  .vejle .event-list-day {
+    background-color: $vejle-color;
+  }
+
+  .borkop .event-list-day {
+    background-color: $borkop-color;
+  }
+
+  .egtved .event-list-day {
+    background-color: $egtved-color;
+  }
+
+  .give .event-list-day {
+    background-color: $give-color;
+  }
+
+  .jelling .event-list-day {
+    background-color: $jelling-color;
+  }
+
+  .event-list-heading {
+    margin-bottom: 0;
+    font-size: 130%;
+  }
+
+  .event-list-location {
+    display: block;
+  }
+
+  .event-list-time:before { 
+    content: "\f017  "; 
+    font-family: FontAwesome;
+  }
+}
