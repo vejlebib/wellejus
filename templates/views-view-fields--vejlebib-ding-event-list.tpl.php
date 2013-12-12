@@ -30,7 +30,7 @@ $slug = $fields['field_ding_library_slug']->content;
   }
   // Output price calculated above
   elseif ($id == 'field_ding_event_price') {
-    print $price;
+    print ' - ' . $price;
   }
   // Print rest of fields except library slug
   elseif ($id != 'field_ding_library_slug') {
