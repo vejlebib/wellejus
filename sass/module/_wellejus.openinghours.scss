@@ -16,8 +16,10 @@
    ========================================================================== */
 
 .hours {
-  padding: 30px 20px;
-  
+  &.panel-pane {
+    padding: 30px 20px;
+  }
+
   .openhours-today-wrapper {
     h2 {
       color: #FFFFFF;
