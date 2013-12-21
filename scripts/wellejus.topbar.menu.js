@@ -249,6 +249,10 @@
     if ( $('.topbar-menu').css("display") == "none" ) {
       $(".openhours-today-wrapper").appendTo($(".topbar-inner"));
     }
+    else {
+      // Make sure that openhours block is in its default section
+      $(".openhours-today-wrapper").appendTo($(".js-topbar-hours"));
+    }
   });
   
   /**
@@ -258,12 +262,20 @@
     
     // display all relevant elements if the topbar menu is not present
     if ( $('.topbar-menu').css("display") == "none" ) {
-      // Resetting: open search and user
+      // Resetting: open search, main menu and user
       $('.js-topbar-search').css("display", "block");
-      $('.site-header .js-topbar-menu').css("display", "none");
+      $('.site-header .js-topbar-menu').css("display", "block");
       $('.js-topbar-user').css("display", "block");
       $('.js-user-top-menu').css("display", "block");
       $('.js-topbar-hours').css("display", "none");
+      
+      // Move openhours block to the header
+      $(".openhours-today-wrapper").appendTo($(".topbar-inner"));
+    } 
+    // topbar is present, reset display of elements for this case
+    else {
+      // Make sure that openhours block is in its default section
+      $(".openhours-today-wrapper").appendTo($(".js-topbar-hours"));
     }
   }); 
   
