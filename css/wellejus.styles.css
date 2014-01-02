@@ -362,7 +362,7 @@ h6 {
 /* Search in header
    ========================================================================== */
 /* line 14, ../sass/module/_wellejus.search.scss */
-.search [class^="label-"] {
+.search .form-item-search-block-form label {
   color: white;
   font-size: 140%;
   text-transform: uppercase;
@@ -598,7 +598,7 @@ h6 {
     font-size: 120%;
   }
   /* line 35, ../sass/module/_wellejus.user.scss */
-  .user .label-password {
+  .user .form-item-pass label {
     display: none;
   }
   /* line 39, ../sass/module/_wellejus.user.scss */
@@ -615,8 +615,8 @@ h6 {
   border-radius: 0px;
 }
 /* line 49, ../sass/module/_wellejus.user.scss */
-.user .label-user,
-.user .label-password {
+.user .form-item-name label,
+.user .form-item-pass label {
   color: white;
   font-size: 140%;
   text-transform: uppercase;

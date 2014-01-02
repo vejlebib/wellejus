@@ -32,7 +32,7 @@
       font-size: 120%;
     }
   
-    .label-password {
+    .form-item-pass label {
       display: none;
     }
   
@@ -45,8 +45,8 @@
     @include border-radius(0px);
   }
   
-  .label-user,
-  .label-password {
+  .form-item-name label,
+  .form-item-pass label {
     color: $white;
     font-size: $font-size-largest;
     text-transform: uppercase;
