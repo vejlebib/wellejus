@@ -639,12 +639,12 @@ h6 {
   padding: 0;
 }
 /* line 33, ../sass/module/_wellejus.user.scss */
-.user .vejlebib-user-info li {
+.user.vejlebib-user-info li {
   float: left;
   width: 48%;
 }
 /* line 38, ../sass/module/_wellejus.user.scss */
-.user .vejlebib-user-info .button {
+.user.vejlebib-user-info .button {
   margin: 1px;
   padding: 3px;
   width: 100%;
