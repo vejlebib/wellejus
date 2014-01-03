@@ -678,4 +678,5 @@ h6 {
 /* line 7, ../sass/module/_wellejus.tipsy.scss */
 .tipsy-inner {
   font-size: 14px;
+  max-width: 250px;
 }
