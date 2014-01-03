@@ -42,10 +42,14 @@
       border-radius: 0;
     }
     
-    .username a {
-      color: #FFFFFF;
-      font-size: $font-size-large;
-      font-weight: bold;
+    .username {
+      margin: 2px 0 5px;
+      
+      a {
+        color: #FFFFFF;
+        font-size: $font-size-large;
+        font-weight: bold;
+      }
     }
   }
 
