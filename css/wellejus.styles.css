@@ -593,11 +593,7 @@ h6 {
   float: left;
   width: 50%;
 }
-/* line 84, ../sass/module/_wellejus.openinghours.scss */
-.topbar-inner .opening-hours-list .details {
-  line-height: 150%;
-}
-/* line 87, ../sass/module/_wellejus.openinghours.scss */
+/* line 85, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list .details span {
   vertical-align: middle;
 }
