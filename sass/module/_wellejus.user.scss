@@ -41,6 +41,12 @@
       border: 1px solid #FFFFFF;
       border-radius: 0;
     }
+    
+    .username a {
+      color: #FFFFFF;
+      font-size: $font-size-large;
+      font-weight: bold;
+    }
   }
 
   /* Media queries */
