@@ -669,3 +669,13 @@ h6 {
   text-transform: uppercase;
   padding: 0;
 }
+
+/**
+ * Tipsy for wellejus
+ *
+ * @author wiredloose
+ */
+/* line 7, ../sass/module/_wellejus.tipsy.scss */
+.tipsy-inner {
+  font-size: 14px;
+}
