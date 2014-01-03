@@ -9,38 +9,6 @@
    ========================================================================== */
 
 .user {
-  /* Media queries */
-  @include large-x-large() {
-    min-height: 30px;
-    
-    overflow: visible;
-
-    .form-item-name,
-    .form-item-pass {
-      padding-left: 0;
-      padding-right: 0;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 5px;
-      float: none;
-      width: 68%;
-    }
-  
-    [class^="icon-"] {
-      left: 16px;
-      bottom: 5px;
-      font-size: 120%;
-    }
-  
-    .form-item-pass label {
-      display: none;
-    }
-  
-    .form-text {
-      min-height: 30px;
-    }
-  }
-  
   .form-text {
     @include border-radius(0px);
   }
@@ -59,6 +27,43 @@
     min-height: 65px;
     text-transform: uppercase;
     padding: 0;
+  }
+  
+  /* Media queries */
+  @include large-x-large() {
+    min-height: 30px;
+    
+    overflow: visible;
+
+    .form-item-name,
+    .form-item-pass {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 5px;
+      float: none;
+      width: 68%;
+    }
+
+    .form-item-name label,
+    .form-item-pass label {
+      font-size: 250%;
+    }
+
+    [class^="icon-"] {
+      left: 16px;
+      bottom: 5px;
+      font-size: 120%;
+    }
+  
+    .form-item-pass label {
+      display: none;
+    }
+  
+    .form-text {
+      min-height: 30px;
+    }
   }
 }
 

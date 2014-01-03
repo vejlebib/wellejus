@@ -395,7 +395,7 @@ h6 {
 /* line 14, ../sass/module/_wellejus.search.scss */
 .search .form-item-search-block-form label {
   color: white;
-  font-size: 140%;
+  font-size: 250%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
@@ -609,39 +609,7 @@ h6 {
 .user {
   /* Media queries */
 }
-@media only screen and (min-width: 769px) {
-  /* line 11, ../sass/module/_wellejus.user.scss */
-  .user {
-    min-height: 30px;
-    overflow: visible;
-  }
-  /* line 19, ../sass/module/_wellejus.user.scss */
-  .user .form-item-name,
-  .user .form-item-pass {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 5px;
-    float: none;
-    width: 68%;
-  }
-  /* line 29, ../sass/module/_wellejus.user.scss */
-  .user [class^="icon-"] {
-    left: 16px;
-    bottom: 5px;
-    font-size: 120%;
-  }
-  /* line 35, ../sass/module/_wellejus.user.scss */
-  .user .form-item-pass label {
-    display: none;
-  }
-  /* line 39, ../sass/module/_wellejus.user.scss */
-  .user .form-text {
-    min-height: 30px;
-  }
-}
-/* line 44, ../sass/module/_wellejus.user.scss */
+/* line 12, ../sass/module/_wellejus.user.scss */
 .user .form-text {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -649,7 +617,7 @@ h6 {
   -o-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 49, ../sass/module/_wellejus.user.scss */
+/* line 17, ../sass/module/_wellejus.user.scss */
 .user .form-item-name label,
 .user .form-item-pass label {
   color: white;
@@ -657,7 +625,7 @@ h6 {
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 56, ../sass/module/_wellejus.user.scss */
+/* line 24, ../sass/module/_wellejus.user.scss */
 .user .form-submit {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -668,6 +636,43 @@ h6 {
   min-height: 65px;
   text-transform: uppercase;
   padding: 0;
+}
+@media only screen and (min-width: 769px) {
+  /* line 11, ../sass/module/_wellejus.user.scss */
+  .user {
+    min-height: 30px;
+    overflow: visible;
+  }
+  /* line 39, ../sass/module/_wellejus.user.scss */
+  .user .form-item-name,
+  .user .form-item-pass {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    float: none;
+    width: 68%;
+  }
+  /* line 50, ../sass/module/_wellejus.user.scss */
+  .user .form-item-name label,
+  .user .form-item-pass label {
+    font-size: 250%;
+  }
+  /* line 54, ../sass/module/_wellejus.user.scss */
+  .user [class^="icon-"] {
+    left: 16px;
+    bottom: 5px;
+    font-size: 120%;
+  }
+  /* line 60, ../sass/module/_wellejus.user.scss */
+  .user .form-item-pass label {
+    display: none;
+  }
+  /* line 64, ../sass/module/_wellejus.user.scss */
+  .user .form-text {
+    min-height: 30px;
+  }
 }
 
 /**
