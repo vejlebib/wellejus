@@ -28,9 +28,26 @@
     text-transform: uppercase;
     padding: 0;
   }
-  
+
+  .vejlebib-user-info {
+    li {
+      float: left;
+      width: 48%;
+    }
+    
+    .button {
+      margin: 1px;
+      padding: 3px;
+      width: 100%;
+    }
+  }
+
   /* Media queries */
   @include large-x-large() {
+    ul {
+      padding-left: 0;
+    }
+    
     min-height: 30px;
     
     overflow: visible;
@@ -66,4 +83,3 @@
     }
   }
 }
-
