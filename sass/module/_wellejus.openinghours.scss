@@ -82,7 +82,11 @@
     }
     
     .details {
-      line-height: 130%;
+      line-height: 150%;
+      
+      span {
+        vertical-align: middle;
+      }
     }
     
   }
