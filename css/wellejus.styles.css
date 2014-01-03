@@ -233,18 +233,25 @@ h6 {
   }
 }
 
-/* line 41, ../sass/framework/_wellejus.navigation.scss */
+/* line 40, ../sass/framework/_wellejus.navigation.scss */
+.main-menu-wrapper {
+  width: 80%;
+  margin-right: -80%;
+  padding-left: 20px;
+}
+
+/* line 47, ../sass/framework/_wellejus.navigation.scss */
 .main-menu .menu-item {
   /* Media queries */
 }
 @media only screen and (min-width: 769px) {
-  /* line 41, ../sass/framework/_wellejus.navigation.scss */
+  /* line 47, ../sass/framework/_wellejus.navigation.scss */
   .main-menu .menu-item {
     font-size: 75%;
     font-weight: bold;
     text-transform: uppercase;
   }
-  /* line 49, ../sass/framework/_wellejus.navigation.scss */
+  /* line 55, ../sass/framework/_wellejus.navigation.scss */
   .main-menu .menu-item.active {
     background: #7d7e7d;
     /* Old browsers */
@@ -268,20 +275,20 @@ h6 {
 
 /* Footer menus
    ========================================================================== */
-/* line 71, ../sass/framework/_wellejus.navigation.scss */
+/* line 77, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 78, ../sass/framework/_wellejus.navigation.scss */
+/* line 84, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 81, ../sass/framework/_wellejus.navigation.scss */
+/* line 87, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 86, ../sass/framework/_wellejus.navigation.scss */
+/* line 92, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
