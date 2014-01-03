@@ -233,22 +233,55 @@ h6 {
   }
 }
 
+/* line 41, ../sass/framework/_wellejus.navigation.scss */
+.main-menu .menu-item {
+  /* Media queries */
+}
+@media only screen and (min-width: 769px) {
+  /* line 41, ../sass/framework/_wellejus.navigation.scss */
+  .main-menu .menu-item {
+    font-size: 75%;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /* line 49, ../sass/framework/_wellejus.navigation.scss */
+  .main-menu .menu-item.active {
+    background: #7d7e7d;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #7d7e7d 0%, #0e0e0e 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #7d7e7d), color-stop(100%, #0e0e0e));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #7d7e7d 0%, #0e0e0e 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #7d7e7d 0%, #0e0e0e 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #7d7e7d 0%, #0e0e0e 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
+    /* W3C */
+    color: #EEEEEE;
+    padding: 6px 10px;
+    text-decoration: none;
+  }
+}
+
 /* Footer menus
    ========================================================================== */
-/* line 45, ../sass/framework/_wellejus.navigation.scss */
+/* line 71, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 52, ../sass/framework/_wellejus.navigation.scss */
+/* line 78, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 55, ../sass/framework/_wellejus.navigation.scss */
+/* line 81, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 60, ../sass/framework/_wellejus.navigation.scss */
+/* line 86, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
