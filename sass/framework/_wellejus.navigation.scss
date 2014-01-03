@@ -30,28 +30,29 @@
 /* Navigation, main menu and secondary menu
    ========================================================================== */
 
-.navigation-wrapper {
-  /* Media queries */
-  @include small-medium() {
+/* Media queries */
+@include small-medium() {
+
+  .navigation-wrapper {
     @include rgba-background($header-background-color, $default-transparency);
   }
+
 }
 
-.main-menu-wrapper {
-  width: 80%;
-  margin-right: -80%;
-  padding-left: $large-spacing;
-}
+@include large-x-large() {
 
-.main-menu {
-  .menu-item {
+  .main-menu-wrapper {
+    width: 80%;
+    margin-right: -80%;
+    padding-left: $large-spacing;
+  }
 
-    /* Media queries */
-    @include large-x-large() {
+  .main-menu {
+    .menu-item {
       font-size: $font-size-tiny;
       font-weight: bold;
       text-transform: uppercase;
-      
+
       &.active {
         background: #7d7e7d; /* Old browsers */
         background: -moz-linear-gradient(-45deg,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */ 
@@ -65,8 +66,8 @@
         text-decoration: none;
       }
     }
-    
   }
+
 }
 
 
