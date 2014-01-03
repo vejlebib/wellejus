@@ -562,6 +562,10 @@ h6 {
   float: left;
   width: 50%;
 }
+/* line 84, ../sass/module/_wellejus.openinghours.scss */
+.topbar-inner .opening-hours-list .details {
+  line-height: 130%;
+}
 
 /**
  * User styling for wellejus theme
