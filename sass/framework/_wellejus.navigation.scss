@@ -52,6 +52,8 @@
       font-size: $font-size-tiny;
       font-weight: bold;
       text-transform: uppercase;
+      padding: 6px 10px;
+      margin: 10px 0;
 
       &.active {
         background: #7d7e7d; /* Old browsers */
@@ -62,7 +64,14 @@
         background: -ms-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
         background: linear-gradient(135deg,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
         color: #EEEEEE;
-        padding: 6px 10px;
+        text-decoration: none;
+      }
+      
+      &:focus,
+      &:hover {
+        background: none;
+        background-color: $black;
+        color: $white;
         text-decoration: none;
       }
     }
