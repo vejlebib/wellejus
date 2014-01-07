@@ -11,5 +11,7 @@
   stylesheets[print][]  = css/wellejusprint.css
 
 ;----------// JavaScripts
-  scripts[] = scripts/ddbasic.topbar.menu.js
+  ; Override javascripts
+  scripts[] = scripts/ddbasic.topbar.menu.min.js
+
   scripts[] = scripts/wellejus.topbar.menu.js
