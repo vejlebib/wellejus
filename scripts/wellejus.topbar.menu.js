@@ -268,12 +268,19 @@
       $('.js-topbar-user').css("display", "block");
       $('.js-user-top-menu').css("display", "block");
       $('.js-topbar-hours').css("display", "none");
-      
+
       // Move openhours block to the header
       $(".openhours-today-wrapper").appendTo($(".topbar-inner"));
     } 
     // topbar is present, reset display of elements for this case
     else {
+      // Resetting: open search, main menu and user
+      $('.js-topbar-search').css("display", "block");
+      $('.site-header .js-topbar-menu').css("display", "none");
+      $('.js-topbar-user').css("display", "block");
+      $('.js-user-top-menu').css("display", "block");
+      $('.js-topbar-hours').css("display", "none");
+
       // Make sure that openhours block is in its default section
       $(".openhours-today-wrapper").appendTo($(".js-topbar-hours"));
     }
