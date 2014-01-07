@@ -331,9 +331,22 @@ h6 {
   padding: 20px;
 }
 
+/* line 37, ../sass/layout/_wellejus.layout.scss */
+.default-layout {
+  margin-top: 0;
+}
+/* line 40, ../sass/layout/_wellejus.layout.scss */
+.default-layout .layout-wrapper {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* Sections
    ========================================================================== */
-/* line 39, ../sass/layout/_wellejus.layout.scss */
+/* line 51, ../sass/layout/_wellejus.layout.scss */
 .navigation-wrapper {
   width: inherit;
   clear: both;
@@ -341,26 +354,26 @@ h6 {
 
 /* Site-header
    ========================================================================== */
-/* line 47, ../sass/layout/_wellejus.layout.scss */
+/* line 59, ../sass/layout/_wellejus.layout.scss */
 .logo {
   margin: 30px 20px;
 }
 
 /* Header wrapper
    ========================================================================== */
-/* line 53, ../sass/layout/_wellejus.layout.scss */
+/* line 65, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper {
   background-color: #50ba00;
   background-color: rgba(80, 186, 0, 0.7);
   /* Media queries */
 }
 @media only screen and (min-width: 769px) {
-  /* line 59, ../sass/layout/_wellejus.layout.scss */
+  /* line 71, ../sass/layout/_wellejus.layout.scss */
   .header-wrapper .header-inner .pane-search-form {
     width: 60%;
     float: left;
   }
-  /* line 65, ../sass/layout/_wellejus.layout.scss */
+  /* line 77, ../sass/layout/_wellejus.layout.scss */
   .header-wrapper .header-inner .pane-user-login,
   .header-wrapper .header-inner .pane-vejlebib-views-panels-vejlebib-ding-userinfo {
     margin-left: 67%;
@@ -370,25 +383,25 @@ h6 {
 
 /* Footer
    ========================================================================== */
-/* line 76, ../sass/layout/_wellejus.layout.scss */
+/* line 88, ../sass/layout/_wellejus.layout.scss */
 .footer {
   padding-top: 0;
 }
 
-/* line 80, ../sass/layout/_wellejus.layout.scss */
+/* line 92, ../sass/layout/_wellejus.layout.scss */
 .footer-inner {
   padding: 20px;
 }
 
 /* Bottom
    ========================================================================== */
-/* line 87, ../sass/layout/_wellejus.layout.scss */
+/* line 99, ../sass/layout/_wellejus.layout.scss */
 .bottom {
   padding: 0;
   color: black;
 }
 
-/* line 92, ../sass/layout/_wellejus.layout.scss */
+/* line 104, ../sass/layout/_wellejus.layout.scss */
 .bottom p {
   border-top: 1px solid #C0C0C0;
   color: #808080;
