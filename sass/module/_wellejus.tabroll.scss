@@ -1,0 +1,58 @@
+/**
+ * Tabroll for wellejus theme
+ *
+ * @author wiredloose
+ */
+
+/* Tabroll tabs
+   ========================================================================== */
+
+.ding-tabroll-wrapper {
+  
+  .ui-tabs {
+  
+    ul.ui-tabs-nav {
+      right: 0;
+      
+      li {
+        background-color: #b2b2b2;
+        border-top: none;
+        
+        a {
+          color: #FFFFFF;
+          font-weight: bold;
+          border-bottom: 1px solid #666666 !important;
+          border-top: 1px solid #D5D5D5; 
+          height: 97%;
+          text-transform: uppercase;
+        }
+      }
+      
+      li:first-child {
+        margin-top: -1px;
+      }
+    }
+
+    .ui-tabs-panel {
+      float: left;
+
+      .info {
+        bottom: 0;
+        right: inherit;
+        width: 100%;
+        height: 25%;
+        padding: 10px 0;
+
+        h3 {
+          margin: 0 10px;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+}
