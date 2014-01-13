@@ -593,42 +593,46 @@ h6 {
 
 /* line 32, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item {
-  padding: 0;
+  padding: 20px 0 0;
 }
 /* line 35, ../sass/module/_wellejus.news.scss */
+.view-vejlebib-ding-news .news-list .news-list-item:first-child {
+  padding-top: 0;
+}
+/* line 39, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item:first-child .news-sub-heading {
   margin-top: 0;
 }
-/* line 42, ../sass/module/_wellejus.news.scss */
+/* line 46, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-sub-heading,
 .view-vejlebib-ding-news .news-list .news-heading,
 .view-vejlebib-ding-news .news-list .news-list-content {
   margin: 0;
 }
-/* line 46, ../sass/module/_wellejus.news.scss */
+/* line 50, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-link {
   float: none;
 }
-/* line 50, ../sass/module/_wellejus.news.scss */
+/* line 54, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 55, ../sass/module/_wellejus.news.scss */
+/* line 59, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label a {
   padding: 0;
   background-color: white;
   font-size: 110%;
   text-transform: uppercase;
 }
-/* line 63, ../sass/module/_wellejus.news.scss */
+/* line 67, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-heading {
   text-transform: uppercase;
   font-size: 170%;
 }
 
-/* line 71, ../sass/module/_wellejus.news.scss */
+/* line 75, ../sass/module/_wellejus.news.scss */
 #w .view-vejlebib-ding-news .news-label a {
   color: black;
 }

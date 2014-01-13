@@ -30,7 +30,11 @@
 .view-vejlebib-ding-news {
   .news-list {
     .news-list-item {
-      padding: 0;
+      padding: $large-spacing 0 0;
+      
+      &:first-child {
+        padding-top: 0;
+      }
       
       &:first-child .news-sub-heading {
         margin-top: 0;
