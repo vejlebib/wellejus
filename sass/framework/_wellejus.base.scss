@@ -38,3 +38,71 @@ h5 {
 h6 {
   font-size: $font-size-reset;
 }
+
+/* override ALL link styles */
+#w a {
+  &:link {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover {
+    color: $link-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $link-color;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: $link-color;
+    text-decoration: underline;
+  }
+  
+}
+
+/* putting back link colors that were overriden */
+#toolbar a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#w h1,
+#w h2,
+#w h3,
+#w h4,
+#w h5,
+#w h6,
+#w .footer-inner {
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+#w .button {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+}

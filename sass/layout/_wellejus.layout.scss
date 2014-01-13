@@ -34,7 +34,8 @@
   }
 }
 
-.default-layout {
+.default-layout,
+.frontpage-layout {
   margin-top: 0;
   
   .layout-wrapper {
@@ -91,6 +92,13 @@
 
 .footer-inner {
   padding: $large-spacing;
+  
+  a {
+    &:hover,
+    &:focus {
+      font-weight: bold;
+    }
+  }
 }
 
 

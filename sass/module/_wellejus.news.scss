@@ -29,10 +29,46 @@
 
 .view-vejlebib-ding-news {
   .news-list {
+    .news-list-item {
+      padding: 0;
+      
+      &:first-child .news-sub-heading {
+        margin-top: 0;
+      }
+    }
+    
     .news-sub-heading, 
     .news-heading,
     .news-list-content {
-      margin-left: 0;
+      margin: 0;
     }
+    
+    .news-link {
+      float: none;
+    }
+    
+    .news-label {
+      background-color: $white;
+      text-shadow: none;
+      padding: 0;
+      
+      a {
+        padding: 0;
+        background-color: $white;
+        font-size: $font-size-medium;
+        text-transform: uppercase;
+      }
+    }
+    
+    .news-heading {
+      text-transform: uppercase;
+      font-size: $font-size-giga;
+    }
+  }
+}
+
+#w .view-vejlebib-ding-news {
+  .news-label a {
+    color: $black;
   }
 }

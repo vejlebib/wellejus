@@ -79,6 +79,54 @@
 
 }
 
+@include large-x-large() {
+
+  #w .main-menu {
+    .menu-item {
+      &:link,
+      &:visited {
+        color: #959595;
+        text-decoration: none;
+      }
+
+      &:focus,
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+      
+      &.active {
+        color: #EEEEEE;
+      }
+    }
+  }
+
+}
+
+/* Sub menu
+   ========================================================================== */
+.sub-menu {
+
+  > li {
+
+    a {
+      color: $link-color;
+
+      &:hover {
+        text-decoration: none;
+        color: $link-color-hover;
+      }
+    }
+  }
+
+  li {
+    &:before {
+      color: $link-color;
+    }
+  }
+
+}
+
 
 /* Footer menus
    ========================================================================== */

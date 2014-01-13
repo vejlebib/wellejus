@@ -19,7 +19,6 @@
         border-top: none;
         
         a {
-          color: #FFFFFF;
           font-weight: bold;
           border-bottom: 1px solid #666666 !important;
           border-top: 1px solid #D5D5D5; 
@@ -56,3 +55,11 @@
   }
 
 }
+
+#w .ding-tabroll-wrapper {
+  a,
+  h3 a {
+    color: #FFFFFF;
+  }
+}
+
