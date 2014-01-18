@@ -28,10 +28,6 @@
   background-color: #ffffff;
   box-shadow: 5px 5px 8px #666666;
   margin-bottom: $medium-spacing;
-  
-  .pane-page-content {
-    padding: $large-spacing;
-  }
 }
 
 .default-layout,
@@ -44,6 +40,15 @@
     padding-left: 0;
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+/* Media queries */
+@include large-x-large() {
+  .content-inner {
+    .pane-page-content {
+      padding: $large-spacing $medium-spacing;
+    }
   }
 }
 
