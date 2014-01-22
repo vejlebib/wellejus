@@ -24,6 +24,18 @@
           border-top: 1px solid #D5D5D5; 
           height: 97%;
           text-transform: uppercase;
+          
+          &:before {
+            display: none;
+          }
+          
+          span {
+            margin: .5em;
+            display: block;
+            text-align: left;
+            overflow: hidden;
+            height: 70%;
+          }
         }
       }
       
