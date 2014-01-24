@@ -585,33 +585,45 @@ h6 {
 
 /* Search results list
    ========================================================================== */
-/* line 54, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list {
+/* line 56, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list,
+.pane-ting-collection .search-results .list,
+.pane-ting-object .search-results .list {
   /* Compact search result display */
 }
-/* line 56, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .list-item {
+/* line 58, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .list-item,
+.pane-ting-collection .search-results .list .list-item,
+.pane-ting-object .search-results .list .list-item {
   padding: 0;
 }
-/* line 60, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .view-mode-teaser {
+/* line 62, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .view-mode-teaser,
+.pane-ting-collection .search-results .list .view-mode-teaser,
+.pane-ting-object .search-results .list .view-mode-teaser {
   padding: 0;
 }
-/* line 63, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .view-mode-teaser .content {
+/* line 65, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .view-mode-teaser .content,
+.pane-ting-collection .search-results .list .view-mode-teaser .content,
+.pane-ting-object .search-results .list .view-mode-teaser .content {
   font-size: 85%;
 }
-/* line 71, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .search-result--heading-type {
+/* line 73, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .search-result--heading-type,
+.pane-ting-collection .search-results .list .search-result--heading-type,
+.pane-ting-object .search-results .list .search-result--heading-type {
   text-transform: uppercase;
   font-size: 75%;
 }
-/* line 106, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .ding-format-short {
+/* line 108, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .ding-format-short,
+.pane-ting-collection .search-results .list .ding-format-short,
+.pane-ting-object .search-results .list .ding-format-short {
   /* Display the author */
 }
 
-/* line 144, ../sass/module/_wellejus.search.scss */
+/* line 146, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
@@ -620,13 +632,13 @@ h6 {
 
 /* Collection display
    ========================================================================== */
-/* line 153, ../sass/module/_wellejus.search.scss */
+/* line 155, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 158, ../sass/module/_wellejus.search.scss */
+/* line 160, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
