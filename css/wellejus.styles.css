@@ -621,45 +621,47 @@ h6 {
   border-bottom: none;
   margin-bottom: 10px;
   padding-bottom: 0;
+  font-size: 85%;
 }
 
 /* Object display
    ========================================================================== */
-/* line 107, ../sass/module/_wellejus.search.scss */
+/* line 108, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 112, ../sass/module/_wellejus.search.scss */
+/* line 113, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 117, ../sass/module/_wellejus.search.scss */
+/* line 118, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .field.field-name-ting-abstract,
 .pane-ting-object .field.field-name-ting-series {
   border-bottom: none;
   margin-bottom: 10px;
   padding-bottom: 0;
+  font-size: 85%;
 }
 
-/* line 129, ../sass/module/_wellejus.search.scss */
+/* line 131, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 135, ../sass/module/_wellejus.search.scss */
+/* line 137, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subjects:before {
   content: "Emner: ";
 }
 
-/* line 141, ../sass/module/_wellejus.search.scss */
+/* line 143, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 146, ../sass/module/_wellejus.search.scss */
+/* line 148, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
