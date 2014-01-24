@@ -48,100 +48,66 @@
 /* Search results list
    ========================================================================== */
 
-.pane-search-result,
-.pane-ting-collection,
-.pane-ting-object {
+.pane-search-result {
   
   .search-results {
     .list {
       
       .list-item {
         padding: 0;
+        border-bottom: 1px solid #EEEEEE;
       }
 
       .view-mode-teaser {
-        padding: 0;
+        padding: 0 0 10px;
         
         .content {
           font-size: $font-size-small;
         }
       }
 
-      .heading h2 {
-      }
-
-      .search-result--heading-type {
-        text-transform: uppercase;
-        font-size: $font-size-tiny;
-      }
-
-      .search-result--meta {
-      }
-
-      .search-result--content {
-      }
-
-      .search-result--availability {
-      }
-
-      .search-result--availability,
-      .search-result--series {
-      }
-
-      .search-result--availability-link {
-      }
-
-      .search-result--availability-link:last-child {
-      }
-
-      .meta {
-      }
-
-      .content,
-      .field {
-      }
-
-      .subjects {
-      }
-
-      /* Compact search result display */
-      .ding-format-short {
-        .ting-cover,
-        .content,
-        .field {
-        }
-
-        /* Display the author */
-        .heading + div.content {
-        }
-
-        .heading,
-        .content,
-        .field {
-        }
-
-        .heading {
-
-          h2 {
-          }
-        }
-
-        .subjects {
-        }
-
-        div.availability {
-        }
-      }
-    }
-
-    @include small() {
-      .list {
-        .heading {
-        }
-      }
     }
   }
 }
+
+
+/* Collection display
+   ========================================================================== */
+
+.pane-ting-collection {
+
+  .ting-collection-wrapper {
+    padding: 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .ting-collection-inner-wrapper {
+    padding: 10px 10px 20px;
+  }
+
+  .field.field-name-ting-abstract {
+    font-size: $font-size-small;
+  }
+
+}
+
+
+/* Object display
+   ========================================================================== */
+
+.pane-ting-object {
+
+  .ting-object-wrapper {
+    padding: 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .ting-object-inner-wrapper {
+    padding: 10px 10px 20px;
+  }
+
+}
+
 
 #w .ting-object .subject {
   background-color: $white;

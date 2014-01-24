@@ -586,44 +586,48 @@ h6 {
 /* Search results list
    ========================================================================== */
 /* line 56, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list,
-.pane-ting-collection .search-results .list,
-.pane-ting-object .search-results .list {
-  /* Compact search result display */
-}
-/* line 58, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .list-item,
-.pane-ting-collection .search-results .list .list-item,
-.pane-ting-object .search-results .list .list-item {
+.pane-search-result .search-results .list .list-item {
   padding: 0;
+  border-bottom: 1px solid #EEEEEE;
 }
-/* line 62, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .view-mode-teaser,
-.pane-ting-collection .search-results .list .view-mode-teaser,
-.pane-ting-object .search-results .list .view-mode-teaser {
-  padding: 0;
+/* line 61, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .view-mode-teaser {
+  padding: 0 0 10px;
 }
-/* line 65, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .view-mode-teaser .content,
-.pane-ting-collection .search-results .list .view-mode-teaser .content,
-.pane-ting-object .search-results .list .view-mode-teaser .content {
+/* line 64, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .view-mode-teaser .content {
   font-size: 85%;
 }
-/* line 73, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .search-result--heading-type,
-.pane-ting-collection .search-results .list .search-result--heading-type,
-.pane-ting-object .search-results .list .search-result--heading-type {
-  text-transform: uppercase;
-  font-size: 75%;
+
+/* Collection display
+   ========================================================================== */
+/* line 79, ../sass/module/_wellejus.search.scss */
+.pane-ting-collection .ting-collection-wrapper {
+  padding: 0;
+  border-bottom: 1px solid #EEEEEE;
 }
-/* line 108, ../sass/module/_wellejus.search.scss */
-.pane-search-result .search-results .list .ding-format-short,
-.pane-ting-collection .search-results .list .ding-format-short,
-.pane-ting-object .search-results .list .ding-format-short {
-  /* Display the author */
+/* line 84, ../sass/module/_wellejus.search.scss */
+.pane-ting-collection .ting-collection-inner-wrapper {
+  padding: 10px 10px 20px;
+}
+/* line 88, ../sass/module/_wellejus.search.scss */
+.pane-ting-collection .field.field-name-ting-abstract {
+  font-size: 85%;
 }
 
-/* line 146, ../sass/module/_wellejus.search.scss */
+/* Object display
+   ========================================================================== */
+/* line 100, ../sass/module/_wellejus.search.scss */
+.pane-ting-object .ting-object-wrapper {
+  padding: 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+/* line 105, ../sass/module/_wellejus.search.scss */
+.pane-ting-object .ting-object-inner-wrapper {
+  padding: 10px 10px 20px;
+}
+
+/* line 112, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
@@ -632,13 +636,13 @@ h6 {
 
 /* Collection display
    ========================================================================== */
-/* line 155, ../sass/module/_wellejus.search.scss */
+/* line 121, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 160, ../sass/module/_wellejus.search.scss */
+/* line 126, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
