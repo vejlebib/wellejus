@@ -615,37 +615,47 @@ h6 {
 .pane-ting-collection .ting-collection-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 92, ../sass/module/_wellejus.search.scss */
-.pane-ting-collection .field.field-name-ting-abstract {
-  font-size: 85%;
+/* line 93, ../sass/module/_wellejus.search.scss */
+.pane-ting-collection .field.field-name-ting-abstract,
+.pane-ting-collection .field.field-name-ting-series {
+  border-bottom: none;
+  margin-bottom: 10px;
+  padding-bottom: 0;
 }
 
 /* Object display
    ========================================================================== */
-/* line 104, ../sass/module/_wellejus.search.scss */
+/* line 107, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 109, ../sass/module/_wellejus.search.scss */
+/* line 112, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
-
 /* line 117, ../sass/module/_wellejus.search.scss */
+.pane-ting-object .field.field-name-ting-abstract,
+.pane-ting-object .field.field-name-ting-series {
+  border-bottom: none;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+/* line 127, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
 
-/* line 123, ../sass/module/_wellejus.search.scss */
+/* line 133, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 128, ../sass/module/_wellejus.search.scss */
+/* line 138, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
