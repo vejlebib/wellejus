@@ -66,6 +66,10 @@
         }
       }
 
+      .search-result--heading-type {
+        text-transform: uppercase;
+        font-size: $font-size-tiny;
+      }
     }
   }
 }
@@ -109,14 +113,12 @@
 }
 
 
+
 #w .ting-object .subject {
   background-color: $white;
   text-shadow: none;
   padding: 0;
 }
-
-/* Collection display
-   ========================================================================== */
 
 .ting-object-left {
   margin-right: -14%;

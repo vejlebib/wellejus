@@ -598,51 +598,54 @@ h6 {
 .pane-search-result .search-results .list .view-mode-teaser .content {
   font-size: 85%;
 }
+/* line 69, ../sass/module/_wellejus.search.scss */
+.pane-search-result .search-results .list .search-result--heading-type {
+  text-transform: uppercase;
+  font-size: 75%;
+}
 
 /* Collection display
    ========================================================================== */
-/* line 79, ../sass/module/_wellejus.search.scss */
+/* line 83, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 84, ../sass/module/_wellejus.search.scss */
+/* line 88, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 88, ../sass/module/_wellejus.search.scss */
+/* line 92, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .field.field-name-ting-abstract {
   font-size: 85%;
 }
 
 /* Object display
    ========================================================================== */
-/* line 100, ../sass/module/_wellejus.search.scss */
+/* line 104, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 105, ../sass/module/_wellejus.search.scss */
+/* line 109, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
 
-/* line 112, ../sass/module/_wellejus.search.scss */
+/* line 117, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
 
-/* Collection display
-   ========================================================================== */
-/* line 121, ../sass/module/_wellejus.search.scss */
+/* line 123, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 126, ../sass/module/_wellejus.search.scss */
+/* line 128, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
