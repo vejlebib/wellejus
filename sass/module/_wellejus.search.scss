@@ -124,10 +124,18 @@
 
 
 
-#w .ting-object .subject {
-  background-color: $white;
-  text-shadow: none;
-  padding: 0;
+#w .ting-object {
+
+  .subject {
+    background-color: $white;
+    text-shadow: none;
+    padding: 0;
+  }
+
+  .subjects:before {
+    content: "Emner: ";
+  }
+
 }
 
 .ting-object-left {

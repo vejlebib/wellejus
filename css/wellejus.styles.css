@@ -642,20 +642,24 @@ h6 {
   padding-bottom: 0;
 }
 
-/* line 127, ../sass/module/_wellejus.search.scss */
+/* line 129, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
+/* line 135, ../sass/module/_wellejus.search.scss */
+#w .ting-object .subjects:before {
+  content: "Emner: ";
+}
 
-/* line 133, ../sass/module/_wellejus.search.scss */
+/* line 141, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 138, ../sass/module/_wellejus.search.scss */
+/* line 146, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
