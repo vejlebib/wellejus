@@ -44,3 +44,118 @@
     }
   }  
 }
+
+/* Search results list
+   ========================================================================== */
+
+.pane-search-result {
+  
+  .search-results {
+    .list {
+      
+      .list-item {
+        padding: 0;
+      }
+
+      .view-mode-teaser {
+        padding: 0;
+        
+        .content {
+          font-size: $font-size-small;
+        }
+      }
+
+      .heading h2 {
+      }
+
+      .search-result--heading-type {
+        text-transform: uppercase;
+        font-size: $font-size-tiny;
+      }
+
+      .search-result--meta {
+      }
+
+      .search-result--content {
+      }
+
+      .search-result--availability {
+      }
+
+      .search-result--availability,
+      .search-result--series {
+      }
+
+      .search-result--availability-link {
+      }
+
+      .search-result--availability-link:last-child {
+      }
+
+      .meta {
+      }
+
+      .content,
+      .field {
+      }
+
+      .subjects {
+      }
+
+      /* Compact search result display */
+      .ding-format-short {
+        .ting-cover,
+        .content,
+        .field {
+        }
+
+        /* Display the author */
+        .heading + div.content {
+        }
+
+        .heading,
+        .content,
+        .field {
+        }
+
+        .heading {
+
+          h2 {
+          }
+        }
+
+        .subjects {
+        }
+
+        div.availability {
+        }
+      }
+    }
+
+    @include small() {
+      .list {
+        .heading {
+        }
+      }
+    }
+  }
+}
+
+#w .ting-object .subject {
+  background-color: $white;
+  text-shadow: none;
+  padding: 0;
+}
+
+/* Collection display
+   ========================================================================== */
+
+.ting-object-left {
+  margin-right: -14%;
+  width: 14%;
+}
+
+.ting-object-left {
+  margin-right: -86%;
+  width: 86%;
+}
