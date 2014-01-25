@@ -644,24 +644,36 @@ h6 {
   font-size: 85%;
 }
 
-/* line 131, ../sass/module/_wellejus.search.scss */
+/* Availability
+   ========================================================================== */
+/* line 130, ../sass/module/_wellejus.search.scss */
+.search-result--availability-link:before {
+  content: " ";
+  font-family: FontAwesome;
+}
+
+/* Subjects
+   ========================================================================== */
+/* line 140, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 137, ../sass/module/_wellejus.search.scss */
+/* line 146, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subjects:before {
   content: "Emner: ";
 }
 
-/* line 143, ../sass/module/_wellejus.search.scss */
+/* Layout
+   ========================================================================== */
+/* line 155, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 148, ../sass/module/_wellejus.search.scss */
+/* line 160, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
