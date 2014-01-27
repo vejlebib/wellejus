@@ -105,6 +105,12 @@
 
 /* Sub menu
    ========================================================================== */
+
+.sub-menu-title {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight-normal;
+}
+
 .sub-menu {
 
   > li {

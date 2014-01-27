@@ -383,41 +383,47 @@ h6 {
 }
 /* Sub menu
    ========================================================================== */
-/* line 112, ../sass/framework/_wellejus.navigation.scss */
+/* line 109, ../sass/framework/_wellejus.navigation.scss */
+.sub-menu-title {
+  font-family: "Verdana", Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 118, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 115, ../sass/framework/_wellejus.navigation.scss */
+/* line 121, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: "Verdana";
   font-weight: bold;
 }
-/* line 120, ../sass/framework/_wellejus.navigation.scss */
+/* line 126, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 128, ../sass/framework/_wellejus.navigation.scss */
+/* line 134, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 140, ../sass/framework/_wellejus.navigation.scss */
+/* line 146, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 147, ../sass/framework/_wellejus.navigation.scss */
+/* line 153, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 150, ../sass/framework/_wellejus.navigation.scss */
+/* line 156, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 155, ../sass/framework/_wellejus.navigation.scss */
+/* line 161, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -425,7 +431,7 @@ h6 {
 
 /* Action Links
    ========================================================================== */
-/* line 167, ../sass/framework/_wellejus.navigation.scss */
+/* line 173, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: "Verdana", Arial, sans-serif;
 }
