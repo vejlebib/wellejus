@@ -249,13 +249,18 @@ h6 {
   color: black;
 }
 
-/* line 106, ../sass/framework/_wellejus.base.scss */
+/* line 107, ../sass/framework/_wellejus.base.scss */
 #w .button:link, #w .button:visited, #w .button:hover, #w .button:focus, #w .button:active,
 #w .button-see-online:link,
 #w .button-see-online:visited,
 #w .button-see-online:hover,
 #w .button-see-online:focus,
-#w .button-see-online:active {
+#w .button-see-online:active,
+#w .ticket-available:link,
+#w .ticket-available:visited,
+#w .ticket-available:hover,
+#w .ticket-available:focus,
+#w .ticket-available:active {
   color: white;
 }
 
@@ -822,6 +827,13 @@ h6 {
 .view-vejlebib-ding-event .event-list-time:before {
   content: "\f017  ";
   font-family: FontAwesome;
+}
+
+/* Event
+   ========================================================================== */
+/* line 110, ../sass/module/_wellejus.event.scss */
+.event .event-info div {
+  border-left: 5px solid #efefef;
 }
 
 /**

@@ -117,6 +117,10 @@
     <?php if (isset($content['field_ding_event_price'])): ?>
       <p><i class="icon-tag"></i> <?php print render($content['field_ding_event_price']); ?></p>
     <?php endif; ?>
+
+    <?php if (isset($content['field_place2book_tickets'])): ?>
+      <div><?php print render($content['field_place2book_tickets']); ?></div>
+    <?php endif; ?>
   </div>  
   <div class="event-content">
     <?php if (isset($content['field_ding_event_title_image'])) : ?>
@@ -134,6 +138,7 @@
       hide($content['field_ding_event_location']);
       hide($content['field_ding_event_target']);
       hide($content['field_ding_event_price']);
+      hide($content['field_place2book_tickets']);
 
       // Hide fields that will be displayed as panel panes instead.
       hide($content['comments']);
