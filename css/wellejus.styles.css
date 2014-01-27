@@ -283,6 +283,10 @@ h6 {
    ========================================================================== */
 /* Breakpoints
    ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
 /**
  * Navigation for wellejus theme
  *
@@ -559,6 +563,33 @@ h6 {
   color: #808080;
   line-height: 3em;
   margin: 0 20px;
+}
+
+/**
+ * Typography for wellejus
+ *
+ * @author wiredloose
+ */
+/* Header variants
+   ========================================================================== */
+/* line 11, ../sass/layout/_wellejus.typography.scss */
+.page-title {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-size: 170%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 11, ../sass/layout/_wellejus.typography.scss */
+  .page-title {
+    font-size: 120%;
+  }
+}
+
+/* line 21, ../sass/layout/_wellejus.typography.scss */
+.pane-title {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-size: 130%;
 }
 
 /**
