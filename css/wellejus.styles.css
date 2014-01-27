@@ -592,6 +592,14 @@ h6 {
   font-size: 130%;
 }
 
+/* Content and elements
+   ========================================================================== */
+/* line 31, ../sass/layout/_wellejus.typography.scss */
+.page-lead {
+  font-family: "Verdana";
+  font-weight: bold;
+}
+
 /**
  * Search for wellejus theme
  *

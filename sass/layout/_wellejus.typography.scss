@@ -23,3 +23,11 @@
 
   font-size: $font-size-larger;
 }
+
+
+/* Content and elements
+   ========================================================================== */
+
+.page-lead {
+  @include font-bold();
+}
