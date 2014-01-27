@@ -138,6 +138,19 @@ a:focus {
 }
 
 /**
+ * Mixins for wellejus theme
+ *
+ * @author wiredloose
+ */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/**
  * Base for wellejus theme
  *
  * @author wiredloose
@@ -181,26 +194,44 @@ h6 {
   font-size: 100%;
 }
 
+/* line 42, ../sass/framework/_wellejus.base.scss */
+strong {
+  font-family: "Verdana";
+  font-weight: bold;
+}
+
+/* line 46, ../sass/framework/_wellejus.base.scss */
+em {
+  font-family: "Verdana";
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 49, ../sass/framework/_wellejus.base.scss */
+em strong {
+  font-family: "Verdana";
+  font-weight: bold;
+}
+
 /* override ALL link styles */
-/* line 44, ../sass/framework/_wellejus.base.scss */
+/* line 57, ../sass/framework/_wellejus.base.scss */
 #w a:link {
   color: #607f0c;
   text-decoration: none;
 }
-/* line 49, ../sass/framework/_wellejus.base.scss */
+/* line 62, ../sass/framework/_wellejus.base.scss */
 #w a:visited {
   color: #607f0c;
 }
-/* line 53, ../sass/framework/_wellejus.base.scss */
+/* line 66, ../sass/framework/_wellejus.base.scss */
 #w a:hover {
   color: #607f0c;
   text-decoration: underline;
 }
-/* line 58, ../sass/framework/_wellejus.base.scss */
+/* line 71, ../sass/framework/_wellejus.base.scss */
 #w a:focus {
   color: #607f0c;
 }
-/* line 62, ../sass/framework/_wellejus.base.scss */
+/* line 75, ../sass/framework/_wellejus.base.scss */
 #w a:active {
   background-color: transparent;
   color: #607f0c;
@@ -208,13 +239,13 @@ h6 {
 }
 
 /* putting back link colors that were overriden */
-/* line 76, ../sass/framework/_wellejus.base.scss */
+/* line 89, ../sass/framework/_wellejus.base.scss */
 #toolbar a:link, #toolbar a:visited, #toolbar a:hover, #toolbar a:focus, #toolbar a:active {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 94, ../sass/framework/_wellejus.base.scss */
+/* line 107, ../sass/framework/_wellejus.base.scss */
 #w h1 a:link, #w h1 a:visited, #w h1 a:hover, #w h1 a:focus, #w h1 a:active,
 #w h2 a:link,
 #w h2 a:visited,
@@ -249,7 +280,7 @@ h6 {
   color: black;
 }
 
-/* line 107, ../sass/framework/_wellejus.base.scss */
+/* line 120, ../sass/framework/_wellejus.base.scss */
 #w .button:link, #w .button:visited, #w .button:hover, #w .button:focus, #w .button:active,
 #w .button-see-online:link,
 #w .button-see-online:visited,
@@ -266,7 +297,7 @@ h6 {
 
 /* body content default styles
    ========================================================================== */
-/* line 117, ../sass/framework/_wellejus.base.scss */
+/* line 130, ../sass/framework/_wellejus.base.scss */
 .field-name-field-ding-event-body img,
 .field-name-field-ding-news-body img,
 .field-name-field-ding-page-body img {
@@ -274,19 +305,6 @@ h6 {
   margin: 0 20px 10px 0;
 }
 
-/**
- * Mixins for wellejus theme
- *
- * @author wiredloose
- */
-/* Media query
-   ========================================================================== */
-/* Breakpoints
-   ========================================================================== */
-/* Typography mixins
- *
- * These are mixins to allow for use in media queries
-   ========================================================================== */
 /**
  * Navigation for wellejus theme
  *

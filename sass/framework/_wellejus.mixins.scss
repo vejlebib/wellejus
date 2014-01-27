@@ -105,3 +105,9 @@
   font-family: $font-bold;
   font-weight: $base-font-weight-bold;
 }
+
+@mixin font-italic() {
+  font-family: $font-regular-italic;
+  font-weight: $base-font-weight-normal;
+  font-style: italic;
+}
