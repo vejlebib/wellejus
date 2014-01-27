@@ -475,6 +475,16 @@ em strong {
 }
 
 /**
+ * Modal popup styling (from jquery ui library) for wellejus
+ *
+ * @author wiredloose
+ */
+/* line 8, ../sass/framework/_wellejus.modal.scss */
+.ui-dialog {
+  background: #50BA00;
+}
+
+/**
  * Layout
  *
  * Base layout for wellejus theme
