@@ -112,6 +112,11 @@
     a {
       color: $link-color;
 
+      &.active {
+        font-family: $font-bold;
+        font-weight: $base-font-weight-bold;
+      }
+
       &:hover {
         text-decoration: none;
         color: $link-color-hover;
@@ -153,3 +158,15 @@
     }
   }
 }
+
+/* Action Links
+   ========================================================================== */
+
+.action-links {
+  li {
+    a {
+      font-family: $base-font-family;
+    }
+  }
+}
+
