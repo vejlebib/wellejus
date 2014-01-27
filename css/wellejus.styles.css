@@ -831,9 +831,23 @@ h6 {
 
 /* Event
    ========================================================================== */
-/* line 110, ../sass/module/_wellejus.event.scss */
+/* line 106, ../sass/module/_wellejus.event.scss */
+.event {
+  /* Media queries */
+}
+/* line 109, ../sass/module/_wellejus.event.scss */
 .event .event-info div {
   border-left: 5px solid #efefef;
+}
+@media only screen and (max-width: 768px) {
+  /* line 117, ../sass/module/_wellejus.event.scss */
+  .event .event-info div {
+    background-color: #efefef;
+    border-left: 0;
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
 }
 
 /**

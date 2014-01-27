@@ -106,11 +106,22 @@
 .event {
 
   .event-info {
-
     div {
       border-left: 5px solid $gray-light;
     }
+  }
 
+  /* Media queries */
+  @include small-medium {
+    .event-info {
+      div {
+        background-color: $gray-light;
+        border-left: 0;
+        border-bottom: 1px solid $gray;
+        padding-top: 12px;
+        padding-bottom: $medium-spacing;
+      }
+    }
   }
 
 }
