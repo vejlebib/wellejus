@@ -264,6 +264,16 @@ h6 {
   color: white;
 }
 
+/* body content default styles
+   ========================================================================== */
+/* line 117, ../sass/framework/_wellejus.base.scss */
+.field-name-field-ding-event-body img,
+.field-name-field-ding-news-body img,
+.field-name-field-ding-page-body img {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
 /**
  * Mixins for wellejus theme
  *

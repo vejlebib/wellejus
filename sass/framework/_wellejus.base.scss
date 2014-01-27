@@ -108,3 +108,14 @@ h6 {
     color: $white;
   }
 }
+
+/* body content default styles
+   ========================================================================== */
+.field-name-field-ding-event-body,
+.field-name-field-ding-news-body,
+.field-name-field-ding-page-body {
+  img {
+    float: left;
+    margin: 0 $large-spacing $medium-spacing 0;
+  }
+}
