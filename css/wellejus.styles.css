@@ -459,6 +459,21 @@ em strong {
 }
 
 /**
+ * Labels for wellejus
+ *
+ * @author wiredloose
+ */
+/* line 8, ../sass/framework/_wellejus.labels.scss */
+.label {
+  background-color: transparent;
+  text-shadow: none;
+}
+/* line 12, ../sass/framework/_wellejus.labels.scss */
+.label:hover {
+  background-color: transparent;
+}
+
+/**
  * Layout
  *
  * Base layout for wellejus theme
