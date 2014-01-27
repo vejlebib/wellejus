@@ -467,8 +467,9 @@ em strong {
 .label {
   background-color: transparent;
   text-shadow: none;
+  padding: 0 10px 0 0;
 }
-/* line 12, ../sass/framework/_wellejus.labels.scss */
+/* line 13, ../sass/framework/_wellejus.labels.scss */
 .label:hover {
   background-color: transparent;
 }
