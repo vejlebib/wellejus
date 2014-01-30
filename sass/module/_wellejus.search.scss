@@ -70,6 +70,13 @@
         text-transform: uppercase;
         font-size: $font-size-tiny;
       }
+
+      .search-result--availability {
+        border-top: 1px solid #EFEFEF;
+        margin-top: 0;
+        padding-top: 0;
+      }
+
     }
   }
 }
