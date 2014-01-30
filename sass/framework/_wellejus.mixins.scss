@@ -111,3 +111,25 @@
   font-weight: $base-font-weight-normal;
   font-style: italic;
 }
+
+
+/* Availability
+   ========================================================================== */
+
+@mixin availability($bg-color) {
+  background-color: $bg-color;
+  color: #fff;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+  a {
+    color: #fff;
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

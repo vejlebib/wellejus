@@ -133,6 +133,46 @@
 }
 
 
+.pane-ting-collection,
+.pane-ting-object {
+
+  li {
+    &.pending {
+      @include availability($availability-pending);
+    }
+
+    &.availability.processed {
+      @include availability($availability-processed);
+    }
+
+    &.availability.available {
+      @include availability($availability-available);
+    }
+
+    &.availability.reservable {
+      @include availability($availability-reservable);
+    }
+
+    &.availability.available.reservable {
+      @include availability($availability-available-reservable);
+    }
+
+    &.availability.available.not-reservable {
+      @include availability($availability-available-not-reservable);
+    }
+
+    &.availability.unavailable.reservable {
+      @include availability($availability-reservable);
+    }
+
+    &.availability.unavailable.not-reservable {
+      @include availability($availability-available-not-reservable);
+    }
+
+  }
+}
+
+
 /* Subjects
    ========================================================================== */
 #w .ting-object {
