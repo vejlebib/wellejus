@@ -728,20 +728,22 @@ em strong {
   border-top: 1px solid #EFEFEF;
   margin-top: 0;
   padding-top: 0;
+  margin-left: -86%;
+  width: 86%;
 }
 
 /* Collection display
    ========================================================================== */
-/* line 91, ../sass/module/_wellejus.search.scss */
+/* line 93, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 96, ../sass/module/_wellejus.search.scss */
+/* line 98, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 101, ../sass/module/_wellejus.search.scss */
+/* line 103, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .field.field-name-ting-abstract,
 .pane-ting-collection .field.field-name-ting-series {
   border-bottom: none;
@@ -750,23 +752,23 @@ em strong {
   font-size: 85%;
 }
 
-/* line 110, ../sass/module/_wellejus.search.scss */
+/* line 112, ../sass/module/_wellejus.search.scss */
 .ting-collection-inner-wrapper > h2 {
   display: none;
 }
 
 /* Object display
    ========================================================================== */
-/* line 120, ../sass/module/_wellejus.search.scss */
+/* line 122, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 125, ../sass/module/_wellejus.search.scss */
+/* line 127, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 130, ../sass/module/_wellejus.search.scss */
+/* line 132, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .field.field-name-ting-abstract,
 .pane-ting-object .field.field-name-ting-series {
   border-bottom: none;
@@ -777,13 +779,13 @@ em strong {
 
 /* Availability
    ========================================================================== */
-/* line 142, ../sass/module/_wellejus.search.scss */
+/* line 144, ../sass/module/_wellejus.search.scss */
 .search-result--availability-link:before {
   content: " ";
   font-family: FontAwesome;
 }
 
-/* line 152, ../sass/module/_wellejus.search.scss */
+/* line 154, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.pending,
 .pane-ting-object li.pending {
   background-color: #959595;
@@ -804,7 +806,7 @@ em strong {
 .pane-ting-object li.pending a:hover {
   text-decoration: none;
 }
-/* line 156, ../sass/module/_wellejus.search.scss */
+/* line 158, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.processed,
 .pane-ting-object li.availability.processed {
   background-color: #959595;
@@ -825,7 +827,7 @@ em strong {
 .pane-ting-object li.availability.processed a:hover {
   text-decoration: none;
 }
-/* line 160, ../sass/module/_wellejus.search.scss */
+/* line 162, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available,
 .pane-ting-object li.availability.available {
   background-color: #528c10;
@@ -846,7 +848,7 @@ em strong {
 .pane-ting-object li.availability.available a:hover {
   text-decoration: none;
 }
-/* line 164, ../sass/module/_wellejus.search.scss */
+/* line 166, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.reservable,
 .pane-ting-object li.availability.reservable {
   background-color: #f0cb28;
@@ -867,7 +869,7 @@ em strong {
 .pane-ting-object li.availability.reservable a:hover {
   text-decoration: none;
 }
-/* line 168, ../sass/module/_wellejus.search.scss */
+/* line 170, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.reservable,
 .pane-ting-object li.availability.available.reservable {
   background-color: #528c10;
@@ -888,7 +890,7 @@ em strong {
 .pane-ting-object li.availability.available.reservable a:hover {
   text-decoration: none;
 }
-/* line 172, ../sass/module/_wellejus.search.scss */
+/* line 174, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.not-reservable,
 .pane-ting-object li.availability.available.not-reservable {
   background-color: #a32e10;
@@ -909,7 +911,7 @@ em strong {
 .pane-ting-object li.availability.available.not-reservable a:hover {
   text-decoration: none;
 }
-/* line 176, ../sass/module/_wellejus.search.scss */
+/* line 178, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.reservable,
 .pane-ting-object li.availability.unavailable.reservable {
   background-color: #f0cb28;
@@ -930,7 +932,7 @@ em strong {
 .pane-ting-object li.availability.unavailable.reservable a:hover {
   text-decoration: none;
 }
-/* line 180, ../sass/module/_wellejus.search.scss */
+/* line 182, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable,
 .pane-ting-object li.availability.unavailable.not-reservable {
   background-color: #a32e10;
@@ -954,26 +956,26 @@ em strong {
 
 /* Subjects
    ========================================================================== */
-/* line 192, ../sass/module/_wellejus.search.scss */
+/* line 194, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 198, ../sass/module/_wellejus.search.scss */
+/* line 200, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subjects:before {
   content: "Emner: ";
 }
 
 /* Layout
    ========================================================================== */
-/* line 207, ../sass/module/_wellejus.search.scss */
+/* line 209, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 212, ../sass/module/_wellejus.search.scss */
+/* line 214, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
