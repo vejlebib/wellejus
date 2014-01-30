@@ -9,6 +9,8 @@
    ========================================================================== */
 
 .topbar-menu {
+  display: block;
+
   .menu-item {
     @include text-shadow(1px 1px 0 rgba(0, 0, 0, .2));
     
