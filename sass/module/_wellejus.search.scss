@@ -136,6 +136,13 @@
     font-size: $font-size-small;
   }
 
+  .collapsible .field-group-format-title,
+  .ding-periodical-fold {
+    &:before {
+      color: $link-color;
+    }
+  }
+
 }
 
 
