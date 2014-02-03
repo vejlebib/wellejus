@@ -467,13 +467,13 @@ em strong {
  * @author wiredloose
  */
 /* line 8, ../sass/framework/_wellejus.labels.scss */
-.label {
+#w .label {
   background-color: transparent;
   text-shadow: none;
   padding: 0 10px 0 0;
 }
 /* line 13, ../sass/framework/_wellejus.labels.scss */
-.label:hover {
+#w .label:hover {
   background-color: transparent;
 }
 
