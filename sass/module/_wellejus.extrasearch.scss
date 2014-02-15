@@ -1,0 +1,30 @@
+/**
+ * Ting Extrasearch for wellejus
+ *
+ * @author wiredloose
+ */
+
+/* Extrasearch in content
+   ========================================================================== */
+
+.page-search .pane-extrasearch-per-page {
+  @include zen-grid-item(6, 1, right);
+}
+
+.page-search .pane-ting-extrasearch-sort-form {
+  @include zen-grid-item(6, 1);
+  clear: none;
+  overflow: visible;
+}
+
+.page-search .pane-ting-extrasearch-sort-form {
+  @include zen-nested-container();
+
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+
+    max-width: 100%;
+  }
+}
