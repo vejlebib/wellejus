@@ -81,6 +81,12 @@ em {
 }
 
 /* putting back link colors that were overriden */
+#w a.js-topbar-link.active,
+#w a.wagnerguide.map,
+#w .hours .opening-hours-list a {
+  color: $white;
+}
+
 #toolbar a {
   &:link,
   &:visited,
@@ -110,6 +116,7 @@ em {
   }
 }
 
+#w .action-button,
 #w .button,
 #w .button-see-online,
 #w .ticket-available {

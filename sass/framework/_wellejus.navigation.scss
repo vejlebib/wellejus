@@ -38,6 +38,11 @@
   .navigation-wrapper {
     @include rgba-background($header-background-color, $default-transparency);
   }
+  
+  #w .main-menu-wrapper .menu-item, 
+  #w .secondary-menu-wrapper .menu-item {
+      color: #FFFFFF;
+  }
 
 }
 

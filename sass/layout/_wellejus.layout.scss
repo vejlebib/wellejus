@@ -66,6 +66,22 @@
   margin: $large-spacing*1.5 $large-spacing;
 }
 
+/* Media queries */
+@include small-medium() {
+
+  .logo {
+    height: inherit;
+    margin: $medium-spacing;
+    width: 50%;
+    
+    img {
+      height: inherit;
+      margin-top: 0;
+    }
+  }
+}
+
+
 /* Header wrapper
    ========================================================================== */
 .header-wrapper {
