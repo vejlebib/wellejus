@@ -320,6 +320,20 @@ em strong {
 }
 
 /**
+ * Buttons for wellejus
+ *
+ * @author wiredloose
+ */
+/* line 10, ../sass/framework/_wellejus.buttons.scss */
+.field-type-ding-entity-buttons form input {
+  height: 40px;
+}
+/* line 14, ../sass/framework/_wellejus.buttons.scss */
+.field-type-ding-entity-buttons .reserve-button {
+  margin-left: 10px;
+}
+
+/**
  * Navigation for wellejus theme
  *
  * @author wiredloose
