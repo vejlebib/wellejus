@@ -88,3 +88,23 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
   $output = l($title_prefix . '<span>' . $element['#title'] . '</span>', $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+/**
+ * Implements hook_css_alter()
+ * 
+ * DDBasic theme integrates the color module. When subtheming it, 
+ * we need to know whether the color module has been used to 
+ * create a custom-color version of the ddbasic stylesheet - and ensure it is used.
+ */
+function wellejus_css_alter(&$css) {
+  // Use DDBasic color-altered css if it exists
+  $color_ddbasic_css = variable_get('color_ddbasic_stylesheets');
+  if (!empty($color_ddbasic_css[0])) {
+    $ddbasic_color_css_file = str_replace($GLOBALS['base_url'] . '/', '', file_create_url($color_ddbasic_css[0]));
+
+    if (isset($css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css'])) {
+      $css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css']['data'] = $ddbasic_color_css_file;
+      $css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css']['type'] = 'file';
+    }
+  }
+}
