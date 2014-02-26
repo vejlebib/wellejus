@@ -55,36 +55,17 @@ em {
 /* override ALL link styles */
 #w a {
   &:link {
-    color: $link-color;
     text-decoration: none;
   }
 
-  &:visited {
-    color: $link-color;
-  }
-
   &:hover {
-    color: $link-color;
     text-decoration: underline;
-  }
-
-  &:focus {
-    color: $link-color;
   }
 
   &:active {
-    background-color: transparent;
-    color: $link-color;
     text-decoration: underline;
   }
   
-}
-
-/* putting back link colors that were overriden */
-#w a.js-topbar-link.active,
-#w a.wagnerguide.map,
-#w .hours .opening-hours-list a {
-  color: $white;
 }
 
 #toolbar a {
@@ -93,41 +74,10 @@ em {
   &:hover,
   &:focus,
   &:active {
-    color: #fff;
     text-decoration: none;
   }
 }
 
-#w h1,
-#w h2,
-#w h3,
-#w h4,
-#w h5,
-#w h6,
-#w .footer-inner {
-  a {
-    &:link,
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-      color: $black;
-    }
-  }
-}
-
-#w .action-button,
-#w .button,
-#w .button-see-online,
-#w .ticket-available {
-  &:link,
-  &:visited,
-  &:hover,
-  &:focus,
-  &:active {
-    color: $white;
-  }
-}
 
 /* body content default styles
    ========================================================================== */

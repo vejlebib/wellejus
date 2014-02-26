@@ -9,20 +9,11 @@
 .news-list {
 
   .news-list-item {
-    @extend %article-background;
     border-top: 1px solid #C0C0C0;
   }
   
   .news-list-item:first-child {
     border-top: none;
-  }
-
-  .news-list-item:nth-child(odd) {
-    @extend %article-background--odd;
-  }
-
-  .news-list-item:nth-child(even) {
-    @extend %article-background--even;
   }
 
 }

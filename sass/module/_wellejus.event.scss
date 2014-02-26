@@ -8,19 +8,6 @@
 /* Event list
    ========================================================================== */
 
-
-.event-list {
-
-  .event-list-item:nth-child(odd) {
-    @extend %article-background--odd;
-  }
-
-  .event-list-item:nth-child(even) {
-    @extend %article-background--even;
-  }
-
-}
-
 .view-vejlebib-ding-event {
   .event-list-leaf {
     padding-left: 75px;
