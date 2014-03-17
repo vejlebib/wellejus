@@ -358,8 +358,9 @@ em strong {
     margin: 0;
     height: 40px;
     line-height: 40px;
+    width: 95%;
   }
-  /* line 170, ../sass/framework/_wellejus.navigation.scss */
+  /* line 171, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a,
   .nav-helpers a:before {
     color: white;
@@ -367,47 +368,47 @@ em strong {
 }
 /* Sub menu
    ========================================================================== */
-/* line 181, ../sass/framework/_wellejus.navigation.scss */
+/* line 182, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
   font-family: "Verdana", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 190, ../sass/framework/_wellejus.navigation.scss */
+/* line 191, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 193, ../sass/framework/_wellejus.navigation.scss */
+/* line 194, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: "Verdana";
   font-weight: bold;
 }
-/* line 198, ../sass/framework/_wellejus.navigation.scss */
+/* line 199, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 206, ../sass/framework/_wellejus.navigation.scss */
+/* line 207, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 218, ../sass/framework/_wellejus.navigation.scss */
+/* line 219, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 225, ../sass/framework/_wellejus.navigation.scss */
+/* line 226, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 228, ../sass/framework/_wellejus.navigation.scss */
+/* line 229, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 233, ../sass/framework/_wellejus.navigation.scss */
+/* line 234, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -415,7 +416,7 @@ em strong {
 
 /* Action Links
    ========================================================================== */
-/* line 245, ../sass/framework/_wellejus.navigation.scss */
+/* line 246, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: "Verdana", Arial, sans-serif;
 }
