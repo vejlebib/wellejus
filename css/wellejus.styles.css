@@ -294,49 +294,109 @@ em strong {
     color: #EEEEEE;
   }
 }
+/* Nav helper links
+   ========================================================================== */
+/* line 115, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers {
+  float: right;
+  padding: 0;
+  width: 20%;
+}
+/* line 120, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers ul {
+  padding: 0;
+  margin: 20px 0;
+}
+/* line 125, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers li {
+  display: inline-block;
+  margin: 0 1em;
+}
+/* line 130, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers .print:before {
+  content: " ";
+  font-family: FontAwesome;
+  color: #000;
+}
+/* line 136, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers .read:before {
+  content: " ";
+  font-family: FontAwesome;
+}
+/* line 141, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers .english:before {
+  content: " ";
+  font-family: FontAwesome;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* line 151, ../sass/framework/_wellejus.navigation.scss */
+  .nav-helpers {
+    clear: left;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 156, ../sass/framework/_wellejus.navigation.scss */
+  .nav-helpers ul {
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+  /* line 161, ../sass/framework/_wellejus.navigation.scss */
+  .nav-helpers li {
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+  /* line 168, ../sass/framework/_wellejus.navigation.scss */
+  .nav-helpers a,
+  .nav-helpers a:before {
+    color: white;
+  }
+}
 /* Sub menu
    ========================================================================== */
-/* line 116, ../sass/framework/_wellejus.navigation.scss */
+/* line 179, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
   font-family: "Verdana", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 125, ../sass/framework/_wellejus.navigation.scss */
+/* line 188, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 128, ../sass/framework/_wellejus.navigation.scss */
+/* line 191, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: "Verdana";
   font-weight: bold;
 }
-/* line 133, ../sass/framework/_wellejus.navigation.scss */
+/* line 196, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 141, ../sass/framework/_wellejus.navigation.scss */
+/* line 204, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 153, ../sass/framework/_wellejus.navigation.scss */
+/* line 216, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 160, ../sass/framework/_wellejus.navigation.scss */
+/* line 223, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 163, ../sass/framework/_wellejus.navigation.scss */
+/* line 226, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 168, ../sass/framework/_wellejus.navigation.scss */
+/* line 231, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -344,7 +404,7 @@ em strong {
 
 /* Action Links
    ========================================================================== */
-/* line 180, ../sass/framework/_wellejus.navigation.scss */
+/* line 243, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: "Verdana", Arial, sans-serif;
 }
