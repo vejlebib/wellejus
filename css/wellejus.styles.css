@@ -309,7 +309,7 @@ em strong {
 .nav-helpers {
   float: right;
   padding: 0;
-  width: 20%;
+  width: 30%;
 }
 /* line 120, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers ul {
@@ -320,44 +320,46 @@ em strong {
 .nav-helpers li {
   display: inline-block;
   margin: 0 1em;
+  float: right;
 }
-/* line 130, ../sass/framework/_wellejus.navigation.scss */
-.nav-helpers .print:before {
-  content: " ";
+/* line 131, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers a:before {
   font-family: FontAwesome;
   color: #000;
 }
 /* line 136, ../sass/framework/_wellejus.navigation.scss */
-.nav-helpers .read:before {
+.nav-helpers .print:before {
   content: " ";
-  font-family: FontAwesome;
 }
-/* line 141, ../sass/framework/_wellejus.navigation.scss */
+/* line 140, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers .read:before {
+  content: " ";
+}
+/* line 144, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .english:before {
-  content: " ";
-  font-family: FontAwesome;
+  content: " ";
 }
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  /* line 151, ../sass/framework/_wellejus.navigation.scss */
+  /* line 153, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers {
     clear: left;
     padding: 0;
     width: 100%;
   }
-  /* line 156, ../sass/framework/_wellejus.navigation.scss */
+  /* line 158, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers ul {
     padding: 0 10px;
     margin: 20px 0;
   }
-  /* line 161, ../sass/framework/_wellejus.navigation.scss */
+  /* line 163, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers li {
     margin: 0;
     height: 40px;
     line-height: 40px;
   }
-  /* line 168, ../sass/framework/_wellejus.navigation.scss */
+  /* line 170, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a,
   .nav-helpers a:before {
     color: white;
@@ -365,47 +367,47 @@ em strong {
 }
 /* Sub menu
    ========================================================================== */
-/* line 179, ../sass/framework/_wellejus.navigation.scss */
+/* line 181, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
   font-family: "Verdana", Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 188, ../sass/framework/_wellejus.navigation.scss */
+/* line 190, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 191, ../sass/framework/_wellejus.navigation.scss */
+/* line 193, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: "Verdana";
   font-weight: bold;
 }
-/* line 196, ../sass/framework/_wellejus.navigation.scss */
+/* line 198, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 204, ../sass/framework/_wellejus.navigation.scss */
+/* line 206, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 216, ../sass/framework/_wellejus.navigation.scss */
+/* line 218, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 223, ../sass/framework/_wellejus.navigation.scss */
+/* line 225, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 226, ../sass/framework/_wellejus.navigation.scss */
+/* line 228, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 231, ../sass/framework/_wellejus.navigation.scss */
+/* line 233, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -413,7 +415,7 @@ em strong {
 
 /* Action Links
    ========================================================================== */
-/* line 243, ../sass/framework/_wellejus.navigation.scss */
+/* line 245, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: "Verdana", Arial, sans-serif;
 }
