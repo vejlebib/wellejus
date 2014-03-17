@@ -89,3 +89,11 @@ em {
     margin: 0 $large-spacing $medium-spacing 0;
   }
 }
+
+/* RSS feed links
+   ========================================================================== */
+.feed-icon:before {
+  color: #FFA500;
+  content: " ";
+  font-family: FontAwesome;
+}

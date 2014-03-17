@@ -175,6 +175,15 @@ em strong {
   margin: 0 20px 10px 0;
 }
 
+/* RSS feed links
+   ========================================================================== */
+/* line 95, ../sass/framework/_wellejus.base.scss */
+.feed-icon:before {
+  color: #FFA500;
+  content: " ";
+  font-family: FontAwesome;
+}
+
 /**
  * Buttons for wellejus
  *
