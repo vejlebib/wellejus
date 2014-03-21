@@ -345,19 +345,19 @@ em strong {
   .nav-helpers {
     clear: left;
     padding: 0;
+    margin: 10px;
     width: 100%;
   }
-  /* line 157, ../sass/framework/_wellejus.navigation.scss */
-  .nav-helpers ul {
-    padding: 0 10px;
-    margin: 20px 0;
-  }
-  /* line 162, ../sass/framework/_wellejus.navigation.scss */
+  /* line 158, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers li {
     margin: 0;
     height: 40px;
     line-height: 40px;
     width: 95%;
+  }
+  /* line 165, ../sass/framework/_wellejus.navigation.scss */
+  .nav-helpers a {
+    margin: 0;
   }
   /* line 170, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a,

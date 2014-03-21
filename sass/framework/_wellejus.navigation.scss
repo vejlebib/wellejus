@@ -152,20 +152,20 @@
   .nav-helpers {
     clear: left;
     padding: 0;
+    margin: $medium-spacing;
     width: 100%;
 
-    ul {
-      padding: 0 $medium-spacing;
-      margin: $large-spacing 0;
-    }
-    
     li {
       margin: 0;
       height: 40px;
       line-height: 40px;
       width: 95%;
     }
-    
+
+    a {
+      margin: 0;
+    }
+
     a,
     a:before {
       color: white;
