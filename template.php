@@ -108,3 +108,10 @@ function wellejus_css_alter(&$css) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function wellejus_form_search_block_form_alter(&$form, &$form_state) {
+  $form['search_block_form']['#title'] = t('Search');
+}
