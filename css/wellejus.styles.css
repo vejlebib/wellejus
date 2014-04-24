@@ -217,9 +217,9 @@ em strong {
 }
 /* line 19, ../sass/framework/_wellejus.navigation.scss */
 .topbar-menu .menu-item.active {
-  background-color: #50ba00;
-  background-color: #50ba00;
-  background-color: rgba(80, 186, 0, 0.7);
+  background-color: #95c11f;
+  background-color: #95c11f;
+  background-color: rgba(149, 193, 31, 0.75);
 }
 @media only screen and (min-width: 769px) {
   /* line 11, ../sass/framework/_wellejus.navigation.scss */
@@ -234,8 +234,8 @@ em strong {
 @media only screen and (max-width: 768px) {
   /* line 38, ../sass/framework/_wellejus.navigation.scss */
   .navigation-wrapper {
-    background-color: #50ba00;
-    background-color: rgba(80, 186, 0, 0.7);
+    background-color: #95c11f;
+    background-color: rgba(149, 193, 31, 0.75);
   }
 
   /* line 43, ../sass/framework/_wellejus.navigation.scss */
@@ -531,8 +531,8 @@ em strong {
    ========================================================================== */
 /* line 87, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper {
-  background-color: #50ba00;
-  background-color: rgba(80, 186, 0, 0.7);
+  background-color: #95c11f;
+  background-color: rgba(149, 193, 31, 0.75);
   /* Media queries */
 }
 @media only screen and (min-width: 769px) {
