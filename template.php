@@ -115,3 +115,10 @@ function wellejus_css_alter(&$css) {
 function wellejus_form_search_block_form_alter(&$form, &$form_state) {
   $form['search_block_form']['#title'] = t('Search');
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function wellejus_form_user_login_block_alter(&$form, &$form_state) {
+  $form['name']['#title'] = t('Login');
+}

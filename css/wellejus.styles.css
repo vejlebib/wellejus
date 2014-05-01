@@ -49,22 +49,27 @@
 /* line 10, ../sass/configuration/_wellejus.configuration.scss */
 a {
   font-weight: normal;
+  /* Ensure that links maintain their color when visited */
 }
 /* line 14, ../sass/configuration/_wellejus.configuration.scss */
 a:link, a:visited {
   text-decoration: none;
 }
-/* line 18, ../sass/configuration/_wellejus.configuration.scss */
+/* line 19, ../sass/configuration/_wellejus.configuration.scss */
+a:visited {
+  color: #607f0c;
+}
+/* line 23, ../sass/configuration/_wellejus.configuration.scss */
 a:hover {
   text-decoration: underline;
 }
-/* line 21, ../sass/configuration/_wellejus.configuration.scss */
+/* line 26, ../sass/configuration/_wellejus.configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
 
 /* Bottom background color */
-/* line 31, ../sass/configuration/_wellejus.configuration.scss */
+/* line 36, ../sass/configuration/_wellejus.configuration.scss */
 .bottom {
   background-color: white;
 }
@@ -160,14 +165,14 @@ em strong {
   text-decoration: underline;
 }
 
-/* line 76, ../sass/framework/_wellejus.base.scss */
+/* line 75, ../sass/framework/_wellejus.base.scss */
 #toolbar a:link, #toolbar a:visited, #toolbar a:hover, #toolbar a:focus, #toolbar a:active {
   text-decoration: none;
 }
 
 /* body content default styles
    ========================================================================== */
-/* line 87, ../sass/framework/_wellejus.base.scss */
+/* line 86, ../sass/framework/_wellejus.base.scss */
 .field-name-field-ding-event-body img,
 .field-name-field-ding-news-body img,
 .field-name-field-ding-page-body img {
@@ -177,7 +182,7 @@ em strong {
 
 /* RSS feed links
    ========================================================================== */
-/* line 95, ../sass/framework/_wellejus.base.scss */
+/* line 94, ../sass/framework/_wellejus.base.scss */
 .feed-icon:before {
   color: #FFA500;
   content: " ";
@@ -768,13 +773,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.pending a,
 .pane-ting-object li.pending a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.pending a:hover,
 .pane-ting-object li.pending a:hover {
   text-decoration: none;
@@ -789,13 +794,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.processed a,
 .pane-ting-object li.availability.processed a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.processed a:hover,
 .pane-ting-object li.availability.processed a:hover {
   text-decoration: none;
@@ -810,13 +815,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available a,
 .pane-ting-object li.availability.available a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available a:hover,
 .pane-ting-object li.availability.available a:hover {
   text-decoration: none;
@@ -831,13 +836,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.reservable a,
 .pane-ting-object li.availability.reservable a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.reservable a:hover,
 .pane-ting-object li.availability.reservable a:hover {
   text-decoration: none;
@@ -852,13 +857,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.reservable a,
 .pane-ting-object li.availability.available.reservable a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.reservable a:hover,
 .pane-ting-object li.availability.available.reservable a:hover {
   text-decoration: none;
@@ -873,13 +878,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.not-reservable a,
 .pane-ting-object li.availability.available.not-reservable a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.not-reservable a:hover,
 .pane-ting-object li.availability.available.not-reservable a:hover {
   text-decoration: none;
@@ -894,13 +899,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.reservable a,
 .pane-ting-object li.availability.unavailable.reservable a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.reservable a:hover,
 .pane-ting-object li.availability.unavailable.reservable a:hover {
   text-decoration: none;
@@ -915,13 +920,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 127, ../sass/framework/_wellejus.mixins.scss */
+/* line 128, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable a,
 .pane-ting-object li.availability.unavailable.not-reservable a {
   color: #fff;
   display: block;
 }
-/* line 131, ../sass/framework/_wellejus.mixins.scss */
+/* line 132, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable a:hover,
 .pane-ting-object li.availability.unavailable.not-reservable a:hover {
   text-decoration: none;
@@ -1234,8 +1239,9 @@ em strong {
   font-size: 140%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  margin-left: 0px;
 }
-/* line 24, ../sass/module/_wellejus.user.scss */
+/* line 25, ../sass/module/_wellejus.user.scss */
 .user .form-submit {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1261,17 +1267,17 @@ em strong {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 40, ../sass/module/_wellejus.user.scss */
+/* line 41, ../sass/module/_wellejus.user.scss */
 .user .form-submit:focus, .user .form-submit:hover, .user .form-submit:active {
   background: none;
   background-color: black;
 }
-/* line 47, ../sass/module/_wellejus.user.scss */
+/* line 48, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info li {
   float: left;
   width: 48%;
 }
-/* line 52, ../sass/module/_wellejus.user.scss */
+/* line 53, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button {
   padding: 3px;
   width: 100%;
@@ -1292,16 +1298,16 @@ em strong {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 67, ../sass/module/_wellejus.user.scss */
+/* line 68, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button:focus, .user.vejlebib-user-info .button:hover, .user.vejlebib-user-info .button:active {
   background: none;
   background-color: black;
 }
-/* line 73, ../sass/module/_wellejus.user.scss */
+/* line 74, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username {
   margin: 2px 0 5px;
 }
-/* line 76, ../sass/module/_wellejus.user.scss */
+/* line 77, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username a {
   color: #FFFFFF;
   font-size: 120%;
@@ -1313,11 +1319,11 @@ em strong {
     min-height: 30px;
     overflow: visible;
   }
-  /* line 86, ../sass/module/_wellejus.user.scss */
+  /* line 87, ../sass/module/_wellejus.user.scss */
   .user ul {
     padding-left: 0;
   }
-  /* line 95, ../sass/module/_wellejus.user.scss */
+  /* line 96, ../sass/module/_wellejus.user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     padding-left: 0;
@@ -1328,22 +1334,22 @@ em strong {
     float: none;
     width: 68%;
   }
-  /* line 106, ../sass/module/_wellejus.user.scss */
+  /* line 107, ../sass/module/_wellejus.user.scss */
   .user .form-item-name label,
   .user .form-item-pass label {
     font-size: 250%;
   }
-  /* line 110, ../sass/module/_wellejus.user.scss */
+  /* line 111, ../sass/module/_wellejus.user.scss */
   .user [class^="icon-"] {
     left: 16px;
     bottom: 5px;
     font-size: 120%;
   }
-  /* line 116, ../sass/module/_wellejus.user.scss */
+  /* line 117, ../sass/module/_wellejus.user.scss */
   .user .form-item-pass label {
     display: none;
   }
-  /* line 120, ../sass/module/_wellejus.user.scss */
+  /* line 121, ../sass/module/_wellejus.user.scss */
   .user .form-text {
     min-height: 30px;
   }

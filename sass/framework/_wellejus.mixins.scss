@@ -58,6 +58,7 @@
   @else if $media == large-x-large {
     @media only screen and (min-width: $breakpoint-medium + 1) { @content; }
   }
+
 }
 
 

@@ -15,6 +15,11 @@ a {
     text-decoration: none;
   }
 
+  /* Ensure that links maintain their color when visited */
+  &:visited {
+    color: $link-color;
+  }
+
   &:hover {
     text-decoration: underline;
 
