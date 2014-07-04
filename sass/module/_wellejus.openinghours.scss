@@ -62,6 +62,13 @@
 
 .topbar-inner {
   .openhours-today-wrapper {
+
+    /* Ensure that the opening hours block isn't displayed on smaller screens */
+    display: block;
+    @include small-medium() {
+      display: none;
+    }
+
     h2 {
       font-size: 120%;
       margin-bottom: 0;
