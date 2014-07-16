@@ -26,6 +26,8 @@
    ========================================================================== */
 /* Availability
    ========================================================================== */
+/* Buttons
+   ========================================================================== */
 /**
  * Colors that can be configured for wellejus theme through theme settings.
  *
@@ -89,6 +91,39 @@ a:hover i[class^="icon-"] {
    ========================================================================== */
 /* Availability
    ========================================================================== */
+/* Buttons
+   ========================================================================== */
+/* line 141, ../sass/framework/_wellejus.mixins.scss */
+.field-type-ding-entity-buttons .bookmark-button {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 100%;
+  padding: 8px 14px;
+  position: relative;
+  box-shadow: 0 0 1px #595959 inset;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+}
+/* line 157, ../sass/framework/_wellejus.mixins.scss */
+.field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
+  text-decoration: none;
+}
+/* line 163, ../sass/framework/_wellejus.mixins.scss */
+.field-type-ding-entity-buttons .disabled.bookmark-button, .field-type-ding-entity-buttons [disabled].bookmark-button {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
 /**
  * Base for wellejus theme
  *
@@ -201,6 +236,34 @@ em strong {
 /* line 14, ../sass/framework/_wellejus.buttons.scss */
 .field-type-ding-entity-buttons .reserve-button {
   margin-left: 10px;
+}
+/* line 18, ../sass/framework/_wellejus.buttons.scss */
+.field-type-ding-entity-buttons .bookmark-button {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
+  background-image: -webkit-linear-gradient(#60a500, #335900);
+  background-image: -moz-linear-gradient(#60a500, #335900);
+  background-image: -o-linear-gradient(#60a500, #335900);
+  background-image: linear-gradient(#60a500, #335900);
+  /* Make sure buttons get a background color in IE */
+  background-color: #60a500;
+  border: 0;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 183, ../sass/framework/_wellejus.mixins.scss */
+.field-type-ding-entity-buttons .bookmark-button:link, .field-type-ding-entity-buttons .bookmark-button:visited {
+  color: white;
+}
+/* line 190, ../sass/framework/_wellejus.mixins.scss */
+.field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
+  background-image: -webkit-linear-gradient(#518b00, #253f00);
+  background-image: -moz-linear-gradient(#518b00, #253f00);
+  background-image: -o-linear-gradient(#518b00, #253f00);
+  background-image: linear-gradient(#518b00, #253f00);
+  background-color: #335900;
 }
 
 /**

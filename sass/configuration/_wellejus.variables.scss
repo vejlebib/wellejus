@@ -119,3 +119,12 @@ $availability-available:                $green;
 $availability-reservable:               $yellow;
 $availability-available-reservable:     $green;
 $availability-available-not-reservable: $red;
+
+
+/* Buttons
+   ========================================================================== */
+$button-border-radius:                8px;
+$button-padding:                      8px 14px;
+$button-box-shadow:                   0 0 1px lighten($black, 35%) inset;
+$button-bookmark-bg:                  #60a500;
+$button-bookmark-color:               #fff;

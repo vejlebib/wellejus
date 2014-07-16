@@ -15,5 +15,12 @@
     margin-left: $medium-spacing;
   }
 
+  .bookmark-button {
+  	@include create-gradient-button($button-bookmark-color, $button-bookmark-bg, darken($button-bookmark-bg, 15%));
+  	line-height: 24px;
+  	text-align: center;
+  	vertical-align: middle;
+  }
+
 }
 

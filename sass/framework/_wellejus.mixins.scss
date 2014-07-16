@@ -135,6 +135,39 @@
   }
 }
 
+/* Buttons
+   ========================================================================== */
+
+%button {
+  @include border-radius($button-border-radius);
+
+  display: inline-block;
+  font-size: 100%;
+  padding: $button-padding;
+  position: relative;
+
+  box-shadow: $button-box-shadow;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    @include opacity(0.65);
+    @include box-shadow(none);
+
+    cursor: default;
+  }
+}
+
 @mixin create-gradient-button($text-color, $bg-start-color, $bg-end-color, $border: 0) {
   @include background-image(linear-gradient($bg-start-color, $bg-end-color));
   @extend %button;
