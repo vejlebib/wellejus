@@ -134,3 +134,29 @@
     }
   }
 }
+
+@mixin create-gradient-button($text-color, $bg-start-color, $bg-end-color, $border: 0) {
+  @include background-image(linear-gradient($bg-start-color, $bg-end-color));
+  @extend %button;
+
+  /* Make sure buttons get a background color in IE */
+  background-color: $bg-start-color;
+  border: $border;
+
+  @if $text-color != "" {
+    color: $text-color;
+
+    &:link,
+    &:visited {
+      color: $text-color;
+    }
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    @include background-image(linear-gradient(darken($bg-start-color, 5%), darken($bg-end-color, 5%)));
+
+    background-color: $bg-end-color;
+  }
+}
