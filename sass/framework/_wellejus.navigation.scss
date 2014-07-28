@@ -132,15 +132,15 @@
   }
 
   .print:before {
-    content: " ";
+    content: "\f017\0a";
   }
   
   .read:before {
-    content: " ";
+    content: "\f028\0a";
   }
   
   .english:before {
-    content: " ";
+    content: "\f024\0a";
   }
 }
 

@@ -396,15 +396,15 @@ em strong {
 }
 /* line 134, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .print:before {
-  content: " ";
+  content: "\f017\0a";
 }
 /* line 138, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .read:before {
-  content: " ";
+  content: "\f028\0a";
 }
 /* line 142, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .english:before {
-  content: " ";
+  content: "\f024\0a";
 }
 
 /* Media queries */
@@ -1252,6 +1252,7 @@ em strong {
    ========================================================================== */
 /* line 64, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .openhours-today-wrapper {
+  margin-top: 15px;
   /* Ensure that the opening hours block isn't displayed on smaller screens */
   display: block;
   top: 0.8em;
@@ -1265,21 +1266,21 @@ em strong {
     display: none;
   }
 }
-/* line 72, ../sass/module/_wellejus.openinghours.scss */
+/* line 73, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .openhours-today-wrapper h2 {
   font-size: 120%;
   margin-bottom: 0;
 }
-/* line 83, ../sass/module/_wellejus.openinghours.scss */
+/* line 84, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list {
   padding-left: 0;
 }
-/* line 86, ../sass/module/_wellejus.openinghours.scss */
+/* line 87, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list li {
   float: left;
   width: 50%;
 }
-/* line 92, ../sass/module/_wellejus.openinghours.scss */
+/* line 93, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list .details span {
   line-height: 14px;
 }
