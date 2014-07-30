@@ -89,6 +89,14 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+
+/**
+ * Implements theme_menu_tree().
+ */
+function wellejus_menu_tree__menu_information_menu(&$vars) {
+  return '<ul class="information-menu">' . $vars['tree'] . '</ul>';
+}
+
 /**
  * Implements hook_css_alter()
  * 

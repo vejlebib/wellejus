@@ -12,6 +12,7 @@
 
 ;----------// JavaScripts
   ; Override javascripts
+  scripts[] = scripts/ddbasic.search.min.js
+  scripts[] = scripts/ddbasic.search.js
   scripts[] = scripts/ddbasic.topbar.menu.min.js
-
   scripts[] = scripts/wellejus.topbar.menu.js

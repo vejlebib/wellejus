@@ -28,6 +28,48 @@
   }
 }
 
+/* Information menu
+   ========================================================================== */
+.information-menu-wrapper {
+  @include zen-clear();
+  @include zen-grid-item(8, 1);
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  /* For now we hide the information-menu on smaller screens */
+  @include small-medium() {
+    display: none;
+  }
+}
+
+.information-menu {
+  padding-left: 10px;
+
+  > li {
+    display: inline;
+    color: white;
+    font-weight: bold;
+
+    &:before {
+      content: "|";
+      padding-right: 5px;
+    }
+
+    /* Remove seperator before the first element. */
+    &:first-child:before {
+      content: "";
+      padding-right: 0;
+    }
+  }
+
+  .menu-item {
+    display: inline-block;
+    color: inherit;
+    font-weight: inherit;
+  }
+
+}
+
 /* Navigation, main menu and secondary menu
    ========================================================================== */
 

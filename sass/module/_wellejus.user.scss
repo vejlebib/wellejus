@@ -5,8 +5,23 @@
  */
 
 
-/* User login in header
+/* User login and user info panel in header
    ========================================================================== */
+
+.header-wrapper {
+  /* Remove the 60px bottom margin on user-panel in header from ddbasic */
+  .user {
+    padding-bottom: 0px;
+  }
+
+  /* Ensure that the user-info panel has the same height as user-login panel, */
+  /* so that elements further down in the header gets displayed in the same   */
+  /* spot, whether the user is logged in or not.                              */
+  /* This is a bit dirty and should be removed if a better solution if found. */
+  .vejlebib-user-info {
+    min-height: 101px;
+  }
+}
 
 .user {
   .form-text {

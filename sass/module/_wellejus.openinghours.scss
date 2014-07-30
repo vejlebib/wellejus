@@ -62,7 +62,9 @@
 
 .topbar-inner {
   .openhours-today-wrapper {
-    margin-top: 15px;
+    margin: 25px 0;
+    float: right;
+    width: 50%;
 
     /* Ensure that the opening hours block isn't displayed on smaller screens */
     display: block;
@@ -74,11 +76,7 @@
       font-size: 120%;
       margin-bottom: 0;
     }
-    
-    top: 0.8em;
-    left: 40%;
-    position: absolute;
-    width: 60%;
+
   }
   
   .opening-hours-list {
