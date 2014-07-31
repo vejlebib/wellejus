@@ -11,11 +11,14 @@
 .header-wrapper {
   .search {
     padding-bottom: 0;
+    @include small-medium() {
+      padding-bottom: 30px;
+    }
 
     .form-item-search-block-form label {
       color: $white;
       font-size: 250%;
-      text-transform: uppercase;
+      text-transform: uppercase;  
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
     }
 

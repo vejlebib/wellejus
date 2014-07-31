@@ -245,6 +245,8 @@
       document.location.href = $(this).val();
     });
     
+    
+
     // Move openhours block to the header if the topbar menu is not present
     if ( $('.topbar-menu').css("display") == "none" ) {
       $(".openhours-today-wrapper").appendTo($(".topbar-inner"));
