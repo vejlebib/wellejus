@@ -6,14 +6,14 @@
   base theme  = ddbasic
 
 ;----------// Stylesheets
-  ; Import stylesheets.
-  stylesheets[all][] = css/wellejus.styles.css
-  stylesheets[print][]  = css/wellejusprint.css
+; Import stylesheets.
+stylesheets[all][] = css/wellejus.styles.css
+stylesheets[print][]  = css/wellejusprint.css
 
 ;----------// JavaScripts
-  ; Override javascripts
-  scripts[] = scripts/ddbasic.search.min.js
-  scripts[] = scripts/ddbasic.search.js
-  scripts[] = scripts/ddbasic.topbar.menu.min.js
-  scripts[] = scripts/wellejus.topbar.menu.js
-  scripts[] = scripts/wellejus.search.js
+; Override javascripts
+scripts[] = scripts/ddbasic.search.min.js
+scripts[] = scripts/ddbasic.search.js
+scripts[] = scripts/ddbasic.topbar.menu.min.js
+scripts[] = scripts/wellejus.topbar.menu.js
+scripts[] = scripts/wellejus.search.js
