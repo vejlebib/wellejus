@@ -1101,61 +1101,57 @@ em strong {
  *
  * @author wiredloose
  */
-/* Provides a line-seperatore between item in the news-list.
-/* This is disabled on an experimental basis.
-.news-list {
+/* line 11, ../sass/module/_wellejus.news.scss */
+.news-list .news-list-item {
+  border-top: 1px solid #C0C0C0;
+}
+/* line 15, ../sass/module/_wellejus.news.scss */
+.news-list .news-list-item:first-child {
+  border-top: none;
+}
 
-  .news-list-item {
-    border-top: 1px solid #C0C0C0;
-  }
-  
-  .news-list-item:first-child {
-    border-top: none;
-  }
-
-}*/
-/* line 25, ../sass/module/_wellejus.news.scss */
+/* line 23, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item {
   padding: 20px 0 0;
 }
-/* line 28, ../sass/module/_wellejus.news.scss */
+/* line 26, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item:first-child {
   padding-top: 0;
 }
-/* line 32, ../sass/module/_wellejus.news.scss */
+/* line 30, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item:first-child .news-sub-heading {
   margin-top: 0;
 }
-/* line 39, ../sass/module/_wellejus.news.scss */
+/* line 37, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-sub-heading,
 .view-vejlebib-ding-news .news-list .news-heading,
 .view-vejlebib-ding-news .news-list .news-list-content {
   margin: 0;
 }
-/* line 43, ../sass/module/_wellejus.news.scss */
+/* line 41, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-link {
   float: none;
 }
-/* line 47, ../sass/module/_wellejus.news.scss */
+/* line 45, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 52, ../sass/module/_wellejus.news.scss */
+/* line 50, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label a {
   padding: 0;
   background-color: white;
   font-size: 110%;
   text-transform: uppercase;
 }
-/* line 60, ../sass/module/_wellejus.news.scss */
+/* line 58, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-heading {
   text-transform: uppercase;
   font-size: 170%;
 }
 
-/* line 68, ../sass/module/_wellejus.news.scss */
+/* line 66, ../sass/module/_wellejus.news.scss */
 #w .view-vejlebib-ding-news .news-label a {
   color: black;
 }
