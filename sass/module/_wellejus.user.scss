@@ -17,7 +17,7 @@
   }
 
   .vejlebib-user-info {
-    min-height: 101px;
+    height: 101px;
   }
 }
 
@@ -59,13 +59,16 @@
   }
 
   &.vejlebib-user-info {
+    ul {
+      padding-right: 5px;
+    }
     li {
       float: left;
       width: 48%;
     }
     
     .button {
-      padding: 3px;
+      padding: 8px;
       width: 100%;
       border: 1px solid #FFFFFF;
       border-radius: 0;
