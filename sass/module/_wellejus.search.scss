@@ -10,7 +10,10 @@
    ========================================================================== */
 .header-wrapper {
   .search {
+    padding-top: 30px;
+    padding-right: 20px;
     padding-bottom: 0;
+    padding-left: 20px;
     @include small-medium() {
       padding-bottom: 30px;
     }

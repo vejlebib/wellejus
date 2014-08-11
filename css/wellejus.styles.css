@@ -752,7 +752,10 @@ em strong {
    ========================================================================== */
 /* line 12, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search {
+  padding-top: 30px;
+  padding-right: 20px;
   padding-bottom: 0;
+  padding-left: 20px;
 }
 @media only screen and (max-width: 768px) {
   /* line 12, ../sass/module/_wellejus.search.scss */
@@ -760,14 +763,14 @@ em strong {
     padding-bottom: 30px;
   }
 }
-/* line 18, ../sass/module/_wellejus.search.scss */
+/* line 21, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search .form-item-search-block-form label {
   color: white;
   font-size: 250%;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
-/* line 25, ../sass/module/_wellejus.search.scss */
+/* line 28, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search .form-text {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -776,7 +779,7 @@ em strong {
   border-radius: 0px;
   min-height: 65px;
 }
-/* line 30, ../sass/module/_wellejus.search.scss */
+/* line 33, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search .form-submit {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -801,7 +804,7 @@ em strong {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 45, ../sass/module/_wellejus.search.scss */
+/* line 48, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search .form-submit:focus, .header-wrapper .search .form-submit:hover, .header-wrapper .search .form-submit:active {
   background: none;
   background-color: black;
@@ -809,26 +812,26 @@ em strong {
 
 /* Search results list
    ========================================================================== */
-/* line 61, ../sass/module/_wellejus.search.scss */
+/* line 64, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .list-item {
   padding: 10px 0 0;
   border-bottom: 1px solid #EFEFEF;
   background: none;
 }
-/* line 67, ../sass/module/_wellejus.search.scss */
+/* line 70, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .view-mode-teaser {
   padding: 0 0 10px;
 }
-/* line 70, ../sass/module/_wellejus.search.scss */
+/* line 73, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .view-mode-teaser .content {
   font-size: 85%;
 }
-/* line 75, ../sass/module/_wellejus.search.scss */
+/* line 78, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .search-result--heading-type {
   text-transform: uppercase;
   font-size: 75%;
 }
-/* line 80, ../sass/module/_wellejus.search.scss */
+/* line 83, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .search-result--availability {
   border-top: 1px solid #EFEFEF;
   margin-top: 0;
@@ -839,16 +842,16 @@ em strong {
 
 /* Collection display
    ========================================================================== */
-/* line 98, ../sass/module/_wellejus.search.scss */
+/* line 101, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 103, ../sass/module/_wellejus.search.scss */
+/* line 106, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 108, ../sass/module/_wellejus.search.scss */
+/* line 111, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .field.field-name-ting-abstract,
 .pane-ting-collection .field.field-name-ting-series {
   border-bottom: none;
@@ -857,23 +860,23 @@ em strong {
   font-size: 85%;
 }
 
-/* line 117, ../sass/module/_wellejus.search.scss */
+/* line 120, ../sass/module/_wellejus.search.scss */
 .ting-collection-inner-wrapper > h2 {
   display: none;
 }
 
 /* Object display
    ========================================================================== */
-/* line 127, ../sass/module/_wellejus.search.scss */
+/* line 130, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 132, ../sass/module/_wellejus.search.scss */
+/* line 135, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 137, ../sass/module/_wellejus.search.scss */
+/* line 140, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .field.field-name-ting-abstract,
 .pane-ting-object .field.field-name-ting-series {
   border-bottom: none;
@@ -881,7 +884,7 @@ em strong {
   padding-bottom: 0;
   font-size: 85%;
 }
-/* line 146, ../sass/module/_wellejus.search.scss */
+/* line 149, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .collapsible .field-group-format-title:before,
 .pane-ting-object .ding-periodical-fold:before {
   color: #607f0c;
@@ -889,13 +892,13 @@ em strong {
 
 /* Availability
    ========================================================================== */
-/* line 156, ../sass/module/_wellejus.search.scss */
+/* line 159, ../sass/module/_wellejus.search.scss */
 .search-result--availability-link:before {
   content: " ";
   font-family: FontAwesome;
 }
 
-/* line 166, ../sass/module/_wellejus.search.scss */
+/* line 169, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.pending,
 .pane-ting-object li.pending {
   background-color: #959595;
@@ -916,7 +919,7 @@ em strong {
 .pane-ting-object li.pending a:hover {
   text-decoration: none;
 }
-/* line 170, ../sass/module/_wellejus.search.scss */
+/* line 173, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.processed,
 .pane-ting-object li.availability.processed {
   background-color: #959595;
@@ -937,7 +940,7 @@ em strong {
 .pane-ting-object li.availability.processed a:hover {
   text-decoration: none;
 }
-/* line 174, ../sass/module/_wellejus.search.scss */
+/* line 177, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available,
 .pane-ting-object li.availability.available {
   background-color: #528c10;
@@ -958,7 +961,7 @@ em strong {
 .pane-ting-object li.availability.available a:hover {
   text-decoration: none;
 }
-/* line 178, ../sass/module/_wellejus.search.scss */
+/* line 181, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.reservable,
 .pane-ting-object li.availability.reservable {
   background-color: #f0cb28;
@@ -979,7 +982,7 @@ em strong {
 .pane-ting-object li.availability.reservable a:hover {
   text-decoration: none;
 }
-/* line 182, ../sass/module/_wellejus.search.scss */
+/* line 185, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.reservable,
 .pane-ting-object li.availability.available.reservable {
   background-color: #528c10;
@@ -1000,7 +1003,7 @@ em strong {
 .pane-ting-object li.availability.available.reservable a:hover {
   text-decoration: none;
 }
-/* line 186, ../sass/module/_wellejus.search.scss */
+/* line 189, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.not-reservable,
 .pane-ting-object li.availability.available.not-reservable {
   background-color: #a32e10;
@@ -1021,7 +1024,7 @@ em strong {
 .pane-ting-object li.availability.available.not-reservable a:hover {
   text-decoration: none;
 }
-/* line 190, ../sass/module/_wellejus.search.scss */
+/* line 193, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.reservable,
 .pane-ting-object li.availability.unavailable.reservable {
   background-color: #f0cb28;
@@ -1042,7 +1045,7 @@ em strong {
 .pane-ting-object li.availability.unavailable.reservable a:hover {
   text-decoration: none;
 }
-/* line 194, ../sass/module/_wellejus.search.scss */
+/* line 197, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable,
 .pane-ting-object li.availability.unavailable.not-reservable {
   background-color: #a32e10;
@@ -1066,26 +1069,26 @@ em strong {
 
 /* Subjects
    ========================================================================== */
-/* line 206, ../sass/module/_wellejus.search.scss */
+/* line 209, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: transparent;
   text-shadow: none;
   padding: 0;
 }
-/* line 212, ../sass/module/_wellejus.search.scss */
+/* line 215, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subjects:before {
   content: "Emner: ";
 }
 
 /* Layout
    ========================================================================== */
-/* line 221, ../sass/module/_wellejus.search.scss */
+/* line 224, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 226, ../sass/module/_wellejus.search.scss */
+/* line 229, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
@@ -1098,57 +1101,61 @@ em strong {
  *
  * @author wiredloose
  */
-/* line 11, ../sass/module/_wellejus.news.scss */
-.news-list .news-list-item {
-  border-top: 1px solid #C0C0C0;
-}
-/* line 15, ../sass/module/_wellejus.news.scss */
-.news-list .news-list-item:first-child {
-  border-top: none;
-}
+/* Provides a line-seperatore between item in the news-list.
+/* This is disabled on an experimental basis.
+.news-list {
 
-/* line 23, ../sass/module/_wellejus.news.scss */
+  .news-list-item {
+    border-top: 1px solid #C0C0C0;
+  }
+  
+  .news-list-item:first-child {
+    border-top: none;
+  }
+
+}*/
+/* line 25, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item {
   padding: 20px 0 0;
 }
-/* line 26, ../sass/module/_wellejus.news.scss */
+/* line 28, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item:first-child {
   padding-top: 0;
 }
-/* line 30, ../sass/module/_wellejus.news.scss */
+/* line 32, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-list-item:first-child .news-sub-heading {
   margin-top: 0;
 }
-/* line 37, ../sass/module/_wellejus.news.scss */
+/* line 39, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-sub-heading,
 .view-vejlebib-ding-news .news-list .news-heading,
 .view-vejlebib-ding-news .news-list .news-list-content {
   margin: 0;
 }
-/* line 41, ../sass/module/_wellejus.news.scss */
+/* line 43, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-link {
   float: none;
 }
-/* line 45, ../sass/module/_wellejus.news.scss */
+/* line 47, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label {
   background-color: white;
   text-shadow: none;
   padding: 0;
 }
-/* line 50, ../sass/module/_wellejus.news.scss */
+/* line 52, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-label a {
   padding: 0;
   background-color: white;
   font-size: 110%;
   text-transform: uppercase;
 }
-/* line 58, ../sass/module/_wellejus.news.scss */
+/* line 60, ../sass/module/_wellejus.news.scss */
 .view-vejlebib-ding-news .news-list .news-heading {
   text-transform: uppercase;
   font-size: 170%;
 }
 
-/* line 66, ../sass/module/_wellejus.news.scss */
+/* line 68, ../sass/module/_wellejus.news.scss */
 #w .view-vejlebib-ding-news .news-label a {
   color: black;
 }
