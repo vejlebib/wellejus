@@ -133,7 +133,7 @@ a:hover i[class^="icon-"] {
 body {
   background-color: #efefef;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Verdana", Arial, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -170,19 +170,19 @@ h6 {
 
 /* line 42, ../sass/framework/_wellejus.base.scss */
 strong {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
 }
 
 /* line 46, ../sass/framework/_wellejus.base.scss */
 em {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: normal;
   font-style: italic;
 }
 /* line 49, ../sass/framework/_wellejus.base.scss */
 em strong {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
 }
 
@@ -496,7 +496,7 @@ em strong {
    ========================================================================== */
 /* line 222, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
-  font-family: "Verdana", Arial, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-weight: normal;
 }
 
@@ -506,7 +506,7 @@ em strong {
 }
 /* line 234, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
 }
 /* line 239, ../sass/framework/_wellejus.navigation.scss */
@@ -544,7 +544,7 @@ em strong {
    ========================================================================== */
 /* line 286, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
-  font-family: "Verdana", Arial, sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 /**
@@ -716,7 +716,7 @@ em strong {
    ========================================================================== */
 /* line 11, ../sass/layout/_wellejus.typography.scss */
 .page-title {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
   font-size: 170%;
 }
@@ -729,7 +729,7 @@ em strong {
 
 /* line 21, ../sass/layout/_wellejus.typography.scss */
 .pane-title {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
   font-size: 130%;
 }
@@ -738,7 +738,7 @@ em strong {
    ========================================================================== */
 /* line 31, ../sass/layout/_wellejus.typography.scss */
 .page-lead {
-  font-family: "Verdana";
+  font-family: Arial;
   font-weight: bold;
 }
 
