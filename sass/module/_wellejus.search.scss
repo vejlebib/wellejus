@@ -10,6 +10,7 @@
    ========================================================================== */
 .header-wrapper {
   .search {
+    @include box-sizing(content-box); // Included as an easy fix to make the search field wider.
     padding-top: 30px;
     padding-right: 20px;
     padding-bottom: 0;
