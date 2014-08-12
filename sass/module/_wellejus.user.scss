@@ -17,6 +17,7 @@
   }
 
   .vejlebib-user-info {
+    @include box-sizing(content-box);
     height: 101px;
     padding-top: 30px;
     padding-left: 20px;
