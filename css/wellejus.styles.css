@@ -1367,6 +1367,9 @@ em strong {
    ========================================================================== */
 /* line 12, ../sass/module/_wellejus.user.scss */
 .header-wrapper .user {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   padding-bottom: 0px;
 }
 @media only screen and (max-width: 768px) {
@@ -1375,7 +1378,7 @@ em strong {
     padding-bottom: 30px;
   }
 }
-/* line 19, ../sass/module/_wellejus.user.scss */
+/* line 20, ../sass/module/_wellejus.user.scss */
 .header-wrapper .vejlebib-user-info {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -1387,11 +1390,11 @@ em strong {
 }
 
 /* User login and user-panel for logged-in library users. */
-/* line 29, ../sass/module/_wellejus.user.scss */
+/* line 30, ../sass/module/_wellejus.user.scss */
 .user {
   /* Media queries */
 }
-/* line 30, ../sass/module/_wellejus.user.scss */
+/* line 31, ../sass/module/_wellejus.user.scss */
 .user .form-text {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1399,7 +1402,7 @@ em strong {
   -o-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 35, ../sass/module/_wellejus.user.scss */
+/* line 36, ../sass/module/_wellejus.user.scss */
 .user .form-item-name label,
 .user .form-item-pass label {
   color: white;
@@ -1408,7 +1411,7 @@ em strong {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
   margin-left: 0px;
 }
-/* line 43, ../sass/module/_wellejus.user.scss */
+/* line 44, ../sass/module/_wellejus.user.scss */
 .user .form-submit {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1434,17 +1437,17 @@ em strong {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 59, ../sass/module/_wellejus.user.scss */
+/* line 60, ../sass/module/_wellejus.user.scss */
 .user .form-submit:focus, .user .form-submit:hover, .user .form-submit:active {
   background: none;
   background-color: black;
 }
-/* line 66, ../sass/module/_wellejus.user.scss */
+/* line 67, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info li {
   float: left;
   width: 48%;
 }
-/* line 71, ../sass/module/_wellejus.user.scss */
+/* line 72, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button {
   padding: 8px;
   width: 100%;
@@ -1465,32 +1468,32 @@ em strong {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 86, ../sass/module/_wellejus.user.scss */
+/* line 87, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button:focus, .user.vejlebib-user-info .button:hover, .user.vejlebib-user-info .button:active {
   background: none;
   background-color: black;
 }
-/* line 92, ../sass/module/_wellejus.user.scss */
+/* line 93, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username {
   margin: 2px 0 5px;
 }
-/* line 95, ../sass/module/_wellejus.user.scss */
+/* line 96, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username a {
   color: #FFFFFF;
   font-size: 120%;
   font-weight: bold;
 }
 @media only screen and (min-width: 769px) {
-  /* line 29, ../sass/module/_wellejus.user.scss */
+  /* line 30, ../sass/module/_wellejus.user.scss */
   .user {
     min-height: 30px;
     overflow: visible;
   }
-  /* line 105, ../sass/module/_wellejus.user.scss */
+  /* line 106, ../sass/module/_wellejus.user.scss */
   .user ul {
     padding-left: 0;
   }
-  /* line 114, ../sass/module/_wellejus.user.scss */
+  /* line 115, ../sass/module/_wellejus.user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     padding-left: 0;
@@ -1501,22 +1504,22 @@ em strong {
     float: none;
     width: 68%;
   }
-  /* line 125, ../sass/module/_wellejus.user.scss */
+  /* line 126, ../sass/module/_wellejus.user.scss */
   .user .form-item-name label,
   .user .form-item-pass label {
     font-size: 250%;
   }
-  /* line 129, ../sass/module/_wellejus.user.scss */
+  /* line 130, ../sass/module/_wellejus.user.scss */
   .user [class^="icon-"] {
     left: 16px;
     bottom: 5px;
     font-size: 120%;
   }
-  /* line 135, ../sass/module/_wellejus.user.scss */
+  /* line 136, ../sass/module/_wellejus.user.scss */
   .user .form-item-pass label {
     display: none;
   }
-  /* line 139, ../sass/module/_wellejus.user.scss */
+  /* line 140, ../sass/module/_wellejus.user.scss */
   .user .form-text {
     min-height: 30px;
   }

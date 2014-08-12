@@ -10,6 +10,7 @@
 
 .header-wrapper {
   .user {
+    @include box-sizing(content-box);
     padding-bottom: 0px;
     @include small-medium() {
       padding-bottom: 30px;
