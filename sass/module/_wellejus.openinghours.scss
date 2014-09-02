@@ -67,7 +67,6 @@
     width: 50%;
 
     /* Ensure that the opening hours block isn't displayed on smaller screens */
-    display: block;
     @include small-medium() {
       display: none;
     }
@@ -94,4 +93,11 @@
     }
     
   }
+}
+
+
+/* opening hours today block placed in topbar
+   ========================================================================== */
+.header-wrapper {
+  
 }

@@ -350,7 +350,6 @@ em strong {
 }
 /* line 65, ../sass/framework/_wellejus.navigation.scss */
 .information-menu .menu-item {
-  display: inline-block;
   color: inherit;
   font-weight: inherit;
 }
@@ -359,27 +358,27 @@ em strong {
    ========================================================================== */
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  /* line 79, ../sass/framework/_wellejus.navigation.scss */
+  /* line 78, ../sass/framework/_wellejus.navigation.scss */
   .navigation-wrapper {
     background-color: #95c11f;
     background-color: rgba(149, 193, 31, 0.75);
   }
 
-  /* line 84, ../sass/framework/_wellejus.navigation.scss */
+  /* line 83, ../sass/framework/_wellejus.navigation.scss */
   #w .main-menu-wrapper .menu-item,
   #w .secondary-menu-wrapper .menu-item {
     color: #FFFFFF;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 92, ../sass/framework/_wellejus.navigation.scss */
+  /* line 91, ../sass/framework/_wellejus.navigation.scss */
   .main-menu-wrapper {
     width: 80%;
     margin-right: -80%;
     padding-left: 20px;
   }
 
-  /* line 99, ../sass/framework/_wellejus.navigation.scss */
+  /* line 98, ../sass/framework/_wellejus.navigation.scss */
   .main-menu .menu-item {
     font-size: 75%;
     font-weight: bold;
@@ -387,7 +386,7 @@ em strong {
     padding: 6px 10px;
     margin: 10px 0;
   }
-  /* line 106, ../sass/framework/_wellejus.navigation.scss */
+  /* line 105, ../sass/framework/_wellejus.navigation.scss */
   .main-menu .menu-item.active {
     background: #7d7e7d;
     /* Old browsers */
@@ -406,7 +405,7 @@ em strong {
     color: #EEEEEE;
     text-decoration: none;
   }
-  /* line 119, ../sass/framework/_wellejus.navigation.scss */
+  /* line 118, ../sass/framework/_wellejus.navigation.scss */
   .main-menu .menu-item:focus, .main-menu .menu-item:hover {
     background: none;
     background-color: black;
@@ -415,78 +414,78 @@ em strong {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 135, ../sass/framework/_wellejus.navigation.scss */
+  /* line 134, ../sass/framework/_wellejus.navigation.scss */
   #w .main-menu .menu-item:link, #w .main-menu .menu-item:visited {
     color: #959595;
     text-decoration: none;
   }
-  /* line 141, ../sass/framework/_wellejus.navigation.scss */
+  /* line 140, ../sass/framework/_wellejus.navigation.scss */
   #w .main-menu .menu-item:focus, #w .main-menu .menu-item:hover {
     color: white;
     text-decoration: none;
   }
-  /* line 146, ../sass/framework/_wellejus.navigation.scss */
+  /* line 145, ../sass/framework/_wellejus.navigation.scss */
   #w .main-menu .menu-item.active {
     color: #EEEEEE;
   }
 }
 /* Nav helper links
    ========================================================================== */
-/* line 156, ../sass/framework/_wellejus.navigation.scss */
+/* line 155, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers {
   float: right;
   padding: 0;
   width: 30%;
 }
-/* line 161, ../sass/framework/_wellejus.navigation.scss */
+/* line 160, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers li {
   float: right;
 }
-/* line 165, ../sass/framework/_wellejus.navigation.scss */
+/* line 164, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers a {
   display: inline-block;
   margin: 10px;
   padding: 6px 0;
 }
-/* line 171, ../sass/framework/_wellejus.navigation.scss */
+/* line 170, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers a:before {
   font-family: FontAwesome;
   color: #000;
 }
-/* line 176, ../sass/framework/_wellejus.navigation.scss */
+/* line 175, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .print:before {
   content: "\f017\0a";
 }
-/* line 180, ../sass/framework/_wellejus.navigation.scss */
+/* line 179, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .read:before {
   content: "\f028\0a";
 }
-/* line 184, ../sass/framework/_wellejus.navigation.scss */
+/* line 183, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .english:before {
   content: "\f024\0a";
 }
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  /* line 193, ../sass/framework/_wellejus.navigation.scss */
+  /* line 192, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers {
     clear: left;
     padding: 0;
     margin: 10px;
     width: 100%;
   }
-  /* line 199, ../sass/framework/_wellejus.navigation.scss */
+  /* line 198, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers li {
     margin: 0;
     height: 40px;
     line-height: 40px;
     width: 95%;
   }
-  /* line 206, ../sass/framework/_wellejus.navigation.scss */
+  /* line 205, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a {
     margin: 0;
   }
-  /* line 211, ../sass/framework/_wellejus.navigation.scss */
+  /* line 210, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a,
   .nav-helpers a:before {
     color: white;
@@ -494,47 +493,47 @@ em strong {
 }
 /* Sub menu
    ========================================================================== */
-/* line 222, ../sass/framework/_wellejus.navigation.scss */
+/* line 221, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-weight: normal;
 }
 
-/* line 231, ../sass/framework/_wellejus.navigation.scss */
+/* line 230, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 234, ../sass/framework/_wellejus.navigation.scss */
+/* line 233, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: Arial;
   font-weight: bold;
 }
-/* line 239, ../sass/framework/_wellejus.navigation.scss */
+/* line 238, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 247, ../sass/framework/_wellejus.navigation.scss */
+/* line 246, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 259, ../sass/framework/_wellejus.navigation.scss */
+/* line 258, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 266, ../sass/framework/_wellejus.navigation.scss */
+/* line 265, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 269, ../sass/framework/_wellejus.navigation.scss */
+/* line 268, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 274, ../sass/framework/_wellejus.navigation.scss */
+/* line 273, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -542,7 +541,7 @@ em strong {
 
 /* Action Links
    ========================================================================== */
-/* line 286, ../sass/framework/_wellejus.navigation.scss */
+/* line 285, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
@@ -1331,7 +1330,6 @@ em strong {
   float: right;
   width: 50%;
   /* Ensure that the opening hours block isn't displayed on smaller screens */
-  display: block;
 }
 @media only screen and (max-width: 768px) {
   /* line 64, ../sass/module/_wellejus.openinghours.scss */
@@ -1339,25 +1337,27 @@ em strong {
     display: none;
   }
 }
-/* line 75, ../sass/module/_wellejus.openinghours.scss */
+/* line 74, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .openhours-today-wrapper h2 {
   font-size: 120%;
   margin-bottom: 0;
 }
-/* line 82, ../sass/module/_wellejus.openinghours.scss */
+/* line 81, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list {
   padding-left: 0;
 }
-/* line 85, ../sass/module/_wellejus.openinghours.scss */
+/* line 84, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list li {
   float: left;
   width: 50%;
 }
-/* line 91, ../sass/module/_wellejus.openinghours.scss */
+/* line 90, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list .details span {
   line-height: 14px;
 }
 
+/* opening hours today block placed in topbar
+   ========================================================================== */
 /**
  * User styling for wellejus theme
  *
