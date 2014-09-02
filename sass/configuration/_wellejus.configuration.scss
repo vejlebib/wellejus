@@ -2,6 +2,12 @@
  * Rules that can be configured for wellejus theme is located in this file.
  *
  * @author wiredloose
+ *
+ * Note that everything we style in this file can't really be configured in
+ * the theme settings, as the name of the file suggest. This is because the
+ * Color module is implemented in the base theme and not in this theme. So,
+ * contrary to the base theme, this file tells us what CAN'T be configured in
+ * theme settings for the base theme.
  */
 
 
@@ -30,6 +36,13 @@ a {
 
 }
 
+/* Header */
+.header-wrapper {
+  $rgba: rgba($header-background-color, $default-transparency);
+  // IE Fallback:
+  background-color: $header-background-color;
+  background-color: $rgba;
+}
 
 /* Bottom background color */
 

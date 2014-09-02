@@ -85,7 +85,6 @@
 /* Header wrapper
    ========================================================================== */
 .header-wrapper {
-  @include rgba-background($header-background-color, $default-transparency);
 
   /* Media queries */
   @include large-x-large() {
