@@ -30,17 +30,6 @@
 
 /* Information menu
    ========================================================================== */
-.information-menu-wrapper {
-  @include zen-clear();
-  @include zen-grid-item(8, 1);
-  margin-top: 5px;
-  margin-bottom: 30px;
-
-  /* For now we hide the information-menu on smaller screens */
-  @include small-medium() {
-    display: none;
-  }
-}
 
 .information-menu {
   padding-left: 10px;

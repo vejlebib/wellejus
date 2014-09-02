@@ -85,6 +85,8 @@
 /* Header wrapper
    ========================================================================== */
 .header-wrapper {
+  @include zen-clear();
+  @include zen-nested-container(); // We're going to use grid-items here
 
   /* Media queries */
   @include large-x-large() {
@@ -101,6 +103,19 @@
       }
     }
   }
+
+  .information-menu-wrapper {
+    @include zen-clear();
+    @include zen-grid-item(8, 1);
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+    /* For now we hide the information-menu on smaller screens */
+    @include small-medium() {
+      display: none;
+    }
+  }
+  
 }
 
 
