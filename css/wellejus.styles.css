@@ -94,7 +94,7 @@ a:hover i[class^="icon-"] {
 /* Buttons
    ========================================================================== */
 /* line 141, ../sass/framework/_wellejus.mixins.scss */
-.field-type-ding-entity-buttons .bookmark-button {
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -111,11 +111,11 @@ a:hover i[class^="icon-"] {
   line-height: 100%;
 }
 /* line 157, ../sass/framework/_wellejus.mixins.scss */
-.field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:focus, .ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:hover, .ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:active {
   text-decoration: none;
 }
 /* line 163, ../sass/framework/_wellejus.mixins.scss */
-.field-type-ding-entity-buttons .disabled.bookmark-button, .field-type-ding-entity-buttons [disabled].bookmark-button {
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .disabled.bookmark-button, .ting-object-inner-wrapper .field-type-ding-entity-buttons [disabled].bookmark-button {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -webkit-box-shadow: none;
@@ -229,41 +229,50 @@ em strong {
  *
  * @author wiredloose
  */
-/* line 10, ../sass/framework/_wellejus.buttons.scss */
-.field-type-ding-entity-buttons form input {
+/* line 7, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-inner-wrapper {
+  position: relative;
+}
+/* line 11, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-inner-wrapper .field-type-ding-entity-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+/* line 17, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-inner-wrapper .field-type-ding-entity-buttons form input {
   height: 40px;
 }
-/* line 14, ../sass/framework/_wellejus.buttons.scss */
-.field-type-ding-entity-buttons .reserve-button {
+/* line 21, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .reserve-button {
   margin-left: 10px;
 }
-/* line 18, ../sass/framework/_wellejus.buttons.scss */
-.field-type-ding-entity-buttons .bookmark-button {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
-  background-image: -webkit-linear-gradient(#60a500, #335900);
-  background-image: -moz-linear-gradient(#60a500, #335900);
-  background-image: -o-linear-gradient(#60a500, #335900);
-  background-image: linear-gradient(#60a500, #335900);
+/* line 25, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444444), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#444444, #000000);
+  background-image: -moz-linear-gradient(#444444, #000000);
+  background-image: -o-linear-gradient(#444444, #000000);
+  background-image: linear-gradient(#444444, #000000);
   /* Make sure buttons get a background color in IE */
-  background-color: #60a500;
+  background-color: #444444;
   border: 0;
   color: white;
-  line-height: 24px;
   text-align: center;
   vertical-align: middle;
 }
 /* line 183, ../sass/framework/_wellejus.mixins.scss */
-.field-type-ding-entity-buttons .bookmark-button:link, .field-type-ding-entity-buttons .bookmark-button:visited {
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:link, .ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:visited {
   color: white;
 }
 /* line 190, ../sass/framework/_wellejus.mixins.scss */
-.field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
-  background-image: -webkit-linear-gradient(#518b00, #253f00);
-  background-image: -moz-linear-gradient(#518b00, #253f00);
-  background-image: -o-linear-gradient(#518b00, #253f00);
-  background-image: linear-gradient(#518b00, #253f00);
-  background-color: #335900;
+.ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:focus, .ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:hover, .ting-object-inner-wrapper .field-type-ding-entity-buttons .bookmark-button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #373737), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#373737, #000000);
+  background-image: -moz-linear-gradient(#373737, #000000);
+  background-image: -o-linear-gradient(#373737, #000000);
+  background-image: linear-gradient(#373737, #000000);
+  background-color: black;
 }
 
 /**

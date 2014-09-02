@@ -4,23 +4,31 @@
  * @author wiredloose
  */
 
+.ting-object-inner-wrapper {
 
-.field-type-ding-entity-buttons {
+  position: relative;
 
-  form input {
-    height: 40px;
+  .field-type-ding-entity-buttons {
+
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+
+    form input {
+      height: 40px; 
+    }
+
+    .reserve-button {
+      margin-left: $medium-spacing;
+    }
+
+    .bookmark-button {
+    	@include create-gradient-button($button-bookmark-color, $button-bookmark-bg, darken($button-bookmark-bg, 30%));
+    	text-align: center;
+    	vertical-align: middle;
+    }
+
   }
+} 
 
-  .reserve-button {
-    margin-left: $medium-spacing;
-  }
-
-  .bookmark-button {
-  	@include create-gradient-button($button-bookmark-color, $button-bookmark-bg, darken($button-bookmark-bg, 15%));
-  	line-height: 24px;
-  	text-align: center;
-  	vertical-align: middle;
-  }
-
-}
 
