@@ -4,31 +4,49 @@
  * @author wiredloose
  */
 
+/**
+ * Remove hover underline on action buttons
+ */
+.reserve-button, .bookmark-button {
+    text-decoration: none !important;
+}
+
+/**
+ * Common styling for ding entity action-buttons
+ */
+.field-type-ding-entity-buttons {
+
+  form input {
+    height: 40px; 
+  }
+
+  .reserve-button {
+    margin-left: $medium-spacing;
+  }
+
+  .bookmark-button {
+    @include create-gradient-button($button-bookmark-color, $button-bookmark-bg, darken($button-bookmark-bg, 30%));
+    text-align: center;
+    vertical-align: middle;
+  }
+
+}
+
+/**
+ * Position ding entity action buttons in bottom right corner when viewing a
+ * ting object entity.
+ */
 .ting-object-inner-wrapper {
 
   position: relative;
 
   .field-type-ding-entity-buttons {
-
     position: absolute;
-    bottom: 20px;
+    bottom: 20px; 
     right: 0;
-
-    form input {
-      height: 40px; 
-    }
-
-    .reserve-button {
-      margin-left: $medium-spacing;
-    }
-
-    .bookmark-button {
-    	@include create-gradient-button($button-bookmark-color, $button-bookmark-bg, darken($button-bookmark-bg, 30%));
-    	text-align: center;
-    	vertical-align: middle;
-    }
-
   }
+
 } 
+
 
 
