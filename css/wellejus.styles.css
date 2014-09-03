@@ -295,7 +295,7 @@ em strong {
 .ting-object-wrapper:first-child .ting-object-inner-wrapper {
   /**
    * Position ding entity action buttons in bottom right corner when viewing a
-   * ting object entity on large screens.
+   * ting object entity on large and x-large screens.
    */
 }
 /* line 37, ../sass/framework/_wellejus.buttons.scss */
@@ -314,6 +314,20 @@ em strong {
     bottom: 20px;
     right: 0;
   }
+}
+
+/**
+ * Fontawesome styles for the wellejus theme.
+ *
+ * @author Simon Holt
+ */
+/**
+ * Remove underline from icons in anchor-tags, when using the em-tag for the 
+ * icons. The em-tag is used for icons in the wysiwig editor.
+ */
+/* line 12, ../sass/framework/_wellejus.fontawesome.scss */
+a em[class*="icon-"] {
+  text-decoration: none;
 }
 
 /**

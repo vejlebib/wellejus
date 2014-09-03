@@ -1,0 +1,15 @@
+/**
+ * Fontawesome styles for the wellejus theme.
+ *
+ * @author Simon Holt
+ */
+
+/**
+ * Remove underline from icons in anchor-tags, when using the em-tag for the 
+ * icons. The em-tag is used for icons in the wysiwig editor.
+ */
+a {
+	em[class*="icon-"] {
+		text-decoration: none;
+	}
+}
