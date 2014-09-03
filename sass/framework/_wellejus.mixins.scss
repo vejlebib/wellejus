@@ -55,8 +55,12 @@
     @media only screen and (min-width: $breakpoint-x-large + 1) { @content; }
   }
 
-  @else if $media == large-x-large {
+  @else if $media == large-x-large { 
     @media only screen and (min-width: $breakpoint-medium + 1) { @content; }
+  }
+
+  @else if $media == large-and-x-large {
+    @media only screen and (min-width: $breakpoint-large + 1) { @content; }
   }
 
 }
@@ -95,6 +99,10 @@
 
 @mixin large-x-large {
   @include respond-to(large-x-large) { @content; }
+}
+
+@mixin large-and-x-large {
+  @include respond-to(large-and-x-large) { @content; }
 }
 
 /* Typography mixins

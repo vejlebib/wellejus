@@ -106,7 +106,7 @@ a:hover i[class^="icon-"] {
    ========================================================================== */
 /* Buttons
    ========================================================================== */
-/* line 141, ../sass/framework/_wellejus.mixins.scss */
+/* line 149, ../sass/framework/_wellejus.mixins.scss */
 .field-type-ding-entity-buttons .bookmark-button {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -123,11 +123,11 @@ a:hover i[class^="icon-"] {
   vertical-align: middle;
   line-height: 100%;
 }
-/* line 157, ../sass/framework/_wellejus.mixins.scss */
+/* line 165, ../sass/framework/_wellejus.mixins.scss */
 .field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
   text-decoration: none;
 }
-/* line 163, ../sass/framework/_wellejus.mixins.scss */
+/* line 171, ../sass/framework/_wellejus.mixins.scss */
 .field-type-ding-entity-buttons .disabled.bookmark-button, .field-type-ding-entity-buttons [disabled].bookmark-button {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -273,11 +273,11 @@ em strong {
   text-align: center;
   vertical-align: middle;
 }
-/* line 183, ../sass/framework/_wellejus.mixins.scss */
+/* line 191, ../sass/framework/_wellejus.mixins.scss */
 .field-type-ding-entity-buttons .bookmark-button:link, .field-type-ding-entity-buttons .bookmark-button:visited {
   color: white;
 }
-/* line 190, ../sass/framework/_wellejus.mixins.scss */
+/* line 198, ../sass/framework/_wellejus.mixins.scss */
 .field-type-ding-entity-buttons .bookmark-button:focus, .field-type-ding-entity-buttons .bookmark-button:hover, .field-type-ding-entity-buttons .bookmark-button:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #373737), color-stop(100%, #000000));
   background-image: -webkit-linear-gradient(#373737, #000000);
@@ -291,19 +291,29 @@ em strong {
   text-decoration: none !important;
 }
 
-/**
- * Position ding entity action buttons in bottom right corner when viewing a
- * ting object entity.
- */
-/* line 39, ../sass/framework/_wellejus.buttons.scss */
-.ting-object-inner-wrapper {
-  position: relative;
+/* line 35, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-wrapper:first-child .ting-object-inner-wrapper {
+  /**
+   * Position ding entity action buttons in bottom right corner when viewing a
+   * ting object entity on large screens.
+   */
 }
-/* line 43, ../sass/framework/_wellejus.buttons.scss */
-.ting-object-inner-wrapper .field-type-ding-entity-buttons {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
+/* line 37, ../sass/framework/_wellejus.buttons.scss */
+.ting-object-wrapper:first-child .ting-object-inner-wrapper .field-type-ding-entity-buttons {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 941px) {
+  /* line 35, ../sass/framework/_wellejus.buttons.scss */
+  .ting-object-wrapper:first-child .ting-object-inner-wrapper {
+    position: relative;
+    min-height: 300px;
+  }
+  /* line 49, ../sass/framework/_wellejus.buttons.scss */
+  .ting-object-wrapper:first-child .ting-object-inner-wrapper .field-type-ding-entity-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+  }
 }
 
 /**
@@ -668,25 +678,24 @@ em strong {
    ========================================================================== */
 /* line 87, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper {
-  clear: left;
   padding-left: 0;
   padding-right: 0;
   /* Media queries */
 }
 @media only screen and (min-width: 769px) {
-  /* line 94, ../sass/layout/_wellejus.layout.scss */
+  /* line 93, ../sass/layout/_wellejus.layout.scss */
   .header-wrapper .header-inner .pane-search-form {
     width: 60%;
     float: left;
   }
-  /* line 100, ../sass/layout/_wellejus.layout.scss */
+  /* line 99, ../sass/layout/_wellejus.layout.scss */
   .header-wrapper .header-inner .pane-user-login,
   .header-wrapper .header-inner .pane-vejlebib-views-panels-vejlebib-ding-userinfo {
     margin-left: 66.66667%;
     width: 30%;
   }
 }
-/* line 107, ../sass/layout/_wellejus.layout.scss */
+/* line 106, ../sass/layout/_wellejus.layout.scss */
 .header-wrapper .information-menu-wrapper {
   clear: left;
   float: left;
@@ -709,7 +718,7 @@ em strong {
   /* For now we hide the information-menu on smaller screens */
 }
 @media only screen and (max-width: 768px) {
-  /* line 107, ../sass/layout/_wellejus.layout.scss */
+  /* line 106, ../sass/layout/_wellejus.layout.scss */
   .header-wrapper .information-menu-wrapper {
     display: none;
   }
@@ -717,29 +726,29 @@ em strong {
 
 /* Footer
    ========================================================================== */
-/* line 124, ../sass/layout/_wellejus.layout.scss */
+/* line 123, ../sass/layout/_wellejus.layout.scss */
 .footer {
   padding-top: 0;
 }
 
-/* line 128, ../sass/layout/_wellejus.layout.scss */
+/* line 127, ../sass/layout/_wellejus.layout.scss */
 .footer-inner {
   padding: 20px;
 }
-/* line 133, ../sass/layout/_wellejus.layout.scss */
+/* line 132, ../sass/layout/_wellejus.layout.scss */
 .footer-inner a:hover, .footer-inner a:focus {
   font-weight: bold;
 }
 
 /* Bottom
    ========================================================================== */
-/* line 142, ../sass/layout/_wellejus.layout.scss */
+/* line 141, ../sass/layout/_wellejus.layout.scss */
 .bottom {
   padding: 0;
   color: #808080;
 }
 
-/* line 147, ../sass/layout/_wellejus.layout.scss */
+/* line 146, ../sass/layout/_wellejus.layout.scss */
 .bottom p {
   border-top: 1px solid #C0C0C0;
   line-height: 3em;
@@ -950,13 +959,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.pending a,
 .pane-ting-object li.pending a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.pending a:hover,
 .pane-ting-object li.pending a:hover {
   text-decoration: none;
@@ -971,13 +980,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.processed a,
 .pane-ting-object li.availability.processed a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.processed a:hover,
 .pane-ting-object li.availability.processed a:hover {
   text-decoration: none;
@@ -992,13 +1001,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available a,
 .pane-ting-object li.availability.available a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available a:hover,
 .pane-ting-object li.availability.available a:hover {
   text-decoration: none;
@@ -1013,13 +1022,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.reservable a,
 .pane-ting-object li.availability.reservable a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.reservable a:hover,
 .pane-ting-object li.availability.reservable a:hover {
   text-decoration: none;
@@ -1034,13 +1043,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.reservable a,
 .pane-ting-object li.availability.available.reservable a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.reservable a:hover,
 .pane-ting-object li.availability.available.reservable a:hover {
   text-decoration: none;
@@ -1055,13 +1064,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.not-reservable a,
 .pane-ting-object li.availability.available.not-reservable a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.available.not-reservable a:hover,
 .pane-ting-object li.availability.available.not-reservable a:hover {
   text-decoration: none;
@@ -1076,13 +1085,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.reservable a,
 .pane-ting-object li.availability.unavailable.reservable a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.reservable a:hover,
 .pane-ting-object li.availability.unavailable.reservable a:hover {
   text-decoration: none;
@@ -1097,13 +1106,13 @@ em strong {
   padding-bottom: 5px;
   padding-left: 10px;
 }
-/* line 128, ../sass/framework/_wellejus.mixins.scss */
+/* line 136, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable a,
 .pane-ting-object li.availability.unavailable.not-reservable a {
   color: #fff;
   display: block;
 }
-/* line 132, ../sass/framework/_wellejus.mixins.scss */
+/* line 140, ../sass/framework/_wellejus.mixins.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable a:hover,
 .pane-ting-object li.availability.unavailable.not-reservable a:hover {
   text-decoration: none;
