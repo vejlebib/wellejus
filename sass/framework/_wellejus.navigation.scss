@@ -161,6 +161,10 @@
     color: #000;
   }
 
+  .facebook:before {
+    content: "\f082\0a"
+  }
+
   .print:before {
     content: "\f017\0a";
   }

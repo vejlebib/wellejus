@@ -488,39 +488,43 @@ a em[class*="icon-"] {
   color: #000;
 }
 /* line 164, ../sass/framework/_wellejus.navigation.scss */
+.nav-helpers .facebook:before {
+  content: "\f082\0a";
+}
+/* line 168, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .print:before {
   content: "\f017\0a";
 }
-/* line 168, ../sass/framework/_wellejus.navigation.scss */
+/* line 172, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .read:before {
   content: "\f028\0a";
 }
-/* line 172, ../sass/framework/_wellejus.navigation.scss */
+/* line 176, ../sass/framework/_wellejus.navigation.scss */
 .nav-helpers .english:before {
   content: "\f024\0a";
 }
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  /* line 181, ../sass/framework/_wellejus.navigation.scss */
+  /* line 185, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers {
     clear: left;
     padding: 0;
     margin: 10px;
     width: 100%;
   }
-  /* line 187, ../sass/framework/_wellejus.navigation.scss */
+  /* line 191, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers li {
     margin: 0;
     height: 40px;
     line-height: 40px;
     width: 95%;
   }
-  /* line 194, ../sass/framework/_wellejus.navigation.scss */
+  /* line 198, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a {
     margin: 0;
   }
-  /* line 199, ../sass/framework/_wellejus.navigation.scss */
+  /* line 203, ../sass/framework/_wellejus.navigation.scss */
   .nav-helpers a,
   .nav-helpers a:before {
     color: white;
@@ -528,47 +532,47 @@ a em[class*="icon-"] {
 }
 /* Sub menu
    ========================================================================== */
-/* line 210, ../sass/framework/_wellejus.navigation.scss */
+/* line 214, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   font-weight: normal;
 }
 
-/* line 219, ../sass/framework/_wellejus.navigation.scss */
+/* line 223, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a {
   color: #607f0c;
 }
-/* line 222, ../sass/framework/_wellejus.navigation.scss */
+/* line 226, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
   font-family: Arial;
   font-weight: bold;
 }
-/* line 227, ../sass/framework/_wellejus.navigation.scss */
+/* line 231, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a:hover {
   text-decoration: none;
   color: #607f0c;
 }
-/* line 235, ../sass/framework/_wellejus.navigation.scss */
+/* line 239, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu li:before {
   color: #607f0c;
 }
 
 /* Footer menus
    ========================================================================== */
-/* line 247, ../sass/framework/_wellejus.navigation.scss */
+/* line 251, ../sass/framework/_wellejus.navigation.scss */
 .footer .pane-title {
   color: black;
   border-bottom: none;
 }
-/* line 254, ../sass/framework/_wellejus.navigation.scss */
+/* line 258, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li {
   margin-bottom: 0;
 }
-/* line 257, ../sass/framework/_wellejus.navigation.scss */
+/* line 261, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li:before {
   color: black;
 }
-/* line 262, ../sass/framework/_wellejus.navigation.scss */
+/* line 266, ../sass/framework/_wellejus.navigation.scss */
 .footer .menu li a,
 .footer .menu li a.active {
   color: black;
@@ -576,7 +580,7 @@ a em[class*="icon-"] {
 
 /* Action Links
    ========================================================================== */
-/* line 274, ../sass/framework/_wellejus.navigation.scss */
+/* line 278, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
   font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
