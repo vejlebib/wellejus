@@ -34,6 +34,7 @@
     .form-submit {
       @include border-radius(0px);
       border: solid $white 1px;
+      color: $white;
       min-height: 65px;
       text-transform: uppercase;
       background: #7d7e7d; /* Old browsers */

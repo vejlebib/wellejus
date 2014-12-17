@@ -45,6 +45,7 @@
     @include border-radius(0px);
     border: solid $white 1px;
     min-height: 65px;
+    color: $white;
     text-transform: uppercase;
     padding: 0;
     background: #7d7e7d; /* Old browsers */

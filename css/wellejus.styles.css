@@ -856,6 +856,7 @@ a em[class*="icon-"] {
   -o-border-radius: 0px;
   border-radius: 0px;
   border: solid white 1px;
+  color: white;
   min-height: 65px;
   text-transform: uppercase;
   background: #7d7e7d;
@@ -873,7 +874,7 @@ a em[class*="icon-"] {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 49, ../sass/module/_wellejus.search.scss */
+/* line 50, ../sass/module/_wellejus.search.scss */
 .header-wrapper .search .form-submit:focus, .header-wrapper .search .form-submit:hover, .header-wrapper .search .form-submit:active {
   background: none;
   background-color: black;
@@ -881,26 +882,26 @@ a em[class*="icon-"] {
 
 /* Search results list
    ========================================================================== */
-/* line 65, ../sass/module/_wellejus.search.scss */
+/* line 66, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .list-item {
   padding: 10px 0 0;
   border-bottom: 1px solid #EFEFEF;
   background: none;
 }
-/* line 71, ../sass/module/_wellejus.search.scss */
+/* line 72, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .view-mode-teaser {
   padding: 0 0 10px;
 }
-/* line 74, ../sass/module/_wellejus.search.scss */
+/* line 75, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .view-mode-teaser .content {
   font-size: 85%;
 }
-/* line 79, ../sass/module/_wellejus.search.scss */
+/* line 80, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .search-result--heading-type {
   text-transform: uppercase;
   font-size: 75%;
 }
-/* line 84, ../sass/module/_wellejus.search.scss */
+/* line 85, ../sass/module/_wellejus.search.scss */
 .pane-search-result .search-results .list .search-result--availability {
   border-top: 1px solid #EFEFEF;
   margin-top: 0;
@@ -911,16 +912,16 @@ a em[class*="icon-"] {
 
 /* Collection display
    ========================================================================== */
-/* line 102, ../sass/module/_wellejus.search.scss */
+/* line 103, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 107, ../sass/module/_wellejus.search.scss */
+/* line 108, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .ting-collection-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 112, ../sass/module/_wellejus.search.scss */
+/* line 113, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection .field.field-name-ting-abstract,
 .pane-ting-collection .field.field-name-ting-series {
   border-bottom: none;
@@ -929,23 +930,23 @@ a em[class*="icon-"] {
   font-size: 85%;
 }
 
-/* line 121, ../sass/module/_wellejus.search.scss */
+/* line 122, ../sass/module/_wellejus.search.scss */
 .ting-collection-inner-wrapper > h2 {
   display: none;
 }
 
 /* Object display
    ========================================================================== */
-/* line 131, ../sass/module/_wellejus.search.scss */
+/* line 132, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-wrapper {
   padding: 0;
   border-bottom: 1px solid #EEEEEE;
 }
-/* line 136, ../sass/module/_wellejus.search.scss */
+/* line 137, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .ting-object-inner-wrapper {
   padding: 10px 10px 20px;
 }
-/* line 141, ../sass/module/_wellejus.search.scss */
+/* line 142, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .field.field-name-ting-abstract,
 .pane-ting-object .field.field-name-ting-series {
   border-bottom: none;
@@ -953,7 +954,7 @@ a em[class*="icon-"] {
   padding-bottom: 0;
   font-size: 85%;
 }
-/* line 150, ../sass/module/_wellejus.search.scss */
+/* line 151, ../sass/module/_wellejus.search.scss */
 .pane-ting-object .collapsible .field-group-format-title:before,
 .pane-ting-object .ding-periodical-fold:before {
   color: #607f0c;
@@ -961,13 +962,13 @@ a em[class*="icon-"] {
 
 /* Availability
    ========================================================================== */
-/* line 160, ../sass/module/_wellejus.search.scss */
+/* line 161, ../sass/module/_wellejus.search.scss */
 .search-result--availability-link:before {
   content: " ";
   font-family: FontAwesome;
 }
 
-/* line 170, ../sass/module/_wellejus.search.scss */
+/* line 171, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.pending,
 .pane-ting-object li.pending {
   background-color: #959595;
@@ -988,7 +989,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.pending a:hover {
   text-decoration: none;
 }
-/* line 174, ../sass/module/_wellejus.search.scss */
+/* line 175, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.processed,
 .pane-ting-object li.availability.processed {
   background-color: #959595;
@@ -1009,7 +1010,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.processed a:hover {
   text-decoration: none;
 }
-/* line 178, ../sass/module/_wellejus.search.scss */
+/* line 179, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available,
 .pane-ting-object li.availability.available {
   background-color: #528c10;
@@ -1030,7 +1031,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.available a:hover {
   text-decoration: none;
 }
-/* line 182, ../sass/module/_wellejus.search.scss */
+/* line 183, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.reservable,
 .pane-ting-object li.availability.reservable {
   background-color: #f0cb28;
@@ -1051,7 +1052,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.reservable a:hover {
   text-decoration: none;
 }
-/* line 186, ../sass/module/_wellejus.search.scss */
+/* line 187, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.reservable,
 .pane-ting-object li.availability.available.reservable {
   background-color: #528c10;
@@ -1072,7 +1073,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.available.reservable a:hover {
   text-decoration: none;
 }
-/* line 190, ../sass/module/_wellejus.search.scss */
+/* line 191, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.available.not-reservable,
 .pane-ting-object li.availability.available.not-reservable {
   background-color: #a32e10;
@@ -1093,7 +1094,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.available.not-reservable a:hover {
   text-decoration: none;
 }
-/* line 194, ../sass/module/_wellejus.search.scss */
+/* line 195, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.reservable,
 .pane-ting-object li.availability.unavailable.reservable {
   background-color: #f0cb28;
@@ -1114,7 +1115,7 @@ a em[class*="icon-"] {
 .pane-ting-object li.availability.unavailable.reservable a:hover {
   text-decoration: none;
 }
-/* line 198, ../sass/module/_wellejus.search.scss */
+/* line 199, ../sass/module/_wellejus.search.scss */
 .pane-ting-collection li.availability.unavailable.not-reservable,
 .pane-ting-object li.availability.unavailable.not-reservable {
   background-color: #a32e10;
@@ -1138,26 +1139,26 @@ a em[class*="icon-"] {
 
 /* Subjects
    ========================================================================== */
-/* line 210, ../sass/module/_wellejus.search.scss */
+/* line 211, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subject {
   background-color: transparent;
   text-shadow: none;
   padding: 0;
 }
-/* line 216, ../sass/module/_wellejus.search.scss */
+/* line 217, ../sass/module/_wellejus.search.scss */
 #w .ting-object .subjects:before {
   content: "Emner: ";
 }
 
 /* Layout
    ========================================================================== */
-/* line 225, ../sass/module/_wellejus.search.scss */
+/* line 226, ../sass/module/_wellejus.search.scss */
 .ting-object-left {
   margin-right: -14%;
   width: 14%;
 }
 
-/* line 230, ../sass/module/_wellejus.search.scss */
+/* line 231, ../sass/module/_wellejus.search.scss */
 .ting-object-right {
   margin-left: -86%;
   width: 86%;
@@ -1487,6 +1488,7 @@ a em[class*="icon-"] {
   border-radius: 0px;
   border: solid white 1px;
   min-height: 65px;
+  color: white;
   text-transform: uppercase;
   padding: 0;
   background: #7d7e7d;
@@ -1504,17 +1506,17 @@ a em[class*="icon-"] {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 60, ../sass/module/_wellejus.user.scss */
+/* line 61, ../sass/module/_wellejus.user.scss */
 .user .form-submit:focus, .user .form-submit:hover, .user .form-submit:active {
   background: none;
   background-color: black;
 }
-/* line 67, ../sass/module/_wellejus.user.scss */
+/* line 68, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info li {
   float: left;
   width: 48%;
 }
-/* line 72, ../sass/module/_wellejus.user.scss */
+/* line 73, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button {
   padding: 8px;
   width: 100%;
@@ -1535,16 +1537,16 @@ a em[class*="icon-"] {
   background: linear-gradient(135deg, #7d7e7d 0%, #0e0e0e 100%);
   /* W3C */
 }
-/* line 87, ../sass/module/_wellejus.user.scss */
+/* line 88, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .button:focus, .user.vejlebib-user-info .button:hover, .user.vejlebib-user-info .button:active {
   background: none;
   background-color: black;
 }
-/* line 93, ../sass/module/_wellejus.user.scss */
+/* line 94, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username {
   margin: 2px 0 5px;
 }
-/* line 96, ../sass/module/_wellejus.user.scss */
+/* line 97, ../sass/module/_wellejus.user.scss */
 .user.vejlebib-user-info .username a {
   color: #FFFFFF;
   font-size: 120%;
@@ -1556,11 +1558,11 @@ a em[class*="icon-"] {
     min-height: 30px;
     overflow: visible;
   }
-  /* line 106, ../sass/module/_wellejus.user.scss */
+  /* line 107, ../sass/module/_wellejus.user.scss */
   .user ul {
     padding-left: 0;
   }
-  /* line 115, ../sass/module/_wellejus.user.scss */
+  /* line 116, ../sass/module/_wellejus.user.scss */
   .user .form-item-name,
   .user .form-item-pass {
     padding-left: 0;
@@ -1571,22 +1573,22 @@ a em[class*="icon-"] {
     float: none;
     width: 68%;
   }
-  /* line 126, ../sass/module/_wellejus.user.scss */
+  /* line 127, ../sass/module/_wellejus.user.scss */
   .user .form-item-name label,
   .user .form-item-pass label {
     font-size: 250%;
   }
-  /* line 130, ../sass/module/_wellejus.user.scss */
+  /* line 131, ../sass/module/_wellejus.user.scss */
   .user [class^="icon-"] {
     left: 16px;
     bottom: 5px;
     font-size: 120%;
   }
-  /* line 136, ../sass/module/_wellejus.user.scss */
+  /* line 137, ../sass/module/_wellejus.user.scss */
   .user .form-item-pass label {
     display: none;
   }
-  /* line 140, ../sass/module/_wellejus.user.scss */
+  /* line 141, ../sass/module/_wellejus.user.scss */
   .user .form-text {
     min-height: 30px;
   }
