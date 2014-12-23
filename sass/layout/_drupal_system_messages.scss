@@ -1,0 +1,8 @@
+
+// Fix missing semicolon in DDBasic theme
+.messages {
+  &.error,
+  table tr.error {
+    background-color: $red;
+  }
+}

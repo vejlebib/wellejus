@@ -607,6 +607,12 @@ a em[class*="icon-"] {
   background: #50BA00;
 }
 
+/* line 5, ../sass/layout/_drupal_system_messages.scss */
+.messages.error,
+.messages table tr.error {
+  background-color: #a32e10;
+}
+
 /**
  * Layout
  *
