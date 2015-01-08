@@ -1,8 +1,9 @@
 <?php
 /**
  * @file
- * Preprocess and Process Functions.
+ * Preprocess, process and theme Functions.
  */
+
 
 
 /**
