@@ -4,7 +4,31 @@
  * Preprocess, process and theme Functions.
  */
 
-
+/**
+ * Implements hook_preprocess_node().
+ */
+function wellejus_preprocess_node(&$vars) {
+  if (isset($vars['content']['#bundle']) && $vars['content']['#bundle'] == 'ding_event') {
+    $event_date_ra = field_view_field('node', $vars['node'], 'field_ding_event_date', array(
+      'label' => 'hidden',
+      'type' => 'date_default',
+      'settings' => array(
+        'format_type' => 'date_only',
+        'fromto' => 'both',
+      ),
+    ));
+    $vars['ddbasic_event_date'] = $event_date_ra[0]['#markup'];
+    $event_time_ra = field_view_field('node', $vars['node'], 'field_ding_event_date', array(
+      'label' => 'hidden',
+      'type' => 'date_default',
+      'settings' => array(
+        'format_type' => 'time_only',
+        'fromto' => 'both',
+      ),
+    ));
+    $vars['ddbasic_event_time'] = $event_time_ra[0]['#markup'];    
+  }
+}
 
 /**
  * Implements theme_menu_link().
