@@ -146,7 +146,7 @@ a:hover i[class^="icon-"] {
 body {
   background-color: #efefef;
   color: rgba(0, 0, 0, 0.7);
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: "SourceSansProRegular", Helvetica, "Nimbus Sans L", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -183,19 +183,19 @@ h6 {
 
 /* line 42, ../sass/framework/_wellejus.base.scss */
 strong {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
 }
 
 /* line 46, ../sass/framework/_wellejus.base.scss */
 em {
-  font-family: Arial;
+  font-family: "SourceSansProItalic";
   font-weight: normal;
   font-style: italic;
 }
 /* line 49, ../sass/framework/_wellejus.base.scss */
 em strong {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
 }
 
@@ -534,7 +534,7 @@ a em[class*="icon-"] {
    ========================================================================== */
 /* line 214, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu-title {
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: "SourceSansProRegular", Helvetica, "Nimbus Sans L", sans-serif;
   font-weight: normal;
 }
 
@@ -544,7 +544,7 @@ a em[class*="icon-"] {
 }
 /* line 226, ../sass/framework/_wellejus.navigation.scss */
 .sub-menu > li a.active {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
 }
 /* line 231, ../sass/framework/_wellejus.navigation.scss */
@@ -582,7 +582,7 @@ a em[class*="icon-"] {
    ========================================================================== */
 /* line 278, ../sass/framework/_wellejus.navigation.scss */
 .action-links li a {
-  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-family: "SourceSansProRegular", Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 /**
@@ -788,7 +788,7 @@ a em[class*="icon-"] {
    ========================================================================== */
 /* line 11, ../sass/layout/_wellejus.typography.scss */
 .page-title {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
   font-size: 170%;
 }
@@ -801,7 +801,7 @@ a em[class*="icon-"] {
 
 /* line 21, ../sass/layout/_wellejus.typography.scss */
 .pane-title {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
   font-size: 130%;
 }
@@ -810,7 +810,7 @@ a em[class*="icon-"] {
    ========================================================================== */
 /* line 31, ../sass/layout/_wellejus.typography.scss */
 .page-lead {
-  font-family: Arial;
+  font-family: "SourceSansProSemibold";
   font-weight: bold;
 }
 

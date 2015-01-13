@@ -59,12 +59,12 @@ $base-icon-library-font:         "FontAwesome";
 /* Typography
    ========================================================================== */
 
-$font-light:                      Arial;
-$font-light-italic:               Arial;
-$font-regular:                    Arial;
-$font-regular-italic:             Arial;
-$font-bold:                       Arial;
-$font-bold-italic:                Arial;
+$font-light:                      "SourceSansProLight";
+$font-light-italic:               "SourceSansProLightItalic";
+$font-regular:                    "SourceSansProRegular";
+$font-regular-italic:             "SourceSansProItalic";
+$font-bold:                       "SourceSansProSemibold";
+$font-bold-italic:                "SourceSansProSemiboldItalic";
 $font-color-primary:              transparentize($black, .3);
 
 
