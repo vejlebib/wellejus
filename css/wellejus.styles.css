@@ -147,7 +147,7 @@ body {
   background-color: #efefef;
   color: rgba(0, 0, 0, 0.7);
   font-family: "SourceSansProRegular", Helvetica, "Nimbus Sans L", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 
@@ -1427,7 +1427,7 @@ a em[class*="icon-"] {
 }
 /* line 90, ../sass/module/_wellejus.openinghours.scss */
 .topbar-inner .opening-hours-list .details span {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 /* opening hours today block placed in topbar
@@ -1678,7 +1678,7 @@ a em[class*="icon-"] {
  */
 /* line 7, ../sass/module/_wellejus.tipsy.scss */
 .tipsy-inner {
-  font-size: 14px;
+  font-size: 16px;
   max-width: 250px;
 }
 
