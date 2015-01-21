@@ -1639,15 +1639,19 @@ a em[class*="icon-"] {
   overflow: hidden;
   height: 70%;
 }
-/* line 42, ../sass/module/_wellejus.tabroll.scss */
+/* line 41, ../sass/module/_wellejus.tabroll.scss */
+.ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav li.ui-tabs-active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 46, ../sass/module/_wellejus.tabroll.scss */
 .ding-tabroll-wrapper .ui-tabs ul.ui-tabs-nav li:first-child {
   margin-top: -1px;
 }
-/* line 47, ../sass/module/_wellejus.tabroll.scss */
+/* line 52, ../sass/module/_wellejus.tabroll.scss */
 .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel {
   float: left;
 }
-/* line 50, ../sass/module/_wellejus.tabroll.scss */
+/* line 55, ../sass/module/_wellejus.tabroll.scss */
 .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info {
   bottom: 0;
   right: inherit;
@@ -1655,17 +1659,17 @@ a em[class*="icon-"] {
   height: 25%;
   padding: 10px 0;
 }
-/* line 57, ../sass/module/_wellejus.tabroll.scss */
+/* line 62, ../sass/module/_wellejus.tabroll.scss */
 .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info h3 {
   margin: 0 10px;
   text-transform: uppercase;
 }
-/* line 62, ../sass/module/_wellejus.tabroll.scss */
+/* line 67, ../sass/module/_wellejus.tabroll.scss */
 .ding-tabroll-wrapper .ui-tabs .ui-tabs-panel .info p {
   margin: 0 10px;
 }
 
-/* line 73, ../sass/module/_wellejus.tabroll.scss */
+/* line 78, ../sass/module/_wellejus.tabroll.scss */
 #w .ding-tabroll-wrapper a,
 #w .ding-tabroll-wrapper h3 a {
   color: #FFFFFF;

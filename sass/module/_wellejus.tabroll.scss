@@ -13,7 +13,7 @@
   
     ul.ui-tabs-nav {
       right: 0;
-      
+        
       li {
         background-color: #b2b2b2;
         border-top: none;
@@ -37,11 +37,16 @@
             height: 70%;
           }
         }
+        
+        &.ui-tabs-active {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
       }
       
       li:first-child {
         margin-top: -1px;
       }
+
     }
 
     .ui-tabs-panel {
