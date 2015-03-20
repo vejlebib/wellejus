@@ -5,7 +5,7 @@
  */
 // Prepare a couple of variables.
 $start = strtotime($fields['field_ding_event_date_1']->content);
-$price = ($fields['field_ding_event_price']->content < 1) ? t('Free') : intval($fields['field_ding_event_price']->content) . ' kr.';
+$price = (!isset($fields['field_ding_event_price']) || $fields['field_ding_event_price']->content < 1) ? t('Free') : intval($fields['field_ding_event_price']->content) . ' kr.';
 $slug = $fields['field_ding_library_slug']->content;
 ?>
 <?php foreach ($fields as $id => $field): ?>
