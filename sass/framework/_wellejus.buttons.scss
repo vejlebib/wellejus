@@ -23,6 +23,10 @@
     vertical-align: middle;
   }
 
+  .button-see-online {
+    line-height: 100%; /* Remove the line-height: 125% applied in ddbasic _search.scss line 215 */
+  }
+
   /**
    * Remove hover underline on action buttons
    */
