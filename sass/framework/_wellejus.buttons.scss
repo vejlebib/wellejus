@@ -43,21 +43,6 @@
     margin-top: 30px;
   }
 
-  /**
-   * Position ding entity action buttons in bottom right corner when viewing a
-   * ting object entity on large and x-large screens.
-   */
-  @include large-and-x-large() {
-    position: relative;
-    min-height: 350px;
-
-    .field-type-ding-entity-buttons {
-      position: absolute;
-      bottom: 20px; 
-      right: 20px;
-    }
-  }  
-
 } 
 
 .ting-collection-wrapper {
