@@ -59,6 +59,11 @@
   display: none;
 }
 
+.search-result--availability-link:before {
+  content: "\f0c8  ";
+  font-family: FontAwesome;
+}
+
 .pane-ting-collection,
 .pane-ting-object {
 
