@@ -55,117 +55,24 @@
   }
 }
 
-/* Search results list
-   ========================================================================== */
-
-.pane-search-result {
-  
-  .search-results {
-    .list {
-      
-      .list-item {
-        padding: 10px 0 0;
-        border-bottom: 1px solid #EFEFEF;
-        background: none;
-      }
-
-      .view-mode-teaser {
-        padding: 0 0 10px;
-        
-        .content {
-          font-size: $font-size-small;
-        }
-      }
-
-      .search-result--heading-type {
-        text-transform: uppercase;
-        font-size: $font-size-tiny;
-      }
-
-      .search-result--availability {
-        border-top: 1px solid #EFEFEF;
-        margin-top: 0;
-        padding-top: 0;
-        margin-left: -86%;
-        width: 86%;
-      }
-
-    }
-  }
-}
-
-
-/* Collection display
-   ========================================================================== */
-
-.pane-ting-collection {
-
-  .ting-collection-wrapper {
-    padding: 0;
-    border-bottom: 1px solid #EEEEEE;
-  }
-
-  .ting-collection-inner-wrapper {
-    padding: 10px 10px 20px;
-  }
-
-  .field.field-name-ting-abstract,
-  .field.field-name-ting-series {
-    border-bottom: none;
-    margin-bottom: 10px;
-    padding-bottom: 0;
-    font-size: $font-size-small;
-  }
-
-}
-
 .ting-collection-inner-wrapper > h2 {
-    display: none;
+  display: none;
 }
-
-
-/* Object display
-   ========================================================================== */
-
-.pane-ting-object {
-
-  .ting-object-wrapper {
-    padding: 0;
-    border-bottom: 1px solid #EEEEEE;
-  }
-
-  .ting-object-inner-wrapper {
-    padding: 10px 10px 20px;
-  }
-
-  .field.field-name-ting-abstract,
-  .field.field-name-ting-series {
-    border-bottom: none;
-    margin-bottom: 10px;
-    padding-bottom: 0;
-    font-size: $font-size-small;
-  }
-
-  .collapsible .field-group-format-title,
-  .ding-periodical-fold {
-    &:before {
-      color: $link-color;
-    }
-  }
-
-}
-
-
-/* Availability
-   ========================================================================== */
-.search-result--availability-link:before {
-  content: " ";
-  font-family: FontAwesome;
-}
-
 
 .pane-ting-collection,
 .pane-ting-object {
+
+  .field-type-ting-subjects {
+    a.subject, a.subject:hover {
+      background-color: $green;
+      color: white;
+
+      &:hover {
+        background-color: darken($green, 10%);
+        text-decoration: none;
+      }
+    }
+  }
 
   li {
     &.pending {
@@ -201,34 +108,4 @@
     }
 
   }
-}
-
-
-/* Subjects
-   ========================================================================== */
-#w .ting-object {
-
-  .subject {
-    background-color: transparent;
-    text-shadow: none;
-    padding: 0;
-  }
-
-  .subjects:before {
-    content: "Emner: ";
-  }
-
-}
-
-
-/* Layout
-   ========================================================================== */
-.ting-object-left {
-  margin-right: -14%;
-  width: 14%;
-}
-
-.ting-object-right {
-  margin-left: -86%;
-  width: 86%;
 }
