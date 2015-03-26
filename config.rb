@@ -10,8 +10,8 @@ javascripts_dir = "scripts"
 require 'zen-grids'
 require 'breakpoint'
 
-output_style = :expanded
-environment = :development
+output_style = :compressed
+environment = :production
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
