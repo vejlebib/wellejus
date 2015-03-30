@@ -161,11 +161,13 @@ function wellejus_form_user_login_block_alter(&$form, &$form_state) {
  */
 function wellejus_js_alter(&$js) {
   // Override the ding_tabroll module js, so that we can adjust the rotation speed
-  $theme_path = drupal_get_path('theme', 'wellejus') . '/scripts/wellejus.ding_tabroll.js';
   $module_path = drupal_get_path('module', 'ding_tabroll') . '/js/ding_tabroll.js';
-  // Copy the settings
-  $js[$theme_path] = $js[$module_path];
-  // Override the data
-  $js[$theme_path]['data'] = $theme_path;
-  unset($js[$module_path]);
+  if (isset($js[$module_path]) {
+    $theme_path = drupal_get_path('theme', 'wellejus') . '/scripts/wellejus.ding_tabroll.js';
+    // Copy the settings
+    $js[$theme_path] = $js[$module_path];
+    // Override the data
+    $js[$theme_path]['data'] = $theme_path;
+    unset($js[$module_path]);
+  }
 }
