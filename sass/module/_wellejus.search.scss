@@ -114,3 +114,36 @@
 
   }
 }
+
+/**
+ * Bibliotek.dk link plugin on search page
+ */
+.pane-bibliotek-dk-link {
+  text-align: center;
+  background: url('../images/pw_maze_white.png');
+  padding: 15px;
+
+  .pane-content {
+    padding: 20px;
+    background-color: transparentize($white, .1);
+  }
+
+  @include x-large {
+    text-align: left;
+    position: relative;
+
+    .pane-content {
+
+      & > a {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+      }
+
+      & > p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
