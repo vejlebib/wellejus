@@ -1,0 +1,17 @@
+/**
+ * Styling of (related to) Biblioteksvagtens ask-widget button.
+ */
+
+#w > #page {
+	/* 'Lift' the page so users can scroll and see library address */
+	padding-bottom: 35px;
+}
+
+div.ask-vopros-tab {
+	z-index: 1000; /* Ensure widget is not hidden below other elements */
+
+	@include small {
+		/* On small screens move widget to the right to not cover cookie-control */
+		right: 10px;
+	}
+}
