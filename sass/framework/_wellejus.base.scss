@@ -54,8 +54,9 @@ em {
 /* Background */
 #page.ding2-site-template {
   background-image: url("../images/facet_baggrund_A3_300dpi.jpg"); /* Fallback */
-  background-image: url("../images/facet_baggrund_A3_300dpi.svg");
-  background-size: contain;
+  //background-image: url("../images/facet_baggrund_A3_300dpi.svg");
+  background-size: cover; 
+  background-attachment: fixed;
 }
 
 /* override ALL link styles */
