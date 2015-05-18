@@ -87,6 +87,16 @@
   }
 }
 
+.event-list {
+  .event-list-item:nth-child(odd) {
+    background-color: $list-item-background-color-odd;
+  }
+
+  .event-list-item:nth-child(even) {
+    background-color: $list-item-background-color-even;
+  }
+}
+
 .frontpage-layout {
   .pane-vejlebib-ding-event-vejlebib-ding-event-list .pane-title {
     background: $black;
