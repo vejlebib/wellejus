@@ -13,6 +13,10 @@
   padding: $medium-spacing;
 }
 
+.topbar {
+  background-color: $topbar-background-color;
+}
+
 .site-header,
 .footer {
   max-width: 1200px;
@@ -28,6 +32,10 @@
   background-color: #ffffff;
   box-shadow: 5px 5px 8px #666666;
   margin-bottom: $medium-spacing;
+}
+
+.layout-wrapper {
+  background-color: $content-background-color;
 }
 
 .default-layout,
@@ -55,10 +63,10 @@
 /* Sections
    ========================================================================== */
 .navigation-wrapper {
+  background-color: $navigation-background-color;
   width: inherit;
   clear: both;
 }
-
 
 /* Site-header
    ========================================================================== */
@@ -131,6 +139,7 @@
 /* Footer
    ========================================================================== */
 .footer {
+  background-color: $footer-background-color;
   padding-top: 0;
 }
 
@@ -149,6 +158,7 @@
 /* Bottom
    ========================================================================== */
 .bottom {
+  background-color: $footer-background-color;
   padding: 0;
   color: #808080;
 }
@@ -159,10 +169,3 @@
   margin: 0 $large-spacing;
 }
 
-/* Bottom background color */
-// MOVED FROM CONFIGURATION PARTIAL
-// This has nothing to do with layout and should by placed in another partial
-// TODO: Make a new mics.scss partial and place styling like this one in it.
-.bottom {
-  background-color: white;
-}
