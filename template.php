@@ -97,26 +97,6 @@ function wellejus_menu_tree__menu_information_menu(&$vars) {
 }
 
 /**
- * Implements hook_css_alter()
- * 
- * DDBasic theme integrates the color module. When subtheming it, 
- * we need to know whether the color module has been used to 
- * create a custom-color version of the ddbasic stylesheet - and ensure it is used.
- */
-function wellejus_css_alter(&$css) {
-  // Use DDBasic color-altered css if it exists
-  $color_ddbasic_css = variable_get('color_ddbasic_stylesheets');
-  if (!empty($color_ddbasic_css[0])) {
-    $ddbasic_color_css_file = str_replace($GLOBALS['base_url'] . '/', '', file_create_url($color_ddbasic_css[0]));
-
-    if (isset($css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css'])) {
-      $css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css']['data'] = $ddbasic_color_css_file;
-      $css['profiles/ding2/themes/ddbasic/css/ddbasic.styles.css']['type'] = 'file';
-    }
-  }
-}
-
-/**
  * Implements hook_form_FORM_ID_alter().
  */
 function wellejus_form_search_block_form_alter(&$form, &$form_state) {
