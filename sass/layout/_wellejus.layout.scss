@@ -117,6 +117,16 @@
   
 }
 
+// MOVED FROM CONFIGURATION PARTIAL
+// This has nothing to do with layout and should by placed in another partial
+// TODO: Make a new mics.scss partial and place styling like this one in it.
+.header-wrapper {
+  $rgba: rgba($header-background-color, $default-transparency);
+  // IE Fallback:
+  background-color: $header-background-color;
+  background-color: $rgba;
+}
+
 
 /* Footer
    ========================================================================== */
@@ -147,4 +157,12 @@
   border-top: 1px solid #C0C0C0;
   line-height: 3em;
   margin: 0 $large-spacing;
+}
+
+/* Bottom background color */
+// MOVED FROM CONFIGURATION PARTIAL
+// This has nothing to do with layout and should by placed in another partial
+// TODO: Make a new mics.scss partial and place styling like this one in it.
+.bottom {
+  background-color: white;
 }
