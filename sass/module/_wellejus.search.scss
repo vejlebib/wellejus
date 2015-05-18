@@ -67,6 +67,14 @@
 .pane-ting-collection,
 .pane-ting-object {
 
+  /* Material Details - Collapsible */
+  .collapsible .field-group-format-title,
+  .ding-periodical-fold {
+    &:before {
+      color: $link-color;
+    }
+  }
+
   .field-type-ting-subjects {
     a.subject, a.subject:hover {
       background-color: $green;
