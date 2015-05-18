@@ -1,28 +1,3 @@
-/* Links */
-
-a {
-  font-weight: $base-font-weight-normal;
-
-  &:link,
-  &:visited {
-    text-decoration: none;
-  }
-
-  /* Ensure that links maintain their color when visited */
-  &:visited {
-    color: $link-color;
-  }
-
-  &:hover {
-    text-decoration: underline;
-
-    i[class^="icon-"] {
-      text-decoration: none;
-    }
-  }
-
-}
-
 /* Header */
 .header-wrapper {
   $rgba: rgba($header-background-color, $default-transparency);

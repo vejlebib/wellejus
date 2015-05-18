@@ -61,12 +61,22 @@ em {
 
 /* override ALL link styles */
 a {
-  &:link {
+  font-weight: $base-font-weight-normal;
+  color: $link-color;
+  &:link,
+  &:visited {
     text-decoration: none;
+    // Ensure that links maintain color when visited.
+    color: $link-color;
   }
 
   &:hover {
     text-decoration: underline;
+
+    // No underline on font awesome icons when placed in links.
+    i[class^="icon-"] {
+      text-decoration: none;
+    }
   }
 
   &:active {
