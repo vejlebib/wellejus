@@ -145,3 +145,17 @@ function wellejus_js_alter(&$js) {
     unset($js[$module_path]);
   }
 }
+
+/**
+ * Implements hook_preprocess_ting_object().
+ */
+function wellejus_preprocess_ting_object(&$vars) {
+  if (isset($vars['elements']['#view_mode']) && $vars['elements']['#view_mode'] == 'full') {
+    // ting_object and ting_collection entities use the same template.
+    if (isset($vars['elements']['#entity_type']) && $vars['elements']['#entity_type'] == 'ting_object') {
+      $holdings = $vars['content']['holdings-available'];
+      $vars['content']['holdings-available'] = $vars['content']['material-details'];
+      $vars['content']['material-details'] = $holdings;
+    }
+  }
+}
