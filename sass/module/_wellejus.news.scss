@@ -8,20 +8,19 @@
 
 .news-list {
 
-  .news-list-item {
-    border-top: 1px solid #C0C0C0;
-  }
-  
-  .news-list-item:first-child {
-    border-top: none;
+  .news-list-item:nth-child(odd) {
+    background-color: $list-item-background-color-odd;
   }
 
+  .news-list-item:nth-child(even) {
+    background-color: $list-item-background-color-even;
+  }  
 }
 
 .view-vejlebib-ding-news {
   .news-list {
     .news-list-item {
-      padding: $large-spacing 0 0;
+      padding: $large-spacing $small-spacing;
       
       &:first-child {
         padding-top: 0;
@@ -43,13 +42,13 @@
     }
     
     .news-label {
-      background-color: $white;
+      //background-color: $white;
       text-shadow: none;
       padding: 0;
       
       a {
         padding: 0;
-        background-color: $white;
+        background-color: inherit;
         font-size: $font-size-medium;
         text-transform: uppercase;
       }
