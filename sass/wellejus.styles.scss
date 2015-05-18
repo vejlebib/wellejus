@@ -1,18 +1,15 @@
 // =============================================================================
 // Wellejus stylesheet combiner
 // =============================================================================
-//
+
 // Include compass
 @import "compass/css3";
-
 
 // Grid - http://zengrids.com
 @import "zen";
 
-
 // Include configuration
 @import "configuration/_wellejus.variables";
-@import "configuration/_wellejus.colors";
 
 // Include framework
 @import "framework/_wellejus.mixins";
@@ -23,31 +20,16 @@
 @import "framework/_wellejus.labels";
 @import "framework/_wellejus.modal";
 
-// Include media queries (displays and attachments)
 @import "layout/_wellejus.drupal_system_messages";
 @import "layout/_wellejus.layout";
 @import "layout/_wellejus.typography";
 
-
-// Include modules - uncomment if needed
-//@import "module/_module";
-//@import "module/_availability";
 @import "module/_wellejus.search";
-//@import "module/_newmaterials";
-//@import "module/_carousel";
 @import "module/_wellejus.news";
 @import "module/_wellejus.event";
-//@import "module/_libraries";
 @import "module/_wellejus.openinghours";
 @import "module/_wellejus.user";
-//@import "module/_comment";
-//@import "module/_staff";
 @import "module/_wellejus.tabroll";
-//@import "module/_groups";
 @import "module/_wellejus.tipsy";
 @import "module/_wellejus.extrasearch";
 @import "module/_wellejus.ask_vopros";
-
-// Custom font
-//@import "../font/source-sans/stylesheet.css";
-// Check if we need Font Squirrel (http://www.fontsquirrel.com) to help with using our ConduitITCS font
