@@ -36,19 +36,38 @@ $breakpoint-x-large:              1210px;
 /* Standard color definitions
    ========================================================================== */
 
-$white:                          #fff !default;
-$black:                          #000 !default;
-$gray:                           #d5d5d5 !default;
-$gray-light:                     lighten($gray, 10%) !default;
-$gray-lighter:                   lighten($gray, 15%) !default;
-$gray-dark:                      darken($gray, 10%) !default;
-$gray-darker:                    darken($gray, 25%) !default;
-$gray-darkest:                   darken($gray, 35%) !default;
-$red:                            #a32e10;
-$green:                          #528c10;
-$yellow:                         #f0cb28;
-$blue:                           #00caff;
-$default-transparency:           0.75;
+$white:                            #fff !default;
+$black:                            #000 !default;
+$gray:                             #d5d5d5 !default;
+$gray-light:                       lighten($gray, 10%) !default;
+$gray-lighter:                     lighten($gray, 15%) !default;
+$gray-dark:                        darken($gray, 10%) !default;
+$gray-darker:                      darken($gray, 25%) !default;
+$gray-darkest:                     darken($gray, 35%) !default;
+$red:                              #a32e10;
+$green:                            #528c10;
+$yellow:                           #f0cb28;
+$blue:                             #00caff;
+$header-background-color:          #95C11F !default;
+$navigation-background-color:      #ffffff !default;
+$link-color:                       #607f0c !default;
+$link-color-hover:                 #607f0c !default;
+$label-bg-color:                   #00cafe !default;
+$label-bg-color-hover:             #00a7d2 !default;
+$label-text-color:                 #fffffd !default;
+$label-text-color-hover:           #fafaf7 !default;
+$content-background-color:         #fffffe !default;
+$list-background-color:            #ffffff !default;
+$list-item-background-color-odd:   #ffffff !default;
+$list-item-background-color-even:  #ffffff !default;
+$list-text-color:                  #4c4c4c !default;
+$footer-background-color:          #ffffff !default;
+$vejle-color:                      #95C127 !default;
+$borkop-color:                     #E4032E !default;
+$egtved-color:                     #951B81 !default;
+$jelling-color:                    #008BD2 !default;
+$give-color:                       #F39200 !default;
+$default-transparency:             0.75;
 
 /* Font library
    ========================================================================== */
