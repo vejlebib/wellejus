@@ -127,20 +127,15 @@
       border-radius: 8px;
       height: 24px;
       color: $white;
+      background-color: $green;
 
       &:hover {
         text-decoration: none;     
-      }
-    }
-
-    span.event-tags a,
-    span.event-category a {
-      background-color: $green;
-      &:hover {
         background-color: darken($green, 10%);
       }
     }
 
+    // library label specific styling
     span.library-ref a {
       background-color: $black;
       &:hover {
