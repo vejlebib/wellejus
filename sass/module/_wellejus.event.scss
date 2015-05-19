@@ -8,11 +8,28 @@
 /* Event list
    ========================================================================== */
 
+.pane-vejlebib-ding-event-vejlebib-ding-event-list,
+.pane-vejlebib-ding-event-vejlebib-ding-event-library-list {
+  .pane-title {
+    background: $black;
+    color: $white;
+    font-size: 1em;
+    padding: 0.2em 0.5em;
+    text-transform: uppercase;
+  }
+}
+
 .view-vejlebib-ding-event {
-  .event-list-leaf {
+  .event-list-item {
     padding-left: 75px;
     
     .event-list-date-wrapper {
+      display: inline-block;
+      font-size: 75%;
+      margin-right: 10px;
+      min-width: 65px;
+      text-align: center;
+      vertical-align: top;
       box-shadow: 2px 2px 2px;
       position: absolute;
       left: 0;
@@ -39,17 +56,26 @@
       &.jelling {
         border: 1px solid $jelling-color;
       }
+
+      .event-list-day{
+        color: $white;
+        text-shadow: none;
+        display: block;
+      }
+
+      .event-list-date {
+        display: block;
+        font-size: 280%;
+        padding-top: 5px;
+        margin-bottom: -5px;
+      }
+
+      .event-list-inner-wrapper {
+        color: $black;
+      }
     }
   }
 
-  .event-list-day{
-    text-shadow: none;
-  }
-
-  .event-list-date {
-    font-size: 280%;
-    margin-bottom: -5px;
-  }
 
   // using library colors
   .vejle .event-list-day {
@@ -96,17 +122,6 @@
     background-color: $list-item-background-color-even;
   }
 }
-
-.frontpage-layout {
-  .pane-vejlebib-ding-event-vejlebib-ding-event-list .pane-title {
-    background: $black;
-    color: $white;
-    font-size: 1em;
-    padding: 0.2em 0.5em;
-    text-transform: uppercase;
-  }
-}
-
 
 /* Event
    ========================================================================== */
