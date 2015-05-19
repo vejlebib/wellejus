@@ -61,6 +61,12 @@
 /* Navigation, main menu and secondary menu
    ========================================================================== */
 
+.navigation-wrapper {
+  background-color: $navigation-background-color;
+  width: inherit;
+  clear: both;
+}
+
 /* Media queries */
 @include small-medium() {
 
