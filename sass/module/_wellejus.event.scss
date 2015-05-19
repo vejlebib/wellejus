@@ -8,6 +8,12 @@
 /* Event list
    ========================================================================== */
 
+// This is a quick fix of the styling of events on '/arrangementer'
+// TODO: Use the same style here as on frontpage and library event list.
+.view-ding-event .event-list-day {
+  background-color: $vejle-color;
+}
+
 .pane-vejlebib-ding-event-vejlebib-ding-event-list,
 .pane-vejlebib-ding-event-vejlebib-ding-event-library-list {
   .pane-title {
