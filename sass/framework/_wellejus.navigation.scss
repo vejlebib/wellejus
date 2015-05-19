@@ -84,14 +84,26 @@
   }
 
   .main-menu {
-    .menu-item {
-      font-size: $font-size-tiny;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 6px 10px;
-      margin: 10px 0;
+    li {
 
-      &.active {
+      .menu-item {
+        font-size: $font-size-tiny;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 6px 10px;
+        margin: 10px 0;
+
+        &:focus,
+        &:hover {
+          background: none;
+          background-color: $black;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+
+      .menu-item.active,
+      &.active-trail .menu-item {
         background: #7d7e7d; /* Old browsers */
         background: -moz-linear-gradient(-45deg,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */ 
         background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
@@ -99,17 +111,10 @@
         background: -o-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
         background: linear-gradient(135deg,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
-        color: #EEEEEE;
-        text-decoration: none;
-      }
-      
-      &:focus,
-      &:hover {
-        background: none;
-        background-color: $black;
         color: $white;
         text-decoration: none;
       }
+      
     }
   }
 
@@ -117,7 +122,7 @@
 
 @include large-x-large() {
 
-  #w .main-menu {
+  .main-menu {
     .menu-item {
       &:link,
       &:visited {
