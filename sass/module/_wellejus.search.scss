@@ -123,6 +123,16 @@
   }
 }
 
+.pane-ding-facetbrowser,
+.pane-search-backends {
+  a:visited {
+    // Ensure that links maintain color when visited.
+    // We neeed to set this here, since _search partial from ddbasic is using a
+    // more specific rule than _wellejus.base partial.
+    color: $link-color;
+  }
+}
+
 /**
  * Bibliotek.dk link plugin on search page
  */
