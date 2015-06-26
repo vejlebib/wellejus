@@ -73,7 +73,7 @@
       @include box-sizing(border-box);
       @include border-radius(0px);
       white-space: nowrap; /* Fix broken user-panel on smaller screens */
-      line-height: 18px; /* To get the same height as search and vertically align text */
+      line-height: 19px; /* To get the same height as search and vertically align text */
       display: inline-block;
       color: $white;
       text-align: center;
@@ -90,7 +90,7 @@
     }
     
     .username {
-      margin: 2px 0 5px;
+      margin-bottom: 5px;
       
       a {
         color: #FFFFFF;
