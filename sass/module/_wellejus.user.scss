@@ -8,22 +8,27 @@
 /* User login and user info panel in header
    ========================================================================== */
 
-.header-wrapper {
+.header-wrapper  {
   .user {
-    @include box-sizing(content-box);
-    padding-bottom: 0px;
+    padding: 0; /* Override the padding set in DDBAsic */
+  }
+
+  .user.pane-user-login {
+    padding: 50px 10px 0 10px;
     @include small-medium() {
+      padding-top: 20px;
       padding-bottom: 30px;
     }
   }
 
-  .vejlebib-user-info {
-    @include box-sizing(content-box);
-    height: 101px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .user.vejlebib-user-info {
+    padding: 20px 10px 0px 10px;
+
+    @include small-medium() {
+      padding-bottom: 20px;
+    }
   }
+
 }
 
 /* User login and user-panel for logged-in library users. */
@@ -34,27 +39,17 @@
   
   .form-item-name label,
   .form-item-pass label {
-    color: $white;
-    font-size: $font-size-largest;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-    margin-left: 0px;
+    display: none;
   }
   
   .form-submit {
     @include border-radius(0px);
-    border: solid $white 1px;
+    margin: 0;
     min-height: 65px;
     color: $white;
     text-transform: uppercase;
     padding: 0;
-    background: #7d7e7d; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */ 
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+    background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
     
     &:focus,
     &:hover,
@@ -65,26 +60,26 @@
   }
 
   &.vejlebib-user-info {
+    ul {
+      padding: 0;
+    }
+
     li {
       float: left;
-      width: 48%;
+      width: 50%; 
     }
     
     .button {
+      @include box-sizing(border-box);
+      @include border-radius(0px);
+      white-space: nowrap; /* Fix broken user-panel on smaller screens */
+      line-height: 18px; /* To get the same height as search and vertically align text */
       display: inline-block;
       color: $white;
       text-align: center;
-      padding: 8px;
+      padding: 7px;
       width: 100%;
-      border: 1px solid #FFFFFF;
-      border-radius: 0;
-      background: #7d7e7d; /* Old browsers */
-      background: -moz-linear-gradient(-45deg,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */ 
-      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-      background: linear-gradient(135deg,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+      background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
       
       &:focus,
       &:hover,
@@ -121,9 +116,13 @@
       padding-right: 0;
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 5px;
       float: none;
       width: 68%;
+      margin-bottom: 5px;
+    }
+
+    .form-item-pass {
+      margin-bottom: 0;
     }
 
     .form-item-name label,

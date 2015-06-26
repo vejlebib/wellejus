@@ -85,29 +85,31 @@
 /* Header wrapper
    ========================================================================== */
 .header-wrapper {
-  @include zen-nested-container(); // We're going to use grid-items here
+  padding-left: 10px;
+  padding-right: 10px;
 
   /* Media queries */
   @include large-x-large() {
-    .header-inner {
-      .pane-search-form {
-        width: 60%;
-        float: left;
-      }
-      
-      .pane-user-login,
-      .pane-vejlebib-views-panels-vejlebib-ding-userinfo {
-        margin-left: 66.66667%;
-        width: 30%;
-      }
+    .pane-search-form {
+      @include zen-clear();
+      @include zen-grid-item(8, 1); 
+    }
+
+    .pane-user-login,
+    .vejlebib-user-info {
+      @include zen-grid-item(4, 9);
     }
   }
 
   .information-menu-wrapper {
     @include zen-clear();
     @include zen-grid-item(8, 1);
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 30px;
+
+    ul {
+      padding: 0; // Removed default padding on lists.
+    }
 
     /* For now we hide the information-menu on smaller screens */
     @include small-medium() {

@@ -1,4 +1,4 @@
-/**
+  /**
  * Base for wellejus theme
  *
  * @author wiredloose
@@ -13,7 +13,6 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
-
 
 h1 {
   font-size: $font-size-giga;
@@ -49,6 +48,10 @@ em {
   strong {
     @include font-bold();
   }
+}
+
+input {
+  @include text-truncate();
 }
 
 /* Background */

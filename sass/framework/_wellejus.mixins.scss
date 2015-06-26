@@ -201,3 +201,11 @@
     background-color: $bg-end-color;
   }
 }
+
+// Truncate text with an ellipsis.
+// Source: https://gist.github.com/Shipow/7167056
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
