@@ -1,34 +1,10 @@
 /**
  * Static pages
  *
- * @author Holt
+ * @author Simon Holt
  */
 
-.page {
-
-  // Tags
-  .super-heading {
-    a {
-      display: inline-block;
-      padding: 3px 10px;
-      margin: 10px 5px 5px 0;
-      border-radius: 8px;
-      height: 24px;
-      color: $white;
-      background-color: $green;
-
-      &:hover {
-        text-decoration: none;     
-        background-color: darken($green, 10%);
-      }      
-    }
-
-    .news-category a {
-      background-color: $black;
-      &:hover {
-        background-color: lighten($black, 15%);
-      }
-    }
-  }
-
-}
+// This was used for labels on ding_page content_types, but it is now moved to 
+// a more general styling in _wellejus.labels.scss.
+// Thus this file is currently empty, but we keep it, if we might wanne apply
+// some special styling to ding_page content_types in the future.

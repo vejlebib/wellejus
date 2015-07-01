@@ -15,7 +15,7 @@
       right: 0;
         
       li {
-        background-color: #b2b2b2;
+        background-color: $gray-dark;
         border-top: none;
         
         a {
@@ -39,7 +39,8 @@
         }
         
         &.ui-tabs-active {
-          background-color: rgba(0, 0, 0, 0.6);
+          background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
+          //background-color: rgba(0, 0, 0, 0.6);
         }
       }
       

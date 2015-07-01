@@ -6,92 +6,37 @@
  * @author wiredloose
  */
 
-.news-list {
+.news-list { 
 
-  .news-list-item:nth-child(odd) {
+  .news-list-item:nth-child(odd) {  
     background-color: $list-item-background-color-odd;
   }
 
   .news-list-item:nth-child(even) {
     background-color: $list-item-background-color-even;
-  }  
-}
+  }
 
-.view-vejlebib-ding-news {
-  .news-list {
-    .news-list-item {
-      padding: $large-spacing $small-spacing;
-      
-      &:first-child {
-        padding-top: 0;
-      }
-      
-      &:first-child .news-sub-heading {
-        margin-top: 0;
-      }
-    }
-    
-    .news-sub-heading, 
-    .news-heading,
-    .news-list-content {
-      margin: 0;
-    }
-    
-    .news-link {
-      float: none;
-    }
-    
-    .news-label {
-      //background-color: $white;
-      text-shadow: none;
-      padding: 0;
-      
-      a {
-        padding: 0;
-        background-color: inherit;
-        font-size: $font-size-medium;
-        text-transform: uppercase;
-      }
-    }
-    
-    .news-heading {
-      text-transform: uppercase;
-      font-size: $font-size-giga;
-    }
+  // DDBasic override
+  .news-label {
+    @extend .label;
+    margin-right: 5px;
   }
 }
 
-#w .view-vejlebib-ding-news {
-  .news-label a {
-    color: $black;
-  }
+// DDBasic sets inline on labels in super-heading in _news partial. We 
+// override this here so that our label-padding has effect.
+.super-heading .label {
+  display: inline-block;
 }
 
-.news {
-
-  // Tags
-  .super-heading {
-    a {
-      display: inline-block;
-      padding: 3px 10px;
-      margin: 10px 5px 5px 0;
-      border-radius: 8px;
-      height: 24px;
-      color: $white;
-      background-color: $green;
-
-      &:hover {
-        text-decoration: none;     
-        background-color: darken($green, 10%);
-      }      
-    }
-
-    .news-category a {
-      background-color: $black;
-      &:hover {
-        background-color: lighten($black, 15%);
-      }
-    }
+.pane-ding-news-ding-news-frontpage-list,
+.pane-vejlebib-ding-news-ding-news-library-list {
+  .pane-title {
+    background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
+    //background: $gray-darkest;
+    color: $white;
+    font-size: 1em;
+    padding: 0.2em 0.5em;
+    text-transform: uppercase;    
   }
-
 }

@@ -8,16 +8,11 @@
 /* Event list
    ========================================================================== */
 
-// This is a quick fix of the styling of events on '/arrangementer'
-// TODO: Use the same style here as on frontpage and library event list.
-.view-ding-event .event-list-day {
-  background-color: $vejle-color;
-}
-
 .pane-vejlebib-ding-event-vejlebib-ding-event-list,
 .pane-vejlebib-ding-event-vejlebib-ding-event-library-list {
   .pane-title {
-    background: $black;
+    background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
+    //background: $gray-darkest;
     color: $white;
     font-size: 1em;
     padding: 0.2em 0.5em;
@@ -25,83 +20,87 @@
   }
 }
 
-.view-vejlebib-ding-event {
-  .event-list-item {
-    padding-left: 75px;
-    
-    .event-list-date-wrapper {
-      display: inline-block;
-      font-size: 75%;
-      margin-right: 10px;
-      min-width: 65px;
-      text-align: center;
-      vertical-align: top;
-      box-shadow: 2px 2px 2px;
-      position: absolute;
-      left: 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      
-      // using library colors
-      &.vejle {
-        border: 1px solid $vejle-color;
-      }
-      
-      &.borkop {
-        border: 1px solid $borkop-color;
-      }
-      
-      &.egtved {
-        border: 1px solid $egtved-color;
-      }
-      
-      &.give {
-        border: 1px solid $give-color;
-      }
-      
-      &.jelling {
-        border: 1px solid $jelling-color;
-      }
-
-      .event-list-day{
-        color: $white;
-        text-shadow: none;
-        display: block;
-      }
-
-      .event-list-date {
-        display: block;
-        font-size: 280%;
-        padding-top: 5px;
-        margin-bottom: -5px;
-      }
-
-      .event-list-inner-wrapper {
-        color: $black;
-      }
+.event-list-date-wrapper {
+  display: inline-block;
+  font-size: 75%;
+  min-width: 75px !important;
+  box-shadow: 2px 2px 2px;
+  position: absolute;
+  left: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  
+  // using library colors
+  &.vejle {
+    border: 1px solid $vejle-color;
+    .event-list-day {
+      background-color: $vejle-color;
     }
   }
+  
+  &.borkop {
+    border: 1px solid $borkop-color;
+    .event-list-day {
+      background-color: $borkop-color;
+    }
+  }
+  
+  &.egtved {
+    border: 1px solid $egtved-color;
+    .event-list-day {
+      background-color: $egtved-color;
+    }
+  }
+  
+  &.give {
+    border: 1px solid $give-color;
+    .event-list-day {
+      background-color: $give-color;
+    }
+  }
+  
+  &.jelling {
+    border: 1px solid $jelling-color;
+    .event-list-day {
+      background-color: $jelling-color;
+    }    
+  }
 
-
-  // using library colors
-  .vejle .event-list-day {
+  .event-list-day {
+    color: $white;
     background-color: $vejle-color;
+    text-shadow: none;
+    display: block;
+    line-height: $base-line-height; /* DDBasic override */
   }
 
-  .borkop .event-list-day {
-    background-color: $borkop-color;
+  .event-list-date {
+    display: block;
+    font-size: 280%;
+    padding-top: 10px;
+    margin-bottom: 0;
   }
 
-  .egtved .event-list-day {
-    background-color: $egtved-color;
+  .event-list-inner-wrapper {
+    color: $black;
   }
+}
 
-  .give .event-list-day {
-    background-color: $give-color;
+.event-list-leaf {
+  min-height: 85px;
+  position: relative;
+
+  .event-list-fulldate {
+    margin-top: 0;
+    margin-left: 85px;
   }
+}
 
-  .jelling .event-list-day {
-    background-color: $jelling-color;
+.view-vejlebib-ding-event {
+  .event-list-item {
+    padding-left: 97px; // + the box-shadow (see below)
+    
   }
 
   .event-list-heading {
@@ -137,31 +136,6 @@
   .event-info {
     div {
       border-left: 5px solid $gray-light;
-    }
-  }
-
-  section.event-tags {
-    a {
-      display: inline-block;
-      padding: 3px 10px;
-      margin: 10px 5px 5px 0;
-      border-radius: 8px;
-      height: 24px;
-      color: $white;
-      background-color: $green;
-
-      &:hover {
-        text-decoration: none;     
-        background-color: darken($green, 10%);
-      }
-    }
-
-    // library label specific styling
-    span.library-ref a {
-      background-color: $black;
-      &:hover {
-        background-color: lighten($black, 15%);
-      }
     }
   }
 

@@ -1,8 +1,50 @@
 /**
  * Labels for wellejus
  *
- * @author wiredloose
- *
- * TODO: Maybe use this file for general styling of labels (tags) on events and
- * news. For now they are placed in event and news partial respectively.
+ * @author Simon Holt
  */
+
+%label-wrapper {
+  font-size: $font-size-small;
+  text-shadow: $label-shadow;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+%label-anchor {
+  background-color: $label-bg-color;
+  color: $label-text-color;
+  padding: $label-padding;
+  margin: $label-margin;
+  display: inline-block;
+
+  @include border-radius($label-border-radius);
+
+  &:link,
+  &:visited {
+    color: $label-text-color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $label-bg-color-hover;
+    color: $label-text-color-hover;
+    text-decoration: none;
+  }
+}
+
+// Some tags ("labels") use a wrapper:
+.label {
+	@extend %label-wrapper;
+
+  a {
+  	@extend %label-anchor;
+  }
+}
+
+// - and some dont. In this cas we just extend both the wrapper and anchor 
+// placeholder.
+a.label {
+	@extend %label-wrapper;
+	@extend %label-anchor;
+}
