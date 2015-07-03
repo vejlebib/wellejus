@@ -41,7 +41,7 @@
 .default-layout,
 .frontpage-layout {
   margin-top: 0;
-  
+
   .layout-wrapper {
     padding-top: 0;
     padding-right: 0;
@@ -73,7 +73,7 @@
     height: inherit;
     margin: $medium-spacing;
     width: 50%;
-    
+
     img {
       height: inherit;
       margin-top: 0;
@@ -92,7 +92,7 @@
   @include large-x-large() {
     .pane-search-form {
       @include zen-clear();
-      @include zen-grid-item(8, 1); 
+      @include zen-grid-item(8, 1);
     }
 
     .pane-user-login,
@@ -116,7 +116,7 @@
       display: none;
     }
   }
-  
+
 }
 
 // MOVED FROM CONFIGURATION PARTIAL
@@ -133,13 +133,13 @@
 /* Footer
    ========================================================================== */
 .footer {
-  background-color: $footer-background-color;
+  background-color: $list-item-background-color-even;
   padding-top: 0;
 }
 
 .footer-inner {
   padding: $large-spacing;
-  
+
   a {
     &:hover,
     &:focus {
@@ -152,9 +152,12 @@
 /* Bottom
    ========================================================================== */
 .bottom {
-  background-color: $footer-background-color;
+  background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
   padding: 0;
   color: #808080;
+  p, a {
+    color: $white;
+  }
 }
 
 .bottom p {
