@@ -23,6 +23,15 @@
   }
 }
 
+.view-display-id-ding_news_library_list {  
+  // DDBasic override; we have no image on library news list.
+  .news-list-item {
+    > div, > h3, > p, > span {    
+      margin-left: 0;
+    }
+  }
+}
+
 // DDBasic sets inline on labels in super-heading in _news partial. We 
 // override this here so that our label-padding has effect.
 .super-heading .label {
