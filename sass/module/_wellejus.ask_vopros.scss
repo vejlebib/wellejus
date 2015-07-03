@@ -2,15 +2,22 @@
  * Styling of (related to) Biblioteksvagtens ask-widget button.
  */
 
-#w > #page {
-	/* 'Lift' the page so users can scroll and see library address */
-	padding-bottom: 35px;
+// Only display on front-page (see below).
+div.ask-vopros-tab {
+  display: none;
 }
 
-div.ask-vopros-tab {
-	z-index: 1000; /* Ensure widget is not hidden below other elements */
-  right: 0;
-  &, i.fa-angle-right {
-    background-color: $vejle-color;
+.front {
+  /* 'Lift' the page so users can scroll and see library address */
+  padding-bottom: 35px;
+
+  div.ask-vopros-tab {
+    display: table-cell;
+  	z-index: 1000; /* Ensure widget is not hidden below other elements */
+    right: 0;
+    &, i.fa-angle-right {
+      background-color: $vejle-color;
+    }
   }
 }
+
