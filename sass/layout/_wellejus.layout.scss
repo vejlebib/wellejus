@@ -155,9 +155,11 @@
   background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
   padding: 0;
   color: #808080;
-  p, a {
-    color: $white;
-    line-height: 3em;
+  p {
     margin: 0 $large-spacing;
+    &, a {
+      color: $white;
+      line-height: 3em;
+    }
   }
 }
