@@ -3,13 +3,17 @@
  */
 
 // Only display on front-page (see below).
+// The settings from the module doesn't work so we use a temporary CSS-hack to
+// only show ask-widget on the frontpage.
 div.ask-vopros-tab {
   display: none;
 }
 
 .front {
   /* 'Lift' the page so users can scroll and see library address */
-  padding-bottom: 35px;
+  #page.ding2-site-template {
+    padding-bottom: 35px;
+  }
 
   div.ask-vopros-tab {
     display: table-cell;
@@ -20,4 +24,3 @@ div.ask-vopros-tab {
     }
   }
 }
-
