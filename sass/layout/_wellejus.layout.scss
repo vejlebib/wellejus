@@ -157,12 +157,7 @@
   color: #808080;
   p, a {
     color: $white;
+    line-height: 3em;
+    margin: 0 $large-spacing;
   }
 }
-
-.bottom p {
-  border-top: 1px solid #C0C0C0;
-  line-height: 3em;
-  margin: 0 $large-spacing;
-}
-
