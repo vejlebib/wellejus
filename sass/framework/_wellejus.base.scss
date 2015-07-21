@@ -59,7 +59,7 @@ input {
   // SVG background with IE8 fallback.
   // See: http://www.broken-links.com/2010/06/14/using-svg-in-backgrounds-with-png-fallback/
   background-image: url('../images/facet_baggrund_A3_300dpi.jpg');
-  background-image: none, url("../images/facet_baggrund_admin_liggende.svg");
+  background-image: url("../images/facet_baggrund_admin_liggende.svg");
   background-attachment: fixed;
   // Use some scaling and repositioning to try and removed the annoying "white
   // border" when using SVG as background.

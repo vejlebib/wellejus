@@ -85,8 +85,7 @@
 /* Header wrapper
    ========================================================================== */
 .header-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
+  @include zen-grid-item-base(); // To get the gutter
 
   /* Media queries */
   @include large-x-large() {
@@ -104,8 +103,8 @@
   .information-menu-wrapper {
     @include zen-clear();
     @include zen-grid-item(8, 1);
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 
     ul {
       padding: 0; // Removed default padding on lists.
@@ -117,6 +116,13 @@
     }
   }
 
+  .pane-wayf-dk-login {
+    @include zen-grid-item(2, 9);
+  }
+
+  .pane-ding-wayf-dk-create-user {
+    @include zen-grid-item(2, 11);
+  }
 }
 
 // MOVED FROM CONFIGURATION PARTIAL

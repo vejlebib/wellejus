@@ -1,0 +1,58 @@
+/**
+ * Styling of WAYF-links (login and create user).
+ *
+ * @author Simon Holt
+ */
+
+// Common rules for WAYF-links
+%wayf-link {
+	margin: 15px 0;
+
+	.pane-content {
+		// Align both the text and img (for login link)
+		text-align: center;
+	}
+
+	a {
+		// So we can set width 100% without padding overflow:
+		@include box-sizing(border-box); 
+		display: inline-block;
+		width: 100%;
+		padding: 5px;
+		text-decoration: none;
+	}
+}
+
+// Specific rules for the login link
+.pane-wayf-dk-login {
+	@extend %wayf-link;
+
+	a {
+		background-color: $white;
+		color: $black;
+		&:hover {
+			background-color: darken($white, 15%);
+		}
+	}
+
+	img {
+		height: 20px;
+		// Adjust the position of Nem-ID logo:
+		padding-left: 3px;
+		padding-bottom: 2px;
+	}
+}
+
+// Specific rules for the create user link
+.pane-ding-wayf-dk-create-user {
+	@extend %wayf-link;
+
+	a {
+		background-image: linear-gradient(to bottom right, $left, $right);
+		color: $white;
+		&:hover {
+			background: none;
+			background-color: $black;
+		}
+	}
+}
