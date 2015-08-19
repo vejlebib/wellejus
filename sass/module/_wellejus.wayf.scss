@@ -6,7 +6,11 @@
 
 // Common rules for WAYF-links
 %wayf-link {
-	margin: 15px 0;
+	margin: 24px 0;
+
+	@include large-x-large() {
+		margin: 15px 0; /* Looks bette whit smalled spacing on desktop */
+	}
 
 	.pane-content {
 		// Align both the text and img (for login link)
@@ -15,7 +19,7 @@
 
 	a {
 		// So we can set width 100% without padding overflow:
-		@include box-sizing(border-box); 
+		@include box-sizing(border-box);
 		display: inline-block;
 		width: 100%;
 		padding: 5px;

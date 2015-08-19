@@ -52,7 +52,7 @@
 }
 
 /* Media queries */
-@include large-x-large() {
+@include large-and-x-large() {
   .content-inner {
     .pane-page-content {
       padding: $large-spacing $medium-spacing;
@@ -88,7 +88,7 @@
   @include zen-grid-item-base(); // To get the gutter
 
   /* Media queries */
-  @include large-x-large() {
+  @include large-and-x-large() {
     .pane-search-form {
       @include zen-clear();
       @include zen-grid-item(8, 1);
@@ -101,27 +101,30 @@
   }
 
   .information-menu-wrapper {
-    @include zen-clear();
-    @include zen-grid-item(8, 1);
-    margin-top: 15px;
-    margin-bottom: 25px;
+    display: none;
 
-    ul {
-      padding: 0; // Removed default padding on lists.
-    }
+    // For now we only show the information-menu on large screens.
+    @include large-and-x-large() {
+      display: block;
+      @include zen-clear();
+      @include zen-grid-item(8, 1);
+      margin-top: 15px;
+      margin-bottom: 25px;
 
-    /* For now we hide the information-menu on smaller screens */
-    @include small-medium() {
-      display: none;
+      ul {
+        padding: 0; // Removed default padding on lists.
+      }
     }
   }
 
-  .pane-wayf-dk-login {
-    @include zen-grid-item(2, 9);
-  }
+  @include large-and-x-large() {
+    .pane-wayf-dk-login {
+      @include zen-grid-item(2, 9);
+    }
 
-  .pane-ding-wayf-dk-create-user {
-    @include zen-grid-item(2, 11);
+    .pane-ding-wayf-dk-create-user {
+      @include zen-grid-item(2, 11);
+    }
   }
 }
 

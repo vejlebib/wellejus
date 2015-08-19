@@ -9,66 +9,109 @@
    ========================================================================== */
 
 .header-wrapper  {
+  overflow: hidden; /* Prevent margin from child elements flowing outside */
+
   .user {
-    padding: 0; /* Override the padding set in DDBAsic */
-  }
+    padding: 0;
 
-  .user.pane-user-login {
-    padding: 40px 10px 0 10px;
-    @include small-medium() {
-      padding-top: 20px;
-      padding-bottom: 30px;
+    .form-item {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 24px;
+      @include large-and-x-large() {
+        width: 68%;
+        float: none; /* Remove the floats DDBasic */
+        margin-bottom: 0;
+      }
+    }
+
+    .form-item-pass {
+      padding: 0; /* Override padding set in DDBAsic, which are problematic in our design (stop using padding for spacing fss) */
+      @include medium() {
+        padding-left: 5px; /* Should probably use zen-grids for these, but it's good for now. */
+      }
+    }
+
+    .form-item-name {
+      padding-left: 0;
+      @include medium() {
+        padding-right: 5px;
+      }
+      @include large-and-x-large() {
+        margin-bottom: 5px;
+      }
+    }
+
+    &.pane-user-login {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      @include large-and-x-large() {
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0 10px;
+      }
+    }
+
+    .form-submit {
+      @include border-radius(0px);
+      margin: 0;
+      background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
+      color: $white;
+      text-transform: uppercase;
+      padding: 0;
+      width: 100%;
+
+      &:focus,
+      &:hover,
+      &:active {
+        background: none;
+        background-color: $black;
+      }
+
+      @include large-and-x-large() {
+        min-height: 65px;
+      }
     }
   }
 
-  .user.vejlebib-user-info {
-    padding: 10px 10px 0px 10px;
+  @include large-and-x-large() {
+    ul {
+      padding-left: 0;
+    }
 
-    @include small-medium() {
-      padding-bottom: 20px;
+    overflow: visible;
+
+    [class^="icon-"] {
+      left: 16px;
+      bottom: 5px;
+      font-size: 120%;
+    }
+
+    .form-text {
+      min-height: 30px;
     }
   }
 
-}
-
-/* User login and user-panel for logged-in library users. */
-.user {
   .form-text {
     @include border-radius(0px);
   }
-  
-  .form-item-name label,
-  .form-item-pass label {
-    display: none;
-  }
-  
-  .form-submit {
-    @include border-radius(0px);
-    margin: 0;
-    min-height: 65px;
-    color: $white;
-    text-transform: uppercase;
-    padding: 0;
-    background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
-    
-    &:focus,
-    &:hover,
-    &:active {
-      background: none;
-      background-color: $black;
-    }
-  }
 
-  &.vejlebib-user-info {
+  .vejlebib-user-info {
     ul {
       padding: 0;
     }
 
     li {
       float: left;
-      width: 50%; 
+      width: 50%;
     }
-    
+
+    @include large-and-x-large() {
+      margin-top: 10px;
+    }
+
     .button {
       @include box-sizing(border-box);
       @include border-radius(0px);
@@ -80,7 +123,7 @@
       padding: 7px;
       width: 100%;
       background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
-      
+
       &:focus,
       &:hover,
       &:active {
@@ -88,10 +131,10 @@
         background-color: $black;
       }
     }
-    
+
     .username {
       margin-bottom: 5px;
-      
+
       a {
         color: #FFFFFF;
         font-size: $font-size-large;
@@ -100,48 +143,4 @@
     }
   }
 
-  /* Media queries */
-  @include large-x-large() {
-    ul {
-      padding-left: 0;
-    }
-    
-    min-height: 30px;
-    
-    overflow: visible;
-
-    .form-item-name,
-    .form-item-pass {
-      padding-left: 0;
-      padding-right: 0;
-      margin-left: 0;
-      margin-right: 0;
-      float: none;
-      width: 68%;
-      margin-bottom: 5px;
-    }
-
-    .form-item-pass {
-      margin-bottom: 0;
-    }
-
-    .form-item-name label,
-    .form-item-pass label {
-      font-size: 250%;
-    }
-
-    [class^="icon-"] {
-      left: 16px;
-      bottom: 5px;
-      font-size: 120%;
-    }
-  
-    .form-item-pass label {
-      display: none;
-    }
-  
-    .form-text {
-      min-height: 30px;
-    }
-  }
 }

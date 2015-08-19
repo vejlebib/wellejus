@@ -76,7 +76,7 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
       $element['#localized_options']['attributes']['class'][] = 'topbar-link-hours';
       $element['#attributes']['class'][] = 'topbar-link-hours';
       break;
-      
+
     default:
       $title_prefix = '<i class="icon-align-justify"></i>';
       $element['#localized_options']['attributes']['class'][] = 'topbar-link-menu';
@@ -107,7 +107,8 @@ function wellejus_form_search_block_form_alter(&$form, &$form_state) {
  * Implements hook_form_FORM_ID_alter().
  */
 function wellejus_form_user_login_block_alter(&$form, &$form_state) {
-  $form['name']['#title'] = t('Login');
+  $form['name']['#title_display'] = 'invisible';
+  $form['pass']['#title_display'] = 'invisible';
 }
 
 /**
