@@ -13,15 +13,15 @@
 
   .menu-item {
     @include text-shadow(1px 1px 0 rgba(0, 0, 0, .2));
-    
+
     color: $black;
-    
+
     &.active {
       background-color: $header-background-color;
       @include rgba-background($header-background-color, $default-transparency);
     }
   }
-  
+
   /* Media queries */
   @include large-x-large() {
     display: none;
@@ -55,99 +55,53 @@
     color: inherit;
     font-weight: inherit;
   }
-
 }
 
-/* Navigation, main menu and secondary menu
+.information-menu-wrapper {
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  ul {
+    padding: 0; // Removed default padding on lists.
+  }
+}
+
+/* Main menu
    ========================================================================== */
 
 .navigation-wrapper {
-  background-color: $navigation-background-color;
-  width: inherit;
-  clear: both;
+  @include rgba-background($header-background-color, $default-transparency);
+
+  @include large-x-large() {
+    background-color: $white;
+  }
 }
 
-/* Media queries */
-@include small-medium() {
-
-  .navigation-wrapper {
-    @include rgba-background($header-background-color, $default-transparency);
-  }
-  
-  #w .main-menu-wrapper .menu-item, 
-  #w .secondary-menu-wrapper .menu-item {
-      color: #FFFFFF;
-  }
-
-}
-
+// Desktop
 @include large-x-large() {
-
-  .main-menu-wrapper {
-    width: 80%;
-    margin-right: -80%;
-    padding-left: $large-spacing;
-  }
-
   .main-menu {
-    li {
 
-      .menu-item {
-        font-size: $font-size-tiny;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 6px 10px;
-        margin: 10px 0;
-
-        &:focus,
-        &:hover {
-          background: none;
-          background-color: $black;
-          color: $white;
-          text-decoration: none;
-        }
-      }
-
-      .menu-item.active,
-      &.active-trail .menu-item {
-        background: #7d7e7d; /* Old browsers */
-        background: -moz-linear-gradient(-45deg,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */ 
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(-45deg,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-        background: linear-gradient(135deg,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
-        color: $white;
-        text-decoration: none;
-      }
-      
-    }
-  }
-
-}
-
-@include large-x-large() {
-
-  .main-menu {
     .menu-item {
-      &:link,
-      &:visited {
-        color: #959595;
-        text-decoration: none;
-      }
+      font-size: 95%;
+      padding: 10px 7px;
+      margin: 10px 0;
 
       &:focus,
       &:hover {
+        background: none;
+        background-color: $black;
         color: $white;
         text-decoration: none;
       }
-      
-      &.active {
-        color: #EEEEEE;
-      }
+    }
+
+    .menu-item.active,
+    li.active-trail .menu-item {
+      text-decoration: none;
+      color: $white;
+      background-image: linear-gradient(to bottom right, $left, $right);
     }
   }
-
 }
 
 /* Nav helper links
@@ -179,11 +133,11 @@
   .print:before {
     content: "\f017\0a";
   }
-  
+
   .read:before {
     content: "\f028\0a";
   }
-  
+
   .english:before {
     content: "\f024\0a";
   }
@@ -265,7 +219,7 @@
   }
 
   .menu {
-    
+
     li {
       margin-bottom: 0;
 
@@ -273,7 +227,7 @@
         color: $black;
       }
 
-      a, 
+      a,
       a.active {
         color: $black;
       }

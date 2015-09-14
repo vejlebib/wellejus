@@ -20,7 +20,7 @@
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 24px;
-      @include large-and-x-large() {
+      @include large-x-large() {
         width: 68%;
         float: none; /* Remove the floats DDBasic */
         margin-bottom: 0;
@@ -37,9 +37,9 @@
     .form-item-name {
       padding-left: 0;
       @include medium() {
-        padding-right: 5px;
+        padding-right: 5px; /* Should probably use zen-grids for these, but it's good for now. */
       }
-      @include large-and-x-large() {
+      @include large-x-large() {
         margin-bottom: 5px;
       }
     }
@@ -47,7 +47,7 @@
     &.pane-user-login {
       margin-top: 24px;
       margin-bottom: 24px;
-      @include large-and-x-large() {
+      @include large-x-large() {
         margin-top: 40px;
         margin-bottom: 0;
         padding: 0 10px;
@@ -70,13 +70,13 @@
         background-color: $black;
       }
 
-      @include large-and-x-large() {
+      @include large-x-large() {
         min-height: 65px;
       }
     }
   }
 
-  @include large-and-x-large() {
+  @include large-x-large() {
     ul {
       padding-left: 0;
     }
@@ -108,7 +108,7 @@
       width: 50%;
     }
 
-    @include large-and-x-large() {
+    @include large-x-large() {
       margin-top: 10px;
     }
 

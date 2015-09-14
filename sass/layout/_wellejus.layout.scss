@@ -1,174 +1,58 @@
 /**
- * Layout
+ * Layout for wellejus theme
  *
- * Base layout for wellejus theme
- *
- * @author wiredloose
+ * @author holt83
  */
-
-
-/* Page
-   ========================================================================== */
-.ding2-site-template {
-  padding: $medium-spacing;
-}
-
-.topbar {
-  background-color: $topbar-background-color;
-}
 
 .site-header,
 .footer {
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 5px 5px 8px #666666;
+  //box-shadow: 5px 5px 8px #666666;
 }
 
-.content-wrapper {
-  margin-top: $medium-spacing;
+.header-wrapper,
+.navigation-wrapper,
+.pane-page-content {
+  @include zen-grid-item-base();
 }
 
-.content-inner {
-  background-color: #ffffff;
-  box-shadow: 5px 5px 8px #666666;
-  margin-bottom: $medium-spacing;
-}
+@include large-x-large() {
+  .pane-search-form {
+    @include zen-clear();
+    @include zen-grid-item(8, 1);
+  }
 
-.layout-wrapper {
-  background-color: $content-background-color;
-}
+  .pane-user-login,
+  .vejlebib-user-info {
+    @include zen-grid-item(4, 9);
+  }
 
-.default-layout,
-.frontpage-layout {
-  margin-top: 0;
+  .pane-wayf-dk-login {
+    @include zen-grid-item(2, 9);
+  }
 
-  .layout-wrapper {
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
+  .pane-ding-wayf-dk-create-user {
+    @include zen-grid-item(2, 11);
+  }
+
+  // We want a bigger main menu
+  .main-menu-wrapper {
+    @include zen-grid-item(9, 1);
+  }
+
+  // - and a smaller secondary menu
+  .secondary-menu-wrapper {
+    @include zen-grid-item(3, 1, right);
   }
 }
 
-/* Media queries */
-@include large-and-x-large() {
-  .content-inner {
-    .pane-page-content {
-      padding: $large-spacing $medium-spacing;
-    }
-  }
-}
-
-/* Site-header
-   ========================================================================== */
-.logo {
-  margin: $large-spacing*1.5 $large-spacing;
-}
-
-/* Media queries */
-@include small-medium() {
-
-  .logo {
-    height: inherit;
-    margin: $medium-spacing;
-    width: 50%;
-
-    img {
-      height: inherit;
-      margin-top: 0;
-    }
-  }
-}
-
-
-/* Header wrapper
-   ========================================================================== */
-.header-wrapper {
-  @include zen-grid-item-base(); // To get the gutter
-
-  /* Media queries */
-  @include large-and-x-large() {
-    .pane-search-form {
-      @include zen-clear();
-      @include zen-grid-item(8, 1);
-    }
-
-    .pane-user-login,
-    .vejlebib-user-info {
-      @include zen-grid-item(4, 9);
-    }
-  }
-
-  .information-menu-wrapper {
-    display: none;
-
-    // For now we only show the information-menu on large screens.
-    @include large-and-x-large() {
-      display: block;
-      @include zen-clear();
-      @include zen-grid-item(8, 1);
-      margin-top: 15px;
-      margin-bottom: 25px;
-
-      ul {
-        padding: 0; // Removed default padding on lists.
-      }
-    }
-  }
-
-  @include large-and-x-large() {
-    .pane-wayf-dk-login {
-      @include zen-grid-item(2, 9);
-    }
-
-    .pane-ding-wayf-dk-create-user {
-      @include zen-grid-item(2, 11);
-    }
-  }
-}
-
-// MOVED FROM CONFIGURATION PARTIAL
-// This has nothing to do with layout and should by placed in another partial
-// TODO: Make a new mics.scss partial and place styling like this one in it.
-.header-wrapper {
-  $rgba: rgba($header-background-color, $default-transparency);
-  // IE Fallback:
-  background-color: $header-background-color;
-  background-color: $rgba;
-}
-
-
-/* Footer
-   ========================================================================== */
-.footer {
-  background-color: $list-item-background-color-even;
-  padding-top: 0;
-}
-
-.footer-inner {
-  padding: $large-spacing;
-
-  a {
-    &:hover,
-    &:focus {
-      font-weight: bold;
-    }
-  }
-}
-
-
-/* Bottom
-   ========================================================================== */
-.bottom {
-  background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
-  padding: 0;
-  color: #808080;
-  p {
-    margin: 0 $large-spacing;
-    &, a {
-      color: $white;
-      line-height: 3em;
-    }
+.information-menu-wrapper {
+  // TODO: Show information-menu on smaller screens.
+  display: none;
+  @include large-x-large() {
+    display: block;
+    @include zen-clear();
+    @include zen-grid-item(8, 1);
   }
 }

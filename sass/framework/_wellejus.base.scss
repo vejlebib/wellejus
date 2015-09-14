@@ -4,8 +4,6 @@
  * @author wiredloose
  */
 
-
-
 body {
   background-color: $gray-light;
   color: $font-color-primary;
@@ -35,7 +33,7 @@ h5 {
 }
 
 h6 {
-  font-size: $font-size-reset;                
+  font-size: $font-size-reset;
 }
 
 strong {
@@ -52,19 +50,6 @@ em {
 
 input {
   @include text-truncate();
-}
-
-/* Background */
-#page.ding2-site-template {
-  // SVG background with IE8 fallback.
-  // See: http://www.broken-links.com/2010/06/14/using-svg-in-backgrounds-with-png-fallback/
-  background-image: url('../images/facet_baggrund_A3_300dpi.jpg');
-  background-image: url("../images/facet_baggrund_admin_liggende.svg");
-  background-attachment: fixed;
-  // Use some scaling and repositioning to try and removed the annoying "white
-  // border" when using SVG as background.
-  background-size: 103%;
-  background-position: -1px -2px;
 }
 
 /* override ALL link styles */
@@ -92,47 +77,3 @@ a {
   }
 }
 
-#toolbar a {
-  &:link,
-  &:visited,
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
-  }
-}
-
-
-/* body content default styles
-   ========================================================================== */
-.field-name-field-ding-event-body,
-.field-name-field-ding-news-body,
-.field-name-field-ding-page-body {
-  img {
-    float: left;
-    margin: 0 $large-spacing $medium-spacing 0;
-  }
-}
-
-/* RSS feed links
-   ========================================================================== */
-.feed-icon:before {
-  color: #FFA500;
-  content: " ";
-  font-family: FontAwesome;
-}
-
-/* Maintenance page
-   ========================================================================== */
-// Note: Some basic styling of the page when site is in maintenance mode. This
-// is temporary; we should probably have a look at the maintenance-page.tpl.php
-// and maintenance-page--offline.tpl.php in the future and make them look more
-// like our site's structure when we're not in maintenance.
-.maintenance-page {
-  #page.ding2-site-template {
-    background-image: none;
-  }
-  .topbar-inner {
-    margin: 0;
-  }
-}

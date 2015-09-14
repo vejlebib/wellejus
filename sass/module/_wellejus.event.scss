@@ -30,7 +30,7 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  
+
   // using library colors
   &.vejle {
     border: 1px solid $vejle-color;
@@ -38,33 +38,33 @@
       background-color: $vejle-color;
     }
   }
-  
+
   &.borkop {
     border: 1px solid $borkop-color;
     .event-list-day {
       background-color: $borkop-color;
     }
   }
-  
+
   &.egtved {
     border: 1px solid $egtved-color;
     .event-list-day {
       background-color: $egtved-color;
     }
   }
-  
-  &.give {
+
+  &.give {f
     border: 1px solid $give-color;
     .event-list-day {
       background-color: $give-color;
     }
   }
-  
+
   &.jelling {
     border: 1px solid $jelling-color;
     .event-list-day {
       background-color: $jelling-color;
-    }    
+    }
   }
 
   .event-list-day {
@@ -87,7 +87,7 @@
   }
 }
 
-.event-list-leaf {
+.event-list-item {
   min-height: 85px;
   position: relative;
 
@@ -100,7 +100,7 @@
 .view-vejlebib-ding-event {
   .event-list-item {
     padding-left: 97px; // + the box-shadow (see below)
-    
+
   }
 
   .event-list-heading {
@@ -112,8 +112,8 @@
     display: block;
   }
 
-  .event-list-time:before { 
-    content: "\f017  "; 
+  .event-list-time:before {
+    content: "\f017  ";
     font-family: FontAwesome;
   }
 }
