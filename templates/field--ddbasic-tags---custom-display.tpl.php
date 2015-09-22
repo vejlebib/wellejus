@@ -2,9 +2,11 @@
 /**
  * @file field--ddbasic-tags---custom-display.tpl.php
  * Remove default field wrapper when a field of type taxonomy term reference is
- * used in DDB CMS.
- *
- * DDBasic
+ * viewed seperate from a view-mode with field_view_field(). DDBasic also does
+ * this, but this is only for the 'full' view-mode, and the template is therefor
+ * not used when we are using panelizer for example.
+ * Note that this will effect every rendering of tags when using
+ * field_view_field(), so we may have to revisit this.
  *
  * Available variables:
  * - $items: An array of field values. Use render() to output them.
