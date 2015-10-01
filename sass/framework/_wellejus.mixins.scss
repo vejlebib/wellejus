@@ -55,7 +55,7 @@
     @media only screen and (min-width: $breakpoint-x-large + 1) { @content; }
   }
 
-  @else if $media == large-x-large { 
+  @else if $media == large-x-large {
     @media only screen and (min-width: $breakpoint-medium + 1) { @content; }
   }
 
@@ -110,6 +110,11 @@
  * These are mixins to allow for use in media queries
    ========================================================================== */
 
+@mixin font-normal() {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight-normal;
+}
+
 @mixin font-bold() {
   font-family: $font-bold;
   font-weight: $base-font-weight-bold;
@@ -118,7 +123,6 @@
 @mixin font-italic() {
   font-family: $font-regular-italic;
   font-weight: $base-font-weight-normal;
-  font-style: italic;
 }
 
 
