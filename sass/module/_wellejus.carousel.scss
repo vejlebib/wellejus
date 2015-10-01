@@ -1,0 +1,30 @@
+/**
+ * Carousel
+ *
+ * @author holt83
+ */
+
+.rs-carousel-wrapper {
+	.rs-carousel-title {
+		@include font-normal();
+		font-size: 110%;
+		border-bottom: 1px solid $gray-light;
+		padding-bottom: 10px;
+	}
+
+	.rs-carousel-list-tabs .rs-carousel-item {
+		a {
+			background-color: $gray;
+			color: $black;
+
+			&:hover {
+				color: $white;
+			}
+		}
+		&.active a {
+			background-image: linear-gradient(to bottom right, $left, $right);
+			color: $white;
+		}
+	}
+
+}
