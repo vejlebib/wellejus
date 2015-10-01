@@ -42,7 +42,7 @@
   }
 }
 
-// - and some dont. In this cas we just extend both the wrapper and anchor 
+// - and some dont. In this cas we just extend both the wrapper and anchor
 // placeholder.
 a.label {
 	@extend %label-wrapper;
