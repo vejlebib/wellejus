@@ -15,12 +15,6 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
   // Check for our 'openhours' link
   if ($element['#href'] == 'openhours') {
     // Run classes array through our custom stripper.
-    $vars['element']['#attributes']['class'] = ddbasic_remove_default_link_classes($vars['element']['#attributes']['class']);
-
-    // Check if the class array is empty.
-    if (empty($vars['element']['#attributes']['class'])) {
-      unset($vars['element']['#attributes']['class']);
-    }
 
     $sub_menu = '';
 
@@ -28,16 +22,11 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
       $sub_menu = drupal_render($element['#below']);
     }
 
-    // Add default class to a tag.
-    $element['#localized_options']['attributes']['class'] = array(
-      'menu-item',
-    );
-
-    // Make sure text string is treated as html by l function.
-    $element['#localized_options']['html'] = TRUE;
+    _wellejust_process_menu_links($element);
 
     $element['#localized_options']['attributes']['class'][] = 'js-topbar-link';
 
+    // Insert a 'clock' fa icon before openhours menu-link.
     $title_prefix = '<i class="icon-time"></i>';
     $element['#localized_options']['attributes']['class'][] = 'topbar-link-hours';
     $element['#attributes']['class'][] = 'topbar-link-hours';
@@ -49,6 +38,50 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
 
   // If it wasn't our link; pass on the rendering to DDBasic.
   return ddbasic_menu_link__menu_tabs_menu($vars);
+}
+
+/**
+ * Implements theme_menu_link().
+ */
+function wellejus_menu_link__menu_secondary_menu($vars) {
+  $element = $vars['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+
+  _wellejust_process_menu_links($element);
+
+  $title_prefix = '';
+
+  switch ($element['#href']) {
+    case 'https://www.facebook.com/vejlebibliotekerne':
+      $title_prefix = '<i class="icon-large icon-facebook-sign"></i>';
+      break;
+    case 'contact':
+      $title_prefix = '<i class="icon-large icon-envelope"></i>';
+      break;
+  }
+
+  $output = l($title_prefix . '<span>' . $element['#title'] . '</span>', $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+/**
+ * Helper function for default processing of menu link elements.
+ */
+function _wellejust_process_menu_links(&$element) {
+  // Add default class to a tag.
+  $element['#localized_options']['attributes']['class'] = array(
+    'menu-item',
+  );
+
+  // Filter classes.
+  $element['#attributes']['class'] = ddbasic_remove_default_link_classes($element['#attributes']['class']);
+
+  // Make sure text string is treated as html by l function.
+  $element['#localized_options']['html'] = TRUE;
 }
 
 /**
