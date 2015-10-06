@@ -10,11 +10,6 @@ div.ask-vopros-tab {
 }
 
 .front {
-  /* 'Lift' the page so users can scroll and see library address */
-  #page.ding2-site-template {
-    padding-bottom: 35px;
-  }
-
   div.ask-vopros-tab {
     display: table-cell;
   	z-index: 1000; /* Ensure widget is not hidden below other elements */
