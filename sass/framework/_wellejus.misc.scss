@@ -7,31 +7,13 @@
 /* Site template
    ========================================================================== */
 .ding2-site-template {
-	padding: $medium-spacing;
+  //padding: $medium-spacing;
   // SVG background with IE8 fallback.
   // See: http://www.broken-links.com/2010/06/14/using-svg-in-backgrounds-with-png-fallback/
   background-image: url('../images/facet_baggrund_A3_300dpi.jpg');
   background-image: url("../images/facet_baggrund_admin_liggende.svg");
   background-attachment: fixed;
-  // Use some scaling and repositioning to try and removed the annoying "white
-  // border" when using SVG as background.
-  background-size: 103%;
-  background-position: -1px -2px;
-}
-
-/* Reset padding and margins set in DDBasic
-   ========================================================================== */
-.default-layout,
-.frontpage-layout {
-  margin-top: 0;
-
-  .layout-wrapper {
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
-  }
+  background-size: 110%;
 }
 
 /* Topbar
@@ -70,17 +52,51 @@
 /* Content
    ========================================================================== */
 .content-inner {
-	background-color: #ffffff;
-  // box-shadow: 5px 5px 8px #666666;
-	margin-bottom: $medium-spacing;
+	background-color: $gray-dark;
 }
 
 .content-wrapper {
-  margin-top: $medium-spacing;
+  @include rgba-background($gray-darker, $default-transparency);
+  margin-top: 0;
 }
 
 .pane-page-content {
-	padding-top: $large-spacing;
+  padding: 10px; // Our gray "border"
+}
+
+/* Common rules for frontpage and default layout. */
+.default-layout,
+.frontpage-layout {
+  background-color: $white;
+
+  .primary-content,
+  .secondary-content,
+  .tertiary-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .layout-wrapper {
+    margin: 0;
+  }
+}
+
+/* Specific rules for default layout */
+.default-layout {
+  margin-top: 0;
+
+  .layout-wrapper {
+    padding: 10px;
+  }
+}
+
+/* Specific rules for frontpage layout */
+.frontpage-layout {
+  padding: 10px;
+
+  .layout-wrapper {
+    padding: 0;
+  }
 }
 
 /* Maintenance page
