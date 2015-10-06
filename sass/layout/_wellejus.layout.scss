@@ -4,19 +4,6 @@
  * @author holt83
  */
 
-.site-header,
-.footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  //box-shadow: 5px 5px 8px #666666;
-}
-
-.header-wrapper,
-.navigation-wrapper,
-.pane-page-content {
-  @include zen-grid-item-base();
-}
-
 @include large-x-large() {
   .pane-search-form {
     @include zen-clear();
