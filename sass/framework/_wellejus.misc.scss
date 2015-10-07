@@ -157,10 +157,11 @@
   background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
   color: #808080;
   p {
+    color: $white;
     margin: 0 $large-spacing;
-    &, a {
-      color: $white;
-      line-height: 3em;
+    line-height: 3em;
+    a {
+      color: $header-background-color;
     }
   }
 }
