@@ -62,6 +62,7 @@
 
 .pane-page-content {
   padding: 10px; // Our gray "border"
+  clear: left; // Prevent status-message collapse
 }
 
 /* Common rules for frontpage and default layout. */
