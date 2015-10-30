@@ -10,19 +10,9 @@
  * Add specific markup for top-bar menu exposed as menu_block_4.
  */
 function wellejus_menu_link__menu_tabs_menu($vars) {
-  $element = $vars['element'];
-
   // Check for our 'openhours' link
-  if ($element['#href'] == 'openhours') {
-    // Run classes array through our custom stripper.
-
-    $sub_menu = '';
-
-    if ($element['#below']) {
-      $sub_menu = drupal_render($element['#below']);
-    }
-
-    _wellejust_process_menu_links($element);
+  if ($vars['element']['#href'] == 'openhours') {
+    list($element, $sub_menu) = _wellejust_process_menu_links($vars);
 
     $element['#localized_options']['attributes']['class'][] = 'js-topbar-link';
 
@@ -44,14 +34,7 @@ function wellejus_menu_link__menu_tabs_menu($vars) {
  * Implements theme_menu_link().
  */
 function wellejus_menu_link__menu_secondary_menu($vars) {
-  $element = $vars['element'];
-  $sub_menu = '';
-
-  if ($element['#below']) {
-    $sub_menu = drupal_render($element['#below']);
-  }
-
-  _wellejust_process_menu_links($element);
+  list($element, $sub_menu) = _wellejust_process_menu_links($vars);
 
   $title_prefix = '';
 
@@ -69,9 +52,46 @@ function wellejus_menu_link__menu_secondary_menu($vars) {
 }
 
 /**
+ * Implements theme_menu_link()
+ */
+function wellejus_menu_link__main_menu(&$vars) {
+  list($element, $sub_menu) = _wellejust_process_menu_links($vars);
+
+  $title_prefix = '';
+
+  switch (drupal_get_path_alias($element['#href'])) {
+    case '<front>':
+      $title_prefix = '<i class="icon-large icon-home"></i>';
+      break;
+    case 'arrangementer':
+      $title_prefix = '<i class="icon-large icon-calendar"></i>';
+      break;
+    case 'inspiration':
+      $title_prefix = '<i class="icon-large icon-lightbulb"></i>';
+      break;
+    case 'pa-nettet':
+      $title_prefix = '<i class="icon-large icon-globe"></i>';
+      break;
+    case 'sadan-gor-du':
+      $title_prefix = '<i class="icon-large icon-wrench"></i>';
+      break;
+  }
+
+  $output = l($title_prefix . '<span>' . $element['#title'] . '</span>', $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+/**
  * Helper function for default processing of menu link elements.
  */
-function _wellejust_process_menu_links(&$element) {
+function _wellejust_process_menu_links(&$vars) {
+  $element = $vars['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+
   // Add default class to a tag.
   $element['#localized_options']['attributes']['class'] = array(
     'menu-item',
@@ -82,6 +102,8 @@ function _wellejust_process_menu_links(&$element) {
 
   // Make sure text string is treated as html by l function.
   $element['#localized_options']['html'] = TRUE;
+
+  return array($element, $sub_menu);
 }
 
 /**

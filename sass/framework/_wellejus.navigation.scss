@@ -81,34 +81,27 @@
 @include large-x-large() {
   .main-menu {
 
+    li {
+      border-right: 1px solid $gray;
+    }
+
+    i {
+      text-decoration: none;
+    }
+
     .menu-item {
       font-size: 95%;
       padding: 10px 7px;
       margin: 10px 0;
-      color: rgba(0,0,0,0.7);
-
-      &:focus,
-      &:hover {
-        background: none;
-        background-color: $black;
-        color: $white;
-        text-decoration: none;
-      }
-    }
-
-    .menu-item.active,
-    li.active-trail .menu-item {
-      text-decoration: none;
-      color: $white;
-      background-image: linear-gradient(to bottom right, $left, $right);
-    }
+      color: #959594;
   }
 }
 
 /* Secondary menu
    ========================================================================== */
-.secondary-menu span {
-  margin-left: 5px; // Adjustment of FA icons
+.secondary-menu span,
+.main-menu span {
+  margin: 0 5px; // Adjustment of FA icons
 }
 
 /* Nav helper links

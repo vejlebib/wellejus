@@ -1,0 +1,25 @@
+/**
+ * Staff styling for Wellejus theme.
+ *
+ * @author holt83
+ */
+
+.view-vejlebib-ding-staff .view-filters {
+	background-color: $gray-light;
+  margin-bottom: $large-spacing;
+  padding: $medium-spacing;
+
+  #edit-field-ding-staff-department-tid-wrapper label {
+  	padding-left: $small-spacing;
+  	margin-bottom: $medium-spacing;
+  }
+
+  .views-widget select {
+  	width: 100%;
+  }
+
+  .views-exposed-widget {
+  	width: 100%;
+  	padding: 0;
+  }
+}
