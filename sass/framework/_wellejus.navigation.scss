@@ -94,6 +94,12 @@
       padding: 10px 7px;
       margin: 10px 0;
       color: #959594;
+    }
+
+    .menu-item.active,
+    li.active-trail .menu-item {
+      color: #000002;
+    }
   }
 }
 
