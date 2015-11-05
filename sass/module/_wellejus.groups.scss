@@ -4,25 +4,7 @@
  * @author holt83
  */
 
-.frontpage-layout .group-blocks--wrapper {
+.group-blocks--wrapper {
 	padding-left: 0;
 	padding-right: 0;
-
-	.group-blocks--inner {
-		border: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	.group-block h2 {
-    background-image: linear-gradient(to bottom right, $left, $right);
-    font-size: 1em;
-    padding: 0.2em 0.5em;
-    text-transform: uppercase;
-
-    a {
-	    color: $white;
-	    display: inline-block;
-    }
-	}
 }
