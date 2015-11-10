@@ -4,7 +4,12 @@
  * @author Simon Holt
  */
 
-// This was used for labels on ding_page content_types, but it is now moved to 
-// a more general styling in _wellejus.labels.scss.
-// Thus this file is currently empty, but we keep it, if we might wanne apply
-// some special styling to ding_page content_types in the future.
+.page {
+	.super-heading {
+		border-top: 1px solid #EFEFEF;
+		padding: 0;
+		margin-top: 10px;
+		padding-top: 10px;
+		clear: both; // This is right after a body field, which may have floats applied
+	}
+}
