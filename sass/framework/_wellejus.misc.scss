@@ -51,53 +51,18 @@
 
 /* Content
    ========================================================================== */
-.content-inner {
-	background-color: $gray-dark;
-}
-
 .content-wrapper {
   @include rgba-background($gray-darker, $default-transparency);
   margin-top: 0;
 }
 
 .pane-page-content {
-  padding: 10px; // Our gray "border"
+  padding: 10px 0;
   clear: left; // Prevent status-message collapse
 }
 
-/* Common rules for frontpage and default layout. */
-.default-layout,
-.frontpage-layout {
-  background-color: $white;
-
-  .primary-content,
-  .secondary-content,
-  .tertiary-content {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .layout-wrapper {
-    margin: 0;
-  }
-}
-
-/* Specific rules for default layout */
 .default-layout {
   margin-top: 0;
-
-  .layout-wrapper {
-    padding: 10px;
-  }
-}
-
-/* Specific rules for frontpage layout */
-.frontpage-layout {
-  padding: 10px;
-
-  .layout-wrapper {
-    padding: 0;
-  }
 }
 
 /* Maintenance page
