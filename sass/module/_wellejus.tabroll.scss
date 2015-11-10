@@ -1,83 +1,41 @@
 /**
  * Tabroll for wellejus theme
  *
- * @author wiredloose
+ * @author holt83
  */
 
-/* Tabroll tabs
-   ========================================================================== */
+.ding-tabroll-wrapper .ui-tabs {
+  ul.ui-tabs-nav {
+    @include zen-grid-item(3, 1, right);
+    list-style: square;
+    margin: 0;
+    padding: 0;
+    right: 0;
 
-.ding-tabroll-wrapper {
-  
-  .ui-tabs {
-  
-    ul.ui-tabs-nav {
-      right: 0;
-        
-      li {
-        background-color: $gray-dark;
-        border-top: none;
-        
-        a {
-          font-weight: bold;
-          border-bottom: 1px solid #666666 !important;
-          border-top: 1px solid #D5D5D5; 
-          height: 97%;
-          text-transform: uppercase;
-          
-          &:before {
-            display: none;
-          }
-          
-          span {
-            margin: .5em;
-            display: block;
-            text-align: left;
-            overflow: hidden;
-            height: 70%;
-          }
-        }
-        
-        &.ui-tabs-active {
-          background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
-          //background-color: rgba(0, 0, 0, 0.6);
-        }
-      }
-      
-      li:first-child {
-        margin-top: -1px;
-      }
+    a {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      color: inherit;
 
+      span {
+        margin: 1em;
+      }
     }
 
-    .ui-tabs-panel {
-      float: left;
+    li {
+      color: transparentize($black, .3);
 
-      .info {
-        bottom: 0;
-        right: inherit;
-        width: 100%;
-        height: 25%;
-        padding: 10px 0;
-
-        h3 {
-          margin: 0 10px;
-          text-transform: uppercase;
-        }
-
-        p {
-          margin: 0 10px;
-        }
+      &.ui-tabs-active {
+        background-image: linear-gradient(to bottom right, #7d7e7d, #0e0e0e);
+        color: $white;
       }
     }
   }
 
-}
-
-#w .ding-tabroll-wrapper {
-  a,
-  h3 a {
-    color: #FFFFFF;
+  .ui-tabs-panel {
+    @include zen-grid-item(9, 1);
+    margin: 0;
+    padding: 0;
   }
 }
-
