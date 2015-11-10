@@ -33,8 +33,9 @@
   }
 }
 
-// Some tags ("labels") use a wrapper:
-.label {
+// Some tags ("labels" and "group-refs") use a wrapper:
+.label,
+.groups-ref {
 	@extend %label-wrapper;
 
   a {
