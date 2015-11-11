@@ -52,7 +52,7 @@
 /* Content
    ========================================================================== */
 .content-wrapper {
-  @include rgba-background($gray-darker, $default-transparency);
+  // @include rgba-background($gray-darker, $default-transparency);
   margin-top: 0;
 }
 
