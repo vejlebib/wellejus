@@ -1,0 +1,51 @@
+/**
+ * Styling of Ting field search profile select box.
+ *
+ * @author holt83
+ */
+
+.form-item-ting-field-search select {
+	width: 100%;
+}
+
+// Make the profile select part of the search field on larger screens.
+@include large-x-large() {
+	#search-block-form {
+		position: relative;
+
+		.form-item-ting-field-search {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 15%;
+			color: transparentize($black, .3);
+
+			select {
+				// TODO: Elipsis doesn't seem to wokr in Chrome.
+				@include text-truncate();
+				min-height: 66px;
+				width: 15%;
+			  -webkit-border-radius: 0px;
+			  -moz-border-radius: 0px;
+			  border-radius: 0px;
+			  background-image: none;
+			  border: none;
+			  border-right: 1px solid #efefef;
+			  background-color: #f3f3f3;
+			}
+		}
+
+		.form-item-search-block-form {
+			input {
+				padding-left: 22%;
+			}
+
+			.field-prefix {
+				position: absolute;
+				left: 15%;
+			}
+		}
+	}
+}
+
