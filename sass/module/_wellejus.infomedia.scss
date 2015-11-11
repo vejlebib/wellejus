@@ -1,0 +1,41 @@
+/**
+ * Styling of infomedia pages for Wellejus.
+ *
+ * @author holt83
+ *
+ * Note: This styling could be avoided if Ting infomedia used panel pages or,
+ * at least, emulate the panel page markup.
+ */
+
+.page-ting-object-infomedia .pane-page-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.infomedia-article {
+	position: relative;
+	background-color: $white;
+
+	.infomedia_text > p:last-child {
+		margin-bottom: 0;
+		padding-top: 1em;
+		border-top: 1px solid #EFEFEF;
+	}
+
+	#article-wrapper {
+		padding: 20px;
+	}
+
+	.infomedia-image {
+		margin: 20px;
+		float: none;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.infomedia_error {
+	background-color: $white;
+	padding: 20px 20px 50px 20px;
+	margin-bottom: 10px;
+}
