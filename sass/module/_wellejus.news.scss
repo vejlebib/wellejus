@@ -6,6 +6,12 @@
  * @author wiredloose
  */
 
+.news {
+  .image-container {
+    margin-bottom: 10px;
+  }
+}
+
 .news-list {
 
   .news-list-item:nth-child(odd) {
