@@ -27,28 +27,28 @@
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
       text-transform: uppercase;
     }
-    
+
     .title:before {
       content: "\f105  ";
       font-family: FontAwesome;
     }
   }
-  
+
   .opening-hours-list {
     padding-left: 10px;
-    
-    li {  
+
+    li {
       border-bottom: 1px solid rgba(255, 255, 255, 0.25);
       clear: both;
       height: 2em;
       padding: 10px 0;
       color: white;
-      
+
       a {
         color: white;
       }
     }
-    
+
     .tipsy-oho .close:after {
       color: white;
       font-size: 140%;
@@ -62,7 +62,7 @@
 
 .topbar-inner {
   .openhours-today-wrapper {
-    margin: 25px 0;
+    margin: $medium-spacing*1.5 0;
     float: right;
     width: 50%;
 
@@ -77,21 +77,21 @@
     }
 
   }
-  
+
   .opening-hours-list {
     padding-left: 0;
-    
+
     li {
       float: left;
       width: 50%;
     }
-    
+
     .details {
       span {
         line-height: $base-font-size;
       }
     }
-    
+
   }
 }
 
@@ -99,5 +99,5 @@
 /* opening hours today block placed in topbar
    ========================================================================== */
 .header-wrapper {
-  
+
 }
