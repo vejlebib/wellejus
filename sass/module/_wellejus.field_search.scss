@@ -18,13 +18,14 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			height: 100%;
 			width: 15%;
 			color: transparentize($black, .3);
 
 			select {
-				// TODO: Elipsis doesn't seem to wokr in Chrome.
+				// TODO: Elipsis doesn't seem to work in Chrome.
 				@include text-truncate();
-				min-height: 66px;
+				height: 100%;
 				width: 15%;
 			  -webkit-border-radius: 0px;
 			  -moz-border-radius: 0px;
