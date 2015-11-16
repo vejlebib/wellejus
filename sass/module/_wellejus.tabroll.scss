@@ -51,8 +51,6 @@
     .ui-tabs-panel {
       @include zen-grid-item(9, 1);
       padding: 0;
-      border: 1px solid $white;
-      border-right: none;
     }
   }
 }
