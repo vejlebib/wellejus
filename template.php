@@ -69,7 +69,7 @@ function wellejus_menu_link__main_menu(&$vars) {
     case 'inspiration':
       $title_prefix = '<i class="icon-large icon-lightbulb"></i>';
       break;
-    case 'pa-nettet':
+    case 'netmedier':
       $title_prefix = '<i class="icon-large icon-globe"></i>';
       break;
     case 'sadan-gor-du':
